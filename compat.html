@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compatibility | Porthole</title>
+<meta name="description" content="How games run in Porthole on iPhones and iPads, from reports sent by the people using it.">
+<meta name="theme-color" content="#0b1b2b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23d6dde6'/%3E%3Ccircle cx='32' cy='32' r='22' fill='%231e6fd9'/%3E%3Ccircle cx='32' cy='32' r='16' fill='%2305172c'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <a class="brand" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#cfd8e3"/><circle cx="32" cy="32" r="22" fill="#1e6fd9"/><circle cx="32" cy="32" r="16" fill="#05172c"/></svg>Porthole</a>
+    <nav aria-label="Main"><a href="/compat.html" aria-current="page">Compatibility</a><a href="/privacy.html">Privacy</a></nav>
+  </header>
+
+  <h1 class="page">Compatibility</h1>
+  <p class="lede">How games run in Porthole, from reports sent by the people using it. Tap a game to see which devices it works on, what settings people used, and their notes.</p>
+
+  <div class="tools">
+    <input id="q" type="search" placeholder="Search games" aria-label="Search games" autocomplete="off">
+    <select id="filter" aria-label="Show">
+      <option value="all">All games</option>
+      <option value="great">Works great</option>
+      <option value="playable">Works, with problems</option>
+      <option value="broken">Doesn't work</option>
+    </select>
+    <select id="sort" aria-label="Sort by">
+      <option value="reports">Most reports</option>
+      <option value="name">Name</option>
+      <option value="recent">Newest report</option>
+    </select>
+  </div>
+
+  <div id="games" class="games" aria-live="polite"><p class="empty">Loading…</p></div>
+
+  <p class="fine" id="note"></p>
+  <p class="fine">These reports are sent by users and aren't verified. A badge combines the reports for a game, giving newer ones more weight. Game titles belong to their owners; this page isn't affiliated with or endorsed by any of them. See the <a href="/privacy.html">privacy page</a> for what a report contains.</p>
+
+  <footer>Porthole is a personal project. · <a href="/privacy.html">Privacy</a> · <a href="/compat.html">Compatibility</a></footer>
+</div>
+<script src="compat.js"></script>
+</body>
+</html>

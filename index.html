@@ -7,53 +7,14 @@
 <meta name="description" content="Porthole runs Windows PC games on your iPhone and iPad. Add games from your own files, download the ones you own on Steam, and see how each game runs on devices like yours.">
 <meta name="theme-color" content="#0b1b2b">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23d6dde6'/%3E%3Ccircle cx='32' cy='32' r='22' fill='%231e6fd9'/%3E%3Ccircle cx='32' cy='32' r='16' fill='%2305172c'/%3E%3C/svg%3E">
-<style>
-  :root {
-    --bg: #07111c; --panel: #0e1d2d; --line: rgba(255,255,255,.09);
-    --text: #eef3f9; --dim: #9db0c4; --accent: #3b82f6; --accent2: #22c5b5;
-  }
-  @media (prefers-color-scheme: light) {
-    :root { --bg: #f4f7fb; --panel: #ffffff; --line: rgba(10,30,60,.1); --text: #0b1b2b; --dim: #55687d; --accent: #1d63d6; --accent2: #0f9d8f; }
-  }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  }
-  a { color: var(--accent); }
-  .wrap { max-width: 980px; margin: 0 auto; padding: 0 22px; }
-  header.top { padding: 22px 0 0; display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .2px; }
-  header.top svg { width: 34px; height: 34px; }
-  .hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; align-items: center; padding: 64px 0 56px; }
-  .hero h1 { font-size: clamp(38px, 6.4vw, 64px); line-height: 1.05; margin: 0 0 18px; letter-spacing: -1.2px; }
-  .hero h1 span { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  .hero p { color: var(--dim); font-size: 19px; margin: 0 0 22px; max-width: 34em; }
-  .porthole { width: 100%; max-width: 340px; justify-self: center; filter: drop-shadow(0 20px 40px rgba(0,0,0,.35)); }
-  .status { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent2); border-radius: 14px; padding: 14px 18px; color: var(--dim); font-size: 15.5px; }
-  .status b { color: var(--text); }
-  h2 { font-size: 28px; letter-spacing: -.4px; margin: 64px 0 18px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
-  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 22px; }
-  .card h3 { margin: 0 0 6px; font-size: 18px; }
-  .card p { margin: 0; color: var(--dim); font-size: 15.5px; }
-  .icon { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; margin-bottom: 14px; background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #fff; }
-  .icon svg { width: 22px; height: 22px; }
-  ul.credits { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
-  ul.credits li { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; }
-  ul.credits b { display: block; }
-  ul.credits span { color: var(--dim); font-size: 15px; }
-  .fine { color: var(--dim); font-size: 14.5px; }
-  footer { margin: 72px 0 40px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--dim); font-size: 14px; }
-  @media (max-width: 760px) { .hero { grid-template-columns: 1fr; padding-top: 40px; } .porthole { max-width: 240px; order: -1; } }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="wrap">
 
-  <header class="top" aria-label="Porthole">
-    <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#cfd8e3"/><circle cx="32" cy="32" r="22" fill="#1e6fd9"/><circle cx="32" cy="32" r="16" fill="#05172c"/></svg>
-    Porthole
+  <header class="top">
+    <a class="brand" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#cfd8e3"/><circle cx="32" cy="32" r="22" fill="#1e6fd9"/><circle cx="32" cy="32" r="16" fill="#05172c"/></svg>Porthole</a>
+    <nav aria-label="Main"><a href="/compat.html">Compatibility</a><a href="/privacy.html">Privacy</a></nav>
   </header>
 
   <section class="hero">
@@ -95,7 +56,7 @@
     <div class="card">
       <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3l2.4 1.8 3-.2 1 2.8 2.5 1.7-.9 2.9.9 2.9-2.5 1.7-1 2.8-3-.2L12 21l-2.4-1.8-3 .2-1-2.8L3.1 15l.9-2.9L3.1 9.2l2.5-1.7 1-2.8 3 .2z"/></svg></div>
       <h3>Compatibility reports</h3>
-      <p>Each game shows a badge: works great, works with problems, or doesn't work, based on reports from other people. See how it runs on your model, and add your own report in under a minute.</p>
+      <p>Each game shows a badge: works great, works with problems, or doesn't work, based on reports from other people. See how it runs on your model, and add your own report in under a minute. <a href="/compat.html">Browse the reports</a>.</p>
     </div>
     <div class="card">
       <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
@@ -125,7 +86,7 @@
   <h2>The fine print</h2>
   <p class="fine">Porthole never includes games, and you need to own what you run. Steam and its artwork belong to Valve; Epic Games, GOG and every game or launcher you run belong to their owners. Apple, iPhone, iPad and iOS are trademarks of Apple Inc. Porthole is not affiliated with or endorsed by any of them.</p>
 
-  <footer>Porthole is a personal project.</footer>
+  <footer>Porthole is a personal project. · <a href="/privacy.html">Privacy</a> · <a href="/compat.html">Compatibility</a></footer>
 </div>
 </body>
 </html>

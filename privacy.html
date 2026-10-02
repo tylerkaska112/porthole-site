@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy | Porthole</title>
+<meta name="description" content="What Porthole sends off your device, when, and what it never collects.">
+<meta name="theme-color" content="#0b1b2b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23d6dde6'/%3E%3Ccircle cx='32' cy='32' r='22' fill='%231e6fd9'/%3E%3Ccircle cx='32' cy='32' r='16' fill='%2305172c'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap doc">
+
+  <header class="top">
+    <a class="brand" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#cfd8e3"/><circle cx="32" cy="32" r="22" fill="#1e6fd9"/><circle cx="32" cy="32" r="16" fill="#05172c"/></svg>Porthole</a>
+    <nav aria-label="Main"><a href="/compat.html">Compatibility</a><a href="/privacy.html" aria-current="page">Privacy</a></nav>
+  </header>
+
+  <h1 class="page">Privacy</h1>
+  <p class="lede">Porthole has no ads, no analytics and no account of its own. This page says exactly what leaves your device, and when. Last updated October 2026.</p>
+
+  <h2>What stays on your device</h2>
+  <ul>
+    <li>Your games, saves, settings and the performance log (<code>telemetry.csv</code> in the Files app).</li>
+    <li>Your pairing file, which lets Porthole switch JIT on.</li>
+    <li>Your Steam sign-in token, if you sign in to Steam. It is kept in the iOS Keychain until you sign out.</li>
+    <li>If you use the optional in-app updating: your signing certificate, its password and your provisioning profiles, kept in the Keychain and used only on your device.</li>
+  </ul>
+  <p>None of this is uploaded.</p>
+
+  <h2>Compatibility reports</h2>
+  <p>A report is only sent when you tap Send. It contains:</p>
+  <table>
+    <tr><th>What</th><th>Details</th></tr>
+    <tr><td>The game</td><td>For a Steam game, its Steam app number and title. For any other game, a fingerprint (a SHA-256 hash) of its main program file, plus the title you gave it. The game itself is never sent.</td></tr>
+    <tr><td>Your device</td><td>Model (for example iPhone 16 Pro), iOS version and Porthole version.</td></tr>
+    <tr><td>Your answers</td><td>How it ran, whether it crashed, the tags you ticked, and which store the files came from (a fixed list, not typed).</td></tr>
+    <tr><td>Measurements</td><td>Average and low frame rate, how long you played, and how hot the device got, if you leave "Include what the app measured" on.</td></tr>
+    <tr><td>Settings</td><td>How the game was started and the performance settings it used, if you leave "Share my settings" on. Launch options you typed are never shared.</td></tr>
+    <tr><td>Your note</td><td>Optional. A person reads it before it can appear, and notes that look like links or download sites are removed.</td></tr>
+  </table>
+  <p>Each report is tied to a random key made on your device. It is not tied to your name, your Apple ID, your Steam account or any device identifier. The server does not store IP addresses; it holds them in memory for a short time to limit abuse. Reports whose files came from "somewhere else" are kept private and are never shown or counted.</p>
+  <p>You can delete your own reports in Settings ▸ Compatibility reports, and forget your reporting key there too. Reports are public: the device model, iOS version and answers are shown next to the game.</p>
+
+  <h2>Showing badges</h2>
+  <p>To show a compatibility badge on a game, Porthole asks the compatibility server about your games: the Steam app number for Steam games, or the fingerprint described above for others, together with your device model so it can show results for your model. You can switch badges off in Settings ▸ Compatibility reports.</p>
+
+  <h2>Steam</h2>
+  <p>If you sign in to Steam in Porthole, your password is encrypted before it leaves the device and is never saved; the app keeps only a sign-in token. Games you download come from Valve's servers, and cover art loads from Valve's servers too. Porthole is not affiliated with Valve.</p>
+
+  <h2>Updates</h2>
+  <p>Porthole can check for new builds on its maintainer's update server. That server sees your IP address, as any website does when you visit it, and nothing else about you.</p>
+
+  <h2>Pairing and the tunnel</h2>
+  <p>Pairing and the JIT tunnel use connections that stay on your device. The VPN entry Porthole creates is a local loopback: no traffic from other apps goes through it.</p>
+
+  <h2>Where reports are stored</h2>
+  <p>Reports are stored on a computer run by the project's maintainer, not with an advertising or analytics company, and are not sold or shared.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Turn off badges and the "How did it run?" prompt in Settings ▸ Compatibility reports.</li>
+    <li>Delete reports you sent, or forget your reporting key, in the same place.</li>
+    <li>Delete the app to remove everything stored on your device.</li>
+  </ul>
+
+  <p class="fine">Porthole is not aimed at children and does not knowingly collect information from them. If this page changes in a way that matters, the date at the top will change.</p>
+
+  <footer>Porthole is a personal project. · <a href="/privacy.html">Privacy</a> · <a href="/compat.html">Compatibility</a></footer>
+</div>
+</body>
+</html>

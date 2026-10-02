@@ -1,0 +1,84 @@
+:root {
+  --bg: #07111c; --panel: #0e1d2d; --line: rgba(255,255,255,.09);
+  --text: #eef3f9; --dim: #9db0c4; --accent: #3b82f6; --accent2: #22c5b5;
+  --good: #30d158; --warn: #f5c400; --bad: #ff5a4f;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f4f7fb; --panel: #ffffff; --line: rgba(10,30,60,.1); --text: #0b1b2b; --dim: #55687d; --accent: #1d63d6; --accent2: #0f9d8f; --good: #1f9d43; --warn: #a87800; --bad: #d1281c; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+a { color: var(--accent); }
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+
+header.top { padding: 22px 0 0; display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+header.top a.brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .2px; color: var(--text); text-decoration: none; margin-right: auto; }
+header.top svg { width: 34px; height: 34px; }
+header.top nav { display: flex; gap: 20px; font-size: 15.5px; }
+header.top nav a { color: var(--dim); text-decoration: none; }
+header.top nav a:hover, header.top nav a[aria-current="page"] { color: var(--text); }
+
+h1.page { font-size: clamp(32px, 5.4vw, 48px); line-height: 1.1; letter-spacing: -1px; margin: 54px 0 12px; }
+.lede { color: var(--dim); font-size: 19px; max-width: 38em; margin: 0 0 28px; }
+h2 { font-size: 26px; letter-spacing: -.4px; margin: 52px 0 14px; }
+h3 { font-size: 18px; margin: 28px 0 6px; }
+p, li { max-width: 46em; }
+.fine { color: var(--dim); font-size: 14.5px; }
+
+.hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; align-items: center; padding: 64px 0 56px; }
+.hero h1 { font-size: clamp(38px, 6.4vw, 64px); line-height: 1.05; margin: 0 0 18px; letter-spacing: -1.2px; }
+.hero h1 span { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero p { color: var(--dim); font-size: 19px; margin: 0 0 22px; max-width: 34em; }
+.porthole { width: 100%; max-width: 340px; justify-self: center; filter: drop-shadow(0 20px 40px rgba(0,0,0,.35)); }
+.status { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent2); border-radius: 14px; padding: 14px 18px; color: var(--dim); font-size: 15.5px; }
+.status b { color: var(--text); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 22px; }
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.card p { margin: 0; color: var(--dim); font-size: 15.5px; }
+.icon { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; margin-bottom: 14px; background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #fff; }
+.icon svg { width: 22px; height: 22px; }
+ul.credits { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+ul.credits li { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; }
+ul.credits b { display: block; }
+ul.credits span { color: var(--dim); font-size: 15px; }
+.links { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 18px; }
+.button { display: inline-block; padding: 10px 18px; border-radius: 12px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; font-size: 15.5px; }
+.button.quiet { background: var(--panel); color: var(--text); border: 1px solid var(--line); }
+
+/* the privacy page */
+.doc h2 { margin-top: 40px; }
+.doc ul { padding-left: 1.2em; }
+.doc li { margin: 4px 0; }
+.doc table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 15.5px; }
+.doc th, .doc td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.doc th { color: var(--dim); font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: .4px; }
+
+/* the compatibility page */
+.tools { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin: 0 0 18px; }
+.tools input { flex: 1 1 260px; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--panel); color: var(--text); font: inherit; }
+.tools select { padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--panel); color: var(--text); font: inherit; }
+.games { display: grid; gap: 12px; }
+.game { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; }
+.game summary { list-style: none; cursor: pointer; padding: 16px 18px; display: flex; gap: 14px; align-items: center; }
+.game summary::-webkit-details-marker { display: none; }
+.game summary .name { font-weight: 650; font-size: 17.5px; }
+.game summary .meta { color: var(--dim); font-size: 14.5px; }
+.game summary .grow { flex: 1; min-width: 0; }
+.game .body { padding: 0 18px 18px; }
+.pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 11px; border-radius: 999px; font-size: 13px; font-weight: 700; letter-spacing: .2px; white-space: nowrap; }
+.pill.great { background: color-mix(in srgb, var(--good) 18%, transparent); color: var(--good); }
+.pill.playable { background: color-mix(in srgb, var(--warn) 20%, transparent); color: var(--warn); }
+.pill.broken { background: color-mix(in srgb, var(--bad) 18%, transparent); color: var(--bad); }
+.report { border-top: 1px solid var(--line); padding: 12px 0; font-size: 15px; }
+.report .top { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.report .dim { color: var(--dim); }
+.report .quote { margin: 6px 0 0; }
+.phones { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 4px; }
+.phones .chip { background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 6px 10px; font-size: 14px; }
+.empty { color: var(--dim); padding: 30px 0; text-align: center; }
+
+footer { margin: 72px 0 40px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--dim); font-size: 14px; }
+footer a { color: var(--dim); }
+@media (max-width: 760px) { .hero { grid-template-columns: 1fr; padding-top: 40px; } .porthole { max-width: 240px; order: -1; } }
