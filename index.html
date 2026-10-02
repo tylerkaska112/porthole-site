@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Porthole: Windows games on iPhone and iPad</title>
+<meta name="description" content="Porthole runs Windows PC games on your iPhone and iPad. Add games from your own files, download the ones you own on Steam, and see how each game runs on devices like yours.">
+<meta name="theme-color" content="#0b1b2b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23d6dde6'/%3E%3Ccircle cx='32' cy='32' r='22' fill='%231e6fd9'/%3E%3Ccircle cx='32' cy='32' r='16' fill='%2305172c'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #07111c; --panel: #0e1d2d; --line: rgba(255,255,255,.09);
+    --text: #eef3f9; --dim: #9db0c4; --accent: #3b82f6; --accent2: #22c5b5;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #f4f7fb; --panel: #ffffff; --line: rgba(10,30,60,.1); --text: #0b1b2b; --dim: #55687d; --accent: #1d63d6; --accent2: #0f9d8f; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+  header.top { padding: 22px 0 0; display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .2px; }
+  header.top svg { width: 34px; height: 34px; }
+  .hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; align-items: center; padding: 64px 0 56px; }
+  .hero h1 { font-size: clamp(38px, 6.4vw, 64px); line-height: 1.05; margin: 0 0 18px; letter-spacing: -1.2px; }
+  .hero h1 span { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero p { color: var(--dim); font-size: 19px; margin: 0 0 22px; max-width: 34em; }
+  .porthole { width: 100%; max-width: 340px; justify-self: center; filter: drop-shadow(0 20px 40px rgba(0,0,0,.35)); }
+  .status { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent2); border-radius: 14px; padding: 14px 18px; color: var(--dim); font-size: 15.5px; }
+  .status b { color: var(--text); }
+  h2 { font-size: 28px; letter-spacing: -.4px; margin: 64px 0 18px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 22px; }
+  .card h3 { margin: 0 0 6px; font-size: 18px; }
+  .card p { margin: 0; color: var(--dim); font-size: 15.5px; }
+  .icon { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; margin-bottom: 14px; background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #fff; }
+  .icon svg { width: 22px; height: 22px; }
+  ul.credits { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  ul.credits li { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; }
+  ul.credits b { display: block; }
+  ul.credits span { color: var(--dim); font-size: 15px; }
+  .fine { color: var(--dim); font-size: 14.5px; }
+  footer { margin: 72px 0 40px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--dim); font-size: 14px; }
+  @media (max-width: 760px) { .hero { grid-template-columns: 1fr; padding-top: 40px; } .porthole { max-width: 240px; order: -1; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top" aria-label="Porthole">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#cfd8e3"/><circle cx="32" cy="32" r="22" fill="#1e6fd9"/><circle cx="32" cy="32" r="16" fill="#05172c"/></svg>
+    Porthole
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Windows PC games, <span>in your pocket.</span></h1>
+      <p>Porthole runs Windows games on your iPhone and iPad. Bring your own game files, download the games you own on Steam, and see how each one runs on devices like yours before you try it.</p>
+      <div class="status"><b>Early hobby project.</b> Porthole isn't on the App Store and there's nothing to download yet. It changes often, and plenty of games won't run.</div>
+    </div>
+    <svg class="porthole" viewBox="0 0 320 320" role="img" aria-label="A ship's porthole with a game controller glowing inside">
+      <defs>
+        <radialGradient id="sea" cx="50%" cy="42%" r="65%"><stop offset="0" stop-color="#2a7bff"/><stop offset=".55" stop-color="#0d3f8f"/><stop offset="1" stop-color="#04162f"/></radialGradient>
+        <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef2f7"/><stop offset=".5" stop-color="#aab7c6"/><stop offset="1" stop-color="#7a8899"/></linearGradient>
+      </defs>
+      <circle cx="160" cy="160" r="150" fill="url(#rim)"/>
+      <circle cx="160" cy="160" r="122" fill="#5b6b7d"/>
+      <circle cx="160" cy="160" r="112" fill="url(#sea)"/>
+      <g fill="#c9d3df"><circle cx="160" cy="26" r="6"/><circle cx="160" cy="294" r="6"/><circle cx="26" cy="160" r="6"/><circle cx="294" cy="160" r="6"/><circle cx="65" cy="65" r="6"/><circle cx="255" cy="255" r="6"/><circle cx="255" cy="65" r="6"/><circle cx="65" cy="255" r="6"/></g>
+      <g transform="translate(160 168)" fill="#fff" opacity=".95">
+        <rect x="-46" y="-22" width="92" height="46" rx="23"/>
+        <circle cx="-22" cy="1" r="9" fill="#0d3f8f"/><circle cx="26" cy="-6" r="5" fill="#0d3f8f"/><circle cx="36" cy="6" r="5" fill="#0d3f8f"/>
+        <rect x="-26" y="-3" width="9" height="3.6" rx="1.8" fill="#fff"/><rect x="-23.3" y="-5.6" width="3.6" height="9" rx="1.8" fill="#fff"/>
+      </g>
+      <path d="M70 120 A100 100 0 0 1 150 62" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="10" stroke-linecap="round"/>
+    </svg>
+  </section>
+
+  <h2>What it does</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M12 11v4M10 13h4"/></svg></div>
+      <h3>Add games your way</h3>
+      <p>Import a game folder from the Files app, or run a Windows installer. Porthole finds the right program in the folder for you, and keeps uninstallers and helper tools out of the way.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg></div>
+      <h3>Your Steam library</h3>
+      <p>Sign in and download the Windows games you own. They start through Steam itself, so your licence is checked the normal way.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3l2.4 1.8 3-.2 1 2.8 2.5 1.7-.9 2.9.9 2.9-2.5 1.7-1 2.8-3-.2L12 21l-2.4-1.8-3 .2-1-2.8L3.1 15l.9-2.9L3.1 9.2l2.5-1.7 1-2.8 3 .2z"/></svg></div>
+      <h3>Compatibility reports</h3>
+      <p>Each game shows a badge: works great, works with problems, or doesn't work, based on reports from other people. See how it runs on your model, and add your own report in under a minute.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
+      <h3>Made for iPhone and iPad</h3>
+      <p>Touch controls you can switch while you play, a page for every game with its own performance settings, and a layout that uses the whole iPad screen.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+      <h3>No ads, no account</h3>
+      <p>Porthole has no ads and no account of its own. A compatibility report is only sent when you choose to send one, and it contains your device model, iOS version and your answers, nothing that names you.</p>
+    </div>
+  </div>
+
+  <h2>How it works</h2>
+  <p>Porthole is built on <b>Madeira</b>, a project that runs Windows programs on iOS by combining Wine, the FEX-Emu translator and DXMT, which turns Direct3D into Metal. Games run through that compatibility layer, so speed depends on the game and on the device. Some games need more memory than a phone has.</p>
+  <p>It needs iOS 18 or later and <b>JIT</b> switched on, which Porthole can do by itself once you give it a pairing file (on iOS 27 it can make one on the device).</p>
+
+  <h2>With thanks to</h2>
+  <ul class="credits">
+    <li><b>Madeira</b><span>125hz and contributors: the runtime Porthole is built on (Wine, FEX-Emu and DXMT).</span></li>
+    <li><b>Iridium</b><span>The idea of switching JIT on from inside the app.</span></li>
+    <li><b>StikDebug and idevice</b><span>The StikDebug team and Jackson Coxson: the debugger library and the device protocols behind JIT and pairing.</span></li>
+    <li><b>StikPair</b><span>StephenDev0 and the StikDebug team, who showed how a pairing file can be made on the device itself.</span></li>
+    <li><b>Jfishin</b><span>The Steam sign-in and library code in Madeira that Porthole's Steam features grew from.</span></li>
+  </ul>
+
+  <h2>The fine print</h2>
+  <p class="fine">Porthole never includes games, and you need to own what you run. Steam and its artwork belong to Valve; Epic Games, GOG and every game or launcher you run belong to their owners. Apple, iPhone, iPad and iOS are trademarks of Apple Inc. Porthole is not affiliated with or endorsed by any of them.</p>
+
+  <footer>Porthole is a personal project.</footer>
+</div>
+</body>
+</html>
