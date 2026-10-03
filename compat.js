@@ -50,13 +50,21 @@
     return parts.join(' · ');
   }
 
+  // "40d5e74-r0" -> "Madeira 40d5e74 r0"; reports from before engine versions have none.
+  function engineName(e) {
+    if (!e) return 'an earlier version';
+    var m = /^(.+)-r(\d+)$/.exec(e);
+    return m ? 'Madeira ' + m[1] + ' r' + m[2] : e;
+  }
+
   function renderReport(r) {
-    var box = el('div', 'report');
+    var box = el('div', r.onThisEngine === false ? 'report old' : 'report');
     var top = el('div', 'top');
     top.appendChild(pill(r.rating));
     top.appendChild(el('strong', null, r.device));
     top.appendChild(el('span', 'dim', 'iOS ' + r.ios + ' · Porthole ' + r.appVersion + ' · ' + when(r.date)));
     box.appendChild(top);
+    if (r.onThisEngine === false) box.appendChild(el('div', 'earlier', 'Earlier game engine (' + engineName(r.engine) + '): not counted in the badge'));
     var line = (STABILITY[r.stability] || r.stability) + ' · files from ' + (SOURCES[r.source] || r.source);
     box.appendChild(el('div', 'dim', line));
     var perf = perfLine(r.perf);
@@ -72,9 +80,11 @@
     var sum = el('summary');
     var grow = el('div', 'grow');
     grow.appendChild(el('div', 'name', g.title));
-    grow.appendChild(el('div', 'meta', plural(g.reportCount, 'report') + ' · latest ' + when(g.lastReport)));
+    var counted = g.countedReports || 0, earlier = g.earlierReports || 0;
+    grow.appendChild(el('div', 'meta', plural(g.reportCount, 'report') + ' · latest ' + when(g.lastReport) + (earlier && counted ? ' · ' + earlier + ' earlier' : '')));
     sum.appendChild(grow);
     if (g.verdict) sum.appendChild(pill(g.verdict));
+    else sum.appendChild(el('span', 'pill untested', 'Not yet tested'));
     d.appendChild(sum);
 
     var body = el('div', 'body');
@@ -100,6 +110,9 @@
       });
       body.appendChild(ul);
     }
+    if (!g.verdict && earlier) {
+      body.appendChild(el('p', 'note', 'The game engine changed since ' + (earlier === 1 ? 'this was' : 'these were') + ' reported, so there is no badge until someone plays it again. The old reports are kept below for reference.'));
+    }
     body.appendChild(el('h3', null, 'Reports'));
     (g.reports || []).forEach(function (r) { body.appendChild(renderReport(r)); });
     d.appendChild(body);
@@ -113,7 +126,7 @@
   function draw() {
     var text = q.value.trim().toLowerCase();
     var shown = data.games.filter(function (g) {
-      return (filter.value === 'all' || g.verdict === filter.value) && (!text || g.title.toLowerCase().indexOf(text) >= 0);
+      return (filter.value === 'all' || g.verdict === filter.value || (filter.value === 'untested' && !g.verdict)) && (!text || g.title.toLowerCase().indexOf(text) >= 0);
     });
     shown.sort(function (a, b) {
       if (sort.value === 'name') return a.title.localeCompare(b.title);
@@ -134,7 +147,8 @@
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (json) {
       data = json;
-      document.getElementById('note').textContent = 'Last updated ' + json.generated + '. ' + plural(json.games.length, 'game') + ' so far.';
+      document.getElementById('note').textContent = 'Last updated ' + json.generated + '. ' + plural(json.games.length, 'game') + ' so far.'
+        + (json.engine ? ' Badges count reports from the current game engine (' + engineName(json.engine) + '); reports from earlier engines stay listed but do not count.' : '');
       draw();
     })
     .catch(function () { list.textContent = ''; list.appendChild(el('p', 'empty', 'The reports could not be loaded right now. Try again later.')); });

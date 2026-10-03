@@ -71,6 +71,10 @@ ul.credits span { color: var(--dim); font-size: 15px; }
 .pill.great { background: color-mix(in srgb, var(--good) 18%, transparent); color: var(--good); }
 .pill.playable { background: color-mix(in srgb, var(--warn) 20%, transparent); color: var(--warn); }
 .pill.broken { background: color-mix(in srgb, var(--bad) 18%, transparent); color: var(--bad); }
+.pill.untested { background: color-mix(in srgb, var(--dim) 18%, transparent); color: var(--dim); }
+.report.old { opacity: .78; }
+.report .earlier { color: var(--warn); font-size: 13px; font-weight: 600; margin-top: 2px; }
+.body .note { color: var(--dim); font-size: 14px; margin: 4px 0 10px; }
 .report { border-top: 1px solid var(--line); padding: 12px 0; font-size: 15px; }
 .report .top { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
 .report .dim { color: var(--dim); }
