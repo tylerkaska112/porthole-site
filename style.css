@@ -200,14 +200,8 @@ footer .fine { grid-column: 1 / -1; margin: 6px 0 0; padding-top: 18px; border-t
 .empty-state h2 { font-size: 24px; margin: 0 0 10px; }
 .empty-state p { margin: 0 auto; color: var(--dim); max-width: 34em; }
 
-/* Screenshots */
-.gallery { scrollbar-width: thin; scrollbar-color: var(--accent) transparent; display: flex; gap: 22px; overflow-x: auto; scroll-snap-type: x proximity; padding: 14px 4px 22px; margin: 18px -4px 0; -webkit-overflow-scrolling: touch; align-items: center; }
-.gallery img { max-width: none; flex: none; scroll-snap-align: center; border-radius: 30px; box-shadow: 0 24px 48px rgba(0, 0, 0, .35); background: var(--panel); }
-.gallery img.tall { height: 520px; width: auto; }
-.gallery img.wide { width: 760px; height: auto; }
+/* Screenshots: one height for all of them, so the strip is a clean row; the wide ones are simply wider. */
+.gallery { scrollbar-width: thin; scrollbar-color: var(--accent) transparent; display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x proximity; padding: 14px 4px 22px; margin: 18px -4px 0; -webkit-overflow-scrolling: touch; align-items: flex-start; }
+.gallery img { max-width: none; flex: none; height: 480px; width: auto; scroll-snap-align: center; border-radius: 28px; box-shadow: 0 24px 48px rgba(0, 0, 0, .35); background: var(--panel); }
 .gallery:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 16px; }
-@media (max-width: 640px) {
-  .gallery img { border-radius: 22px; }
-  .gallery img.tall { height: 460px; }
-  .gallery img.wide { width: 88vw; }
-}
+@media (max-width: 640px) { .gallery img { height: 400px; border-radius: 22px; } }
