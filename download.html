@@ -15,7 +15,7 @@
 <meta property="og:image" content="https://portholehq.site/img/og-image.png">
 <meta property="og:url" content="https://portholehq.site/download.html">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="/style.css?v=20261018">
+<link rel="stylesheet" href="/style.css?v=20261019">
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
@@ -48,6 +48,16 @@
   </div>
   <p class="fine" style="margin-top:12px">You can also download every build, current and past, from inside Porthole under Settings &#9656; Updates. Without a certificate added it saves the file for you to sign yourself.</p>
 
+  <h2>Which certificate to use</h2>
+  <p>The certificate and profile you sign with decide how well Porthole works, so this is worth getting right.</p>
+  <ul>
+    <li><b>Best: your own development certificate and profile from a paid Apple Developer account.</b> The profile must include <b>get-task-allow</b> (that is what lets Porthole switch JIT on) and <i>Network Extension (packet tunnel)</i>, <i>Personal VPN</i>, <i>Increased Memory Limit</i> and <i>Extended Virtual Addressing</i>, for the app and for each of its two extensions.</li>
+    <li><b>Keep the .p12 and its password.</b> With them Porthole signs every new version of itself on your device; without them you can still download new versions as a file and sign them yourself.</li>
+    <li><b>A free Apple ID usually is not enough.</b> It cannot add those capabilities and its profiles expire after about a week.</li>
+    <li><b>Be careful with signing you do not control.</b> A shared or third-party certificate can be revoked without warning, may lack these capabilities, and means someone else signs an app that holds your Steam sign-in and your games.</li>
+  </ul>
+  <p class="fine">Apple changes its account limits from time to time. Check Apple's current developer documentation for the exact numbers.</p>
+
   <h2>Install</h2>
   <ol>
     <li>Download the IPA and check the checksum.</li>
@@ -66,9 +76,9 @@
     <div><b>Porthole</b><span>Windows PC games on iPhone and iPad. A personal project.</span></div>
   </div>
   <nav class="foot-links" aria-label="Footer">
-    <a href="/download.html">Get it</a><a href="/compat.html">Compatibility</a><a href="/privacy.html">Privacy</a><a href="https://github.com/tylerkaska112/PortHole">GitHub</a>
+    <a href="/download.html">Get it</a><a href="/compat.html">Compatibility</a><a href="/privacy.html">Privacy</a><a href="https://github.com/tylerkaska112/PortHole">GitHub</a><a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem</a>
   </nav>
-  <p class="fine">Not affiliated with or endorsed by Valve, Microsoft, Apple or any game publisher. Game and company names belong to their owners.</p>
+  <p class="fine">Not affiliated with or endorsed by Valve, Microsoft, Apple or any game publisher. Game and company names belong to their owners. Built with the help of AI.</p>
 </div></footer>
 </body>
 </html>
