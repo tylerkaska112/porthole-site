@@ -3,7 +3,7 @@
 This branch (`redesign`) is a full redesign and has NOT been published. Nothing is deployed until `main` is pushed (GitHub Pages serves `main`).
 
 ## Fill in
-- [ ] GitHub address: `https://github.com/porthole-app/porthole/releases` is a placeholder (download.html, one link). Replace it with the real repository.
+- [x] GitHub address: the repository is `https://github.com/tylerkaska112/PortHole` (already created, currently empty). The Get it page links to its Releases page.
 - [ ] Download page: when the first release exists, replace the "isn't out yet" box with the IPA, its SHA-256 and the source link.
 - [ ] `compat.json`: regenerate the snapshot with `tools/publish_compat_snapshot.py` (in the app repo) so the list is current.
 - [ ] Check every claim on the home page against the build that is released (controller badges, Steam downloads, setup guide).
