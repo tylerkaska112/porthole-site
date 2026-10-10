@@ -1,5 +1,95 @@
 {
- "generated": "2026-10-03 02:54 UTC",
- "engine": "40d5e74-r0",
- "games": []
+ "generated": "2026-10-10 20:19 UTC",
+ "engine": "48f9764-r0",
+ "games": [
+  {
+   "id": "steam:3314790",
+   "title": "CloverPit",
+   "kind": "steam",
+   "steamAppID": 3314790,
+   "reportCount": 1,
+   "lastReport": "2026-10-10",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro Max",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.203",
+     "engine": "48f9764-r0",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": null,
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-10",
+     "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:427520",
+   "title": "Factorio",
+   "kind": "steam",
+   "steamAppID": 427520,
+   "reportCount": 1,
+   "lastReport": "2026-10-10",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro Max",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.203",
+     "engine": "48f9764-r0",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "audio_issues",
+      "controller_ok",
+      "online_works"
+     ],
+     "source": "steam",
+     "perf": null,
+     "settings": null,
+     "comment": null,
+     "date": "2026-10-10",
+     "device": "iPhone 15 Pro Max"
+    }
+   ]
+  }
+ ]
 }
