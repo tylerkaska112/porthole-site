@@ -229,3 +229,6 @@ footer .fine { grid-column: 1 / -1; margin: 6px 0 0; padding-top: 18px; border-t
   background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 16%, var(--panel)), color-mix(in srgb, var(--accent2) 10%, var(--panel))); }
 .band h2 { margin-bottom: 8px; }
 .band .lede { margin: 0; max-width: 34em; }
+
+/* Keyboard focus is always visible */
+a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 10px; }
