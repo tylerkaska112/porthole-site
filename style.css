@@ -151,6 +151,7 @@ ul.credits span { color: var(--dim); font-size: 15px; }
 
 /* The compatibility list (compat.js builds these) */
 .tools { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin: 0 0 18px; }
+.tools[hidden] { display: none; }
 .tools input, .tools select { padding: 12px 14px; border-radius: 14px; border: 1px solid var(--line); background: var(--panel); color: var(--text); font: inherit; }
 .tools input { flex: 1 1 260px; }
 .games { display: grid; gap: 12px; }
