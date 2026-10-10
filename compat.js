@@ -134,8 +134,14 @@
       return b.reportCount - a.reportCount || a.title.localeCompare(b.title);
     });
     list.textContent = '';
+    var tools = document.querySelector('.tools');
+    if (tools) tools.hidden = !data.games.length;          // nothing to search or filter yet
     if (!shown.length) {
-      list.appendChild(el('p', 'empty', data.games.length ? 'No game matches.' : 'No reports have been sent yet.'));
+      if (data.games.length) { list.appendChild(el('p', 'empty', 'No game matches.')); return; }
+      var box = el('div', 'empty-state');
+      box.appendChild(el('h2', null, 'Nothing reported yet'));
+      box.appendChild(el('p', null, "Porthole hasn't been released, so nobody has reported a game yet. Once people start playing, every game they report shows up here with a badge: works great, works with problems, or doesn't work."));
+      list.appendChild(box);
       return;
     }
     shown.forEach(function (g) { list.appendChild(renderGame(g)); });

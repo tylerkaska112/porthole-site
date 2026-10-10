@@ -193,3 +193,8 @@ footer .fine { grid-column: 1 / -1; margin: 6px 0 0; padding-top: 18px; border-t
   footer .foot { grid-template-columns: 1fr; }
   footer .foot-links { justify-content: flex-start; }
 }
+
+/* The compatibility list before any report exists */
+.empty-state { text-align: center; background: var(--panel); border: 1px dashed var(--line); border-radius: var(--radius); padding: 40px 24px; margin: 8px 0 12px; }
+.empty-state h2 { font-size: 24px; margin: 0 0 10px; }
+.empty-state p { margin: 0 auto; color: var(--dim); max-width: 34em; }
