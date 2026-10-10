@@ -4,20 +4,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy | Porthole</title>
-<meta name="description" content="What Porthole sends off your device, when, and what it never collects.">
-<meta name="theme-color" content="#0b1b2b">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23d6dde6'/%3E%3Ccircle cx='32' cy='32' r='22' fill='%231e6fd9'/%3E%3Ccircle cx='32' cy='32' r='16' fill='%2305172c'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css">
+<meta name="description" content="What Porthole sends, what stays on your device, and when.">
+<meta name="theme-color" content="#04121A">
+<link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy | Porthole">
+<meta property="og:description" content="What Porthole sends, what stays on your device, and when.">
+<meta property="og:image" content="https://portholehq.site/img/og-image.png">
+<meta property="og:url" content="https://portholehq.site/privacy.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<div class="wrap doc">
-
-  <header class="top">
-    <a class="brand" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#cfd8e3"/><circle cx="32" cy="32" r="22" fill="#1e6fd9"/><circle cx="32" cy="32" r="16" fill="#05172c"/></svg>Porthole</a>
-    <nav aria-label="Main"><a href="/compat.html">Compatibility</a><a href="/privacy.html" aria-current="page">Privacy</a></nav>
-  </header>
-
-  <h1 class="page">Privacy</h1>
+<a class="skip" href="#main">Skip to the content</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/"><picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night.png"><img src="/img/porthole-sunset.png" alt="" width="38" height="38"></picture>Porthole</a>
+  <nav aria-label="Main">
+    <a href="/#features">Features</a><a href="/compat.html">Compatibility</a><a href="/privacy.html" aria-current="page">Privacy</a><a class="cta" href="/download.html">Get it</a>
+  </nav>
+</div></header>
+<main id="main">
+<div class="wrap page doc">
+  <p class="eyebrow">Privacy</p>
+  <h1>Privacy</h1>
   <p class="lede">Porthole has no ads, no analytics and no account of its own. This page says exactly what leaves your device, and when. Last updated October 2026.</p>
 
   <h2>What stays on your device</h2>
@@ -47,13 +58,13 @@
   <p>To show a compatibility badge on a game, Porthole asks the compatibility server about your games: the Steam app number for Steam games, or the fingerprint described above for others, together with your device model so it can show results for your model. You can switch badges off in Settings ▸ Compatibility reports.</p>
 
   <h2>Steam</h2>
-  <p>If you sign in to Steam in Porthole, your password is encrypted before it leaves the device and is never saved; the app keeps only a sign-in token. Games you download come from Valve's servers, and cover art loads from Valve's servers too. Porthole is not affiliated with Valve.</p>
+  <p>If you sign in to Steam in Porthole, your password is encrypted before it leaves the device and is never saved; the app keeps only a sign-in token. Games you download come from Valve's servers, and cover art loads from Valve's servers too. To show which games work with a controller, Porthole asks Valve's store about the Steam app numbers of the games on your screen; the answers are kept on your device for a week. Porthole is not affiliated with Valve.</p>
 
   <h2>Updates</h2>
-  <p>Porthole can check for new builds on its maintainer's update server. That server sees your IP address, as any website does when you visit it, and nothing else about you.</p>
+  <p>Porthole can check for new builds on its maintainer's update server, and download them. That server sees your IP address, as any website does when you visit it, and nothing else about you.</p>
 
   <h2>Pairing and the tunnel</h2>
-  <p>Pairing and the JIT tunnel use connections that stay on your device. The VPN entry Porthole creates is a local loopback: no traffic from other apps goes through it.</p>
+  <p>Pairing and the JIT tunnel use connections that stay on your device. The VPN entry Porthole creates is a local loopback: no traffic from other apps goes through it. iOS runs one VPN at a time, so before it turns its own tunnel on Porthole checks whether another VPN is on (it cannot tell which one), asks you, and afterwards can run a shortcut you choose to turn your VPN back on. Nothing about this is sent anywhere.</p>
 
   <h2>Where reports are stored</h2>
   <p>Reports are stored on a computer run by the project's maintainer, not with an advertising or analytics company, and are not sold or shared.</p>
@@ -67,7 +78,12 @@
 
   <p class="fine">Porthole is not aimed at children and does not knowingly collect information from them. If this page changes in a way that matters, the date at the top will change.</p>
 
-  <footer>Porthole is a personal project. · <a href="/privacy.html">Privacy</a> · <a href="/compat.html">Compatibility</a></footer>
+  
 </div>
+</main>
+<footer><div class="wrap">
+  <span>Porthole is a personal project.</span><span class="grow"></span>
+  <a href="/download.html">Get it</a><a href="/compat.html">Compatibility</a><a href="/privacy.html">Privacy</a>
+</div></footer>
 </body>
 </html>

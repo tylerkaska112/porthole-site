@@ -1,4 +1,6 @@
 # Porthole site
 
-The one-page website for Porthole, served by GitHub Pages at https://portholehq.site.
-Plain HTML and CSS: no build step, no scripts, no tracking. Edit `index.html` and push.
+The website for Porthole, served by GitHub Pages at https://portholehq.site.
+Plain HTML and CSS: no build step, no tracking (the compatibility list uses one small script). Edit the files and push `main`.
+
+See `RELEASE-CHECKLIST.md` before publishing the redesign.

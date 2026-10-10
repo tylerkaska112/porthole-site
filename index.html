@@ -5,87 +5,146 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Porthole: Windows games on iPhone and iPad</title>
 <meta name="description" content="Porthole runs Windows PC games on your iPhone and iPad. Add games from your own files, download the ones you own on Steam, and see how each game runs on devices like yours.">
-<meta name="theme-color" content="#0b1b2b">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23d6dde6'/%3E%3Ccircle cx='32' cy='32' r='22' fill='%231e6fd9'/%3E%3Ccircle cx='32' cy='32' r='16' fill='%2305172c'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css">
+<meta name="theme-color" content="#04121A">
+<link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Porthole: Windows games on iPhone and iPad">
+<meta property="og:description" content="Porthole runs Windows PC games on your iPhone and iPad. Add games from your own files, download the ones you own on Steam, and see how each game runs on devices like yours.">
+<meta property="og:image" content="https://portholehq.site/img/og-image.png">
+<meta property="og:url" content="https://portholehq.site/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to the content</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/"><picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night.png"><img src="/img/porthole-sunset.png" alt="" width="38" height="38"></picture>Porthole</a>
+  <nav aria-label="Main">
+    <a href="/#features">Features</a><a href="/compat.html">Compatibility</a><a href="/privacy.html">Privacy</a><a class="cta" href="/download.html">Get it</a>
+  </nav>
+</div></header>
+<main id="main">
+
 <div class="wrap">
-
-  <header class="top">
-    <a class="brand" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#cfd8e3"/><circle cx="32" cy="32" r="22" fill="#1e6fd9"/><circle cx="32" cy="32" r="16" fill="#05172c"/></svg>Porthole</a>
-    <nav aria-label="Main"><a href="/compat.html">Compatibility</a><a href="/privacy.html">Privacy</a></nav>
-  </header>
-
-  <section class="hero">
+  <section class="hero" style="padding-top:72px">
     <div>
+      <p class="eyebrow">For iPhone and iPad</p>
       <h1>Windows PC games, <span>in your pocket.</span></h1>
-      <p>Porthole runs Windows games on your iPhone and iPad. Bring your own game files, download the games you own on Steam, and see how each one runs on devices like yours before you try it.</p>
-      <div class="status"><b>Early hobby project.</b> Porthole isn't on the App Store and there's nothing to download yet. It changes often, and plenty of games won't run.</div>
+      <p class="lede">Porthole runs Windows games on your iPhone and iPad. Bring your own game files, download the ones you own on Steam, and see how each game runs on phones like yours before you try it.</p>
+      <div class="actions">
+        <a class="button" href="/download.html">Get Porthole</a>
+        <a class="button quiet" href="/compat.html">See what runs</a>
+      </div>
+      <div class="status"><span><b>Early hobby project.</b> Porthole isn't on the App Store and there's nothing to download yet. It changes often, and plenty of games won't run.</span></div>
     </div>
-    <svg class="porthole" viewBox="0 0 320 320" role="img" aria-label="A ship's porthole with a game controller glowing inside">
-      <defs>
-        <radialGradient id="sea" cx="50%" cy="42%" r="65%"><stop offset="0" stop-color="#2a7bff"/><stop offset=".55" stop-color="#0d3f8f"/><stop offset="1" stop-color="#04162f"/></radialGradient>
-        <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef2f7"/><stop offset=".5" stop-color="#aab7c6"/><stop offset="1" stop-color="#7a8899"/></linearGradient>
-      </defs>
-      <circle cx="160" cy="160" r="150" fill="url(#rim)"/>
-      <circle cx="160" cy="160" r="122" fill="#5b6b7d"/>
-      <circle cx="160" cy="160" r="112" fill="url(#sea)"/>
-      <g fill="#c9d3df"><circle cx="160" cy="26" r="6"/><circle cx="160" cy="294" r="6"/><circle cx="26" cy="160" r="6"/><circle cx="294" cy="160" r="6"/><circle cx="65" cy="65" r="6"/><circle cx="255" cy="255" r="6"/><circle cx="255" cy="65" r="6"/><circle cx="65" cy="255" r="6"/></g>
-      <g transform="translate(160 168)" fill="#fff" opacity=".95">
-        <rect x="-46" y="-22" width="92" height="46" rx="23"/>
-        <circle cx="-22" cy="1" r="9" fill="#0d3f8f"/><circle cx="26" cy="-6" r="5" fill="#0d3f8f"/><circle cx="36" cy="6" r="5" fill="#0d3f8f"/>
-        <rect x="-26" y="-3" width="9" height="3.6" rx="1.8" fill="#fff"/><rect x="-23.3" y="-5.6" width="3.6" height="9" rx="1.8" fill="#fff"/>
-      </g>
-      <path d="M70 120 A100 100 0 0 1 150 62" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="10" stroke-linecap="round"/>
-    </svg>
+    <div class="art">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night.png">
+        <img src="/img/porthole-sunset.png" width="800" height="800" alt="A silver ship's porthole looking out at a calm cyan sea with a small island and palm tree">
+      </picture>
+    </div>
   </section>
 
-  <h2>What it does</h2>
-  <div class="grid">
-    <div class="card">
-      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M12 11v4M10 13h4"/></svg></div>
-      <h3>Add games your way</h3>
-      <p>Import a game folder from the Files app, or run a Windows installer. Porthole finds the right program in the folder for you, and keeps uninstallers and helper tools out of the way.</p>
+  <section id="features">
+    <p class="eyebrow">What it does</p>
+    <h2>Everything in one place</h2>
+    <div class="grid">
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M12 11v4M10 13h4"/></svg></div>
+        <h3>Add games your way</h3><p>Copy a game folder in from the Files app, or run a Windows installer. Porthole finds the right program in the folder and keeps uninstallers and helper tools out of the way.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg></div>
+        <h3>Your Steam library</h3><p>Sign in and download the Windows games you own. They start through Steam itself, so your licence is checked the normal way.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="11" rx="5.5"/><path d="M7 10.5v4M5 12.5h4"/><circle cx="16" cy="11.5" r="1"/><circle cx="18.5" cy="13.5" r="1"/></svg></div>
+        <h3>Built for a controller</h3><p>Move around the whole app with a game controller, like a console. Steam says which games support one, and Porthole shows it on every game.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M12 3l2.4 1.8 3-.2 1 2.8 2.5 1.7-.9 2.9.9 2.9-2.5 1.7-1 2.8-3-.2L12 21l-2.4-1.8-3 .2-1-2.8L3.1 15l.9-2.9L3.1 9.2l2.5-1.7 1-2.8 3 .2z"/></svg></div>
+        <h3>Know before you try</h3><p>Each game shows a badge from reports by other people: works great, works with problems, or doesn't work. Add your own in under a minute.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
+        <h3>Made for iPhone and iPad</h3><p>Touch controls you can switch while you play, a page for every game with its own settings, and a layout that fills the iPad screen.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+        <h3>No ads, no account</h3><p>Porthole has no ads and no account of its own. A compatibility report is only sent when you choose to send one, and nothing in it names you.</p></div>
     </div>
-    <div class="card">
-      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg></div>
-      <h3>Your Steam library</h3>
-      <p>Sign in and download the Windows games you own. They start through Steam itself, so your licence is checked the normal way.</p>
-    </div>
-    <div class="card">
-      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3l2.4 1.8 3-.2 1 2.8 2.5 1.7-.9 2.9.9 2.9-2.5 1.7-1 2.8-3-.2L12 21l-2.4-1.8-3 .2-1-2.8L3.1 15l.9-2.9L3.1 9.2l2.5-1.7 1-2.8 3 .2z"/></svg></div>
-      <h3>Compatibility reports</h3>
-      <p>Each game shows a badge: works great, works with problems, or doesn't work, based on reports from other people. See how it runs on your model, and add your own report in under a minute. <a href="/compat.html">Browse the reports</a>.</p>
-    </div>
-    <div class="card">
-      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
-      <h3>Made for iPhone and iPad</h3>
-      <p>Touch controls you can switch while you play, a page for every game with its own performance settings, and a layout that uses the whole iPad screen.</p>
-    </div>
-    <div class="card">
-      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
-      <h3>No ads, no account</h3>
-      <p>Porthole has no ads and no account of its own. A compatibility report is only sent when you choose to send one, and it contains your device model, iOS version and your answers, nothing that names you.</p>
-    </div>
-  </div>
+  </section>
 
-  <h2>How it works</h2>
-  <p>Porthole is built on <b>Madeira</b>, a project that runs Windows programs on iOS by combining Wine, the FEX-Emu translator and DXMT, which turns Direct3D into Metal. Games run through that compatibility layer, so speed depends on the game and on the device. Some games need more memory than a phone has.</p>
-  <p>It needs iOS 18 or later and <b>JIT</b> switched on, which Porthole can do by itself once you give it a pairing file (on iOS 27 it can make one on the device).</p>
+  <section id="console">
+    <div class="split">
+      <div>
+        <p class="eyebrow">Made to be used with a controller</p>
+        <h2>A shelf that feels like a console</h2>
+        <p class="lede">Your games sit on one row. Move along it and the one you're on grows, with its name, its badges and Play right there.</p>
+        <div class="legend">
+          <div><span class="chip full">FULL</span><p><b>Full controller support.</b> Steam lists the game as playable with a controller from start to finish, menus included.</p></div>
+          <div><span class="chip partial">PARTIAL</span><p><b>Partial controller support.</b> It works with a controller in places, but some parts still want a keyboard and mouse. Porthole shows you how to cover those.</p></div>
+        </div>
+      </div>
+      <div>
+        <div class="shelf-demo" role="img" aria-label="An illustration of the Porthole home screen: a row of games with one selected and larger, showing its name and a Play button">
+          <div class="bar"><img src="/img/porthole-sunset.png" alt=""><b>Porthole</b><span class="on">Home</span><span>Steam</span><span>Reports</span><span>Settings</span><span class="grow"></span><span>9:41</span></div>
+          <div class="stage">
+            <h3>Your next game</h3>
+            <div class="chips"><span class="chip plain">Steam</span><span class="chip full">FULL</span><span class="chip plain">Played yesterday</span></div>
+            <span class="play">&#9654;&nbsp; Play</span>
+          </div>
+          <div class="row">
+            <div class="tile t1"><span class="chip partial">PARTIAL</span></div>
+            <div class="tile big t2"><span class="chip full">FULL</span></div>
+            <div class="tile t3"></div><div class="tile t4"></div><div class="tile t5"></div>
+          </div>
+        </div>
+        <p class="demo-note">An illustration of the home screen, not a screenshot.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>With thanks to</h2>
-  <ul class="credits">
-    <li><b>Madeira</b><span>125hz and contributors: the runtime Porthole is built on (Wine, FEX-Emu and DXMT).</span></li>
-    <li><b>Iridium</b><span>The idea of switching JIT on from inside the app.</span></li>
-    <li><b>StikDebug and idevice</b><span>The StikDebug team and Jackson Coxson: the debugger library and the device protocols behind JIT and pairing.</span></li>
-    <li><b>StikPair</b><span>StephenDev0 and the StikDebug team, who showed how a pairing file can be made on the device itself.</span></li>
-  </ul>
+  <section id="how">
+    <p class="eyebrow">How it works</p>
+    <h2>Three quick steps to your first game</h2>
+    <ol class="steps">
+      <li><h3>Get ready</h3><p>Install Porthole and follow the setup guide: switch on full speed, allow its private link, and download Microsoft's Windows components.</p></li>
+      <li><h3>Add a game</h3><p>Sign in to Steam and download one you own, or copy a game folder in from Files.</p></li>
+      <li><h3>Press Play</h3><p>Check the game's badge first if you like, then press Play. Tell other people how it went with a short report.</p></li>
+    </ol>
+    <p class="fine" style="margin-top:22px">Under the hood Porthole is built on <b>Madeira</b>, a project that runs Windows programs on iOS by combining Wine, the FEX-Emu translator and DXMT, which turns Direct3D into Metal. Speed depends on the game and on the device, and some games need more memory than a phone has. It needs iOS 18 or later and JIT switched on, which Porthole can do by itself once it has a pairing file.</p>
+  </section>
 
-  <h2>The fine print</h2>
-  <p class="fine">Porthole never includes games, and you need to own what you run. Steam and its artwork belong to Valve; Epic Games, GOG and every game or launcher you run belong to their owners. Apple, iPhone, iPad and iOS are trademarks of Apple Inc. Porthole is not affiliated with or endorsed by any of them.</p>
+  <section id="expect">
+    <p class="eyebrow">Straight talk</p>
+    <h2>What to expect</h2>
+    <div class="grid">
+      <div class="card"><h3>It's early</h3><p>Porthole is a hobby project that changes often. Plenty of games don't run yet, and some run slowly. The <a href="/compat.html">compatibility list</a> shows what people have actually tried.</p></div>
+      <div class="card"><h3>It takes some setting up</h3><p>Porthole isn't on the App Store, because it uses interfaces Apple keeps private. You sign the app file with your own developer certificate and install it yourself. <a href="/download.html">Here's what you need.</a></p></div>
+      <div class="card"><h3>You bring the games</h3><p>Porthole never includes games and doesn't get around any copy protection. You need to own what you run.</p></div>
+    </div>
+  </section>
 
-  <footer>Porthole is a personal project. · <a href="/privacy.html">Privacy</a> · <a href="/compat.html">Compatibility</a></footer>
+  <section id="faq">
+    <p class="eyebrow">Questions</p>
+    <h2>Good to know</h2>
+    <div class="faq">
+      <details><summary>Is Porthole on the App Store?</summary><div class="a"><p>No, and it can't be: it relies on things Apple doesn't allow in App Store apps. You install it yourself, signed with your own certificate. The <a href="/download.html">Get it</a> page explains how.</p></div></details>
+      <details><summary>Is it legal?</summary><div class="a"><p>Porthole contains no games and doesn't bypass any copy protection. Steam games start through Valve's own client files, which check your licence as they do on a PC, and Microsoft's runtime is downloaded from Microsoft. Porthole is free software under the GPL and its source code is public.</p></div></details>
+      <details><summary>Which games will run?</summary><div class="a"><p>It depends on the game and the device. The <a href="/compat.html">compatibility list</a> comes from reports sent by people using Porthole, and the app shows the same badge on each game.</p></div></details>
+      <details><summary>Do I need a controller?</summary><div class="a"><p>No. Porthole has on-screen touch controls, and a keyboard works too. A controller makes it feel like a console, and Porthole shows which games support one.</p></div></details>
+      <details><summary>Does it collect my data?</summary><div class="a"><p>No account, no ads and no tracking. A compatibility report is only sent when you choose to send one. The <a href="/privacy.html">privacy page</a> lists exactly what a report contains.</p></div></details>
+      <details><summary>Is it affiliated with Valve, Microsoft or Apple?</summary><div class="a"><p>No. Steam and its artwork belong to Valve; Epic Games, GOG and every game or launcher you run belong to their owners. Apple, iPhone, iPad and iOS are trademarks of Apple Inc.</p></div></details>
+    </div>
+  </section>
+
+  <section id="thanks">
+    <p class="eyebrow">With thanks to</p>
+    <h2>The people whose work this stands on</h2>
+    <ul class="credits">
+      <li><b>Madeira</b><span>125hz and contributors: the runtime Porthole is built on (Wine, FEX-Emu and DXMT).</span></li>
+      <li><b>Iridium</b><span>The idea of switching JIT on from inside the app.</span></li>
+      <li><b>StikDebug and idevice</b><span>The StikDebug team and Jackson Coxson: the debugger library and the device protocols behind JIT and pairing.</span></li>
+      <li><b>StikPair</b><span>StephenDev0 and the StikDebug team, who showed how a pairing file can be made on the device itself.</span></li>
+    </ul>
+  </section>
 </div>
+</main>
+<footer><div class="wrap">
+  <span>Porthole is a personal project.</span><span class="grow"></span>
+  <a href="/download.html">Get it</a><a href="/compat.html">Compatibility</a><a href="/privacy.html">Privacy</a>
+</div></footer>
 </body>
 </html>
