@@ -200,11 +200,15 @@ footer .fine { grid-column: 1 / -1; margin: 6px 0 0; padding-top: 18px; border-t
 .empty-state h2 { font-size: 24px; margin: 0 0 10px; }
 .empty-state p { margin: 0 auto; color: var(--dim); max-width: 34em; }
 
-/* Screenshots: one height for all of them, so the strip is a clean row; the wide ones are simply wider. */
-.gallery { scroll-padding-left: 4px; scrollbar-width: thin; scrollbar-color: var(--accent) transparent; display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x proximity; padding: 14px 4px 22px; margin: 18px -4px 0; -webkit-overflow-scrolling: touch; align-items: flex-start; }
-.gallery img { max-width: none; flex: none; height: 480px; width: auto; scroll-snap-align: start; border-radius: 28px; box-shadow: 0 24px 48px rgba(0, 0, 0, .35); background: var(--panel); }
-.gallery:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 16px; }
-@media (max-width: 640px) { .gallery img { height: 400px; border-radius: 22px; } }
+/* Screenshots: a grid that runs down the page */
+.shots { display: grid; gap: 30px; margin-top: 26px; }
+.shot { margin: 0; }
+.shot img { width: 100%; height: auto; display: block; border-radius: 26px; box-shadow: 0 22px 44px rgba(0, 0, 0, .32); background: var(--panel); }
+.shot-row { display: grid; gap: 22px; }
+.shot-row.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.shot-row.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 820px) { .shot-row.four { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .shot-row.two { grid-template-columns: minmax(0, 1fr); } .shot img { border-radius: 20px; } }
 
 /* Scroll animations (index only; switched on by anim.js and the snippet in <head>, never for reduced motion) */
 .anim :is(.hero .eyebrow, .hero h1, .hero .lede, .hero .actions, .hero .status,
@@ -215,6 +219,7 @@ footer .fine { grid-column: 1 / -1; margin: 6px 0 0; padding-top: 18px; border-t
 }
 .anim .hero .art { opacity: 0; transform: translateY(40px) scale(.88) rotate(-4deg); transition: opacity .9s ease, transform 1s cubic-bezier(.2, .8, .2, 1); transition-delay: .15s; }
 .anim .shelf-demo { opacity: 0; transform: translateX(70px) scale(.96); transition: opacity .8s ease, transform .9s cubic-bezier(.2, .8, .2, 1); }
-.anim .gallery img { opacity: 0; transform: translateX(90px) rotate(2.5deg) scale(.95); transition: opacity .7s ease, transform .85s cubic-bezier(.2, .8, .2, 1); transition-delay: var(--d, 0ms); }
+.anim .shot { opacity: 0; transform: translateY(46px) scale(.96); transition: opacity .8s ease, transform .9s cubic-bezier(.2, .8, .2, 1); transition-delay: var(--d, 0ms); }
+.anim .shot.tall { transform: translateY(60px) rotate(1.5deg) scale(.95); }
 .anim :is(.hero .eyebrow, .hero h1, .hero .lede, .hero .actions, .hero .status, .hero .art, section > .eyebrow, section > h2, section > .lede, section > p.fine,
-          .grid > .card, .steps > li, .legend > div, ul.credits > li, .faq > details, .shelf-demo, .gallery img).in { opacity: 1; transform: none; }
+          .grid > .card, .steps > li, .legend > div, ul.credits > li, .faq > details, .shelf-demo, .shot).in { opacity: 1; transform: none; }
