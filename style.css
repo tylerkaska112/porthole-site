@@ -223,3 +223,9 @@ footer .fine { grid-column: 1 / -1; margin: 6px 0 0; padding-top: 18px; border-t
 .anim .shot.tall { transform: translateY(60px) rotate(1.5deg) scale(.95); }
 .anim :is(.hero .eyebrow, .hero h1, .hero .lede, .hero .actions, .hero .status, .hero .art, section > .eyebrow, section > h2, section > .lede, section > p.fine,
           .grid > .card, .steps > li, .legend > div, ul.credits > li, .faq > details, .shelf-demo, .shot).in { opacity: 1; transform: none; }
+
+/* The community band */
+.band { display: flex; gap: 24px; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 30px; border-radius: 26px; border: 1px solid var(--line);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 16%, var(--panel)), color-mix(in srgb, var(--accent2) 10%, var(--panel))); }
+.band h2 { margin-bottom: 8px; }
+.band .lede { margin: 0; max-width: 34em; }
