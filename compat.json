@@ -1,7 +1,64 @@
 {
- "generated": "2026-10-11 07:00 UTC",
+ "generated": "2026-10-11 08:00 UTC",
  "engine": "48f9764-r0",
  "games": [
+  {
+   "id": "steam:1167630",
+   "title": "Teardown",
+   "kind": "steam",
+   "steamAppID": 1167630,
+   "reportCount": 1,
+   "lastReport": "2026-10-11",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro Max",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.207",
+     "engine": "48f9764-r0",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "graphics_glitches",
+      "online_works"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 62.7,
+      "fpsLow": 14,
+      "minutes": 5,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": null,
+     "date": "2026-10-11",
+     "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
   {
    "id": "steam:2670630",
    "title": "Supermarket Simulator",
