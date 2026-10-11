@@ -1,7 +1,117 @@
 {
- "generated": "2026-10-10 20:19 UTC",
+ "generated": "2026-10-11 07:00 UTC",
  "engine": "48f9764-r0",
  "games": [
+  {
+   "id": "steam:2670630",
+   "title": "Supermarket Simulator",
+   "kind": "steam",
+   "steamAppID": 2670630,
+   "reportCount": 1,
+   "lastReport": "2026-10-11",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro Max",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "firstPerson",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.207",
+     "engine": "48f9764-r0",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "online_works"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 44.1,
+      "fpsLow": 20,
+      "minutes": 6,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": null,
+     "date": "2026-10-11",
+     "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
   {
    "id": "steam:3314790",
    "title": "CloverPit",
@@ -68,11 +178,65 @@
      "reports": 1
     }
    ],
-   "settingsSummary": null,
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "direct",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
    "reports": [
     {
      "ios": "27.0",
-     "appVersion": "0.50.203",
+     "appVersion": "0.50.207",
      "engine": "48f9764-r0",
      "onThisEngine": true,
      "rating": "great",
@@ -83,8 +247,24 @@
       "online_works"
      ],
      "source": "steam",
-     "perf": null,
-     "settings": null,
+     "perf": {
+      "fpsAvg": 55.3,
+      "fpsLow": 10.9,
+      "minutes": 5,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "direct",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
      "comment": null,
      "date": "2026-10-10",
      "device": "iPhone 15 Pro Max"
