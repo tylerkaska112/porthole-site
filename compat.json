@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-11 08:00 UTC",
- "engine": "48f9764-r0",
+ "generated": "2026-10-12 21:18 UTC",
+ "engine": "48f9764-r1",
  "games": [
   {
    "id": "steam:1167630",
@@ -9,24 +9,18 @@
    "steamAppID": 1167630,
    "reportCount": 1,
    "lastReport": "2026-10-11",
-   "verdict": "playable",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 0,
-   "devices": [
-    {
-     "device": "iPhone 15 Pro Max",
-     "verdict": "playable",
-     "reports": 1
-    }
-   ],
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
    "settingsSummary": null,
    "reports": [
     {
      "ios": "27.0",
      "appVersion": "0.50.207",
      "engine": "48f9764-r0",
-     "onThisEngine": true,
+     "onThisEngine": false,
      "rating": "playable",
      "stability": "never",
      "tags": [
@@ -66,78 +60,18 @@
    "steamAppID": 2670630,
    "reportCount": 1,
    "lastReport": "2026-10-11",
-   "verdict": "great",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 0,
-   "devices": [
-    {
-     "device": "iPhone 15 Pro Max",
-     "verdict": "great",
-     "reports": 1
-    }
-   ],
-   "settingsSummary": {
-    "reports": 1,
-    "items": [
-     {
-      "key": "launch",
-      "value": "steam",
-      "count": 1
-     },
-     {
-      "key": "power",
-      "value": "performance",
-      "count": 1
-     },
-     {
-      "key": "desktopDisplay",
-      "value": true,
-      "count": 1
-     },
-     {
-      "key": "preciseMath",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "controls",
-      "value": "firstPerson",
-      "count": 1
-     },
-     {
-      "key": "swapMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "vramMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "audioCushionMs",
-      "value": 80,
-      "count": 1
-     },
-     {
-      "key": "keepModeWhenHot",
-      "value": true,
-      "count": 1
-     },
-     {
-      "key": "swapCoverage",
-      "value": "",
-      "count": 1
-     }
-    ]
-   },
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
    "reports": [
     {
      "ios": "27.0",
      "appVersion": "0.50.207",
      "engine": "48f9764-r0",
-     "onThisEngine": true,
+     "onThisEngine": false,
      "rating": "great",
      "stability": "never",
      "tags": [
@@ -176,24 +110,18 @@
    "steamAppID": 3314790,
    "reportCount": 1,
    "lastReport": "2026-10-10",
-   "verdict": "playable",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 0,
-   "devices": [
-    {
-     "device": "iPhone 15 Pro Max",
-     "verdict": "playable",
-     "reports": 1
-    }
-   ],
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
    "settingsSummary": null,
    "reports": [
     {
      "ios": "27.0",
      "appVersion": "0.50.203",
      "engine": "48f9764-r0",
-     "onThisEngine": true,
+     "onThisEngine": false,
      "rating": "playable",
      "stability": "never",
      "tags": [],
@@ -224,78 +152,18 @@
    "steamAppID": 427520,
    "reportCount": 1,
    "lastReport": "2026-10-10",
-   "verdict": "great",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 0,
-   "devices": [
-    {
-     "device": "iPhone 15 Pro Max",
-     "verdict": "great",
-     "reports": 1
-    }
-   ],
-   "settingsSummary": {
-    "reports": 1,
-    "items": [
-     {
-      "key": "launch",
-      "value": "direct",
-      "count": 1
-     },
-     {
-      "key": "power",
-      "value": "performance",
-      "count": 1
-     },
-     {
-      "key": "desktopDisplay",
-      "value": true,
-      "count": 1
-     },
-     {
-      "key": "preciseMath",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "controls",
-      "value": "standard",
-      "count": 1
-     },
-     {
-      "key": "swapMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "vramMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "audioCushionMs",
-      "value": 80,
-      "count": 1
-     },
-     {
-      "key": "keepModeWhenHot",
-      "value": true,
-      "count": 1
-     },
-     {
-      "key": "swapCoverage",
-      "value": "",
-      "count": 1
-     }
-    ]
-   },
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
    "reports": [
     {
      "ios": "27.0",
      "appVersion": "0.50.207",
      "engine": "48f9764-r0",
-     "onThisEngine": true,
+     "onThisEngine": false,
      "rating": "great",
      "stability": "never",
      "tags": [
