@@ -86,7 +86,7 @@ section { padding: 72px 0 0; scroll-margin-top: 70px; }
 .hero h1 span { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .hero .actions { display: flex; gap: 12px; flex-wrap: wrap; margin: 26px 0 22px; }
 .hero .art { justify-self: center; width: 100%; max-width: 440px; padding: 28px; }
-.hero .art img { width: 100%; height: auto; filter: drop-shadow(0 20px 26px rgba(0, 0, 0, .28)); animation: bob 7s ease-in-out infinite; }
+.hero .art img { width: 100%; height: auto; animation: bob 7s ease-in-out infinite; }
 @keyframes bob { 0%, 100% { transform: translateY(0) rotate(-1deg); } 50% { transform: translateY(-10px) rotate(1deg); } }
 .status { display: flex; gap: 12px; align-items: flex-start; background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--warm);
   border-radius: 14px; padding: 13px 16px; color: var(--dim); font-size: 15.5px; max-width: 36em; }
@@ -112,7 +112,7 @@ section { padding: 72px 0 0; scroll-margin-top: 70px; }
 .shelf-demo .bar { display: flex; align-items: center; gap: 14px; font-size: 14px; color: #9DB0C3; padding: 4px 6px 16px; white-space: nowrap; overflow: hidden; }
 .shelf-demo .bar img { width: 26px; height: 26px; }
 .shelf-demo .bar b { color: #fff; font-size: 15px; }
-.shelf-demo .bar .on { color: #fff; font-weight: 700; border-bottom: 3px solid #22D6EA; padding-bottom: 3px; }
+.shelf-demo .bar .on { color: #fff; font-weight: 700; border-bottom: 3px solid var(--accent); padding-bottom: 3px; }
 .shelf-demo .bar .grow { flex: 1; }
 .shelf-demo .stage { padding: 6px 12px 20px; }
 .shelf-demo h3 { font-size: clamp(26px, 4vw, 40px); margin: 0 0 8px; color: #fff; }
@@ -124,7 +124,7 @@ section { padding: 72px 0 0; scroll-margin-top: 70px; }
 .shelf-demo .play { display: inline-block; padding: 10px 24px; border-radius: 999px; background: linear-gradient(90deg, #4CB8F5, #7A6CFF); color: #04202B; font-weight: 800; }
 .shelf-demo .row { display: flex; align-items: center; gap: 12px; padding: 22px 12px 8px; overflow: hidden; }
 .tile { border-radius: 14px; height: 74px; flex: 0 0 120px; position: relative; opacity: .9; }
-.tile.big { flex: 0 0 230px; height: 112px; opacity: 1; box-shadow: 0 0 0 3px #22D6EA, 0 0 36px rgba(34, 214, 234, .55); }
+.tile.big { flex: 0 0 230px; height: 112px; opacity: 1; box-shadow: 0 0 0 3px var(--accent), 0 0 36px color-mix(in srgb, var(--accent) 55%, transparent); }
 .tile .chip { position: absolute; left: 8px; bottom: 8px; font-size: 10.5px; padding: 3px 8px; }
 .t1 { background: linear-gradient(135deg, #3E8E7E, #14414F); } .t2 { background: linear-gradient(135deg, #FF9A3D, #FF4F6D); }
 .t3 { background: linear-gradient(135deg, #5B7CFA, #1C2F6B); } .t4 { background: linear-gradient(135deg, #22D6EA, #0A5873); } .t5 { background: linear-gradient(135deg, #B07CFF, #3A1F6B); }
@@ -288,26 +288,6 @@ section.tint::before { content: ""; position: absolute; z-index: -1; inset: 0 ca
 @keyframes orb { from { transform: translate(0, 0) scale(1); } to { transform: translate(-40px, 30px) scale(1.15); } }
 .hero .art picture { display: block; transform: translate3d(var(--tx, 0px), var(--ty, 0px), 0); transition: transform .25s ease-out; }
 
-/* The tour: a drawn phone with the app's screens */
-.tour { margin-top: 30px; display: grid; grid-template-columns: minmax(0, 340px) 1fr; gap: 40px; align-items: center; }
-.tour-tabs { display: flex; gap: 8px; flex-wrap: wrap; grid-column: 1 / -1; }
-.tour-tabs button, .tool .opts label, .ed-bar button, .ed-tray button { font: inherit; font-size: 15px; font-weight: 650; color: var(--text); background: var(--panel); border: 1px solid var(--line);
-  border-radius: 999px; padding: 9px 16px; cursor: pointer; transition: background .15s, border-color .15s, transform .1s; }
-.tour-tabs button:hover, .tool .opts label:hover, .ed-bar button:hover:not(:disabled), .ed-tray button:hover { border-color: var(--accent); }
-.tour-tabs button[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
-.phone { position: relative; width: 100%; max-width: 340px; margin: 0 auto; }
-.phone-screen { position: relative; border-radius: 26px; overflow: hidden; aspect-ratio: 828 / 1800; background: var(--panel); touch-action: pan-y; cursor: pointer; box-shadow: 0 22px 44px rgba(0, 0, 0, .32); }
-.phone-screen img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .35s; border-radius: 0; box-shadow: none; }
-.phone-screen img.on { opacity: 1; }
-/* For plain screenshots (without a phone drawn around them): add class "framed" to .phone in index.html to wrap them in a drawn phone */
-.phone.framed { padding: 12px; border-radius: 46px; background: #0B121B; border: 2px solid rgba(199, 213, 224, .28); box-shadow: var(--glow), 0 30px 60px rgba(0, 0, 0, .4); }
-.phone.framed::before { content: ""; position: absolute; z-index: 2; top: 20px; left: 50%; width: 84px; height: 24px; margin-left: -42px; border-radius: 99px; background: #000; }
-.phone.framed .phone-screen { border-radius: 34px; box-shadow: none; }
-.tour-caption h3 { font-size: clamp(24px, 3.4vw, 34px); margin-bottom: 10px; }
-.tour-caption p { color: var(--dim); font-size: 18px; max-width: 28em; }
-.tour-hint { color: var(--dim); font-size: 14px; }
-@media (max-width: 760px) { .tour { grid-template-columns: 1fr; gap: 22px; } .tour-caption { text-align: center; } .tour-caption p { margin-left: auto; margin-right: auto; } }
-
 /* The controls demo */
 .ed { margin-top: 28px; }
 .ed-bar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
@@ -381,3 +361,21 @@ section.tint::before { content: ""; position: absolute; z-index: -1; inset: 0 ca
 @media (max-width: 720px) { .fab { display: grid; } footer { padding-bottom: 96px; } }
 
 [hidden] { display: none !important; }
+
+/* ---------- Themes: the app's own presets, applied to the whole site (see theme.js) ---------- */
+@property --bg { syntax: '<color>'; inherits: true; initial-value: #04121A; }
+@property --bg2 { syntax: '<color>'; inherits: true; initial-value: #08202E; }
+@property --accent { syntax: '<color>'; inherits: true; initial-value: #22D6EA; }
+@property --accent2 { syntax: '<color>'; inherits: true; initial-value: #14C9A6; }
+:root { transition: --bg .7s ease, --bg2 .7s ease, --accent .7s ease, --accent2 .7s ease; }
+/* A chosen theme is always the dark look, whatever the device prefers */
+:root[data-theme] { color-scheme: dark; --panel: rgba(199, 213, 224, .06); --panel-solid: var(--bg2); --line: rgba(199, 213, 224, .14); --text: #EEF5F9; --dim: #9DB3C4; --accent-ink: #06101F;
+  --warm: #FFA94D; --good: #34D399; --warn: #FFB020; --bad: #FF6B6B; --glow: 0 0 0 1px color-mix(in srgb, var(--accent) 25%, transparent), 0 18px 60px color-mix(in srgb, var(--accent) 14%, transparent); }
+:root[data-theme="deepsea"]  { --bg: #0B121B; --bg2: #1B2838; --accent: #4CB8F5; --accent2: #7A6CFF; --hue: 15deg; }
+:root[data-theme="aurora"]   { --bg: #050F12; --bg2: #0A1D1C; --accent: #3DDC97; --accent2: #4CC9F0; --hue: -33deg; }
+:root[data-theme="sunset"]   { --bg: #120A18; --bg2: #25122B; --accent: #FF8A5B; --accent2: #FF4D8D; --hue: -170deg; }
+:root[data-theme="ember"]    { --bg: #130909; --bg2: #2A1210; --accent: #FF5A4F; --accent2: #FFB020; --hue: -183deg; }
+:root[data-theme="orchid"]   { --bg: #0D0817; --bg2: #1D1233; --accent: #C77DFF; --accent2: #5AC8FA; --hue: 87deg; }
+:root[data-theme="graphite"] { --bg: #0B0C0F; --bg2: #1B1D22; --accent: #E5E7EB; --accent2: #8B93A1; --sat: 0; }
+/* the porthole picture takes the theme's colour too */
+.hero .art img { filter: hue-rotate(var(--hue, 0deg)) saturate(var(--sat, 1)) drop-shadow(0 20px 26px rgba(0, 0, 0, .28)); }

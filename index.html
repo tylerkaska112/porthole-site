@@ -19,7 +19,9 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <script>if(window.matchMedia&&matchMedia("(prefers-reduced-motion: no-preference)").matches&&"IntersectionObserver" in window)document.documentElement.classList.add("anim")</script>
-<link rel="stylesheet" href="/style.css?v=20261032">
+<script>try{var d=document.documentElement,t=localStorage.getItem("porthole-theme");if(t){d.dataset.theme=t;if(t==="custom"){var c=JSON.parse(localStorage.getItem("porthole-custom")||"{}");for(var k in c)d.style.setProperty(k,c[k])}}}catch(e){}</script>
+<link rel="stylesheet" href="/style.css?v=20261034">
+<link rel="stylesheet" href="/mock.css?v=20261038">
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
@@ -36,6 +38,7 @@
       <a href="/download.html">Get it</a>
       <a href="/compat.html">Compatibility</a>
       <a href="/help.html">Help</a>
+      <a href="/gallery.html">Gallery</a>
       <a href="/changelog.html">What's new</a>
       <a href="/privacy.html">Privacy</a>
       <a href="/trust.html">Trust</a>
@@ -69,32 +72,26 @@
     </div>
   </section>
 
-  <section id="tour">
-    <p class="eyebrow">Look around</p>
-    <h2>Try the app</h2>
-    <p class="lede">Tap through some of Porthole's screens: the phone, a tab, or swipe it.</p>
-    <div class="tour">
-      <div class="tour-tabs" role="tablist" aria-label="Screens of the app">
-        <button type="button" role="tab" aria-controls="tour-screen" data-title="Your games, one shelf" data-text="Every game shows the store it came from, with its compatibility and controller badges.">Home</button>
-        <button type="button" role="tab" aria-controls="tour-screen" data-title="A page for every game" data-text="Its own settings, controls and compatibility, and whether other players got it running on a phone like yours.">A game</button>
-        <button type="button" role="tab" aria-controls="tour-screen" data-title="Every store in one place" data-text="Steam, Epic Games, GOG and itch.io, each with a grid of the games you own.">Stores</button>
-        <button type="button" role="tab" aria-controls="tour-screen" data-title="Know before you install" data-text="Screenshots, controller support and ratings, where the store has them.">Store page</button>
-        <button type="button" role="tab" aria-controls="tour-screen" data-title="See every download" data-text="Speed, time left and a queue you control. One Downloads page covers all the stores.">Downloads</button>
-        <button type="button" role="tab" aria-controls="tour-screen" data-title="Reports from real players" data-text="Badges come from players on real devices, so you can see what to expect before you try a game.">Reports</button>
+  <section id="demo">
+    <p class="eyebrow">Try it</p>
+    <h2>Tap around a Porthole</h2>
+    <p class="lede">A working copy of the iPhone app's layout, with made-up games and no connection to anything. Open a store, start a download, press Play, then try <b>Settings &#8250; Appearance</b>: it changes the colours of this whole website.</p>
+    <div class="mock-stage">
+      <div class="mock" id="mock"><div class="m-screen" id="m-screen" aria-label="A demo of the Porthole app. Everything in it is made up."></div></div>
+      <div class="mock-side">
+        <h3>Things to try</h3>
+        <ul>
+          <li>Open <b>Stores</b>, sign in to GOG and install a game. The round button shows progress.</li>
+          <li>Start two downloads, then pause one or move another to the front on the Downloads page.</li>
+          <li>Press <b>Play</b>, switch the power mode, and trigger the low-memory warning.</li>
+          <li>Open a game's page and try <b>How it runs</b>.</li>
+          <li>In <b>Settings &#8250; Appearance</b>, pick a theme, or your own colour.</li>
+        </ul>
+        <p class="fine">Everything in the demo is invented, and it shows the layout, not how any game runs. <a href="/gallery.html">See pictures of the real app</a>.</p>
       </div>
-      <div class="phone">
-        <div class="phone-screen" id="tour-screen" role="tabpanel">
-          <img src="/img/screens/1-home-portrait.webp" width="828" height="1800" alt="The home screen">
-          <img src="/img/screens/2-game-portrait.webp" width="828" height="1800" alt="A game's page" loading="lazy">
-          <img src="/img/screens/3-stores-portrait.webp" width="828" height="1800" alt="The Stores tab" loading="lazy">
-          <img src="/img/screens/9-store-page-portrait.webp" width="828" height="1800" alt="A game's store page" loading="lazy">
-          <img src="/img/screens/8-downloads-portrait.webp" width="828" height="1800" alt="The Downloads page" loading="lazy">
-          <img src="/img/screens/10-reports-portrait.webp" width="828" height="1800" alt="The Reports tab" loading="lazy">
-        </div>
-      </div>
-      <div class="tour-caption"><h3></h3><p></p><p class="tour-hint">Tap the phone for the next screen.</p></div>
     </div>
   </section>
+
 
   <section id="fit">
     <p class="eyebrow">Before you start</p>
@@ -114,30 +111,6 @@
     <p class="fine">Real reports from players, with the frame rate they measured and the device they used. Nothing here is made up.</p>
     <div class="grid" id="runs-list"><p class="fine">The reports are on the <a href="/compat.html">compatibility list</a>.</p></div>
     <p class="fine" id="runs-note" style="margin-top:14px"></p>
-  </section>
-
-  <section id="screens">
-    <p class="eyebrow">A look inside</p>
-    <h2>What it looks like</h2>
-    <p class="lede">From the home shelf to the stores, a game's page and a game starting up.</p>
-    <div class="shots">
-      <figure class="shot wide"><img src="/img/screens/1-home-landscape.webp" width="1800" height="828" loading="lazy" alt="The Porthole home screen: Subnautica selected, with its store, compatibility and controller badges, Play and Details, above a shelf of games that each carry the logo of their store"></figure>
-      <div class="shot-row four">
-        <figure class="shot tall"><img src="/img/screens/2-game-portrait.webp" width="828" height="1800" loading="lazy" alt="A game's page with its store, Play, Resolution and Power mode, and rows for controls, compatibility, more options and files"></figure>
-        <figure class="shot tall"><img src="/img/screens/3-stores-portrait.webp" width="828" height="1800" loading="lazy" alt="The Stores tab on Epic Games: a switcher for Steam, Epic Games and all games, a Downloads button, search and a grid of games"></figure>
-        <figure class="shot tall"><img src="/img/screens/9-store-page-portrait.webp" width="828" height="1800" loading="lazy" alt="A game's store page with its controller support, rating and Metacritic score, an Install button and screenshots"></figure>
-        <figure class="shot tall"><img src="/img/screens/10-reports-portrait.webp" width="828" height="1800" loading="lazy" alt="The Reports tab: games with the badge from their latest reports, such as Worked in v0.50.207"></figure>
-      </div>
-      <div class="shot-row two">
-        <figure class="shot wide"><img src="/img/screens/8-downloads-landscape.webp" width="1800" height="828" loading="lazy" alt="The Downloads page with a running download: the game, its size, speed and time left, with Pause and Cancel"></figure>
-        <figure class="shot wide"><img src="/img/screens/6-setup-landscape.webp" width="1800" height="828" loading="lazy" alt="The setup guide's Add your games step with Steam and Epic Games signed in, and Back and Continue in the top row"></figure>
-      </div>
-      <div class="shot-row two">
-        <figure class="shot wide"><img src="/img/screens/5-compat.webp" width="1800" height="828" loading="lazy" alt="A game's compatibility page showing a Works great verdict and the result by device"></figure>
-        <figure class="shot wide"><img src="/img/screens/7-launch.webp" width="1800" height="828" loading="lazy" alt="Launching a game: Porthole turns on JIT and gets Steam ready"></figure>
-      </div>
-    </div>
-    <p class="fine" style="margin-top:18px">Screenshots from an iPhone 15 Pro Max, with a drawn phone around them. Game artwork belongs to its owners.</p>
   </section>
 
   <section id="features">
@@ -282,13 +255,14 @@
     <div><b>Porthole</b><span>Windows PC games on iPhone and iPad. A personal project.</span></div>
   </div>
   <nav class="foot-links" aria-label="Footer">
-    <a href="/download.html">Get it</a><a href="/changelog.html">What's new</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/privacy.html">Privacy</a><a href="/trust.html">Trust</a><a href="/privacy.html#contact">Contact</a><a href="https://github.com/tylerkaska112/PortHole">GitHub</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem</a>
+    <a href="/download.html">Get it</a><a href="/changelog.html">What's new</a><a href="/gallery.html">Gallery</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/privacy.html">Privacy</a><a href="/trust.html">Trust</a><a href="/privacy.html#contact">Contact</a><a href="https://github.com/tylerkaska112/PortHole">GitHub</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem</a>
   </nav>
   <p class="fine">Not affiliated with or endorsed by Valve, Microsoft, Apple or any game publisher. Game and company names belong to their owners. Built with the help of AI.</p>
 </div></footer>
 <script src="/anim.js?v=20261023" defer></script>
 <script src="/runs.js?v=20261033" defer></script>
-<script src="/demo.js?v=20261033" defer></script>
+<script src="/theme.js?v=20261034" defer></script>
+<script src="/mock.js?v=20261037" defer></script>
 <script src="/editor.js?v=20261033" defer></script>
 <script src="/fx.js?v=20261033" defer></script>
 <script src="/menu.js?v=20261027" defer></script>
