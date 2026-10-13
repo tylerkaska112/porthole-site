@@ -259,3 +259,125 @@ footer .fine { grid-column: 1 / -1; margin: 6px 0 0; padding-top: 18px; border-t
 
 /* Keyboard focus is always visible */
 a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 10px; }
+
+/* Home: what players report, and the time each step takes */
+.runs-fps { font-size: 26px !important; font-weight: 800; color: var(--accent) !important; letter-spacing: -.02em; margin: 2px 0 6px !important; }
+.steps li p.when { margin-top: 12px; font-size: 13.5px; font-weight: 700; color: var(--accent); }
+
+#fit .grid { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+/* ---------- Interactive pieces (tour, controls demo, tools), motion, the floating button ---------- */
+
+/* Tinted bands behind some sections, edge to edge, to give the page a rhythm */
+section.tint { position: relative; isolation: isolate; padding-bottom: 72px; margin-top: 72px; }
+section.tint::before { content: ""; position: absolute; z-index: -1; inset: 0 calc(50% - 50vw); border-top: 1px solid var(--line);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 8%, transparent), transparent 90%); }
+.icon svg.line { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Cards: a soft highlight that follows the pointer (set by fx.js) */
+.card { position: relative; overflow: hidden; }
+.card::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .25s;
+  background: radial-gradient(260px circle at var(--mx, 50%) var(--my, 50%), color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%); }
+@media (hover: hover) { .card:hover::before { opacity: 1; } .card { transition: translate .2s, border-color .2s; } .card:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); translate: 0 -2px; } }
+
+/* Hero: slow glowing orbs behind the porthole, and a parallax on the picture (fx.js sets --py / --tx / --ty) */
+.hero { position: relative; isolation: isolate; }
+.hero::before, .hero::after { content: ""; position: absolute; z-index: -1; border-radius: 50%; filter: blur(70px); pointer-events: none; }
+.hero::before { width: 360px; height: 360px; right: 4%; top: -40px; background: color-mix(in srgb, var(--accent) 30%, transparent); animation: orb 16s ease-in-out infinite alternate; }
+.hero::after { width: 300px; height: 300px; right: 24%; bottom: -80px; background: color-mix(in srgb, var(--accent2) 24%, transparent); animation: orb 20s ease-in-out infinite alternate-reverse; }
+@keyframes orb { from { transform: translate(0, 0) scale(1); } to { transform: translate(-40px, 30px) scale(1.15); } }
+.hero .art picture { display: block; transform: translate3d(var(--tx, 0px), var(--ty, 0px), 0); transition: transform .25s ease-out; }
+
+/* The tour: a drawn phone with the app's screens */
+.tour { margin-top: 30px; display: grid; grid-template-columns: minmax(0, 340px) 1fr; gap: 40px; align-items: center; }
+.tour-tabs { display: flex; gap: 8px; flex-wrap: wrap; grid-column: 1 / -1; }
+.tour-tabs button, .tool .opts label, .ed-bar button, .ed-tray button { font: inherit; font-size: 15px; font-weight: 650; color: var(--text); background: var(--panel); border: 1px solid var(--line);
+  border-radius: 999px; padding: 9px 16px; cursor: pointer; transition: background .15s, border-color .15s, transform .1s; }
+.tour-tabs button:hover, .tool .opts label:hover, .ed-bar button:hover:not(:disabled), .ed-tray button:hover { border-color: var(--accent); }
+.tour-tabs button[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+.phone { position: relative; width: 100%; max-width: 340px; margin: 0 auto; }
+.phone-screen { position: relative; border-radius: 26px; overflow: hidden; aspect-ratio: 828 / 1800; background: var(--panel); touch-action: pan-y; cursor: pointer; box-shadow: 0 22px 44px rgba(0, 0, 0, .32); }
+.phone-screen img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .35s; border-radius: 0; box-shadow: none; }
+.phone-screen img.on { opacity: 1; }
+/* For plain screenshots (without a phone drawn around them): add class "framed" to .phone in index.html to wrap them in a drawn phone */
+.phone.framed { padding: 12px; border-radius: 46px; background: #0B121B; border: 2px solid rgba(199, 213, 224, .28); box-shadow: var(--glow), 0 30px 60px rgba(0, 0, 0, .4); }
+.phone.framed::before { content: ""; position: absolute; z-index: 2; top: 20px; left: 50%; width: 84px; height: 24px; margin-left: -42px; border-radius: 99px; background: #000; }
+.phone.framed .phone-screen { border-radius: 34px; box-shadow: none; }
+.tour-caption h3 { font-size: clamp(24px, 3.4vw, 34px); margin-bottom: 10px; }
+.tour-caption p { color: var(--dim); font-size: 18px; max-width: 28em; }
+.tour-hint { color: var(--dim); font-size: 14px; }
+@media (max-width: 760px) { .tour { grid-template-columns: 1fr; gap: 22px; } .tour-caption { text-align: center; } .tour-caption p { margin-left: auto; margin-right: auto; } }
+
+/* The controls demo */
+.ed { margin-top: 28px; }
+.ed-bar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+.ed-bar button:disabled { opacity: .4; cursor: default; }
+.ed-bar button.primary { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+.ed-bar .sp { flex: 1; }
+.ed-tray { display: none; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; padding: 10px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); }
+.ed-tray.open { display: flex; }
+.ed-screen { position: relative; aspect-ratio: 16 / 9; border-radius: 22px; overflow: hidden; border: 1px solid var(--line); touch-action: none; user-select: none; -webkit-user-select: none;
+  background: radial-gradient(60% 40% at 50% 100%, #14516A, transparent 70%), radial-gradient(120px 120px at 74% 28%, rgba(255, 244, 214, .85), rgba(255, 244, 214, 0) 70%), linear-gradient(180deg, #08202E, #0B3A4D 60%, #0E5D70); box-shadow: var(--glow); }
+.ed-screen::after { content: ""; position: absolute; left: 12%; right: 12%; bottom: 0; height: 22%; background: radial-gradient(60% 100% at 50% 100%, #031219, transparent 72%); pointer-events: none; }
+.ed-screen.editing { outline: 2px dashed color-mix(in srgb, var(--accent) 70%, transparent); outline-offset: -8px; }
+.ed-ctl { position: absolute; z-index: 2; transform: translate(-50%, -50%); display: grid; place-items: center; border-radius: 50%; font-weight: 800; font-size: 14px; color: #fff; cursor: pointer;
+  background: rgba(8, 20, 30, .72); border: 2px solid rgba(255, 255, 255, .55); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); touch-action: none; }
+.ed-ctl.down { background: var(--accent); color: var(--accent-ink); border-color: #fff; }
+.ed-ctl.sel { border-color: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 40%, transparent); }
+.ed-screen.editing .ed-ctl { cursor: grab; }
+.ed-ctl.stick { width: 110px; height: 110px; }
+.ed-ctl.stick i { position: absolute; width: 46px; height: 46px; border-radius: 50%; background: rgba(255, 255, 255, .85); left: 50%; top: 50%; margin: -23px 0 0 -23px; transform: translate(var(--kx, 0px), var(--ky, 0px)); pointer-events: none; }
+.ed-ctl.btn { width: 64px; height: 64px; }
+.ed-ctl.sw { width: 78px; height: 40px; border-radius: 99px; font-size: 13px; }
+.ed-guide { position: absolute; z-index: 1; background: var(--accent); opacity: .85; pointer-events: none; display: none; }
+.ed-guide.v { width: 1px; top: 0; bottom: 0; } .ed-guide.h { height: 1px; left: 0; right: 0; }
+.ed-status { margin-top: 10px; min-height: 1.6em; color: var(--dim); font-size: 15px; }
+.ed-status b { color: var(--accent); }
+@media (max-width: 560px) { .ed-ctl.stick { width: 84px; height: 84px; } .ed-ctl.stick i { width: 36px; height: 36px; margin: -18px 0 0 -18px; } .ed-ctl.btn { width: 50px; height: 50px; font-size: 12px; } .ed-ctl.sw { width: 64px; height: 34px; } }
+
+/* Tools on the Help page */
+.tool { margin-top: 22px; padding: 24px; border-radius: 22px; border: 1px solid var(--line); background: var(--panel); }
+.tool h2 { margin-top: 0; font-size: clamp(22px, 3vw, 28px); }
+.tool fieldset { border: 0; padding: 0; margin: 18px 0 0; min-width: 0; }
+.tool legend { font-weight: 700; padding: 0; margin-bottom: 10px; }
+.tool .opts { display: flex; gap: 8px; flex-wrap: wrap; }
+.tool .opts label { display: inline-flex; font-weight: 600; font-size: 14.5px; }
+.tool .opts input { position: absolute; opacity: 0; pointer-events: none; }
+.tool .opts label:has(input:checked) { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+.tool .opts label:has(input:focus-visible) { outline: 3px solid var(--accent); outline-offset: 2px; }
+.res { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 10px; }
+.res li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: color-mix(in srgb, var(--bg) 40%, var(--panel)); border: 1px solid var(--line); font-size: 15.5px; color: var(--dim); }
+.res li b { color: var(--text); }
+.res .ic { flex: 0 0 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font-weight: 900; font-size: 14px; color: #04121A; }
+.res .ok .ic { background: var(--good); } .res .warn .ic { background: var(--warn); } .res .bad .ic { background: var(--bad); }
+.verdict { margin: 16px 0 0; font-size: 18px; font-weight: 750; }
+.search { width: 100%; max-width: 560px; margin-top: 18px; padding: 13px 18px; font: inherit; color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 999px; }
+.search:focus { outline: 3px solid var(--accent); outline-offset: 2px; }
+.range { display: grid; gap: 6px; margin-top: 16px; }
+.range label { font-weight: 700; display: flex; justify-content: space-between; }
+.range output { color: var(--accent); }
+.range input[type=range] { width: 100%; accent-color: var(--accent); }
+.meter { position: relative; height: 16px; margin-top: 18px; border-radius: 99px; background: color-mix(in srgb, var(--text) 10%, transparent); overflow: hidden; }
+.meter i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 99px; background: var(--good); transition: width .25s, background .25s; }
+.meter u { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--text); opacity: .5; text-decoration: none; }
+
+/* What players report: a frame-rate bar, chips and the store */
+.runs-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+.runs-top h3 { margin: 0; }
+.store { display: grid; place-items: center; flex: 0 0 30px; width: 30px; height: 30px; border-radius: 9px; font-weight: 900; font-size: 15px; color: #08141C; }
+.store.steam { background: #669ED1; } .store.epic { background: #BFC7D6; } .store.gog { background: #9E5CCC; color: #fff; } .store.itch { background: #FA5C5C; } .store.other { background: #8B93A1; }
+.fpsbar { position: relative; height: 10px; border-radius: 99px; background: color-mix(in srgb, var(--text) 12%, transparent); margin: 6px 0 4px; }
+.fpsbar i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 99px; background: linear-gradient(90deg, var(--accent2), var(--accent)); }
+.fpsbar u { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--text); opacity: .35; text-decoration: none; }
+.fpsbar b { position: absolute; top: -3px; bottom: -3px; width: 3px; border-radius: 2px; background: var(--warn); }
+.fpsscale { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--dim); }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
+
+/* The floating Get it button on phones (solid, never see-through) */
+.fab { position: fixed; z-index: 6; right: max(18px, env(safe-area-inset-right)); bottom: max(18px, env(safe-area-inset-bottom)); width: 58px; height: 58px; border-radius: 50%; display: none; place-items: center;
+  background: var(--accent); color: var(--accent-ink); box-shadow: 0 8px 22px rgba(0, 0, 0, .4); border: 2px solid color-mix(in srgb, var(--accent-ink) 25%, transparent); transform: translateY(90px); transition: transform .3s; text-decoration: none; }
+.fab svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.fab.show { transform: none; }
+@media (max-width: 720px) { .fab { display: grid; } footer { padding-bottom: 96px; } }
+
+[hidden] { display: none !important; }

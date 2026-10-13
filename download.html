@@ -9,20 +9,23 @@
 <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="canonical" href="https://portholehq.site/download.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Get Porthole">
 <meta property="og:description" content="What you need to install Porthole on an iPhone or iPad, and how to do it.">
-<meta property="og:image" content="https://portholehq.site/img/og-image.png">
+<meta property="og:image" content="https://portholehq.site/img/og-image.jpg">
 <meta property="og:url" content="https://portholehq.site/download.html">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="/style.css?v=20261027">
+<link rel="stylesheet" href="/style.css?v=20261032">
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
 <header class="top"><div class="wrap">
-  <a class="brand" href="/"><picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night.png"><img src="/img/porthole-sunset.png" alt="" width="38" height="38"></picture>Porthole</a>
+  <a class="brand" href="/"><picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night-96.webp"><img src="/img/porthole-sunset-96.webp" alt="" width="38" height="38"></picture>Porthole</a>
   <nav aria-label="Main">
-    <a href="/#features">Features</a><a href="/compat.html">Compatibility</a><a href="/privacy.html">Privacy</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a class="cta" href="/download.html" aria-current="page">Get it</a>
+    <a href="/#features">Features</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/privacy.html">Privacy</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a class="cta" href="/download.html" aria-current="page">Get it</a>
   </nav>
   <details class="menu">
     <summary aria-label="Menu"><span class="bars" aria-hidden="true"></span></summary>
@@ -31,8 +34,10 @@
       <a href="/#features">Features</a>
       <a href="/download.html" aria-current="page">Get it</a>
       <a href="/compat.html">Compatibility</a>
+      <a href="/help.html">Help</a>
       <a href="/changelog.html">What's new</a>
       <a href="/privacy.html">Privacy</a>
+      <a href="/trust.html">Trust</a>
       <a href="/privacy.html#contact">Contact</a>
       <span class="sep" role="separator"></span>
       <a href="https://discord.gg/N7PkdptTFn">Discord<i aria-hidden="true">↗</i></a>
@@ -51,18 +56,30 @@
 
   <p>Stuck at any step? <a href="https://discord.gg/N7PkdptTFn">Ask in the Discord</a>: the support channels are made for exactly this.</p>
 
-  <h2>You need</h2>
+  <h2 id="you-need">You need</h2>
   <ul>
     <li>An iPhone or iPad with <b>iOS 18 or later</b>. More memory is better.</li>
     <li>A way to <b>sign and install apps yourself</b>, with a <b>development certificate and profile</b> that include Network Extension (packet tunnel), Personal VPN, Increased Memory Limit, Extended Virtual Addressing and get-task-allow. Apple normally only gives these to a <b>paid Apple Developer account</b>.</li>
     <li>JIT switched on for the app. Porthole can do it itself once it has a pairing file, and on iOS 27 or later it can make that file on the device.</li>
-    <li>Games you own: Steam games you can sign in to, or game folders and installers you copy in from the Files app.</li>
+    <li>Games you own: games from Steam, Epic Games, GOG or itch.io that you can sign in to, or game folders and installers you copy in from the Files app.</li>
   </ul>
+
+  <h2 id="wont-work">What Porthole can't run</h2>
+  <p>Better to know before you spend an evening on it. These don't work, or mostly don't yet:</p>
+  <ul>
+    <li><b>Games with kernel-level anti-cheat.</b> Windows' driver-level protections have nothing to run on here.</li>
+    <li><b>Very large programs.</b> The runtime copies a program into a fixed memory area, so executables of roughly 450 MB and up can't load.</li>
+    <li><b>Games that need more memory than your device has.</b> Swap helps some, not all.</li>
+    <li><b>Games that need a launcher of their own.</b> Epic's overlay and anti-cheat, GOG Galaxy's online features, and other publishers' launchers (such as Ubisoft's or Rockstar's) mostly don't run yet.</li>
+    <li><b>Programs that use Windows features that aren't implemented yet.</b> Some Unity games only work when started through Steam.</li>
+  </ul>
+  <p>Not sure about a game? Look it up on the <a href="/compat.html">compatibility list</a> or ask on the <a href="https://discord.gg/N7PkdptTFn">Discord</a>.</p>
 
   <h2>Download</h2>
   <div class="placeholder" id="release">
     <p><b>The first public release isn't out yet.</b> When it is, the IPA, its checksum and the source code will be here, on the project's GitHub Releases page:</p>
     <p style="margin:0"><a class="button" href="https://github.com/tylerkaska112/PortHole/releases">All releases on GitHub</a></p>
+    <p class="fine" style="margin-top:14px"><!-- build:start -->Newest test build: 0.50.289 (385). Page updated 13 October 2026.<!-- build:end --></p>
   </div>
   <p class="fine" style="margin-top:12px">You can also download every build, current and past, from inside Porthole under Settings &#9656; Updates. Without a certificate added it saves the file for you to sign yourself.</p>
 
@@ -72,7 +89,7 @@
     <li><b>Best: your own development certificate and profile from a paid Apple Developer account.</b> The profile must include <b>get-task-allow</b> (that is what lets Porthole switch JIT on) and <i>Network Extension (packet tunnel)</i>, <i>Personal VPN</i>, <i>Increased Memory Limit</i> and <i>Extended Virtual Addressing</i>, for the app and for each of its two extensions.</li>
     <li><b>Keep the .p12 and its password.</b> With them Porthole signs every new version of itself on your device; without them you can still download new versions as a file and sign them yourself.</li>
     <li><b>A free Apple ID usually is not enough.</b> It cannot add those capabilities and its profiles expire after about a week.</li>
-    <li><b>Be careful with signing you do not control.</b> A shared or third-party certificate can be revoked without warning, may lack these capabilities, and means someone else signs an app that holds your Steam sign-in and your games.</li>
+    <li><b>Be careful with signing you do not control.</b> A shared or third-party certificate can be revoked without warning, may lack these capabilities, and means someone else signs an app that holds your store sign-ins and your games.</li>
   </ul>
   <p class="fine">Apple changes its account limits from time to time. Check Apple's current developer documentation for the exact numbers.</p>
 
@@ -86,25 +103,26 @@
 
   <div class="shots" style="margin-top:14px">
     <div class="shot-row two">
-      <figure class="shot tall"><img src="/img/screens/6-setup-portrait.jpg" width="828" height="1800" loading="lazy" alt="The setup guide's Add your games step, with Steam, Epic Games and Files"></figure>
-      <figure class="shot wide"><img src="/img/screens/7-launch.jpg" width="1800" height="828" loading="lazy" alt="Launching a game: Porthole turns on JIT and gets Steam ready"></figure>
+      <figure class="shot tall"><img src="/img/screens/6-setup-portrait.webp" width="828" height="1800" loading="lazy" alt="The setup guide's Add your games step, with Steam, Epic Games and Files"></figure>
+      <figure class="shot wide"><img src="/img/screens/7-launch.webp" width="1800" height="828" loading="lazy" alt="Launching a game: Porthole turns on JIT and gets Steam ready"></figure>
     </div>
   </div>
 
   <h2>Is it legal and safe?</h2>
-  <p>Porthole contains no games and doesn't get around any copy protection: Steam games start through Valve's own client files, which check your licence as they do on a PC. Microsoft's runtime is downloaded from Microsoft. Porthole is free software under the GPL, and its source code is public. It is not affiliated with Valve, Microsoft or Apple. <a href="/privacy.html">Privacy</a></p>
+  <p>Porthole contains no games and doesn't get around any copy protection: Steam games start through Valve's own client files, which check your licence as they do on a PC. Microsoft's runtime is downloaded from Microsoft. Porthole is free software under the GPL, and its source code is public. It is not affiliated with Valve, Epic Games, GOG, itch.io, Microsoft or Apple. <a href="/privacy.html">Privacy</a></p>
 </div>
 </main>
 <footer><div class="wrap foot">
   <div class="foot-brand">
-    <picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night.png"><img src="/img/porthole-sunset.png" alt="" width="40" height="40"></picture>
+    <picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night-96.webp"><img src="/img/porthole-sunset-96.webp" alt="" width="40" height="40"></picture>
     <div><b>Porthole</b><span>Windows PC games on iPhone and iPad. A personal project.</span></div>
   </div>
   <nav class="foot-links" aria-label="Footer">
-    <a href="/download.html">Get it</a><a href="/changelog.html">What's new</a><a href="/compat.html">Compatibility</a><a href="/privacy.html">Privacy</a><a href="/privacy.html#contact">Contact</a><a href="https://github.com/tylerkaska112/PortHole">GitHub</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem</a>
+    <a href="/download.html">Get it</a><a href="/changelog.html">What's new</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/privacy.html">Privacy</a><a href="/trust.html">Trust</a><a href="/privacy.html#contact">Contact</a><a href="https://github.com/tylerkaska112/PortHole">GitHub</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem</a>
   </nav>
   <p class="fine">Not affiliated with or endorsed by Valve, Microsoft, Apple or any game publisher. Game and company names belong to their owners. Built with the help of AI.</p>
 </div></footer>
+<script src="/fx.js?v=20261031" defer></script>
 <script src="/menu.js?v=20261027" defer></script>
 </body>
 </html>

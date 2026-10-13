@@ -9,20 +9,23 @@
 <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="canonical" href="https://portholehq.site/privacy.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Privacy | Porthole">
 <meta property="og:description" content="What Porthole sends, what stays on your device, and when.">
-<meta property="og:image" content="https://portholehq.site/img/og-image.png">
+<meta property="og:image" content="https://portholehq.site/img/og-image.jpg">
 <meta property="og:url" content="https://portholehq.site/privacy.html">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="/style.css?v=20261027">
+<link rel="stylesheet" href="/style.css?v=20261032">
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
 <header class="top"><div class="wrap">
-  <a class="brand" href="/"><picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night.png"><img src="/img/porthole-sunset.png" alt="" width="38" height="38"></picture>Porthole</a>
+  <a class="brand" href="/"><picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night-96.webp"><img src="/img/porthole-sunset-96.webp" alt="" width="38" height="38"></picture>Porthole</a>
   <nav aria-label="Main">
-    <a href="/#features">Features</a><a href="/compat.html">Compatibility</a><a href="/privacy.html" aria-current="page">Privacy</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a class="cta" href="/download.html">Get it</a>
+    <a href="/#features">Features</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/privacy.html" aria-current="page">Privacy</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a class="cta" href="/download.html">Get it</a>
   </nav>
   <details class="menu">
     <summary aria-label="Menu"><span class="bars" aria-hidden="true"></span></summary>
@@ -31,8 +34,10 @@
       <a href="/#features">Features</a>
       <a href="/download.html">Get it</a>
       <a href="/compat.html">Compatibility</a>
+      <a href="/help.html">Help</a>
       <a href="/changelog.html">What's new</a>
       <a href="/privacy.html" aria-current="page">Privacy</a>
+      <a href="/trust.html">Trust</a>
       <a href="/privacy.html#contact">Contact</a>
       <span class="sep" role="separator"></span>
       <a href="https://discord.gg/N7PkdptTFn">Discord<i aria-hidden="true">↗</i></a>
@@ -45,13 +50,13 @@
 <div class="wrap page doc">
   <p class="eyebrow">Privacy</p>
   <h1>Privacy</h1>
-  <p class="lede">Porthole has no ads, no analytics and no account of its own. This page says exactly what leaves your device, and when. Last updated 12 October 2026.</p>
+  <p class="lede">Porthole has no ads, no analytics and no account of its own. This page says exactly what leaves your device, and when. Last updated 13 October 2026.</p>
 
   <h2>What stays on your device</h2>
   <ul>
     <li>Your games, saves, settings and the performance log (<code>telemetry.csv</code> in the Files app).</li>
-    <li>Your pairing file, which lets Porthole switch JIT on. It is kept in a private folder, not in the Files app.</li>
-    <li>Your Steam sign-in token, if you sign in to Steam. It is kept in the iOS Keychain until you sign out.</li>
+    <li>Your pairing file, which lets Porthole switch JIT on. It is kept in the iOS Keychain, not in the Files app.</li>
+    <li>Your store sign-ins, if you sign in to Steam, Epic Games, GOG or itch.io: a sign-in token for each (for itch.io, the API key you made there). They are kept in the iOS Keychain, for this device only, until you sign out. Passwords are never kept.</li>
     <li>If you use the optional in-app updating: your signing certificate, its password and your provisioning profiles, kept in the Keychain and used only on your device.</li>
   </ul>
   <p>None of this is uploaded.</p>
@@ -76,19 +81,24 @@
     <tr><th>What</th><th>Details</th></tr>
     <tr><td>Your words</td><td>What you typed in the box, if anything.</td></tr>
     <tr><td>About your install</td><td>Porthole version and build, the engine version, your device model, iOS version, memory and free space, how Porthole was installed (which parts are in it), how JIT is switched on, and how many games are in your library.</td></tr>
-    <tr><td>The log</td><td>The whole log of the run you are reporting (after a crash: the run that ended, and the game's own log) and of the run before it, unless you switch it off. A log is a few megabytes, up to a few tens; it is packed before it is sent. The app removes folder names inside its own storage, your Steam and Epic account names, e-mail addresses and public IP addresses from it before anything is saved or sent. A log can still mention the games you run and technical details of the engine. You can open "Look at exactly what would be shared" and read the whole report first.</td></tr>
+    <tr><td>The log</td><td>The whole log of the run you are reporting (after a crash: the run that ended, and the game's own log) and of the run before it, unless you switch it off. A log is a few megabytes, up to a few tens; it is packed before it is sent. The app removes folder names inside its own storage, your Steam, Epic, GOG and itch.io account names, e-mail addresses, public IP addresses and any password, token or key that appears next to its name from it before anything is saved or sent. A log can still mention the games you run and technical details of the engine. You can open "Look at exactly what would be shared" and read the whole report first.</td></tr>
   </table>
-  <p>A problem report is <b>private</b>: it is not shown to anyone else and not counted anywhere. It can be read by the project's maintainer, and by your own install, which shows you its status (open, reviewed, or fixed in a version) and a short note from the maintainer if there is one. It is tied to the same random key as compatibility reports, not to your name, your Apple ID, your Steam or Epic account or any device identifier. The server does not store IP addresses; it holds them in memory for a short time to limit abuse.</p>
+  <p>A problem report is <b>private</b>: it is not shown to anyone else and not counted anywhere. It can be read by the project's maintainer, and by your own install, which shows you its status (open, reviewed, or fixed in a version) and a short note from the maintainer if there is one. It is tied to the same random key as compatibility reports, not to your name, your Apple ID, your store accounts or any device identifier. The server does not store IP addresses; it holds them in memory for a short time to limit abuse.</p>
   <p>The whole log is needed because the cause of a crash is often far from its last lines. The log part of a report is deleted 30 days after the report is marked fixed, and a fixed report is deleted after a year. You can withdraw a report you sent at any time in Settings ▸ Report a problem ▸ My reports; it is then deleted from the server.</p>
 
   <h2>Showing badges</h2>
   <p>To show compatibility badges, Porthole downloads the public list of games that have reports for your engine version and your device model, and matches your own games against it on your device. The server is not told which games you have: it sees only a request for the list, with your device model and engine version. You can switch badges off in Settings ▸ Compatibility reports.</p>
 
-  <h2>Steam</h2>
-  <p>If you sign in to Steam in Porthole, your password is encrypted before it leaves the device and is never saved; the app keeps only a sign-in token. Games you download come from Valve's servers, and cover art loads from Valve's servers too. To show which games work with a controller, Porthole asks Valve's store about the Steam app numbers of the games on your screen; the answers are kept on your device for a week. Porthole is not affiliated with Valve.</p>
-
+  <h2>Game stores</h2>
+  <p>Porthole talks to a store only to list the games you own and to download them, and only after you sign in. Sign-in tokens go to that store's own servers and nowhere else, and they are kept in the iOS Keychain. Porthole does not keep a cache or cookies of that traffic.</p>
+  <ul>
+    <li><b>Steam:</b> your password is encrypted before it leaves the device and is never saved; the app keeps only a sign-in token. Games and cover art come from Valve's servers. To show which games work with a controller, Porthole asks Valve's store about the Steam app numbers of the games on your screen; the answers are kept on your device for a week. If Valve's own client runs inside Porthole it can save its own sign-in; Porthole removes it when the session ends.</li>
+    <li><b>Epic Games and GOG:</b> you sign in on the store's own web page, so Porthole never sees your password. The page keeps no cookies after you close it.</li>
+    <li><b>itch.io:</b> you make a personal API key on itch.io and paste it into Porthole. It is sent only to itch.io, as the credential of requests to list and download your games.</li>
+  </ul>
+  <p>Porthole is not affiliated with Valve, Epic Games, GOG or itch.io.</p>
   <h2>Updates</h2>
-  <p>Porthole can check for new builds on its maintainer's update server, and download them. That server sees your IP address, as any website does when you visit it, and nothing else about you. When you update from inside the app, the new build is signed on your device with your own certificate and installed on your device. Your certificate, profiles and the signed copy are never uploaded anywhere.</p>
+  <p>Porthole can check for new builds on its maintainer's update server, and download them. That server sees your IP address, as any website does when you visit it, and nothing else about you. When you update from inside the app, Porthole first checks the maintainer's signature on the new build, then signs it on your device with your own certificate and installs it on your device. Your certificate, profiles and the signed copy are never uploaded anywhere.</p>
 
   <h2>Pairing and the tunnel</h2>
   <p>Pairing and the JIT tunnel use connections that stay on your device. The VPN entry Porthole creates is a local loopback: no traffic from other apps goes through it. iOS runs one VPN at a time, so before it turns its own tunnel on Porthole checks whether another VPN is on (it cannot tell which one), asks you, and afterwards can run a shortcut you choose to turn your VPN back on. Nothing about this is sent anywhere.</p>
@@ -114,14 +124,15 @@
 </main>
 <footer><div class="wrap foot">
   <div class="foot-brand">
-    <picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night.png"><img src="/img/porthole-sunset.png" alt="" width="40" height="40"></picture>
+    <picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night-96.webp"><img src="/img/porthole-sunset-96.webp" alt="" width="40" height="40"></picture>
     <div><b>Porthole</b><span>Windows PC games on iPhone and iPad. A personal project.</span></div>
   </div>
   <nav class="foot-links" aria-label="Footer">
-    <a href="/download.html">Get it</a><a href="/changelog.html">What's new</a><a href="/compat.html">Compatibility</a><a href="/privacy.html">Privacy</a><a href="/privacy.html#contact">Contact</a><a href="https://github.com/tylerkaska112/PortHole">GitHub</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem</a>
+    <a href="/download.html">Get it</a><a href="/changelog.html">What's new</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/privacy.html">Privacy</a><a href="/trust.html">Trust</a><a href="/privacy.html#contact">Contact</a><a href="https://github.com/tylerkaska112/PortHole">GitHub</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem</a>
   </nav>
   <p class="fine">Not affiliated with or endorsed by Valve, Microsoft, Apple or any game publisher. Game and company names belong to their owners. Built with the help of AI.</p>
 </div></footer>
+<script src="/fx.js?v=20261031" defer></script>
 <script src="/menu.js?v=20261027" defer></script>
 </body>
 </html>

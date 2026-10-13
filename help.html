@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Help and troubleshooting | Porthole</title>
+<meta name="description" content="Fixes for the problems people hit most: pairing and JIT, a game that closes or stutters, controllers, downloads and updates.">
+<meta name="theme-color" content="#04121A">
+<link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="canonical" href="https://portholehq.site/help.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Help and troubleshooting | Porthole">
+<meta property="og:description" content="Fixes for the problems people hit most: pairing and JIT, a game that closes or stutters, controllers, downloads and updates.">
+<meta property="og:image" content="https://portholehq.site/img/og-image.jpg">
+<meta property="og:url" content="https://portholehq.site/help.html">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/style.css?v=20261032">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/"><picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night-96.webp"><img src="/img/porthole-sunset-96.webp" alt="" width="38" height="38"></picture>Porthole</a>
+  <nav aria-label="Main">
+    <a href="/#features">Features</a><a href="/compat.html">Compatibility</a><a href="/help.html" aria-current="page">Help</a><a href="/privacy.html">Privacy</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a class="cta" href="/download.html">Get it</a>
+  </nav>
+  <details class="menu">
+    <summary aria-label="Menu"><span class="bars" aria-hidden="true"></span></summary>
+    <div class="panel" role="navigation" aria-label="Site menu">
+      <a href="/">Home</a>
+      <a href="/#features">Features</a>
+      <a href="/download.html">Get it</a>
+      <a href="/compat.html">Compatibility</a>
+      <a href="/help.html" aria-current="page">Help</a>
+      <a href="/changelog.html">What's new</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/trust.html">Trust</a>
+      <a href="/privacy.html#contact">Contact</a>
+      <span class="sep" role="separator"></span>
+      <a href="https://discord.gg/N7PkdptTFn">Discord<i aria-hidden="true">↗</i></a>
+      <a href="https://github.com/tylerkaska112/PortHole">GitHub<i aria-hidden="true">↗</i></a>
+      <a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem<i aria-hidden="true">↗</i></a>
+    </div>
+  </details>
+</div></header>
+<main id="main">
+<div class="wrap page doc">
+  <p class="eyebrow">Help</p>
+  <h1>Help and troubleshooting</h1>
+  <p class="lede">Most problems have a short fix. If yours isn't here, ask on the <a href="https://discord.gg/N7PkdptTFn">Discord</a>, or send a report from Settings &#8250; Report a problem. You can read the whole report before it goes anywhere.</p>
+  <input class="search" type="search" id="help-search" placeholder="Search the answers: pairing, controller, swap..." aria-label="Search the answers" autocomplete="off">
+  <p class="fine" id="help-count" aria-live="polite" style="margin:8px 0 0"></p>
+
+  <form class="tool" id="checker" aria-labelledby="checker-h">
+    <h2 id="checker-h">Setup checker</h2>
+    <p class="fine">Four quick questions to see if you are ready. Nothing you pick leaves this page.</p>
+    <fieldset><legend>Which iOS is your iPhone or iPad on?</legend><div class="opts">
+      <label><input type="radio" name="ios" value="27">iOS 27 or later</label><label><input type="radio" name="ios" value="18">iOS 18 to 26</label><label><input type="radio" name="ios" value="old">Older than iOS 18</label><label><input type="radio" name="ios" value="?">I don't know</label></div></fieldset>
+    <fieldset><legend>How will you sign the app?</legend><div class="opts">
+      <label><input type="radio" name="sign" value="paid">A paid Apple Developer account</label><label><input type="radio" name="sign" value="free">A free Apple ID</label><label><input type="radio" name="sign" value="service">A signing service</label><label><input type="radio" name="sign" value="none">Not sorted yet</label></div></fieldset>
+    <fieldset><legend>Can you use a computer once?</legend><div class="opts">
+      <label><input type="radio" name="comp" value="yes">Yes</label><label><input type="radio" name="comp" value="no">No</label></div></fieldset>
+    <fieldset><legend>How much memory does your device have?</legend><div class="opts">
+      <label><input type="radio" name="mem" value="4">4 GB or less</label><label><input type="radio" name="mem" value="6">6 GB</label><label><input type="radio" name="mem" value="8">8 GB or more</label><label><input type="radio" name="mem" value="?">I don't know</label></div></fieldset>
+    <div id="check-out" aria-live="polite"></div>
+  </form>
+
+  <h2>Setting up</h2>
+  <div class="faq">
+      <details id="pairing-file"><summary>It says &ldquo;Pairing file needed&rdquo;</summary><div class="a"><p>The pairing file lets Porthole switch JIT on. On <b>iOS 27 or later</b>, tap <b>Create it on this device</b> in the setup guide, then open Settings &#8250; Privacy &amp; Security &#8250; Developer Mode &#8250; &ldquo;Pair with Porthole&rdquo; and type the six-digit code Porthole shows. On <b>earlier versions of iOS</b> the file is made once on a computer with a free pairing tool such as iloader or Jitterbug: plug the device in, tap Trust, save the pairing file, move it to the device and choose it in Porthole.</p></div></details>
+      <details><summary>iOS asks to add a VPN. Is that safe?</summary><div class="a"><p>Yes. It is not a real VPN: it is a small private link that exists only inside your device, so Porthole can reach your device's own debug service to switch JIT on. Nothing goes over the internet and none of your other traffic is touched. Tap Allow. iOS runs one VPN at a time, so another VPN app pauses for a few seconds; Porthole asks first and can help turn it back on.</p></div></details>
+      <details><summary>JIT won't switch on, or the game doesn't start</summary><div class="a"><p>Check these in order: the pairing file is there (setup guide, step 1); the private link is allowed; the app was signed with a <i>development</i> profile that includes <b>get-task-allow</b> (Porthole says so if it wasn't); and no debugger is attached (if you started the app from Xcode, close it and open Porthole from the Home Screen). Developer Mode must be on in Settings &#8250; Privacy &amp; Security.</p></div></details>
+      <details><summary>After updating Porthole, the tunnel says &ldquo;connecting&rdquo; and then &ldquo;disconnected&rdquo;</summary><div class="a"><p>iOS sometimes keeps old information about the app's helper after an update. <b>Restart the device</b>. Your games and settings aren't affected, and you don't need to reinstall.</p></div></details>
+      <details><summary>My signing certificate or profile expired</summary><div class="a"><p>Profiles run out: after 7 days with a free Apple account and after about a year with a paid one. Sign the app again with the same account (so iOS treats it as an update and keeps your games). You can also add your certificate and profile in Settings &#8250; Updates so Porthole signs its own updates on the device.</p></div></details>
+  </div>
+  <h2>Playing</h2>
+  <div class="faq">
+      <details><summary>A game closes by itself or stutters</summary><div class="a"><p>The device is probably running out of memory. Open the game's settings and raise <b>Swap</b>, which lets Porthole use storage as extra memory, and close other apps. The <b>Stats</b> button while you play shows how full swap is, and Porthole shows a warning when memory is nearly full. If it keeps happening, send a problem report: the log says why.</p></div></details>
+      <details><summary>The first start takes a long time</summary><div class="a"><p>The first start of a game sets everything up, and some games prepare their graphics as they run, so it can take a minute or more and the first frames may stutter. Keep Porthole open and the screen on while it loads. Later starts are quicker.</p></div></details>
+      <details><summary>A Steam game won't start</summary><div class="a"><p>Try the other way. Touch and hold the game on the Home screen and choose <b>Run directly (skip Steam)</b>, or the reverse if it is already set to run directly. Some Unity games only work when started through Steam. If it still fails, read <a href="/download.html#wont-work">what Porthole can't run</a>.</p></div></details>
+      <details><summary>The game is too slow, or the device gets hot</summary><div class="a"><p>Choose the power mode with the Power button in the in-game menu. <b>Performance</b> goes up to 120 FPS on iPads and iPhones with ProMotion screens but uses more battery and heat; <b>Balanced</b> and <b>Battery saver</b> do the opposite. The <a href="/compat.html">compatibility list</a> shows what other people report for your model, which tells you what to expect.</p></div></details>
+      <details><summary>My controller isn't picked up</summary><div class="a"><p>Pair it first in iOS Settings &#8250; Bluetooth. If a game still doesn't see it, open the game's settings and try <b>DualSense (HID) and Xbox</b> (this fixed Hollow Knight: Silksong), or switch on <b>Controller as keyboard and mouse</b>. In HID mode rumble doesn't work. Each game's controller buttons can be remapped under Controller buttons.</p></div></details>
+      <details><summary>The on-screen controls disappeared</summary><div class="a"><p>They hide while a controller is in use and come back when you touch the screen.</p></div></details>
+  </div>
+  <h2>Stores and downloads</h2>
+  <div class="faq">
+      <details><summary>How do I sign in to itch.io?</summary><div class="a"><p>itch.io uses a personal API key. In Porthole choose Sign in to itch.io, open the API keys page, sign in there, tap <b>Generate new API key</b>, copy it and paste it back. The key stays in your device's Keychain and is sent only to itch.io.</p></div></details>
+      <details><summary>Epic Games and GOG show a sign-in page</summary><div class="a"><p>That is the store's own page: you type your password there, so Porthole never sees it. Porthole keeps only a sign-in token. If a store refuses the sign-in, sign out in Porthole and sign in again.</p></div></details>
+      <details><summary>A download is stuck, paused or failed</summary><div class="a"><p>Open the round <b>Downloads</b> button at the bottom right of the Stores tab. It lists every store's downloads with Pause, Resume, Try again and Download now. Check that the device has free space (Settings &#8250; Storage shows what is using it). Downloads carry on when you leave the app.</p></div></details>
+      <details><summary>Steam sign-in or downloads fail on one network only</summary><div class="a"><p>Some work and school networks block Steam. Try another network or a mobile connection. If it works there, the network was the cause.</p></div></details>
+  </div>
+  <h2>Reports and privacy</h2>
+  <div class="faq">
+      <details><summary>How do I report a problem?</summary><div class="a"><p>Settings &#8250; Report a problem. Describe what went wrong and Porthole adds the log of the run. Tap <b>Look at exactly what would be shared</b> to read the whole report first. You can send it to the project's server or save it as a file and share it yourself. The <a href="/privacy.html">privacy page</a> lists exactly what is in it.</p></div></details>
+      <details><summary>What is sent about me?</summary><div class="a"><p>Nothing unless you choose to send a report. <a href="/privacy.html">The privacy page</a> lists everything, and <a href="/trust.html">the trust page</a> says how your logins are protected.</p></div></details>
+  </div>
+  <section class="tool" id="memory" aria-labelledby="mem-h">
+    <h2 id="mem-h">Will the game fit in memory?</h2>
+    <p class="fine">A game that wants more memory than your device has can't run. Slide to compare. This is a rule of thumb, not a promise: the same game can behave differently on your device.</p>
+    <div class="range"><label for="mem-device">Your device's memory <output id="mem-device-out"></output></label><input type="range" id="mem-device" min="4" max="16" step="2" value="8"></div>
+    <div class="range"><label for="mem-need">The game wants about <output id="mem-need-out"></output></label><input type="range" id="mem-need" min="1" max="16" step="0.5" value="4"></div>
+    <div class="meter" aria-hidden="true"><i id="mem-fill"></i><u id="mem-m50"></u><u id="mem-m75"></u></div>
+    <p id="mem-say" aria-live="polite" style="margin:14px 0 0"></p>
+    <p class="fine">Where to find the number: the game's store page lists its memory (RAM) requirement. Swap lets Porthole use storage as extra memory, which helps with tight fits, not impossible ones.</p>
+  </section>
+
+  <p class="fine" style="margin-top:30px">Didn't find it? Ask on the <a href="https://discord.gg/N7PkdptTFn">Discord</a> or open an <a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">issue on GitHub</a>.</p>
+</div>
+</main>
+<footer><div class="wrap foot">
+  <div class="foot-brand">
+    <picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night-96.webp"><img src="/img/porthole-sunset-96.webp" alt="" width="40" height="40"></picture>
+    <div><b>Porthole</b><span>Windows PC games on iPhone and iPad. A personal project.</span></div>
+  </div>
+  <nav class="foot-links" aria-label="Footer">
+    <a href="/download.html">Get it</a><a href="/changelog.html">What's new</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/privacy.html">Privacy</a><a href="/trust.html">Trust</a><a href="/privacy.html#contact">Contact</a><a href="https://github.com/tylerkaska112/PortHole">GitHub</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem</a>
+  </nav>
+  <p class="fine">Not affiliated with or endorsed by Valve, Microsoft, Apple or any game publisher. Game and company names belong to their owners. Built with the help of AI.</p>
+</div></footer>
+<script src="/tools.js?v=20261031" defer></script>
+<script src="/fx.js?v=20261031" defer></script>
+<script src="/menu.js?v=20261027" defer></script>
+</body>
+</html>
