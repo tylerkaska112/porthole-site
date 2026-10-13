@@ -43,6 +43,9 @@
       card.appendChild(el('p', 'fine', (r.device || 'A phone') + (r.perf.minutes ? ', after ' + r.perf.minutes + ' minutes' : '')));
       if (r.onThisEngine === false) earlier = true;
       list.appendChild(card);
+      // The page's scroll-reveal (anim.js) only knows the cards that existed when it started, so these are revealed here, one after another.
+      var i = list.children.length - 1;
+      setTimeout(function () { card.classList.add('in'); }, 60 + i * 90);
     });
     var total = (data.games || []).reduce(function (n, g) { return n + (g.reportCount || 0); }, 0);
     note.textContent = 'From ' + total + ' report' + (total === 1 ? '' : 's') + ' on ' + (data.games || []).length + ' games so far' + (earlier ? ', made on an earlier version of the engine than the current one' : '') + '. Your result can differ: device, settings and iOS version all matter. ';
