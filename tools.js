@@ -18,10 +18,10 @@
       else if (ios === '?') add('warn', '<b>Check your iOS version</b> in Settings &#8250; General &#8250; About. You need 18 or later.');
       else add('ok', '<b>iOS ' + (ios === '27' ? '27 or later' : '18 or later') + '.</b> Good.');
 
-      if (sign === 'paid') add('ok', '<b>A paid developer account</b> normally includes what Porthole needs (Network Extension, Increased Memory Limit, Extended Virtual Addressing and get-task-allow).');
-      else if (sign === 'free') add('warn', '<b>A free Apple ID</b> usually can\'t provide those capabilities, so Porthole may not install or run. A paid account is the reliable route. <a href="/download.html#you-need">What you need</a>');
-      else if (sign === 'service') add('warn', '<b>A signing service</b> may lack the capabilities and can revoke its certificate without warning. Check with it first, or use your own certificate. <a href="/download.html#you-need">What you need</a>');
-      else add('warn', '<b>You still need a way to sign the app.</b> <a href="/download.html#you-need">See what you need</a>.');
+      if (sign === 'paid') add('ok', '<b>A paid developer account</b> can provide every capability Porthole uses (Network Extension, Increased Memory Limit, Extended Virtual Addressing and get-task-allow). Recommended.');
+      else if (sign === 'service') add('ok', '<b>A third-party certificate service</b> is a recommended route: it can provide the capabilities too. Choose one you trust, and keep a copy of the IPA in case it is revoked.');
+      else if (sign === 'free') add('warn', '<b>A free Apple ID works, with some features missing:</b> no Network Extension (run LocalDevVPN for the private link) and no Increased Memory Limit, and it needs signing again about weekly. <a href="#free-account">More</a>');
+      else add('warn', '<b>You still need a way to sign the app.</b> A paid account or a certificate service is recommended; a free Apple ID works with limits. <a href="/download.html#you-need">See what you need</a>.');
 
       if (ios === '27') add('ok', '<b>Pairing file:</b> your device can make it itself. The setup guide has a button for it.');
       else if (ios === '18') {

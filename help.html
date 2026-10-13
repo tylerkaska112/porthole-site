@@ -62,7 +62,7 @@
     <fieldset><legend>Which iOS is your iPhone or iPad on?</legend><div class="opts">
       <label><input type="radio" name="ios" value="27">iOS 27 or later</label><label><input type="radio" name="ios" value="18">iOS 18 to 26</label><label><input type="radio" name="ios" value="old">Older than iOS 18</label><label><input type="radio" name="ios" value="?">I don't know</label></div></fieldset>
     <fieldset><legend>How will you sign the app?</legend><div class="opts">
-      <label><input type="radio" name="sign" value="paid">A paid Apple Developer account</label><label><input type="radio" name="sign" value="free">A free Apple ID</label><label><input type="radio" name="sign" value="service">A signing service</label><label><input type="radio" name="sign" value="none">Not sorted yet</label></div></fieldset>
+      <label><input type="radio" name="sign" value="paid">A paid Apple Developer account</label><label><input type="radio" name="sign" value="free">A free Apple ID</label><label><input type="radio" name="sign" value="service">A third-party certificate service</label><label><input type="radio" name="sign" value="none">Not sorted yet</label></div></fieldset>
     <fieldset><legend>Can you use a computer once?</legend><div class="opts">
       <label><input type="radio" name="comp" value="yes">Yes</label><label><input type="radio" name="comp" value="no">No</label></div></fieldset>
     <fieldset><legend>How much memory does your device have?</legend><div class="opts">
@@ -76,7 +76,8 @@
       <details><summary>iOS asks to add a VPN. Is that safe?</summary><div class="a"><p>Yes. It is not a real VPN: it is a small private link that exists only inside your device, so Porthole can reach your device's own debug service to switch JIT on. Nothing goes over the internet and none of your other traffic is touched. Tap Allow. iOS runs one VPN at a time, so another VPN app pauses for a few seconds; Porthole asks first and can help turn it back on.</p></div></details>
       <details><summary>JIT won't switch on, or the game doesn't start</summary><div class="a"><p>Check these in order: the pairing file is there (setup guide, step 1); the private link is allowed; the app was signed with a <i>development</i> profile that includes <b>get-task-allow</b> (Porthole says so if it wasn't); and no debugger is attached (if you started the app from Xcode, close it and open Porthole from the Home Screen). Developer Mode must be on in Settings &#8250; Privacy &amp; Security.</p></div></details>
       <details><summary>After updating Porthole, the tunnel says &ldquo;connecting&rdquo; and then &ldquo;disconnected&rdquo;</summary><div class="a"><p>iOS sometimes keeps old information about the app's helper after an update. <b>Restart the device</b>. Your games and settings aren't affected, and you don't need to reinstall.</p></div></details>
-      <details><summary>My signing certificate or profile expired</summary><div class="a"><p>Profiles run out: after 7 days with a free Apple account and after about a year with a paid one. Sign the app again with the same account (so iOS treats it as an update and keeps your games). You can also add your certificate and profile in Settings &#8250; Updates so Porthole signs its own updates on the device.</p></div></details>
+      <details id="free-account"><summary>Can I use a free Apple ID?</summary><div class="a"><p>Yes, with some features missing. A free account can't carry the Network Extension capability, so you run <b>LocalDevVPN</b> for the private link before you press Play, and it can't carry <b>Increased Memory Limit</b>, so memory-hungry games are more likely to run out of memory. Its signing also expires after about a week. A paid developer account or a third-party certificate service gives you the complete install. Settings &#8250; Stores and JIT &#8250; Your install shows what yours is missing.</p></div></details>
+      <details><summary>My signing certificate or profile expired</summary><div class="a"><p>Profiles run out: after about 7 days with a free Apple account and after about a year with a paid one. A third-party service can also revoke its certificate; sign again with a new one. Sign the app again with the same account (so iOS treats it as an update and keeps your games). You can also add your certificate and profile in Settings &#8250; Updates so Porthole signs its own updates on the device.</p></div></details>
   </div>
   <h2>Playing</h2>
   <div class="faq">
@@ -122,7 +123,7 @@
   </nav>
   <p class="fine">Not affiliated with or endorsed by Valve, Microsoft, Apple or any game publisher. Game and company names belong to their owners. Built with the help of AI.</p>
 </div></footer>
-<script src="/tools.js?v=20261031" defer></script>
+<script src="/tools.js?v=20261050" defer></script>
 <script src="/fx.js?v=20261031" defer></script>
 <script src="/menu.js?v=20261027" defer></script>
 </body>

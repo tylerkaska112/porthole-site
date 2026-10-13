@@ -61,7 +61,7 @@
   <h2 id="you-need">You need</h2>
   <ul>
     <li>An iPhone or iPad with <b>iOS 18 or later</b>. More memory is better.</li>
-    <li>A way to <b>sign and install apps yourself</b>, with a <b>development certificate and profile</b> that include Network Extension (packet tunnel), Personal VPN, Increased Memory Limit, Extended Virtual Addressing and get-task-allow. Apple normally only gives these to a <b>paid Apple Developer account</b>.</li>
+    <li>A way to <b>sign and install apps yourself</b>. A <b>paid Apple Developer account</b> or a <b>third-party certificate service</b> is recommended: both can provide every capability Porthole uses (Network Extension, Personal VPN, Increased Memory Limit, Extended Virtual Addressing and get-task-allow). A <b>free Apple ID</b> also works, with some features missing (see below).</li>
     <li>JIT switched on for the app. Porthole can do it itself once it has a pairing file, and on iOS 27 or later it can make that file on the device.</li>
     <li>Games you own: games from Steam, Epic Games, GOG or itch.io that you can sign in to, or game folders and installers you copy in from the Files app.</li>
   </ul>
@@ -88,10 +88,10 @@
   <h2>Which certificate to use</h2>
   <p>The certificate and profile you sign with decide how well Porthole works, so this is worth getting right.</p>
   <ul>
-    <li><b>Best: your own development certificate and profile from a paid Apple Developer account.</b> The profile must include <b>get-task-allow</b> (that is what lets Porthole switch JIT on) and <i>Network Extension (packet tunnel)</i>, <i>Personal VPN</i>, <i>Increased Memory Limit</i> and <i>Extended Virtual Addressing</i>, for the app and for each of its two extensions.</li>
+    <li><b>Recommended: a paid Apple Developer account, or a third-party certificate service.</b> Either can provide a profile with <b>get-task-allow</b> (that is what lets Porthole switch JIT on) and <i>Network Extension (packet tunnel)</i>, <i>Personal VPN</i>, <i>Increased Memory Limit</i> and <i>Extended Virtual Addressing</i>, for the app and for each of its two extensions. That is the complete install, with nothing given up.</li>
+    <li><b>A free Apple ID works, with a lighter install.</b> It cannot carry the VPN (Network Extension) capability, so you run LocalDevVPN for the private link, and it cannot carry Increased Memory Limit, so memory-hungry games are more likely to run out of memory. Its signing also expires after about a week, so you sign again weekly. Porthole's Settings tell you exactly what your install is missing and what that costs.</li>
     <li><b>Keep the .p12 and its password.</b> With them Porthole signs every new version of itself on your device; without them you can still download new versions as a file and sign them yourself.</li>
-    <li><b>A free Apple ID usually is not enough.</b> It cannot add those capabilities and its profiles expire after about a week.</li>
-    <li><b>Be careful with signing you do not control.</b> A shared or third-party certificate can be revoked without warning, may lack these capabilities, and means someone else signs an app that holds your store sign-ins and your games.</li>
+    <li><b>Choose who signs with care.</b> A third-party service can revoke its certificate, and it is the one signing an app that holds your store sign-ins and your games, so pick one you trust. Keep a copy of the IPA you installed.</li>
   </ul>
   <p class="fine">Apple changes its account limits from time to time. Check Apple's current developer documentation for the exact numbers.</p>
 
