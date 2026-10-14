@@ -14,9 +14,9 @@
       if (!ios || !sign || !mem) { out.textContent = ''; return; }
       var rows = [];
       var add = function (state, html) { rows.push([state, html]); };
-      if (ios === 'old') add('bad', '<b>iOS is too old.</b> Porthole needs iOS 26 or later.');
-      else if (ios === '?') add('warn', '<b>Check your iOS version</b> in Settings &#8250; General &#8250; About. You need 26 or later.');
-      else add('ok', '<b>iOS ' + (ios === '27' ? '27 or later' : '26') + '.</b> Good.');
+      if (ios === 'old') add('bad', '<b>iOS is too old.</b> Porthole needs iOS 18 or later.');
+      else if (ios === '?') add('warn', '<b>Check your iOS version</b> in Settings &#8250; General &#8250; About. You need 18 or later.');
+      else add('ok', '<b>iOS ' + (ios === '27' ? '27 or later' : '18 or later') + '.</b> Good.');
 
       if (sign === 'paid') add('ok', '<b>A paid developer account</b> can provide every capability Porthole uses (Network Extension, Increased Memory Limit, Extended Virtual Addressing and get-task-allow). Recommended.');
       else if (sign === 'service') add('ok', '<b>A third-party certificate service</b> is a recommended route: it can provide the capabilities too. Choose one you trust, and keep a copy of the IPA in case it is revoked.');
@@ -24,7 +24,7 @@
       else add('warn', '<b>You still need a way to sign the app.</b> A paid account or a certificate service is recommended; a free Apple ID works with limits. <a href="/download.html#you-need">See what you need</a>.');
 
       if (ios === '27') add('ok', '<b>Pairing file:</b> your device can make it itself. The setup guide has a button for it.');
-      else if (ios === '26') {
+      else if (ios === '18') {
         if (comp === 'yes') add('ok', '<b>Pairing file:</b> make it once on a computer with a free tool (iloader or Jitterbug), then move it to the device. <a href="#pairing-file">How</a>');
         else add('warn', '<b>Pairing file:</b> before iOS 27 it has to be made once on a computer. A friend\'s will do, and you only do it once.');
       } else add('warn', '<b>Pairing file:</b> answer the iOS question first.');
