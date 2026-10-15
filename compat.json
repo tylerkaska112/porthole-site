@@ -1,7 +1,441 @@
 {
- "generated": "2026-10-15 10:00 UTC",
+ "generated": "2026-10-15 12:00 UTC",
  "engine": "48f9764-r1",
  "games": [
+  {
+   "id": "steam:1966720",
+   "title": "Lethal Company",
+   "kind": "steam",
+   "steamAppID": 1966720,
+   "reportCount": 1,
+   "lastReport": "2026-10-15",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad Pro 13-inch (M4)",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "firstPerson",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.366",
+     "engine": "48f9764-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 55.9,
+      "fpsLow": 32,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": null,
+     "date": "2026-10-15",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:620",
+   "title": "Portal 2",
+   "kind": "steam",
+   "steamAppID": 620,
+   "reportCount": 1,
+   "lastReport": "2026-10-15",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad Pro 13-inch (M4)",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.365",
+     "engine": "48f9764-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_bad"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 90.1,
+      "fpsLow": 65.1,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-15",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:1948280",
+   "title": "Stacklands",
+   "kind": "steam",
+   "steamAppID": 1948280,
+   "reportCount": 1,
+   "lastReport": "2026-10-15",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad Pro 13-inch (M4)",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.365",
+     "engine": "48f9764-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 119,
+      "fpsLow": 116.3,
+      "minutes": 7,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-15",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:4001890",
+   "title": "How to Fish",
+   "kind": "steam",
+   "steamAppID": 4001890,
+   "reportCount": 1,
+   "lastReport": "2026-10-15",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad Pro 13-inch (M4)",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 4096,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.365",
+     "engine": "48f9764-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 97.3,
+      "fpsLow": 57,
+      "minutes": 6,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-15",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
   {
    "id": "steam:242760",
    "title": "The Forest",
