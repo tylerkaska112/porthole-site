@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15 03:00 UTC",
+ "generated": "2026-10-15 10:00 UTC",
  "engine": "48f9764-r1",
  "games": [
   {
@@ -107,7 +107,7 @@
       "desktopDisplay": true,
       "controls": "standard"
      },
-     "comment": null,
+     "comment": "ultra low graphics settings to get 60 fps",
      "date": "2026-10-15",
      "device": "iPad Pro 13-inch (M4)"
     }
