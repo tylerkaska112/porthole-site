@@ -1,7 +1,195 @@
 {
- "generated": "2026-10-15 12:00 UTC",
+ "generated": "2026-10-15 13:00 UTC",
  "engine": "48f9764-r1",
  "games": [
+  {
+   "id": "steam:3314790",
+   "title": "CloverPit",
+   "kind": "steam",
+   "steamAppID": 3314790,
+   "reportCount": 2,
+   "lastReport": "2026-10-15",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPad Pro 13-inch (M4)",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.368",
+     "engine": "48f9764-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "needs_low_settings"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 31.9,
+      "fpsLow": 18,
+      "minutes": 8,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-15",
+     "device": "iPad Pro 13-inch (M4)"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.203",
+     "engine": "48f9764-r0",
+     "onThisEngine": false,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": null,
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-10",
+     "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:400",
+   "title": "Portal",
+   "kind": "steam",
+   "steamAppID": 400,
+   "reportCount": 1,
+   "lastReport": "2026-10-15",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad Pro 13-inch (M4)",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "firstPerson",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.367",
+     "engine": "48f9764-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 49.8,
+      "fpsLow": 31,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": null,
+     "date": "2026-10-15",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
   {
    "id": "steam:1966720",
    "title": "Lethal Company",
@@ -644,48 +832,6 @@
      },
      "comment": null,
      "date": "2026-10-11",
-     "device": "iPhone 15 Pro Max"
-    }
-   ]
-  },
-  {
-   "id": "steam:3314790",
-   "title": "CloverPit",
-   "kind": "steam",
-   "steamAppID": 3314790,
-   "reportCount": 1,
-   "lastReport": "2026-10-10",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0",
-     "appVersion": "0.50.203",
-     "engine": "48f9764-r0",
-     "onThisEngine": false,
-     "rating": "playable",
-     "stability": "never",
-     "tags": [],
-     "source": "steam",
-     "perf": null,
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-10-10",
      "device": "iPhone 15 Pro Max"
     }
    ]
