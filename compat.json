@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15 13:00 UTC",
+ "generated": "2026-10-16 06:00 UTC",
  "engine": "48f9764-r1",
  "games": [
   {
@@ -80,6 +80,55 @@
      "comment": null,
      "date": "2026-10-10",
      "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:383870",
+   "title": "Firewatch",
+   "kind": "steam",
+   "steamAppID": 383870,
+   "reportCount": 1,
+   "lastReport": "2026-10-16",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.0.1",
+     "engine": "279fd0f-r5",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 94.4,
+      "fpsLow": 40,
+      "minutes": 10,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-16",
+     "device": "iPad Pro 13-inch (M4)"
     }
    ]
   },
