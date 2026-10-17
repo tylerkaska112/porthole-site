@@ -52,13 +52,13 @@
 <div class="wrap page doc">
   <p class="eyebrow">Privacy</p>
   <h1>Privacy</h1>
-  <p class="lede">Porthole has no ads, no analytics and no account of its own. This page says exactly what leaves your device, and when. Last updated 13 October 2026.</p>
+  <p class="lede">Porthole has no ads, no analytics and no account of its own. This page says exactly what leaves your device, and when. Last updated 17 October 2026.</p>
 
   <h2>What stays on your device</h2>
   <ul>
     <li>Your games, saves, settings and the performance log (<code>telemetry.csv</code> in the Files app).</li>
     <li>Your pairing file, which lets Porthole switch JIT on. It is kept in the iOS Keychain, not in the Files app.</li>
-    <li>Your store sign-ins, if you sign in to Steam, Epic Games, GOG or itch.io: a sign-in token for each (for itch.io, the API key you made there). They are kept in the iOS Keychain, for this device only, until you sign out. Passwords are never kept.</li>
+    <li>Your store sign-ins, if you sign in to Steam, Epic Games, GOG, Amazon Games or itch.io: a sign-in token for each (for itch.io, the API key you made there). They are kept in the iOS Keychain, for this device only, until you sign out. Passwords are never kept.</li>
     <li>If you use the optional in-app updating: your signing certificate, its password and your provisioning profiles, kept in the Keychain and used only on your device.</li>
   </ul>
   <p>None of this is uploaded.</p>
@@ -94,11 +94,12 @@
   <h2>Game stores</h2>
   <p>Porthole talks to a store only to list the games you own and to download them, and only after you sign in. Sign-in tokens go to that store's own servers and nowhere else, and they are kept in the iOS Keychain. Porthole does not keep a cache or cookies of that traffic.</p>
   <ul>
-    <li><b>Steam:</b> your password is encrypted before it leaves the device and is never saved; the app keeps only a sign-in token. Games and cover art come from Valve's servers. To show which games work with a controller, Porthole asks Valve's store about the Steam app numbers of the games on your screen; the answers are kept on your device for a week. If Valve's own client runs inside Porthole it can save its own sign-in; Porthole removes it when the session ends.</li>
+    <li><b>Steam:</b> you can sign in with a QR code that you approve in the Steam mobile app, so Porthole never sees your password, or with your account name and password: the password is encrypted before it leaves the device, sent once to Steam and never saved. The app keeps only a sign-in token. With it, Porthole asks Steam, on your behalf and only when you use a feature, for your game library, your Steam Cloud save files for a game, the versions and add-ons of a game, your achievements for a game, and the Workshop items you browse, subscribe to or download. All of it comes from and goes to Valve's servers and is kept only on your device; none of it is sent to Porthole's servers. Achievement pop-ups come from files Steam's own client writes on your device. Games and cover art come from Valve's servers. To show which games work with a controller, Porthole asks Valve's store about the Steam app numbers of the games on your screen; the answers are kept on your device for a week. If Valve's own client runs inside Porthole it can save its own sign-in; Porthole removes it when the session ends.</li>
     <li><b>Epic Games and GOG:</b> you sign in on the store's own web page, so Porthole never sees your password. The page keeps no cookies after you close it.</li>
+    <li><b>Amazon Games:</b> you sign in on Amazon's own page, so Porthole never sees your password. The app keeps only a sign-in token and uses it to list the games you own and to download them from Amazon's servers. The page keeps no cookies after you close it.</li>
     <li><b>itch.io:</b> you make a personal API key on itch.io and paste it into Porthole. It is sent only to itch.io, as the credential of requests to list and download your games.</li>
   </ul>
-  <p>Porthole is not affiliated with Valve, Epic Games, GOG or itch.io.</p>
+  <p>Porthole is unofficial. It is not affiliated with or endorsed by Valve, Epic Games, GOG, Amazon or itch.io.</p>
   <h2>Updates</h2>
   <p>Porthole can check for new builds on its maintainer's update server, and download them. That server sees your IP address, as any website does when you visit it, and nothing else about you. When you update from inside the app, Porthole first checks the maintainer's signature on the new build, then signs it on your device with your own certificate and installs it on your device. Your certificate, profiles and the signed copy are never uploaded anywhere.</p>
 
