@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17 07:00 UTC",
+ "generated": "2026-10-17 09:00 UTC",
  "engine": "48f9764-r1",
  "games": [
   {
@@ -80,6 +80,107 @@
      "comment": null,
      "date": "2026-10-10",
      "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:3527290",
+   "title": "PEAK",
+   "kind": "steam",
+   "steamAppID": 3527290,
+   "reportCount": 1,
+   "lastReport": "2026-10-17",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.1.5",
+     "engine": "279fd0f-r13",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "long_loading",
+      "online_works"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 29,
+      "thermal": null
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "wide",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-17",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:284160",
+   "title": "BeamNG.drive",
+   "kind": "steam",
+   "steamAppID": 284160,
+   "reportCount": 1,
+   "lastReport": "2026-10-17",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.1.5",
+     "engine": "279fd0f-r13",
+     "onThisEngine": false,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "drains_battery",
+      "long_loading",
+      "needs_low_settings"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 37.2,
+      "fpsLow": 1,
+      "minutes": 6,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "blocks",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-17",
+     "device": "iPad Pro 13-inch (M4)"
     }
    ]
   },
