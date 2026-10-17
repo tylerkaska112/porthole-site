@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16 06:00 UTC",
+ "generated": "2026-10-17 07:00 UTC",
  "engine": "48f9764-r1",
  "games": [
   {
@@ -79,6 +79,105 @@
      },
      "comment": null,
      "date": "2026-10-10",
+     "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:70",
+   "title": "Half-Life",
+   "kind": "steam",
+   "steamAppID": 70,
+   "reportCount": 1,
+   "lastReport": "2026-10-17",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.0.1",
+     "engine": "279fd0f-r13",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_bad",
+      "overheats"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 84.5,
+      "fpsLow": 43,
+      "minutes": 6,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": "mfi controller doesnt work without access to steam input",
+     "date": "2026-10-17",
+     "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:250900",
+   "title": "The Binding of Isaac: Rebirth",
+   "kind": "steam",
+   "steamAppID": 250900,
+   "reportCount": 1,
+   "lastReport": "2026-10-17",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.0.1",
+     "engine": "279fd0f-r13",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 59.4,
+      "fpsLow": 57,
+      "minutes": 9,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "can't download or play any DLC/mods.",
+     "date": "2026-10-17",
      "device": "iPhone 15 Pro Max"
     }
    ]
