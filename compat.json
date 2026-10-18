@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18 21:00 UTC",
+ "generated": "2026-10-18 23:00 UTC",
  "engine": "48f9764-r1",
  "games": [
   {
@@ -80,6 +80,57 @@
      "comment": null,
      "date": "2026-10-10",
      "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:730",
+   "title": "Counter-Strike 2",
+   "kind": "steam",
+   "steamAppID": 730,
+   "reportCount": 1,
+   "lastReport": "2026-10-18",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.1.50",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "playable",
+     "stability": "sometimes",
+     "tags": [
+      "controller_ok",
+      "long_loading",
+      "online_broken"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 62.6,
+      "fpsLow": 1,
+      "minutes": 7,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "blocks",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": null,
+     "date": "2026-10-18",
+     "device": "iPad Pro 13-inch (M4)"
     }
    ]
   },
