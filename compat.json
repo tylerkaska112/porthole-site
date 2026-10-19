@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19 02:00 UTC",
+ "generated": "2026-10-19 04:00 UTC",
  "engine": "48f9764-r1",
  "games": [
   {
@@ -126,7 +126,7 @@
       "desktopDisplay": true,
       "controls": "standard"
      },
-     "comment": null,
+     "comment": "works great, 120 fps locked pretty much, although i didnt get that far. ipad pro m4 2tb",
      "date": "2026-10-19",
      "device": "iPad Pro 13-inch (M4)"
     }
