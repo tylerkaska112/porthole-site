@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18 23:00 UTC",
+ "generated": "2026-10-19 02:00 UTC",
  "engine": "48f9764-r1",
  "games": [
   {
@@ -80,6 +80,55 @@
      "comment": null,
      "date": "2026-10-10",
      "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:1145350",
+   "title": "Hades II",
+   "kind": "steam",
+   "steamAppID": 1145350,
+   "reportCount": 1,
+   "lastReport": "2026-10-19",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 90.3,
+      "fpsLow": 59,
+      "minutes": 7,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-19",
+     "device": "iPad Pro 13-inch (M4)"
     }
    ]
   },
