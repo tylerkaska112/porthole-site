@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21 20:00 UTC",
+ "generated": "2026-10-22 03:00 UTC",
  "engine": "48f9764-r1",
  "games": [
   {
@@ -126,7 +126,7 @@
       "desktopDisplay": true,
       "controls": "firstPerson"
      },
-     "comment": null,
+     "comment": "it takes like 5 minutes each time I launch it to get into the game but works great afterwards",
      "date": "2026-10-21",
      "device": "iPad, model iPad17,4"
     }
