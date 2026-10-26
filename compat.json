@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22 03:00 UTC",
+ "generated": "2026-10-26 06:00 UTC",
  "engine": "48f9764-r1",
  "games": [
   {
@@ -80,6 +80,53 @@
      "comment": null,
      "date": "2026-10-10",
      "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:240",
+   "title": "Counter-Strike: Source",
+   "kind": "steam",
+   "steamAppID": 240,
+   "reportCount": 1,
+   "lastReport": "2026-10-26",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "broken",
+     "stability": "sometimes",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 2,
+      "fpsLow": 2,
+      "minutes": 2,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-26",
+     "device": "iPad, model iPad16,10"
     }
    ]
   },
