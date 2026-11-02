@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02 14:00 UTC",
+ "generated": "2026-11-02 16:00 UTC",
  "engine": "48f9764-r1",
  "games": [
   {
@@ -80,53 +80,6 @@
      "comment": null,
      "date": "2026-10-10",
      "device": "iPhone 15 Pro Max"
-    }
-   ]
-  },
-  {
-   "id": "steam:2378620",
-   "title": "Anomaly Agent",
-   "kind": "steam",
-   "steamAppID": 2378620,
-   "reportCount": 1,
-   "lastReport": "2026-11-02",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0.1",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "playable",
-     "stability": "never",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": null,
-      "fpsLow": null,
-      "minutes": 7,
-      "thermal": "warm"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-02",
-     "device": "iPad Air 13-inch (M2)"
     }
    ]
   },
