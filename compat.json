@@ -1,7 +1,85 @@
 {
- "generated": "2026-11-02 16:00 UTC",
+ "generated": "2026-11-02 18:00 UTC",
  "engine": "48f9764-r1",
  "games": [
+  {
+   "id": "steam:480",
+   "title": "Spacewar",
+   "kind": "steam",
+   "steamAppID": 480,
+   "reportCount": 2,
+   "lastReport": "2026-11-02",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 2,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "broken",
+     "stability": "sometimes",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 1,
+      "thermal": "critical"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-02",
+     "device": "iPhone 12"
+    },
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.0.1",
+     "engine": "279fd0f-r13",
+     "onThisEngine": false,
+     "rating": "broken",
+     "stability": "sometimes",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 29,
+      "fpsLow": 23,
+      "minutes": 1,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-17",
+     "device": "iPhone 14 Pro Max"
+    }
+   ]
+  },
   {
    "id": "steam:3314790",
    "title": "CloverPit",
@@ -513,53 +591,6 @@
      "comment": null,
      "date": "2026-10-17",
      "device": "iPhone 15 Pro"
-    }
-   ]
-  },
-  {
-   "id": "steam:480",
-   "title": "Spacewar",
-   "kind": "steam",
-   "steamAppID": 480,
-   "reportCount": 1,
-   "lastReport": "2026-10-17",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0.1",
-     "appVersion": "1.0.1",
-     "engine": "279fd0f-r13",
-     "onThisEngine": false,
-     "rating": "broken",
-     "stability": "sometimes",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 29,
-      "fpsLow": 23,
-      "minutes": 1,
-      "thermal": "hot"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-10-17",
-     "device": "iPhone 14 Pro Max"
     }
    ]
   },
