@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03 01:00 UTC",
+ "generated": "2026-11-03 02:00 UTC",
  "engine": "48f9764-r1",
  "games": [
   {
@@ -158,6 +158,53 @@
      "comment": null,
      "date": "2026-10-10",
      "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:381210",
+   "title": "Dead by Daylight",
+   "kind": "steam",
+   "steamAppID": 381210,
+   "reportCount": 1,
+   "lastReport": "2026-11-03",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "broken",
+     "stability": "sometimes",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 1,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-03",
+     "device": "iPad, model iPad13,8"
     }
    ]
   },
