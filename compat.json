@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03 03:00 UTC",
+ "generated": "2026-11-03 06:00 UTC",
  "engine": "48f9764-r1",
  "games": [
   {
@@ -105,7 +105,7 @@
       "desktopDisplay": true,
       "controls": "firstPerson"
      },
-     "comment": null,
+     "comment": "The game runs but the camera spins uncontrollably",
      "date": "2026-11-03",
      "device": "iPhone 16 Pro"
     },
