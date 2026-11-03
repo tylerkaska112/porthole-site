@@ -1,7 +1,149 @@
 {
- "generated": "2026-11-03 02:00 UTC",
+ "generated": "2026-11-03 03:00 UTC",
  "engine": "48f9764-r1",
  "games": [
+  {
+   "id": "steam:620",
+   "title": "Portal 2",
+   "kind": "steam",
+   "steamAppID": 620,
+   "reportCount": 2,
+   "lastReport": "2026-11-03",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPad Pro 13-inch (M4)",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "controller_bad"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 50.9,
+      "fpsLow": 24.6,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": null,
+     "date": "2026-11-03",
+     "device": "iPhone 16 Pro"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.365",
+     "engine": "48f9764-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_bad"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 90.1,
+      "fpsLow": 65.1,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-15",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
   {
    "id": "steam:480",
    "title": "Spacewar",
@@ -158,6 +300,95 @@
      "comment": null,
      "date": "2026-10-10",
      "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:245170",
+   "title": "Skullgirls 2nd Encore",
+   "kind": "steam",
+   "steamAppID": 245170,
+   "reportCount": 1,
+   "lastReport": "2026-11-03",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "broken",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": null,
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-03",
+     "device": "iPhone 16 Pro"
+    }
+   ]
+  },
+  {
+   "id": "steam:275390",
+   "title": "Guacamelee! Super Turbo Championship Edition",
+   "kind": "steam",
+   "steamAppID": 275390,
+   "reportCount": 1,
+   "lastReport": "2026-11-03",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "broken",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 6,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-03",
+     "device": "iPhone 16 Pro"
     }
    ]
   },
@@ -1330,115 +1561,6 @@
       "preciseMath": false,
       "desktopDisplay": true,
       "controls": "firstPerson"
-     },
-     "comment": null,
-     "date": "2026-10-15",
-     "device": "iPad Pro 13-inch (M4)"
-    }
-   ]
-  },
-  {
-   "id": "steam:620",
-   "title": "Portal 2",
-   "kind": "steam",
-   "steamAppID": 620,
-   "reportCount": 1,
-   "lastReport": "2026-10-15",
-   "verdict": "great",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 0,
-   "devices": [
-    {
-     "device": "iPad Pro 13-inch (M4)",
-     "verdict": "great",
-     "reports": 1
-    }
-   ],
-   "settingsSummary": {
-    "reports": 1,
-    "items": [
-     {
-      "key": "launch",
-      "value": "steam",
-      "count": 1
-     },
-     {
-      "key": "power",
-      "value": "performance",
-      "count": 1
-     },
-     {
-      "key": "desktopDisplay",
-      "value": true,
-      "count": 1
-     },
-     {
-      "key": "preciseMath",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "controls",
-      "value": "standard",
-      "count": 1
-     },
-     {
-      "key": "swapMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "vramMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "audioCushionMs",
-      "value": 80,
-      "count": 1
-     },
-     {
-      "key": "keepModeWhenHot",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "swapCoverage",
-      "value": "",
-      "count": 1
-     }
-    ]
-   },
-   "reports": [
-    {
-     "ios": "27.0",
-     "appVersion": "0.50.365",
-     "engine": "48f9764-r1",
-     "onThisEngine": true,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "controller_bad"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 90.1,
-      "fpsLow": 65.1,
-      "minutes": 5,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
      },
      "comment": null,
      "date": "2026-10-15",
