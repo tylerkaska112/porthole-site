@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02 23:00 UTC",
+ "generated": "2026-11-03 00:00 UTC",
  "engine": "48f9764-r1",
  "games": [
   {
@@ -158,6 +158,95 @@
      "comment": null,
      "date": "2026-10-10",
      "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:4348910",
+   "title": "Probably Stolen",
+   "kind": "steam",
+   "steamAppID": 4348910,
+   "reportCount": 1,
+   "lastReport": "2026-11-02",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 6,
+      "thermal": null
+     },
+     "settings": null,
+     "comment": null,
+     "date": "2026-11-02",
+     "device": "iPhone 16"
+    }
+   ]
+  },
+  {
+   "id": "steam:1332010",
+   "title": "Stray",
+   "kind": "steam",
+   "steamAppID": 1332010,
+   "reportCount": 1,
+   "lastReport": "2026-11-02",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "audio_issues",
+      "controller_ok",
+      "graphics_glitches",
+      "needs_low_settings",
+      "overheats"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 12.9,
+      "fpsLow": 5,
+      "minutes": 7,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-02",
+     "device": "iPhone 16 Pro"
     }
    ]
   },
