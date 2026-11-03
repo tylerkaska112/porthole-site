@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03 00:00 UTC",
+ "generated": "2026-11-03 01:00 UTC",
  "engine": "48f9764-r1",
  "games": [
   {
@@ -22,7 +22,7 @@
      "engine": "279fd0f-r17",
      "onThisEngine": false,
      "rating": "broken",
-     "stability": "sometimes",
+     "stability": "never",
      "tags": [],
      "source": "steam",
      "perf": {
