@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03 11:00 UTC",
+ "generated": "2026-11-03 12:00 UTC",
  "engine": "48f9764-r1",
  "games": [
   {
@@ -223,68 +223,34 @@
    ]
   },
   {
-   "id": "steam:3314790",
-   "title": "CloverPit",
+   "id": "steam:21000",
+   "title": "LEGO® BatmanTM: The Videogame",
    "kind": "steam",
-   "steamAppID": 3314790,
-   "reportCount": 2,
-   "lastReport": "2026-10-15",
-   "verdict": "playable",
-   "confidence": "low",
-   "countedReports": 1,
+   "steamAppID": 21000,
+   "reportCount": 1,
+   "lastReport": "2026-11-03",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
    "earlierReports": 1,
-   "devices": [
-    {
-     "device": "iPad Pro 13-inch (M4)",
-     "verdict": "playable",
-     "reports": 1
-    }
-   ],
+   "devices": [],
    "settingsSummary": null,
    "reports": [
     {
      "ios": "27.0",
-     "appVersion": "0.50.368",
-     "engine": "48f9764-r1",
-     "onThisEngine": true,
-     "rating": "playable",
-     "stability": "never",
-     "tags": [
-      "needs_low_settings"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 31.9,
-      "fpsLow": 18,
-      "minutes": 8,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-10-15",
-     "device": "iPad Pro 13-inch (M4)"
-    },
-    {
-     "ios": "27.0",
-     "appVersion": "0.50.203",
-     "engine": "48f9764-r0",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
      "onThisEngine": false,
-     "rating": "playable",
-     "stability": "never",
+     "rating": "broken",
+     "stability": "wont_launch",
      "tags": [],
      "source": "steam",
-     "perf": null,
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 1,
+      "thermal": "cool"
+     },
      "settings": {
       "launch": "steam",
       "power": "balanced",
@@ -298,8 +264,8 @@
       "controls": "standard"
      },
      "comment": null,
-     "date": "2026-10-10",
-     "device": "iPhone 15 Pro Max"
+     "date": "2026-11-03",
+     "device": "iPhone 16 Pro Max"
     }
    ]
   },
@@ -1540,6 +1506,61 @@
      },
      "comment": null,
      "date": "2026-10-16",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:3314790",
+   "title": "CloverPit",
+   "kind": "steam",
+   "steamAppID": 3314790,
+   "reportCount": 1,
+   "lastReport": "2026-10-15",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad Pro 13-inch (M4)",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.368",
+     "engine": "48f9764-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "needs_low_settings"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 31.9,
+      "fpsLow": 18,
+      "minutes": 8,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-15",
      "device": "iPad Pro 13-inch (M4)"
     }
    ]
