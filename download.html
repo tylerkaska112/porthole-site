@@ -79,17 +79,17 @@
 
   <h2>Download</h2>
   <div class="placeholder" id="release">
-    <p><b>Porthole 1.1.0 &ldquo;Full Steam Ahead&rdquo; is out.</b> It adds much more Steam (versions and DLC, achievements, friends, the Workshop in beta), Amazon Games and Restart game, and fixes for American Truck Simulator, Megabonk and Counter-Strike 2. Porthole is still early: plenty of games don't run yet, and some that do need tweaking. The IPA, its checksum and the release notes are on the project's GitHub Releases page:</p>
-    <p style="margin:0"><a class="button" href="https://github.com/tylerkaska112/Porthole/releases/latest">Download 1.1.0 on GitHub</a></p>
-    <p class="fine" style="margin-top:14px"><!-- build:start -->Latest release: 1.1.0 (build 551). Page updated 18 October 2026.<!-- build:end --></p>
+    <p><b>Porthole 1.2.0 &ldquo;Autumn Tide&rdquo; is out.</b> It adds a keyboard and mouse in games on iPad, the whole app on a controller, the EA app as a sixth store, much faster Steam downloads, a new look and a newer game engine. Porthole is still early: plenty of games don't run yet, and some that do need tweaking. The IPA, its checksum and the release notes are on the project's GitHub Releases page:</p>
+    <p style="margin:0"><a class="button" href="https://github.com/tylerkaska112/Porthole/releases/latest">Download 1.2.0 on GitHub</a></p>
+    <p class="fine" style="margin-top:14px"><!-- build:start -->Latest release: 1.2.0 (build 681). Page updated 4 November 2026.<!-- build:end --></p>
   </div>
-  <p class="fine" style="margin-top:12px"><b>Check the download.</b> Put the IPA and its <code>.sha256</code> file in one folder and run <code>shasum -a 256 -c Porthole-1.1.0-551.ipa.sha256</code>; it should print OK. Then sign the app and its extensions with your own certificate (see below and the <a href="https://github.com/tylerkaska112/Porthole/blob/main/docs/INSTALL.md">install guide</a>). The source code for this release is in the same <a href="https://github.com/tylerkaska112/Porthole">repository</a> (tag <code>v1.0.1</code>).</p>
+  <p class="fine" style="margin-top:12px"><b>Check the download.</b> Put the IPA and its <code>.sha256</code> file in one folder and run <code>shasum -a 256 -c Porthole-1.2.0-681.ipa.sha256</code>; it should print OK. Then sign the app and its extensions with your own certificate (see below and the <a href="https://github.com/tylerkaska112/Porthole/blob/main/docs/INSTALL.md">install guide</a>). The source code for this release is in the same <a href="https://github.com/tylerkaska112/Porthole">repository</a> (tag <code>v1.2.0</code>).</p>
   <p class="fine" style="margin-top:12px">You can also download every build, current and past, from inside Porthole under Settings &#9656; Updates. Without a certificate added it saves the file for you to sign yourself.</p>
 
   <h2>Which certificate to use</h2>
   <p>The certificate and profile you sign with decide how well Porthole works, so this is worth getting right.</p>
   <ul>
-    <li><b>Recommended: a paid Apple Developer account, or a third-party certificate service.</b> Either can provide a profile with <b>get-task-allow</b> (that is what lets Porthole switch JIT on) and <i>Network Extension (packet tunnel)</i>, <i>Personal VPN</i>, <i>Increased Memory Limit</i> and <i>Extended Virtual Addressing</i>, for the app and for each of its two extensions. That is the complete install, with nothing given up.</li>
+    <li><b>Recommended: a paid Apple Developer account, or a third-party certificate service.</b> Either can provide a profile with <b>get-task-allow</b> (that is what lets Porthole switch JIT on) and <i>Network Extension (packet tunnel)</i>, <i>Personal VPN</i>, <i>Increased Memory Limit</i> and <i>Extended Virtual Addressing</i>, for the app and for each extension that needs one (the <a href="https://github.com/tylerkaska112/Porthole/blob/main/docs/INSTALL.md">install guide</a> lists which). That is the complete install, with nothing given up.</li>
     <li><b>A free Apple ID works, with a lighter install.</b> It cannot carry the VPN (Network Extension) capability, so you run LocalDevVPN for the private link, and it cannot carry Increased Memory Limit, so memory-hungry games are more likely to run out of memory. Its signing also expires after about a week, so you sign again weekly. Porthole's Settings tell you exactly what your install is missing and what that costs.</li>
     <li><b>Keep the .p12 and its password.</b> With them Porthole signs every new version of itself on your device; without them you can still download new versions as a file and sign them yourself.</li>
     <li><b>Choose who signs with care.</b> A third-party service can revoke its certificate, and it is the one signing an app that holds your store sign-ins and your games, so pick one you trust. Keep a copy of the IPA you installed.</li>
@@ -99,7 +99,7 @@
   <h2>Install</h2>
   <ol>
     <li>Download the IPA and check the checksum.</li>
-    <li>Sign the app and its three extensions with your certificate and profiles, keeping the bundle ids in step (<code>your.id</code>, <code>your.id.jithelper</code>, <code>your.id.tunnel</code>, <code>your.id.activity</code>), and install it. Short on App IDs? Each extension can be left out; the <b>INSTALL</b> guide says what that costs.</li>
+    <li>Sign the app and its four extensions with your certificate and profiles, keeping the bundle ids in step (<code>your.id</code>, <code>your.id.jithelper</code>, <code>your.id.tunnel</code>, <code>your.id.activity</code>, <code>your.id.MemoryHost</code>), and install it. Short on App IDs? Each extension can be left out; the <b>INSTALL</b> guide says what that costs.</li>
     <li>Open Porthole and follow the setup guide: full speed (JIT and the private link), Microsoft's Windows components, and your games.</li>
   </ol>
   <p>The full guide, including the exact requirements for each part, is in the <b>INSTALL</b> document in the source repository.</p>

@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-03 22:00 UTC",
- "engine": "48f9764-r1",
+ "generated": "2026-11-04 19:48 UTC",
+ "engine": "3af3467-r1",
  "games": [
   {
    "id": "steam:620",
@@ -9,72 +9,12 @@
    "steamAppID": 620,
    "reportCount": 2,
    "lastReport": "2026-11-03",
-   "verdict": "great",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 1,
-   "devices": [
-    {
-     "device": "iPad Pro 13-inch (M4)",
-     "verdict": "great",
-     "reports": 1
-    }
-   ],
-   "settingsSummary": {
-    "reports": 1,
-    "items": [
-     {
-      "key": "launch",
-      "value": "steam",
-      "count": 1
-     },
-     {
-      "key": "power",
-      "value": "performance",
-      "count": 1
-     },
-     {
-      "key": "desktopDisplay",
-      "value": true,
-      "count": 1
-     },
-     {
-      "key": "preciseMath",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "controls",
-      "value": "standard",
-      "count": 1
-     },
-     {
-      "key": "swapMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "vramMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "audioCushionMs",
-      "value": 80,
-      "count": 1
-     },
-     {
-      "key": "keepModeWhenHot",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "swapCoverage",
-      "value": "",
-      "count": 1
-     }
-    ]
-   },
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 2,
+   "devices": [],
+   "settingsSummary": null,
    "reports": [
     {
      "ios": "27.2",
@@ -113,7 +53,7 @@
      "ios": "27.0",
      "appVersion": "0.50.365",
      "engine": "48f9764-r1",
-     "onThisEngine": true,
+     "onThisEngine": false,
      "rating": "great",
      "stability": "never",
      "tags": [
@@ -1682,24 +1622,18 @@
    "steamAppID": 3314790,
    "reportCount": 1,
    "lastReport": "2026-10-15",
-   "verdict": "playable",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 0,
-   "devices": [
-    {
-     "device": "iPad Pro 13-inch (M4)",
-     "verdict": "playable",
-     "reports": 1
-    }
-   ],
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
    "settingsSummary": null,
    "reports": [
     {
      "ios": "27.0",
      "appVersion": "0.50.368",
      "engine": "48f9764-r1",
-     "onThisEngine": true,
+     "onThisEngine": false,
      "rating": "playable",
      "stability": "never",
      "tags": [
@@ -1737,78 +1671,18 @@
    "steamAppID": 400,
    "reportCount": 1,
    "lastReport": "2026-10-15",
-   "verdict": "great",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 0,
-   "devices": [
-    {
-     "device": "iPad Pro 13-inch (M4)",
-     "verdict": "great",
-     "reports": 1
-    }
-   ],
-   "settingsSummary": {
-    "reports": 1,
-    "items": [
-     {
-      "key": "launch",
-      "value": "steam",
-      "count": 1
-     },
-     {
-      "key": "power",
-      "value": "performance",
-      "count": 1
-     },
-     {
-      "key": "desktopDisplay",
-      "value": true,
-      "count": 1
-     },
-     {
-      "key": "preciseMath",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "controls",
-      "value": "firstPerson",
-      "count": 1
-     },
-     {
-      "key": "swapMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "vramMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "audioCushionMs",
-      "value": 80,
-      "count": 1
-     },
-     {
-      "key": "keepModeWhenHot",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "swapCoverage",
-      "value": "",
-      "count": 1
-     }
-    ]
-   },
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
    "reports": [
     {
      "ios": "27.0",
      "appVersion": "0.50.367",
      "engine": "48f9764-r1",
-     "onThisEngine": true,
+     "onThisEngine": false,
      "rating": "great",
      "stability": "never",
      "tags": [],
@@ -1844,78 +1718,18 @@
    "steamAppID": 1966720,
    "reportCount": 1,
    "lastReport": "2026-10-15",
-   "verdict": "great",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 0,
-   "devices": [
-    {
-     "device": "iPad Pro 13-inch (M4)",
-     "verdict": "great",
-     "reports": 1
-    }
-   ],
-   "settingsSummary": {
-    "reports": 1,
-    "items": [
-     {
-      "key": "launch",
-      "value": "steam",
-      "count": 1
-     },
-     {
-      "key": "power",
-      "value": "performance",
-      "count": 1
-     },
-     {
-      "key": "desktopDisplay",
-      "value": true,
-      "count": 1
-     },
-     {
-      "key": "preciseMath",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "controls",
-      "value": "firstPerson",
-      "count": 1
-     },
-     {
-      "key": "swapMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "vramMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "audioCushionMs",
-      "value": 80,
-      "count": 1
-     },
-     {
-      "key": "keepModeWhenHot",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "swapCoverage",
-      "value": "",
-      "count": 1
-     }
-    ]
-   },
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
    "reports": [
     {
      "ios": "27.0",
      "appVersion": "0.50.366",
      "engine": "48f9764-r1",
-     "onThisEngine": true,
+     "onThisEngine": false,
      "rating": "great",
      "stability": "never",
      "tags": [],
@@ -1951,78 +1765,18 @@
    "steamAppID": 1948280,
    "reportCount": 1,
    "lastReport": "2026-10-15",
-   "verdict": "great",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 0,
-   "devices": [
-    {
-     "device": "iPad Pro 13-inch (M4)",
-     "verdict": "great",
-     "reports": 1
-    }
-   ],
-   "settingsSummary": {
-    "reports": 1,
-    "items": [
-     {
-      "key": "launch",
-      "value": "steam",
-      "count": 1
-     },
-     {
-      "key": "power",
-      "value": "performance",
-      "count": 1
-     },
-     {
-      "key": "desktopDisplay",
-      "value": true,
-      "count": 1
-     },
-     {
-      "key": "preciseMath",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "controls",
-      "value": "standard",
-      "count": 1
-     },
-     {
-      "key": "swapMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "vramMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "audioCushionMs",
-      "value": 80,
-      "count": 1
-     },
-     {
-      "key": "keepModeWhenHot",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "swapCoverage",
-      "value": "",
-      "count": 1
-     }
-    ]
-   },
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
    "reports": [
     {
      "ios": "27.0",
      "appVersion": "0.50.365",
      "engine": "48f9764-r1",
-     "onThisEngine": true,
+     "onThisEngine": false,
      "rating": "great",
      "stability": "never",
      "tags": [
@@ -2060,78 +1814,18 @@
    "steamAppID": 4001890,
    "reportCount": 1,
    "lastReport": "2026-10-15",
-   "verdict": "great",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 0,
-   "devices": [
-    {
-     "device": "iPad Pro 13-inch (M4)",
-     "verdict": "great",
-     "reports": 1
-    }
-   ],
-   "settingsSummary": {
-    "reports": 1,
-    "items": [
-     {
-      "key": "launch",
-      "value": "steam",
-      "count": 1
-     },
-     {
-      "key": "power",
-      "value": "performance",
-      "count": 1
-     },
-     {
-      "key": "desktopDisplay",
-      "value": true,
-      "count": 1
-     },
-     {
-      "key": "preciseMath",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "controls",
-      "value": "standard",
-      "count": 1
-     },
-     {
-      "key": "swapMB",
-      "value": 4096,
-      "count": 1
-     },
-     {
-      "key": "vramMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "audioCushionMs",
-      "value": 80,
-      "count": 1
-     },
-     {
-      "key": "keepModeWhenHot",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "swapCoverage",
-      "value": "",
-      "count": 1
-     }
-    ]
-   },
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
    "reports": [
     {
      "ios": "27.0",
      "appVersion": "0.50.365",
      "engine": "48f9764-r1",
-     "onThisEngine": true,
+     "onThisEngine": false,
      "rating": "great",
      "stability": "never",
      "tags": [
@@ -2169,78 +1863,18 @@
    "steamAppID": 242760,
    "reportCount": 1,
    "lastReport": "2026-10-15",
-   "verdict": "great",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 0,
-   "devices": [
-    {
-     "device": "iPad Pro 13-inch (M4)",
-     "verdict": "great",
-     "reports": 1
-    }
-   ],
-   "settingsSummary": {
-    "reports": 1,
-    "items": [
-     {
-      "key": "launch",
-      "value": "steam",
-      "count": 1
-     },
-     {
-      "key": "power",
-      "value": "performance",
-      "count": 1
-     },
-     {
-      "key": "desktopDisplay",
-      "value": true,
-      "count": 1
-     },
-     {
-      "key": "preciseMath",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "controls",
-      "value": "standard",
-      "count": 1
-     },
-     {
-      "key": "swapMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "vramMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "audioCushionMs",
-      "value": 80,
-      "count": 1
-     },
-     {
-      "key": "keepModeWhenHot",
-      "value": true,
-      "count": 1
-     },
-     {
-      "key": "swapCoverage",
-      "value": "",
-      "count": 1
-     }
-    ]
-   },
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
    "reports": [
     {
      "ios": "27.0",
      "appVersion": "0.50.335",
      "engine": "48f9764-r1",
-     "onThisEngine": true,
+     "onThisEngine": false,
      "rating": "great",
      "stability": "never",
      "tags": [
