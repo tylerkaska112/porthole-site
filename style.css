@@ -9,8 +9,8 @@
 @media (prefers-color-scheme: light) {
   :root {
     --bg: #F2FAFC; --bg2: #E1F3F7; --panel: #FFFFFF; --panel-solid: #FFFFFF; --line: rgba(6, 40, 56, .12);
-    --text: #062431; --dim: #476474; --accent: #0A9DB8; --accent-ink: #FFFFFF; --accent2: #0E9F86; --warm: #E5802B;
-    --good: #138A5B; --warn: #A66A00; --bad: #C23030;
+    --text: #062431; --dim: #476474; --accent: #07758A; --accent-ink: #FFFFFF; --accent2: #0E9F86; --warm: #E5802B;
+    --good: #0E7A50; --warn: #A66A00; --bad: #C23030;
     --glow: 0 0 0 1px rgba(10, 157, 184, .22), 0 18px 50px rgba(10, 100, 130, .12);
   }
 }
@@ -379,3 +379,63 @@ section.tint::before { content: ""; position: absolute; z-index: -1; inset: 0 ca
 :root[data-theme="graphite"] { --bg: #0B0C0F; --bg2: #1B1D22; --accent: #E5E7EB; --accent2: #8B93A1; --sat: 0; }
 /* the porthole picture takes the theme's colour too */
 .hero .art img { filter: hue-rotate(var(--hue, 0deg)) saturate(var(--sat, 1)) drop-shadow(0 20px 26px rgba(0, 0, 0, .28)); }
+
+
+/* ===== 2026-11 refresh: display type, release badge, a "new in" strip, the release card ===== */
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 600 800; font-display: swap;
+  src: url("/fonts/bricolage-grotesque-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+:root { --display: "Bricolage Grotesque", ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; --space: clamp(56px, 8vw, 104px); }
+h1, h2, h3, header.top a.brand, .rc-name { font-family: var(--display); }
+h1, h2 { font-weight: 800; letter-spacing: -.03em; text-wrap: balance; }
+h3 { font-weight: 700; }
+h2 { font-size: clamp(30px, 4.6vw, 46px); }
+section { padding: var(--space) 0 0; }
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; }
+.lede { text-wrap: pretty; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+.button { font-family: var(--display); font-weight: 700; letter-spacing: -.005em; border-radius: 999px; padding: 14px 26px; box-shadow: 0 10px 30px -12px color-mix(in srgb, var(--accent) 70%, transparent); }
+.button.quiet { box-shadow: none; }
+.button small { font-weight: 600; opacity: .88; font-size: .82em; }
+
+/* Hero: the release is the first thing you see */
+.hero { padding: clamp(40px, 7vw, 88px) 0 0; }
+.release-pill { display: inline-flex; align-items: center; gap: 10px; padding: 6px 8px 6px 12px; margin-bottom: 22px; border-radius: 999px; font-size: 14.5px; font-weight: 600; text-decoration: none; color: var(--text);
+  background: color-mix(in srgb, var(--accent) 12%, var(--panel)); border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--line)); }
+.release-pill i { width: 8px; height: 8px; border-radius: 50%; background: var(--good); box-shadow: 0 0 0 4px color-mix(in srgb, var(--good) 26%, transparent); }
+.release-pill span { background: var(--accent); color: var(--accent-ink); border-radius: 999px; padding: 3px 11px; font-size: 13px; font-weight: 800; }
+.release-pill:hover { border-color: var(--accent); }
+.hero .meta-row { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0 0 22px; padding: 0; list-style: none; color: var(--dim); font-size: 14.5px; }
+.hero .meta-row li::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 8px; border-radius: 50%; background: var(--accent2); vertical-align: middle; }
+
+/* New in this release */
+#new { padding-top: clamp(40px, 6vw, 72px); }
+.glance-grid { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+a.card.glance { display: block; text-decoration: none; color: inherit; transition: transform .18s, border-color .18s, background .18s; }
+a.card.glance:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); background: color-mix(in srgb, var(--accent) 7%, var(--panel)); }
+a.card.glance h3 { color: var(--text); }
+.more-link { display: inline-block; margin-top: 22px; font-weight: 700; font-family: var(--display); }
+
+/* Release card on the Get it page */
+.release-card { margin-top: 18px; padding: clamp(22px, 4vw, 34px); border-radius: 28px; border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--line));
+  background: radial-gradient(600px 260px at 100% 0, color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%), var(--panel); box-shadow: var(--glow); }
+.rc-head { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 14px; margin-bottom: 8px; }
+.rc-name { font-size: clamp(26px, 4vw, 36px); font-weight: 800; letter-spacing: -.03em; line-height: 1.1; }
+.rc-tag { font-size: 12.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-ink); background: var(--good); border-radius: 999px; padding: 4px 11px; }
+.rc-sub { color: var(--dim); max-width: 44em; margin-bottom: 20px; }
+.rc-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 22px; }
+.rc-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 0 0 16px; }
+.rc-facts div { padding: 12px 14px; border-radius: 14px; background: color-mix(in srgb, var(--bg) 55%, transparent); border: 1px solid var(--line); min-width: 0; }
+.rc-facts dt { font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--dim); margin-bottom: 4px; }
+.rc-facts dd { margin: 0; font-weight: 700; overflow-wrap: anywhere; }
+.rc-facts code { font-size: .86em; font-weight: 600; }
+.fab-wrap { display: contents; }
+
+.hero { grid-template-columns: 1.3fr .7fr; }
+.hero h1 { font-size: clamp(38px, 5.3vw, 62px); }
+.hero h1 span { white-space: nowrap; }
+.hero .art { max-width: 380px; }
+@media (max-width: 820px) { .hero { grid-template-columns: 1fr; } .hero h1 span { white-space: normal; } }
+
+/* four across on a desktop, so eight features make two full rows and four reports make one */
+#fit .grid, #runs .grid, #features .grid { grid-template-columns: repeat(auto-fit, minmax(236px, 1fr)); }

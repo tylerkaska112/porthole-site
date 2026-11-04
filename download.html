@@ -19,7 +19,28 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <script>try{var d=document.documentElement,t=localStorage.getItem("porthole-theme");if(t){d.dataset.theme=t;if(t==="custom"){var c=JSON.parse(localStorage.getItem("porthole-custom")||"{}");for(var k in c)d.style.setProperty(k,c[k])}}}catch(e){}</script>
-<link rel="stylesheet" href="/style.css?v=20261034">
+<link rel="preload" href="/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css?v=20261104">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "Porthole",
+ "applicationCategory": "UtilitiesApplication",
+ "operatingSystem": "iOS 18 or later",
+ "softwareVersion": "1.2.0",
+ "url": "https://portholehq.site/download.html",
+ "downloadUrl": "https://github.com/tylerkaska112/Porthole/releases/download/v1.2.0/Porthole-1.2.0-681.ipa",
+ "fileSize": "200MB",
+ "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ }
+}
+</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
@@ -54,16 +75,36 @@
   <p class="eyebrow">Get it</p>
   <h1>Get Porthole</h1>
   <p class="lede">Porthole isn't on the App Store, and can't be: it uses interfaces Apple keeps private. You download an app file (an IPA), sign it with your own developer certificate, and install it. The first time takes about 20 minutes and it isn't for everyone, so read this page first.</p>
-  <div class="status"><span><b>Early hobby project.</b> Many games don't run. Check the <a href="/compat.html">compatibility list</a> for the games you care about before you spend an evening on it.</span></div>
+  <div class="status"><span><b>Early software.</b> Many games don't run. Check the <a href="/compat.html">compatibility list</a> for the games you care about before you spend an evening on it.</span></div>
 
   <p>Stuck at any step? <a href="https://discord.gg/N7PkdptTFn">Ask in the Discord</a>: the support channels are made for exactly this.</p>
 
+  <h2 id="download">Download</h2>
+  <div class="release-card" id="release">
+    <div class="rc-head"><span class="rc-name">Porthole 1.2.0 &ldquo;Autumn Tide&rdquo;</span><span class="rc-tag">Latest</span></div>
+    <p class="rc-sub">A keyboard and mouse in games, the whole app on a controller, the EA app as a sixth store, much faster Steam downloads, a new look and a newer game engine. Porthole is still early: plenty of games don&rsquo;t run yet, and some need tweaking.</p>
+    <div class="rc-actions">
+      <a class="button" href="https://github.com/tylerkaska112/Porthole/releases/download/v1.2.0/Porthole-1.2.0-681.ipa">Download the IPA <small>200 MB</small></a>
+      <a class="button quiet" href="https://github.com/tylerkaska112/Porthole/releases/tag/v1.2.0">Release notes on GitHub</a>
+    </div>
+    <dl class="rc-facts">
+      <div><dt>Version</dt><dd>1.2.0 (build 681)</dd></div>
+      <div><dt>Needs</dt><dd>iOS 18 or later</dd></div>
+      <div><dt>The file is</dt><dd>Unsigned: you sign it</dd></div>
+      <div><dt>SHA-256</dt><dd><code title="8b01553c17b4dcb636bbbd3094b652e685e2c6ade56f72f902fde4748825cdb5">8b01553c&hellip;cdb5</code></dd></div>
+    </dl>
+    <p class="fine" style="margin:0"><!-- build:start -->Latest release: 1.2.0 (build 681). Page updated 4 November 2026.<!-- build:end --></p>
+  </div>
+  <p class="fine" style="margin-top:12px"><b>Check the download.</b> Put the IPA and its <code>.sha256</code> file in one folder and run <code>shasum -a 256 -c Porthole-1.2.0-681.ipa.sha256</code>; it should print OK. Then sign the app and its extensions with your own certificate (see below and the <a href="https://github.com/tylerkaska112/Porthole/blob/main/docs/INSTALL.md">install guide</a>). The source code for this release is in the same <a href="https://github.com/tylerkaska112/Porthole">repository</a> (tag <code>v1.2.0</code>).</p>
+  <p class="fine" style="margin-top:12px">You can also download every build, current and past, from inside Porthole under Settings &#9656; Updates. Without a certificate added it saves the file for you to sign yourself.</p>
+
+  
   <h2 id="you-need">You need</h2>
   <ul>
     <li>An iPhone or iPad with <b>iOS 18 or later</b> (tested on iOS 26 and 27). More memory is better.</li>
     <li>A way to <b>sign and install apps yourself</b>. A <b>paid Apple Developer account</b> or a <b>third-party certificate service</b> is recommended: both can provide every capability Porthole uses (Network Extension, Personal VPN, Increased Memory Limit, Extended Virtual Addressing and get-task-allow). A <b>free Apple ID</b> also works, with some features missing (see below).</li>
     <li>JIT switched on for the app. Porthole can do it itself once it has a pairing file, and on iOS 27 or later it can make that file on the device.</li>
-    <li>Games you own: games from Steam, Epic Games, GOG or itch.io that you can sign in to, or game folders and installers you copy in from the Files app.</li>
+    <li>Games you own: games from Steam, Epic Games, GOG, itch.io, Amazon Games or the EA app that you can sign in to, or game folders and installers you copy in from the Files app.</li>
   </ul>
 
   <h2 id="wont-work">What Porthole can't run</h2>
@@ -76,15 +117,6 @@
     <li><b>Programs that use Windows features that aren't implemented yet.</b> Some Unity games only work when started through Steam.</li>
   </ul>
   <p>Not sure about a game? Look it up on the <a href="/compat.html">compatibility list</a> or ask on the <a href="https://discord.gg/N7PkdptTFn">Discord</a>.</p>
-
-  <h2>Download</h2>
-  <div class="placeholder" id="release">
-    <p><b>Porthole 1.2.0 &ldquo;Autumn Tide&rdquo; is out.</b> It adds a keyboard and mouse in games on iPad, the whole app on a controller, the EA app as a sixth store, much faster Steam downloads, a new look and a newer game engine. Porthole is still early: plenty of games don't run yet, and some that do need tweaking. The IPA, its checksum and the release notes are on the project's GitHub Releases page:</p>
-    <p style="margin:0"><a class="button" href="https://github.com/tylerkaska112/Porthole/releases/latest">Download 1.2.0 on GitHub</a></p>
-    <p class="fine" style="margin-top:14px"><!-- build:start -->Latest release: 1.2.0 (build 681). Page updated 4 November 2026.<!-- build:end --></p>
-  </div>
-  <p class="fine" style="margin-top:12px"><b>Check the download.</b> Put the IPA and its <code>.sha256</code> file in one folder and run <code>shasum -a 256 -c Porthole-1.2.0-681.ipa.sha256</code>; it should print OK. Then sign the app and its extensions with your own certificate (see below and the <a href="https://github.com/tylerkaska112/Porthole/blob/main/docs/INSTALL.md">install guide</a>). The source code for this release is in the same <a href="https://github.com/tylerkaska112/Porthole">repository</a> (tag <code>v1.2.0</code>).</p>
-  <p class="fine" style="margin-top:12px">You can also download every build, current and past, from inside Porthole under Settings &#9656; Updates. Without a certificate added it saves the file for you to sign yourself.</p>
 
   <h2>Which certificate to use</h2>
   <p>The certificate and profile you sign with decide how well Porthole works, so this is worth getting right.</p>

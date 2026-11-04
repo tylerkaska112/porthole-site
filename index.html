@@ -20,8 +20,33 @@
 <meta name="twitter:card" content="summary_large_image">
 <script>if(window.matchMedia&&matchMedia("(prefers-reduced-motion: no-preference)").matches&&"IntersectionObserver" in window)document.documentElement.classList.add("anim")</script>
 <script>try{var d=document.documentElement,t=localStorage.getItem("porthole-theme");if(t){d.dataset.theme=t;if(t==="custom"){var c=JSON.parse(localStorage.getItem("porthole-custom")||"{}");for(var k in c)d.style.setProperty(k,c[k])}}}catch(e){}</script>
-<link rel="stylesheet" href="/style.css?v=20261034">
+<link rel="preload" href="/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css?v=20261104">
 <link rel="stylesheet" href="/mock.css?v=20261038">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "Porthole",
+ "applicationCategory": "UtilitiesApplication",
+ "operatingSystem": "iOS 18 or later",
+ "softwareVersion": "1.2.0",
+ "description": "Porthole runs Windows PC games on iPhone and iPad, with a game library and downloads for Steam, Epic Games, GOG, itch.io, Amazon Games and EA. Open source and unofficial.",
+ "url": "https://portholehq.site/",
+ "image": "https://portholehq.site/img/og-image.jpg",
+ "downloadUrl": "https://github.com/tylerkaska112/Porthole/releases/tag/v1.2.0",
+ "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "sameAs": [
+  "https://github.com/tylerkaska112/Porthole"
+ ]
+}
+</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
@@ -53,45 +78,42 @@
 <main id="main">
 
 <div class="wrap">
-  <section class="hero" style="padding-top:72px">
+  <section class="hero">
     <div>
-      <p class="eyebrow">For iPhone and iPad</p>
+      <a class="release-pill" href="/changelog.html#v1-2-0"><i aria-hidden="true"></i>Porthole 1.2.0 &ldquo;Autumn Tide&rdquo; is out <span>What&rsquo;s new</span></a>
       <h1>Windows PC games, <span>in your pocket.</span></h1>
       <p class="lede">Porthole runs Windows games on your iPhone and iPad. Bring your own game files, download the ones you own on Steam, Epic Games, GOG, itch.io, Amazon Games and EA, and see how each game runs on phones like yours before you try it.</p>
       <div class="actions">
-        <a class="button" href="/download.html">Get Porthole</a>
+        <a class="button" href="/download.html">Get Porthole 1.2.0</a>
         <a class="button quiet" href="/compat.html">See what runs</a>
       </div>
-      <div class="status"><span><b>Early hobby project.</b> Porthole isn't on the App Store and there's nothing to download yet. It changes often, and plenty of games won't run.</span></div>
+      <ul class="meta-row"><li>Free and open source</li><li>iOS 18 or later</li><li>You sign it yourself</li></ul>
+      <div class="status"><span><b>Early software.</b> Made and tested by one person. Plenty of games won&rsquo;t run yet, and some need tweaking, so check the <a href="/compat.html">compatibility list</a> before you spend an evening on one.</span></div>
     </div>
     <div class="art">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night.webp">
-        <img src="/img/porthole-sunset.webp" width="800" height="800" alt="A silver ship's porthole looking out at a calm cyan sea with a small island and palm tree">
+        <img src="/img/porthole-sunset.webp" width="800" height="800" fetchpriority="high" alt="A silver ship's porthole looking out at a calm cyan sea with a small island and palm tree">
       </picture>
     </div>
   </section>
 
-  <section id="demo">
-    <p class="eyebrow">Try it</p>
-    <h2>Tap around a Porthole</h2>
-    <p class="lede">A working copy of the iPhone app's layout, with made-up games and no connection to anything. Open a store, start a download, press Play, then try <b>Settings &#8250; Appearance</b>: it changes the colours of this whole website.</p>
-    <div class="mock-stage">
-      <div class="mock" id="mock"><div class="m-screen" id="m-screen" aria-label="A demo of the Porthole app. Everything in it is made up."></div></div>
-      <div class="mock-side">
-        <h3>Things to try</h3>
-        <ul>
-          <li>Open <b>Stores</b>, sign in to GOG and install a game. The round button shows progress.</li>
-          <li>Start two downloads, then pause one or move another to the front on the Downloads page.</li>
-          <li>Press <b>Play</b>, switch the power mode, and trigger the low-memory warning.</li>
-          <li>Open a game's page and try <b>How it runs</b>.</li>
-          <li>In <b>Settings &#8250; Appearance</b>, pick a theme, or your own colour.</li>
-        </ul>
-        <p class="fine">Everything in the demo is invented, and it shows the layout, not how any game runs. <a href="/gallery.html">See pictures of the real app</a>.</p>
-      </div>
+  <section id="new">
+    <p class="eyebrow">New in 1.2.0</p>
+    <h2>Keyboard, mouse and a controller-ready app</h2>
+    <p class="lede">&ldquo;Autumn Tide&rdquo; is the biggest update since Steam: you can play with a keyboard and mouse, run the whole app from a controller, and download from six stores.</p>
+    <div class="grid glance-grid">
+      <a class="card glance" href="/changelog.html#v1-2-0"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></svg></div>
+        <h3>Keyboard and mouse</h3><p>On iPad: every key, five mouse buttons, the wheel and a locked pointer for looking around. Pick your own key for Porthole&rsquo;s menu.</p></a>
+      <a class="card glance" href="/changelog.html#v1-2-0"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="11" rx="5.5"/><path d="M7 10.5v4M5 12.5h4"/><circle cx="16" cy="11.5" r="1"/><circle cx="18.5" cy="13.5" r="1"/></svg></div>
+        <h3>Controller everywhere</h3><p>An on-screen keyboard you drive with the D-pad, the same starting spot on every screen and live button hints.</p></a>
+      <a class="card glance" href="/changelog.html#v1-2-0"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></svg></div>
+        <h3>Six stores</h3><p>The EA app joins Steam, Epic Games, GOG, itch.io and Amazon Games, and Steam demos and betas show in your library.</p></a>
+      <a class="card glance" href="/changelog.html#v1-2-0"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>Faster Steam</h3><p>No more random sign-outs, and downloads ran at 160 to 170 MB/s in testing, up from 12 to 22.</p></a>
     </div>
+    <a class="more-link" href="/changelog.html#v1-2-0">Everything in 1.2.0 &rsaquo;</a>
   </section>
-
 
   <section id="fit">
     <p class="eyebrow">Before you start</p>
@@ -101,7 +123,7 @@
       <div class="card"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div><h3>An iPhone or iPad on iOS 18 or later</h3><p>More memory is better: a game that needs more than your device has can't run.</p></div>
       <div class="card"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>A way to sign the app</h3><p>Porthole isn't on the App Store, so you sign it yourself. A paid developer account or a third-party certificate service is recommended and gives you everything. A free Apple ID works with some features missing.</p></div>
       <div class="card"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L5 14h6l-1 8 8-12h-6z"/></svg></div><h3>A way to switch on JIT</h3><p>Porthole does it itself once it has a pairing file. On iOS 27 or later your device can make that file on its own; before that it is made once on a computer.</p></div>
-      <div class="card"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="5"/><path d="M8 10v4M6 12h4M16 11h.01M18 13h.01"/></svg></div><h3>Games you own</h3><p>From Steam, Epic Games, GOG or itch.io, or game folders you copy in from Files. Porthole contains no games.</p></div>
+      <div class="card"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="5"/><path d="M8 10v4M6 12h4M16 11h.01M18 13h.01"/></svg></div><h3>Games you own</h3><p>From Steam, Epic Games, GOG, itch.io, Amazon Games or EA, or game folders you copy in from Files. Porthole contains no games.</p></div>
     </div>
   </section>
 
@@ -136,31 +158,24 @@
     </div>
   </section>
 
-  <section id="editor" class="tint">
-    <p class="eyebrow">Make it yours</p>
-    <h2>Build your own controls</h2>
-    <p class="lede">Porthole's on-screen controls are yours to arrange. This is a small copy of the editor: use the stick and buttons, then press Edit to drag things around (they snap to guides), add more, and undo.</p>
-    <div class="ed">
-      <div class="ed-bar">
-        <button type="button" id="ed-mode" class="primary">Edit</button>
-        <button type="button" id="ed-add" aria-expanded="false" aria-controls="ed-tray" disabled>+ Add</button>
-        <button type="button" id="ed-undo" disabled>Undo</button>
-        <button type="button" id="ed-redo" disabled>Redo</button>
-        <button type="button" id="ed-del" disabled>Delete</button>
-        <span class="sp"></span>
-        <button type="button" id="ed-reset">Reset</button>
+  <section id="demo" class="tint">
+    <p class="eyebrow">Try it</p>
+    <h2>Tap around a Porthole</h2>
+    <p class="lede">A working copy of the iPhone app's layout, with made-up games and no connection to anything. Open a store, start a download, press Play, then try <b>Settings &#8250; Appearance</b>: it changes the colours of this whole website.</p>
+    <div class="mock-stage">
+      <div class="mock" id="mock"><div class="m-screen" id="m-screen" aria-label="A demo of the Porthole app. Everything in it is made up."></div></div>
+      <div class="mock-side">
+        <h3>Things to try</h3>
+        <ul>
+          <li>Open <b>Stores</b>, sign in to GOG and install a game. The round button shows progress.</li>
+          <li>Start two downloads, then pause one or move another to the front on the Downloads page.</li>
+          <li>Press <b>Play</b>, switch the power mode, and trigger the low-memory warning.</li>
+          <li>Open a game's page and try <b>How it runs</b>.</li>
+          <li>In <b>Settings &#8250; Appearance</b>, pick a theme, or your own colour.</li>
+        </ul>
+        <p class="fine">Everything in the demo is invented, and it shows the layout, not how any game runs. <a href="/gallery.html">See pictures of the real app</a>.</p>
       </div>
-      <div class="ed-tray" id="ed-tray">
-        <button type="button" data-type="btn" data-label="Q">Key Q</button>
-        <button type="button" data-type="btn" data-label="F">Key F</button>
-        <button type="button" data-type="btn" data-label="Tab">Tab</button>
-        <button type="button" data-type="btn" data-label="Fire">Fire</button>
-        <button type="button" data-type="sw" data-label="Look">Look / Mouse switch</button>
-      </div>
-      <div class="ed-screen" id="ed-screen" aria-label="A game screen with on-screen controls you can try"></div>
-      <p class="ed-status" id="ed-status" aria-live="polite"></p>
     </div>
-    <p class="fine">Only a demo: nothing you do here is saved or sent anywhere. In the app the layout is kept per game, and you can share one with other players.</p>
   </section>
 
   <section id="console">
@@ -193,7 +208,34 @@
     </div>
   </section>
 
-  <section id="how" class="tint">
+  <section id="editor" class="tint">
+    <p class="eyebrow">Make it yours</p>
+    <h2>Build your own controls</h2>
+    <p class="lede">Porthole's on-screen controls are yours to arrange. This is a small copy of the editor: use the stick and buttons, then press Edit to drag things around (they snap to guides), add more, and undo.</p>
+    <div class="ed">
+      <div class="ed-bar">
+        <button type="button" id="ed-mode" class="primary">Edit</button>
+        <button type="button" id="ed-add" aria-expanded="false" aria-controls="ed-tray" disabled>+ Add</button>
+        <button type="button" id="ed-undo" disabled>Undo</button>
+        <button type="button" id="ed-redo" disabled>Redo</button>
+        <button type="button" id="ed-del" disabled>Delete</button>
+        <span class="sp"></span>
+        <button type="button" id="ed-reset">Reset</button>
+      </div>
+      <div class="ed-tray" id="ed-tray">
+        <button type="button" data-type="btn" data-label="Q">Key Q</button>
+        <button type="button" data-type="btn" data-label="F">Key F</button>
+        <button type="button" data-type="btn" data-label="Tab">Tab</button>
+        <button type="button" data-type="btn" data-label="Fire">Fire</button>
+        <button type="button" data-type="sw" data-label="Look">Look / Mouse switch</button>
+      </div>
+      <div class="ed-screen" id="ed-screen" aria-label="A game screen with on-screen controls you can try"></div>
+      <p class="ed-status" id="ed-status" aria-live="polite"></p>
+    </div>
+    <p class="fine">Only a demo: nothing you do here is saved or sent anywhere. In the app the layout is kept per game, and you can share one with other players.</p>
+  </section>
+
+  <section id="how">
     <p class="eyebrow">How it works</p>
     <h2>Three quick steps to your first game</h2>
     <ol class="steps">
@@ -204,7 +246,7 @@
     <p class="fine" style="margin-top:22px">Under the hood Porthole is built on <b>Madeira</b>, a project that runs Windows programs on iOS by combining Wine, the FEX-Emu translator and DXMT, which turns Direct3D into Metal. Speed depends on the game and on the device, and some games need more memory than a phone has. It needs iOS 18 or later and JIT switched on, which Porthole can do by itself once it has a pairing file.</p>
   </section>
 
-  <section id="expect">
+  <section id="expect" class="tint">
     <p class="eyebrow">Straight talk</p>
     <h2>What to expect</h2>
     <div class="grid">
@@ -221,6 +263,7 @@
       <details><summary>Is Porthole on the App Store?</summary><div class="a"><p>No, and it can't be: it relies on things Apple doesn't allow in App Store apps. You install it yourself, signed with your own certificate. The <a href="/download.html">Get it</a> page explains how.</p></div></details>
       <details><summary>Is it legal?</summary><div class="a"><p>Porthole contains no games and doesn't bypass any copy protection. Steam games start through Valve's own client files, which check your licence as they do on a PC, Epic, GOG and itch.io games are installed from the stores' own servers with your own account, and Microsoft's runtime is downloaded from Microsoft. Porthole is free software under the GPL and its source code is public.</p></div></details>
       <details><summary>Which games will run?</summary><div class="a"><p>It depends on the game and the device. The <a href="/compat.html">compatibility list</a> comes from reports sent by people using Porthole, and the app shows the same badge on each game.</p></div></details>
+      <details><summary>Can I use a keyboard and mouse?</summary><div class="a"><p>Yes, on an iPad. A Bluetooth or USB keyboard and a mouse or trackpad work in games like on a PC: every key, five mouse buttons, the wheel, the game&rsquo;s own cursor in menus and a locked pointer for looking around. An iPhone gets a mouse only through AssistiveTouch. Details are in <a href="/help.html">Help</a>.</p></div></details>
       <details><summary>Do I need a controller?</summary><div class="a"><p>No. Porthole has on-screen touch controls, and on an iPad a keyboard and a mouse work too. A controller makes it feel like a console, and Porthole shows which games support one.</p></div></details>
       <details><summary>Was this built with AI?</summary><div class="a"><p>Yes. A large part of the code, the documentation, this website and the artwork was written by an AI coding assistant (Claude, from Anthropic) working with the maintainer, who directs the project, reviews the changes and tests them on real devices. The project therefore contains AI-written code, and like any software it may contain mistakes.</p></div></details>
       <details><summary>Does it collect my data?</summary><div class="a"><p>No account, no ads and no tracking. A compatibility report is only sent when you choose to send one. The <a href="/privacy.html">privacy page</a> lists exactly what a report contains.</p></div></details>

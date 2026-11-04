@@ -8,7 +8,8 @@
     var fab = document.createElement('a');
     fab.className = 'fab'; fab.href = '/download.html'; fab.setAttribute('aria-label', 'Get Porthole');
     fab.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 11l5 5 5-5"/><path d="M5 20h14"/></svg>';
-    document.body.appendChild(fab);
+    var wrap = document.createElement('nav'); wrap.className = 'fab-wrap'; wrap.setAttribute('aria-label', 'Get Porthole');
+    wrap.appendChild(fab); document.body.appendChild(wrap);
     var shown = false;
     var toggle = function () { var want = window.scrollY > 420; if (want !== shown) { shown = want; fab.classList.toggle('show', want); } };
     addEventListener('scroll', toggle, { passive: true }); toggle();
