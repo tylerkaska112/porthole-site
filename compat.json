@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04 19:48 UTC",
+ "generated": "2026-11-04 22:00 UTC",
  "engine": "3af3467-r1",
  "games": [
   {
@@ -81,6 +81,170 @@
      "comment": null,
      "date": "2026-10-15",
      "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:4474710",
+   "title": "FINAL FANTASY RESONANCE DEMO",
+   "kind": "steam",
+   "steamAppID": 4474710,
+   "reportCount": 1,
+   "lastReport": "2026-11-04",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad, model iPad17,4",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "graphics_glitches"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 53.1,
+      "fpsLow": 35,
+      "minutes": 24,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "flickring effects (lighting, water, fire etc..)",
+     "date": "2026-11-04",
+     "device": "iPad, model iPad17,4"
+    }
+   ]
+  },
+  {
+   "id": "steam:107100",
+   "title": "Bastion",
+   "kind": "steam",
+   "steamAppID": 107100,
+   "reportCount": 1,
+   "lastReport": "2026-11-04",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone, model iPhone19,4",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.1",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "graphics_glitches"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 59.2,
+      "fpsLow": 59,
+      "minutes": 18,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-04",
+     "device": "iPhone, model iPhone19,4"
     }
    ]
   },
