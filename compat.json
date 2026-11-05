@@ -1,7 +1,187 @@
 {
- "generated": "2026-11-05 12:00 UTC",
+ "generated": "2026-11-05 19:00 UTC",
  "engine": "3af3467-r1",
  "games": [
+  {
+   "id": "steam:3241660",
+   "title": "R.E.P.O.",
+   "kind": "steam",
+   "steamAppID": 3241660,
+   "reportCount": 3,
+   "lastReport": "2026-11-05",
+   "verdict": "playable",
+   "confidence": "medium",
+   "countedReports": 2,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPhone 13 Pro Max",
+     "verdict": "broken",
+     "reports": 1
+    },
+    {
+     "device": "iPhone 15 Pro",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 3072,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_bad"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 29.7,
+      "fpsLow": 29,
+      "minutes": 8,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": true,
+      "swapMB": 2048,
+      "swapCoverage": "",
+      "vramMB": 512,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPhone 17"
+    },
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "drains_battery",
+      "needs_low_settings",
+      "overheats"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 22.8,
+      "fpsLow": 16,
+      "minutes": 12,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 3072,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPhone 15 Pro"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "broken",
+     "stability": "wont_launch",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 1,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPhone 13 Pro Max"
+    }
+   ]
+  },
   {
    "id": "steam:275850",
    "title": "No Man's Sky",
@@ -85,153 +265,6 @@
      "comment": "downloads just fine and seems to launch without issue but failed to actually load into game. I think that this is due to me having a free Apple developer account and not having extra memory unlocked.",
      "date": "2026-11-04",
      "device": "iPhone 15"
-    }
-   ]
-  },
-  {
-   "id": "steam:3241660",
-   "title": "R.E.P.O.",
-   "kind": "steam",
-   "steamAppID": 3241660,
-   "reportCount": 2,
-   "lastReport": "2026-11-05",
-   "verdict": "playable",
-   "confidence": "medium",
-   "countedReports": 2,
-   "earlierReports": 0,
-   "devices": [
-    {
-     "device": "iPhone 13 Pro Max",
-     "verdict": "broken",
-     "reports": 1
-    },
-    {
-     "device": "iPhone 15 Pro",
-     "verdict": "great",
-     "reports": 1
-    }
-   ],
-   "settingsSummary": {
-    "reports": 1,
-    "items": [
-     {
-      "key": "launch",
-      "value": "steam",
-      "count": 1
-     },
-     {
-      "key": "power",
-      "value": "performance",
-      "count": 1
-     },
-     {
-      "key": "desktopDisplay",
-      "value": true,
-      "count": 1
-     },
-     {
-      "key": "preciseMath",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "controls",
-      "value": "standard",
-      "count": 1
-     },
-     {
-      "key": "swapMB",
-      "value": 3072,
-      "count": 1
-     },
-     {
-      "key": "vramMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "audioCushionMs",
-      "value": 80,
-      "count": 1
-     },
-     {
-      "key": "keepModeWhenHot",
-      "value": true,
-      "count": 1
-     },
-     {
-      "key": "swapCoverage",
-      "value": "",
-      "count": 1
-     }
-    ]
-   },
-   "reports": [
-    {
-     "ios": "27.2",
-     "appVersion": "1.2.0",
-     "engine": "3af3467-r1",
-     "onThisEngine": true,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "drains_battery",
-      "needs_low_settings",
-      "overheats"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 22.8,
-      "fpsLow": 16,
-      "minutes": 12,
-      "thermal": "hot"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": true,
-      "swapMB": 3072,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-05",
-     "device": "iPhone 15 Pro"
-    },
-    {
-     "ios": "27.0",
-     "appVersion": "1.2.1",
-     "engine": "3af3467-r1",
-     "onThisEngine": true,
-     "rating": "broken",
-     "stability": "wont_launch",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": null,
-      "fpsLow": null,
-      "minutes": 1,
-      "thermal": "hot"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-05",
-     "device": "iPhone 13 Pro Max"
     }
    ]
   },
@@ -709,6 +742,222 @@
      "comment": null,
      "date": "2026-10-15",
      "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:504230",
+   "title": "Celeste",
+   "kind": "steam",
+   "steamAppID": 504230,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 4096,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 4096,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 41.3,
+      "fpsLow": 29.1,
+      "minutes": 12,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 4096,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "No problems whatsoever",
+     "date": "2026-11-05",
+     "device": "iPhone 15 Pro"
+    }
+   ]
+  },
+  {
+   "id": "steam:632360",
+   "title": "Risk of Rain 2",
+   "kind": "steam",
+   "steamAppID": 632360,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 4096,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 4096,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "overheats"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 23.5,
+      "fpsLow": 2,
+      "minutes": 12,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 4096,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPhone 15 Pro"
     }
    ]
   },
