@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05 19:00 UTC",
+ "generated": "2026-11-05 22:00 UTC",
  "engine": "3af3467-r1",
  "games": [
   {
@@ -183,6 +183,221 @@
    ]
   },
   {
+   "id": "steam:250900",
+   "title": "The Binding of Isaac: Rebirth",
+   "kind": "steam",
+   "steamAppID": 250900,
+   "reportCount": 3,
+   "lastReport": "2026-11-05",
+   "verdict": "playable",
+   "confidence": "medium",
+   "countedReports": 2,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro",
+     "verdict": "broken",
+     "reports": 1
+    },
+    {
+     "device": "iPad Pro 11-inch (M4)",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "26.5.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "graphics_glitches",
+      "long_loading"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 46.4,
+      "fpsLow": 42.2,
+      "minutes": 18,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPad Pro 11-inch (M4)"
+    },
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "broken",
+     "stability": "wont_launch",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 1,
+      "fpsLow": 1,
+      "minutes": 1,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 2048,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "Black screen",
+     "date": "2026-11-04",
+     "device": "iPhone 15 Pro"
+    },
+    {
+     "ios": "27.2",
+     "appVersion": "1.0.1",
+     "engine": "279fd0f-r13",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 59.4,
+      "fpsLow": 57,
+      "minutes": 9,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "can't download or play any DLC/mods.",
+     "date": "2026-10-17",
+     "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:3247750",
+   "title": "Mycopunk",
+   "kind": "steam",
+   "steamAppID": 3247750,
+   "reportCount": 2,
+   "lastReport": "2026-11-05",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPad, model iPad17,4",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "drains_battery",
+      "long_loading",
+      "overheats"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 59.1,
+      "fpsLow": 55,
+      "minutes": 13,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": "it takes about 5-10 minutes to load initially then works normally",
+     "date": "2026-11-05",
+     "device": "iPad, model iPad17,4"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 59.4,
+      "fpsLow": 58,
+      "minutes": 80,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": "it takes like 5 minutes each time I launch it to get into the game but works great afterwards",
+     "date": "2026-10-21",
+     "device": "iPad, model iPad17,4"
+    }
+   ]
+  },
+  {
    "id": "steam:275850",
    "title": "No Man's Sky",
    "kind": "steam",
@@ -353,92 +568,6 @@
      "comment": "ultra low graphics settings to get 60 fps",
      "date": "2026-10-15",
      "device": "iPad Pro 13-inch (M4)"
-    }
-   ]
-  },
-  {
-   "id": "steam:250900",
-   "title": "The Binding of Isaac: Rebirth",
-   "kind": "steam",
-   "steamAppID": 250900,
-   "reportCount": 2,
-   "lastReport": "2026-11-04",
-   "verdict": "broken",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 1,
-   "devices": [
-    {
-     "device": "iPhone 15 Pro",
-     "verdict": "broken",
-     "reports": 1
-    }
-   ],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.2",
-     "appVersion": "1.2.0",
-     "engine": "3af3467-r1",
-     "onThisEngine": true,
-     "rating": "broken",
-     "stability": "wont_launch",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 1,
-      "fpsLow": 1,
-      "minutes": 1,
-      "thermal": "hot"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": false,
-      "swapMB": 2048,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": "Black screen",
-     "date": "2026-11-04",
-     "device": "iPhone 15 Pro"
-    },
-    {
-     "ios": "27.2",
-     "appVersion": "1.0.1",
-     "engine": "279fd0f-r13",
-     "onThisEngine": false,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "controller_ok"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 59.4,
-      "fpsLow": 57,
-      "minutes": 9,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": true,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": "can't download or play any DLC/mods.",
-     "date": "2026-10-17",
-     "device": "iPhone 15 Pro Max"
     }
    ]
   },
@@ -742,6 +871,113 @@
      "comment": null,
      "date": "2026-10-15",
      "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:674940",
+   "title": "Stick Fight: The Game",
+   "kind": "steam",
+   "steamAppID": 674940,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 17 Pro",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "sometimes",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 28.9,
+      "fpsLow": 21,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPhone 17 Pro"
     }
    ]
   },
@@ -2295,55 +2531,6 @@
      "comment": null,
      "date": "2026-10-26",
      "device": "iPad, model iPad16,10"
-    }
-   ]
-  },
-  {
-   "id": "steam:3247750",
-   "title": "Mycopunk",
-   "kind": "steam",
-   "steamAppID": 3247750,
-   "reportCount": 1,
-   "lastReport": "2026-10-21",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "controller_ok"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 59.4,
-      "fpsLow": 58,
-      "minutes": 80,
-      "thermal": "warm"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": false,
-      "swapMB": 4096,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "firstPerson"
-     },
-     "comment": "it takes like 5 minutes each time I launch it to get into the game but works great afterwards",
-     "date": "2026-10-21",
-     "device": "iPad, model iPad17,4"
     }
    ]
   },
