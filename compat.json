@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06 01:00 UTC",
+ "generated": "2026-11-06 05:00 UTC",
  "engine": "3af3467-r1",
  "games": [
   {
@@ -1236,6 +1236,61 @@
    ]
   },
   {
+   "id": "steam:2494930",
+   "title": "SLUDGE LIFE: The BIG MUD Sessions",
+   "kind": "steam",
+   "steamAppID": 2494930,
+   "reportCount": 1,
+   "lastReport": "2026-11-06",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 17",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "sometimes",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 52.4,
+      "fpsLow": 39,
+      "minutes": 5,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "direct",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPhone 17"
+    }
+   ]
+  },
+  {
    "id": "steam:365670",
    "title": "Blender",
    "kind": "steam",
@@ -2287,6 +2342,59 @@
      "comment": null,
      "date": "2026-11-05",
      "device": "iPhone 15 Pro"
+    }
+   ]
+  },
+  {
+   "id": "steam:3480",
+   "title": "Peggle Deluxe",
+   "kind": "steam",
+   "steamAppID": 3480,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "broken",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad, model iPad15,7",
+     "verdict": "broken",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "26.1",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "broken",
+     "stability": "wont_launch",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 1,
+      "fpsLow": 1,
+      "minutes": 2,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPad, model iPad15,7"
     }
    ]
   },
