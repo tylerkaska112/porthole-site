@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05 22:00 UTC",
+ "generated": "2026-11-06 00:00 UTC",
  "engine": "3af3467-r1",
  "games": [
   {
@@ -304,6 +304,93 @@
      "comment": "can't download or play any DLC/mods.",
      "date": "2026-10-17",
      "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:270880",
+   "title": "American Truck Simulator",
+   "kind": "steam",
+   "steamAppID": 270880,
+   "reportCount": 2,
+   "lastReport": "2026-11-05",
+   "verdict": "broken",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPad, model iPad15,7",
+     "verdict": "broken",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "broken",
+     "stability": "wont_launch",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 9,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": true,
+      "swapMB": 3072,
+      "swapCoverage": "",
+      "vramMB": 1536,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPad, model iPad15,7"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "1.1.20",
+     "engine": "279fd0f-r15",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "long_loading"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 115.1,
+      "fpsLow": 88,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-17",
+     "device": "iPad Pro 13-inch (M4)"
     }
    ]
   },
@@ -875,6 +962,493 @@
    ]
   },
   {
+   "id": "steam:203160",
+   "title": "Tomb Raider",
+   "kind": "steam",
+   "steamAppID": 203160,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 17 Pro",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.3",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 54.9,
+      "fpsLow": 29.8,
+      "minutes": 9,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "very good",
+     "date": "2026-11-05",
+     "device": "iPhone 17 Pro"
+    }
+   ]
+  },
+  {
+   "id": "steam:1030300",
+   "title": "Hollow Knight: Silksong",
+   "kind": "steam",
+   "steamAppID": 1030300,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad Air 11-inch (M3)",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "controller_bad"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 58.4,
+      "fpsLow": 52.9,
+      "minutes": 10,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "xbox controller does not work",
+     "date": "2026-11-05",
+     "device": "iPad Air 11-inch (M3)"
+    }
+   ]
+  },
+  {
+   "id": "steam:239140",
+   "title": "Dying Light",
+   "kind": "steam",
+   "steamAppID": 239140,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 17 Pro",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.3",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 59.7,
+      "fpsLow": 29,
+      "minutes": 5,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "great",
+     "date": "2026-11-05",
+     "device": "iPhone 17 Pro"
+    }
+   ]
+  },
+  {
+   "id": "steam:2626860",
+   "title": "Dragon Eclipse",
+   "kind": "steam",
+   "steamAppID": 2626860,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad, model iPad17,4",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 58.4,
+      "fpsLow": 49,
+      "minutes": 11,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPad, model iPad17,4"
+    }
+   ]
+  },
+  {
+   "id": "steam:1519240",
+   "title": "Box Ninja",
+   "kind": "steam",
+   "steamAppID": 1519240,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 17",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 2048,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 512,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 29.8,
+      "fpsLow": 29.8,
+      "minutes": 6,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": true,
+      "swapMB": 2048,
+      "swapCoverage": "",
+      "vramMB": 512,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "controls need to be configured",
+     "date": "2026-11-05",
+     "device": "iPhone 17"
+    }
+   ]
+  },
+  {
    "id": "steam:674940",
    "title": "Stick Fight: The Game",
    "kind": "steam",
@@ -978,6 +1552,59 @@
      "comment": null,
      "date": "2026-11-05",
      "device": "iPhone 17 Pro"
+    }
+   ]
+  },
+  {
+   "id": "steam:3224770",
+   "title": "Umamusume: Pretty Derby",
+   "kind": "steam",
+   "steamAppID": 3224770,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "broken",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 15",
+     "verdict": "broken",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "broken",
+     "stability": "constantly",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPhone 15"
     }
    ]
   },
@@ -2868,56 +3495,6 @@
      "comment": null,
      "date": "2026-10-17",
      "device": "iPhone 15 Pro"
-    }
-   ]
-  },
-  {
-   "id": "steam:270880",
-   "title": "American Truck Simulator",
-   "kind": "steam",
-   "steamAppID": 270880,
-   "reportCount": 1,
-   "lastReport": "2026-10-17",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0",
-     "appVersion": "1.1.20",
-     "engine": "279fd0f-r15",
-     "onThisEngine": false,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "controller_ok",
-      "long_loading"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 115.1,
-      "fpsLow": 88,
-      "minutes": 5,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-10-17",
-     "device": "iPad Pro 13-inch (M4)"
     }
    ]
   },
