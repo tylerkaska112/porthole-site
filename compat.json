@@ -1,7 +1,126 @@
 {
- "generated": "2026-11-06 00:00 UTC",
+ "generated": "2026-11-06 01:00 UTC",
  "engine": "3af3467-r1",
  "games": [
+  {
+   "id": "steam:242760",
+   "title": "The Forest",
+   "kind": "steam",
+   "steamAppID": 242760,
+   "reportCount": 3,
+   "lastReport": "2026-11-06",
+   "verdict": "broken",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 2,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro",
+     "verdict": "broken",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.3.26",
+     "engine": "3af3467-r4",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 53.4,
+      "fpsLow": 2,
+      "minutes": 2,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPad Pro 13-inch (M4)"
+    },
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "broken",
+     "stability": "constantly",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 52.9,
+      "fpsLow": 1,
+      "minutes": 5,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPhone 15 Pro"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.335",
+     "engine": "48f9764-r1",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "drains_battery",
+      "needs_low_settings"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 63,
+      "fpsLow": 44,
+      "minutes": 7,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "ultra low graphics settings to get 60 fps",
+     "date": "2026-10-15",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
   {
    "id": "steam:3241660",
    "title": "R.E.P.O.",
@@ -308,6 +427,249 @@
    ]
   },
   {
+   "id": "steam:4001890",
+   "title": "How to Fish",
+   "kind": "steam",
+   "steamAppID": 4001890,
+   "reportCount": 2,
+   "lastReport": "2026-11-06",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 2,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.3.26",
+     "engine": "3af3467-r4",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 74.4,
+      "fpsLow": 26,
+      "minutes": 3,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPad Pro 13-inch (M4)"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.365",
+     "engine": "48f9764-r1",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 97.3,
+      "fpsLow": 57,
+      "minutes": 6,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-15",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:427520",
+   "title": "Factorio",
+   "kind": "steam",
+   "steamAppID": 427520,
+   "reportCount": 2,
+   "lastReport": "2026-11-06",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 2,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.3.26",
+     "engine": "3af3467-r4",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 31.5,
+      "fpsLow": 3,
+      "minutes": 1,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPad Pro 13-inch (M4)"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.207",
+     "engine": "48f9764-r0",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "audio_issues",
+      "controller_ok",
+      "online_works"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 55.3,
+      "fpsLow": 10.9,
+      "minutes": 5,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "direct",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-10",
+     "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:2670630",
+   "title": "Supermarket Simulator",
+   "kind": "steam",
+   "steamAppID": 2670630,
+   "reportCount": 2,
+   "lastReport": "2026-11-06",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 2,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.3.26",
+     "engine": "3af3467-r4",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 80.5,
+      "fpsLow": 49,
+      "minutes": 1,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPad Pro 13-inch (M4)"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.207",
+     "engine": "48f9764-r0",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "online_works"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 44.1,
+      "fpsLow": 20,
+      "minutes": 6,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": null,
+     "date": "2026-10-11",
+     "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
    "id": "steam:270880",
    "title": "American Truck Simulator",
    "kind": "steam",
@@ -567,94 +929,6 @@
      "comment": "downloads just fine and seems to launch without issue but failed to actually load into game. I think that this is due to me having a free Apple developer account and not having extra memory unlocked.",
      "date": "2026-11-04",
      "device": "iPhone 15"
-    }
-   ]
-  },
-  {
-   "id": "steam:242760",
-   "title": "The Forest",
-   "kind": "steam",
-   "steamAppID": 242760,
-   "reportCount": 2,
-   "lastReport": "2026-11-05",
-   "verdict": "broken",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 1,
-   "devices": [
-    {
-     "device": "iPhone 15 Pro",
-     "verdict": "broken",
-     "reports": 1
-    }
-   ],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.2",
-     "appVersion": "1.2.1",
-     "engine": "3af3467-r1",
-     "onThisEngine": true,
-     "rating": "broken",
-     "stability": "constantly",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 52.9,
-      "fpsLow": 1,
-      "minutes": 5,
-      "thermal": "warm"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": true,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-05",
-     "device": "iPhone 15 Pro"
-    },
-    {
-     "ios": "27.0",
-     "appVersion": "0.50.335",
-     "engine": "48f9764-r1",
-     "onThisEngine": false,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "controller_ok",
-      "drains_battery",
-      "needs_low_settings"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 63,
-      "fpsLow": 44,
-      "minutes": 7,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": true,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": "ultra low graphics settings to get 60 fps",
-     "date": "2026-10-15",
-     "device": "iPad Pro 13-inch (M4)"
     }
    ]
   },
@@ -958,6 +1232,198 @@
      "comment": null,
      "date": "2026-10-15",
      "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:365670",
+   "title": "Blender",
+   "kind": "steam",
+   "steamAppID": 365670,
+   "reportCount": 1,
+   "lastReport": "2026-11-06",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.3.26",
+     "engine": "3af3467-r4",
+     "onThisEngine": false,
+     "rating": "playable",
+     "stability": "sometimes",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 7.8,
+      "fpsLow": 5,
+      "minutes": 4,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "direct",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 4096,
+      "swapCoverage": "wide",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:601150",
+   "title": "Devil-May-Cry-5",
+   "kind": "steam",
+   "steamAppID": 601150,
+   "reportCount": 1,
+   "lastReport": "2026-11-06",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.3.26",
+     "engine": "3af3467-r4",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 68.7,
+      "fpsLow": 21.6,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": null,
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:1799840",
+   "title": "Queen's Domain",
+   "kind": "steam",
+   "steamAppID": 1799840,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad, model iPad17,4",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 59.4,
+      "fpsLow": 59.9,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPad, model iPad17,4"
     }
    ]
   },
@@ -3842,55 +4308,6 @@
    ]
   },
   {
-   "id": "steam:4001890",
-   "title": "How to Fish",
-   "kind": "steam",
-   "steamAppID": 4001890,
-   "reportCount": 1,
-   "lastReport": "2026-10-15",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0",
-     "appVersion": "0.50.365",
-     "engine": "48f9764-r1",
-     "onThisEngine": false,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "controller_ok"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 97.3,
-      "fpsLow": 57,
-      "minutes": 6,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": false,
-      "swapMB": 4096,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-10-15",
-     "device": "iPad Pro 13-inch (M4)"
-    }
-   ]
-  },
-  {
    "id": "steam:1167630",
    "title": "Teardown",
    "kind": "steam",
@@ -3937,107 +4354,6 @@
      },
      "comment": null,
      "date": "2026-10-11",
-     "device": "iPhone 15 Pro Max"
-    }
-   ]
-  },
-  {
-   "id": "steam:2670630",
-   "title": "Supermarket Simulator",
-   "kind": "steam",
-   "steamAppID": 2670630,
-   "reportCount": 1,
-   "lastReport": "2026-10-11",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0",
-     "appVersion": "0.50.207",
-     "engine": "48f9764-r0",
-     "onThisEngine": false,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "controller_ok",
-      "online_works"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 44.1,
-      "fpsLow": 20,
-      "minutes": 6,
-      "thermal": "hot"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": true,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "firstPerson"
-     },
-     "comment": null,
-     "date": "2026-10-11",
-     "device": "iPhone 15 Pro Max"
-    }
-   ]
-  },
-  {
-   "id": "steam:427520",
-   "title": "Factorio",
-   "kind": "steam",
-   "steamAppID": 427520,
-   "reportCount": 1,
-   "lastReport": "2026-10-10",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0",
-     "appVersion": "0.50.207",
-     "engine": "48f9764-r0",
-     "onThisEngine": false,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "audio_issues",
-      "controller_ok",
-      "online_works"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 55.3,
-      "fpsLow": 10.9,
-      "minutes": 5,
-      "thermal": "warm"
-     },
-     "settings": {
-      "launch": "direct",
-      "power": "performance",
-      "keepModeWhenHot": true,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-10-10",
      "device": "iPhone 15 Pro Max"
     }
    ]
