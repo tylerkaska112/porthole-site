@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07 06:00 UTC",
+ "generated": "2026-11-07 20:00 UTC",
  "engine": "3af3467-r1",
  "games": [
   {
@@ -423,6 +423,99 @@
      "comment": "can't download or play any DLC/mods.",
      "date": "2026-10-17",
      "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:1332010",
+   "title": "Stray",
+   "kind": "steam",
+   "steamAppID": 1332010,
+   "reportCount": 2,
+   "lastReport": "2026-11-07",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPhone, model iPhone19,4",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.1",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "graphics_glitches"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 19.4,
+      "fpsLow": 5,
+      "minutes": 8,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-07",
+     "device": "iPhone, model iPhone19,4"
+    },
+    {
+     "ios": "27.2",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "audio_issues",
+      "controller_ok",
+      "graphics_glitches",
+      "needs_low_settings",
+      "overheats"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 12.9,
+      "fpsLow": 5,
+      "minutes": 7,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-02",
+     "device": "iPhone 16 Pro"
     }
    ]
   },
@@ -1517,6 +1610,118 @@
      "comment": null,
      "date": "2026-10-15",
      "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:335300",
+   "title": "DARK SOULSTM II: Scholar of the First Sin",
+   "kind": "steam",
+   "steamAppID": 335300,
+   "reportCount": 1,
+   "lastReport": "2026-11-07",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad, model iPad15,7",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "sometimes",
+     "tags": [
+      "controller_ok",
+      "needs_low_settings"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 36.5,
+      "fpsLow": 15,
+      "minutes": 51,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 40,
+      "preciseMath": true,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-07",
+     "device": "iPad, model iPad15,7"
+    }
+   ]
+  },
+  {
+   "id": "steam:550",
+   "title": "Left 4 Dead 2",
+   "kind": "steam",
+   "steamAppID": 550,
+   "reportCount": 1,
+   "lastReport": "2026-11-07",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone, model iPhone19,3",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "needs_low_settings"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 40.9,
+      "fpsLow": 15,
+      "minutes": 5,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-07",
+     "device": "iPhone, model iPhone19,3"
     }
    ]
   },
@@ -3891,59 +4096,6 @@
      "comment": null,
      "date": "2026-11-02",
      "device": "iPhone 16"
-    }
-   ]
-  },
-  {
-   "id": "steam:1332010",
-   "title": "Stray",
-   "kind": "steam",
-   "steamAppID": 1332010,
-   "reportCount": 1,
-   "lastReport": "2026-11-02",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.2",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "playable",
-     "stability": "never",
-     "tags": [
-      "audio_issues",
-      "controller_ok",
-      "graphics_glitches",
-      "needs_low_settings",
-      "overheats"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 12.9,
-      "fpsLow": 5,
-      "minutes": 7,
-      "thermal": "hot"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": true,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-02",
-     "device": "iPhone 16 Pro"
     }
    ]
   },
