@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08 10:00 UTC",
+ "generated": "2026-11-08 12:00 UTC",
  "engine": "3af3467-r1",
  "games": [
   {
@@ -1609,6 +1609,53 @@
      },
      "comment": null,
      "date": "2026-10-15",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:3164500",
+   "title": "Schedule I",
+   "kind": "steam",
+   "steamAppID": 3164500,
+   "reportCount": 1,
+   "lastReport": "2026-11-08",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.3.86",
+     "engine": "2c133ca-r1",
+     "onThisEngine": false,
+     "rating": "playable",
+     "stability": "sometimes",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 40.1,
+      "fpsLow": 3,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": null,
+     "date": "2026-11-08",
      "device": "iPad Pro 13-inch (M4)"
     }
    ]
