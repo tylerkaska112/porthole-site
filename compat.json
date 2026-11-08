@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07 20:00 UTC",
+ "generated": "2026-11-08 10:00 UTC",
  "engine": "3af3467-r1",
  "games": [
   {
@@ -1610,6 +1610,283 @@
      "comment": null,
      "date": "2026-10-15",
      "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:4231820",
+   "title": "Castlevania: Belmont's Curse",
+   "kind": "steam",
+   "steamAppID": 4231820,
+   "reportCount": 1,
+   "lastReport": "2026-11-08",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone, model iPhone19,4",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.3",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "sometimes",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 94.5,
+      "fpsLow": 39,
+      "minutes": 6,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-08",
+     "device": "iPhone, model iPhone19,4"
+    }
+   ]
+  },
+  {
+   "id": "steam:412020",
+   "title": "Metro Exodus",
+   "kind": "steam",
+   "steamAppID": 412020,
+   "reportCount": 1,
+   "lastReport": "2026-11-08",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 17 Pro Max",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "sometimes",
+     "tags": [
+      "controller_ok",
+      "graphics_glitches",
+      "needs_low_settings",
+      "online_works"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 22.3,
+      "fpsLow": 6,
+      "minutes": 15,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-08",
+     "device": "iPhone 17 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:814380",
+   "title": "SekiroTM: Shadows Die Twice",
+   "kind": "steam",
+   "steamAppID": 814380,
+   "reportCount": 1,
+   "lastReport": "2026-11-08",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad, model iPad14,5",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "graphics_glitches"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 25.2,
+      "fpsLow": 13,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-08",
+     "device": "iPad, model iPad14,5"
+    }
+   ]
+  },
+  {
+   "id": "steam:739630",
+   "title": "Phasmophobia",
+   "kind": "steam",
+   "steamAppID": 739630,
+   "reportCount": 1,
+   "lastReport": "2026-11-08",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 17",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "firstPerson",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "online_works"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 48.3,
+      "fpsLow": 30,
+      "minutes": 6,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": null,
+     "date": "2026-11-08",
+     "device": "iPhone 17"
     }
    ]
   },
