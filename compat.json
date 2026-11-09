@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09 08:00 UTC",
+ "generated": "2026-11-09 20:00 UTC",
  "engine": "3af3467-r1",
  "games": [
   {
@@ -423,6 +423,152 @@
      "comment": "can't download or play any DLC/mods.",
      "date": "2026-10-17",
      "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:814380",
+   "title": "SekiroTM: Shadows Die Twice",
+   "kind": "steam",
+   "steamAppID": 814380,
+   "reportCount": 2,
+   "lastReport": "2026-11-09",
+   "verdict": "playable",
+   "confidence": "medium",
+   "countedReports": 2,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad, model iPad14,5",
+     "verdict": "playable",
+     "reports": 1
+    },
+    {
+     "device": "iPad, model iPad19,1",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 29.1,
+      "fpsLow": 23,
+      "minutes": 15,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "works great on my ipad mini 8",
+     "date": "2026-11-09",
+     "device": "iPad, model iPad19,1"
+    },
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "graphics_glitches"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 25.2,
+      "fpsLow": 13,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-08",
+     "device": "iPad, model iPad14,5"
     }
    ]
   },
@@ -1777,6 +1923,113 @@
    ]
   },
   {
+   "id": "steam:553420",
+   "title": "TUNIC",
+   "kind": "steam",
+   "steamAppID": 553420,
+   "reportCount": 1,
+   "lastReport": "2026-11-09",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad, model iPad15,7",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 4096,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 40,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 59.2,
+      "fpsLow": 55.3,
+      "minutes": 23,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 40,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-09",
+     "device": "iPad, model iPad15,7"
+    }
+   ]
+  },
+  {
    "id": "steam:2751050",
    "title": "clickyland",
    "kind": "steam",
@@ -2509,62 +2762,6 @@
      "comment": null,
      "date": "2026-11-08",
      "device": "iPhone 17 Pro Max"
-    }
-   ]
-  },
-  {
-   "id": "steam:814380",
-   "title": "SekiroTM: Shadows Die Twice",
-   "kind": "steam",
-   "steamAppID": 814380,
-   "reportCount": 1,
-   "lastReport": "2026-11-08",
-   "verdict": "playable",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 0,
-   "devices": [
-    {
-     "device": "iPad, model iPad14,5",
-     "verdict": "playable",
-     "reports": 1
-    }
-   ],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.2",
-     "appVersion": "1.2.1",
-     "engine": "3af3467-r1",
-     "onThisEngine": true,
-     "rating": "playable",
-     "stability": "never",
-     "tags": [
-      "controller_ok",
-      "graphics_glitches"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 25.2,
-      "fpsLow": 13,
-      "minutes": 5,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-08",
-     "device": "iPad, model iPad14,5"
     }
    ]
   },
