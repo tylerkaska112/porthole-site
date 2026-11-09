@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Porthole says: messages and errors | Documentation</title>
+<meta name="description" content="The messages and errors Porthole shows, with their exact wording, so you can search for the one you see.">
+<meta name="theme-color" content="#04121A">
+<link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="canonical" href="https://portholehq.site/docs/messages.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="What Porthole says: messages and errors | Documentation">
+<meta property="og:description" content="The messages and errors Porthole shows, with their exact wording, so you can search for the one you see.">
+<meta property="og:image" content="https://portholehq.site/img/og-image.jpg">
+<meta property="og:url" content="https://portholehq.site/docs/messages.html">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script>try{var d=document.documentElement,t=localStorage.getItem("porthole-theme");if(t){d.dataset.theme=t;if(t==="custom"){var c=JSON.parse(localStorage.getItem("porthole-custom")||"{}");for(var k in c)d.style.setProperty(k,c[k])}}}catch(e){}</script>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css?v=20261104">
+<link rel="stylesheet" href="/docs/docs.css?v=202611092040">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/"><picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night-96.webp"><img src="/img/porthole-sunset-96.webp" alt="" width="38" height="38"></picture>Porthole</a>
+  <nav aria-label="Main">
+    <a href="/#features">Features</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/docs/">Docs</a><a href="/privacy.html">Privacy</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a class="cta" href="/download.html">Get it</a>
+  </nav>
+  <details class="menu">
+    <summary aria-label="Menu"><span class="bars" aria-hidden="true"></span></summary>
+    <div class="panel" role="navigation" aria-label="Site menu">
+      <a href="/">Home</a>
+      <a href="/#features">Features</a>
+      <a href="/download.html">Get it</a>
+      <a href="/compat.html">Compatibility</a>
+      <a href="/help.html">Help</a>
+      <a href="/docs/">Docs</a>
+      <a href="/gallery.html">Gallery</a>
+      <a href="/changelog.html">What's new</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/trust.html">Trust</a>
+      <a href="/privacy.html#contact">Contact</a>
+      <span class="sep" role="separator"></span>
+      <a href="https://discord.gg/N7PkdptTFn">Discord<i aria-hidden="true">↗</i></a>
+      <a href="https://github.com/tylerkaska112/PortHole">GitHub<i aria-hidden="true">↗</i></a>
+      <a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem<i aria-hidden="true">↗</i></a>
+    </div>
+  </details>
+</div></header>
+<main id="main">
+<div class="wrap page doc docs">
+<p class="eyebrow">Documentation</p>
+<h1>What Porthole says</h1>
+<nav class="d-nav" aria-label="Documentation"><a href="/docs/">Search</a><a href="/docs/settings.html">Settings</a><a href="/docs/engine-lines.html">Engine lines</a><a href="/docs/errors.html">Errors and log lines</a><a href="/docs/messages.html" aria-current="page">Messages</a></nav>
+<p class="lede">The messages Porthole shows when something is wrong, copied from the app so you can find the one in front of you. A … stands for a name or number that changes.</p>
+<input class="search" type="search" data-docs-filter placeholder="Paste or type part of the message..." aria-label="Filter the messages" autocomplete="off">
+<p class="fine" data-docs-count aria-live="polite" style="margin:8px 0 0"></p>
+<section class="d-section" id="install-check"><h2>Install check</h2>
+<article class="d-entry" id="jit-cannot-be-switched-on" data-q="jit cannot be switched on this copy was signed without the “debuggable” permission (get-task-allow), which comes with a distribution or enterprise certificate. no tool can turn jit on for it. sign it with a development certificate and profile."><h5>JIT cannot be switched on</h5><p>This copy was signed without the “debuggable” permission (get-task-allow), which comes with a distribution or enterprise certificate. No tool can turn JIT on for it. Sign it with a development certificate and profile.</p></article>
+<article class="d-entry" id="jit-can-be-switched-on" data-q="jit can be switched on this copy is signed so a debugger may attach."><h5>JIT can be switched on</h5><p>This copy is signed so a debugger may attach.</p></article>
+<article class="d-entry" id="extra-memory-allowed" data-q="extra memory allowed games may use more memory than a normal app."><h5>Extra memory allowed</h5><p>Games may use more memory than a normal app.</p></article>
+<article class="d-entry" id="extra-memory-is-not-allowed" data-q="extra memory is not allowed big games may close on their own without warning."><h5>Extra memory is not allowed</h5><p>Big games may close on their own without warning.</p></article>
+<article class="d-entry" id="large-address-space-allowed" data-q="large address space allowed games can map the memory the engine reserves for them."><h5>Large address space allowed</h5><p>Games can map the memory the engine reserves for them.</p></article>
+<article class="d-entry" id="large-address-space-is-not-allowed" data-q="large address space is not allowed some games will not start, or close shortly after they do."><h5>Large address space is not allowed</h5><p>Some games will not start, or close shortly after they do.</p></article>
+<article class="d-entry" id="the-private-link-cannot-start" data-q="the private link cannot start … was signed without the “network extensions” permission, so ios will not run porthole&#x27;s own tunnel. turn on “use localdevvpn instead” and run localdevvpn, or install again without the tunnel extension to save an app id."><h5>The private link cannot start</h5><p>… was signed without the “Network Extensions” permission, so iOS will not run Porthole&#x27;s own tunnel. Turn on “Use LocalDevVPN instead” and run LocalDevVPN, or install again without the tunnel extension to save an App ID.</p></article>
+<article class="d-entry" id="the-private-link-was-signed-by-another-team" data-q="the private link was signed by another team the tunnel extension and the app were signed with different profiles, so ios will not start it. sign both with the same certificate and team."><h5>The private link was signed by another team</h5><p>The tunnel extension and the app were signed with different profiles, so iOS will not start it. Sign both with the same certificate and team.</p></article>
+<article class="d-entry" id="the-private-link-can-start" data-q="the private link can start the tunnel extension carries the network extensions permission."><h5>The private link can start</h5><p>The tunnel extension carries the Network Extensions permission.</p></article>
+<article class="d-entry" id="no-private-link-inside-this-install" data-q="no private link inside this install run localdevvpn when a tool needs the private link to switch jit on. porthole does not start its own vpn, so your own vpn is left alone."><h5>No private link inside this install</h5><p>Run LocalDevVPN when a tool needs the private link to switch JIT on. Porthole does not start its own VPN, so your own VPN is left alone.</p></article>
+<article class="d-entry" id="the-jit-helper-has-no-signature" data-q="the jit helper has no signature ios will not run the jit helper. install again so both the app and the helper are signed."><h5>The JIT helper has no signature</h5><p>iOS will not run the JIT helper. Install again so both the app and the helper are signed.</p></article>
+<article class="d-entry" id="the-jit-helper-s-profile-has-expired" data-q="the jit helper&#x27;s profile has expired sign porthole again to renew it."><h5>The JIT helper&#x27;s profile has expired</h5><p>Sign Porthole again to renew it.</p></article>
+<article class="d-entry" id="no-jit-helper-inside-this-install" data-q="no jit helper inside this install switch jit on with stikdebug or another tool. “porthole does it” is not available in this install."><h5>No JIT helper inside this install</h5><p>Switch JIT on with StikDebug or another tool. “Porthole does it” is not available in this install.</p></article>
+<article class="d-entry" id="no-download-card-extension-inside-this-install" data-q="no download card extension inside this install downloads show ios&#x27;s own download card (percentage, size and speed) instead of the one with pause and cancel buttons. it saves an app id."><h5>No download card extension inside this install</h5><p>Downloads show iOS&#x27;s own download card (percentage, size and speed) instead of the one with Pause and Cancel buttons. It saves an App ID.</p></article>
+<article class="d-entry" id="donor-memory-can-start" data-q="donor memory can start the memory host extension is inside and signed."><h5>Donor memory can start</h5><p>The Memory Host extension is inside and signed.</p></article>
+<article class="d-entry" id="no-donor-memory-extension-inside-this-install" data-q="no donor memory extension inside this install settings &gt; advanced &gt; engine options &gt; memory &gt; donor memory does nothing in this install. it saves an app id."><h5>No donor memory extension inside this install</h5><p>Settings &gt; Advanced &gt; Engine options &gt; Memory &gt; Donor memory does nothing in this install. It saves an App ID.</p></article>
+<article class="d-entry" id="donor-memory-cannot-start" data-q="donor memory cannot start the memory host extension is inside, but …, so ios will not run it. sign porthole again, or install without it to save an app id."><h5>Donor memory cannot start</h5><p>The Memory Host extension is inside, but …, so iOS will not run it. Sign Porthole again, or install without it to save an App ID.</p></article>
+<article class="d-entry" id="the-signature-has-expired" data-q="the signature has expired sign porthole again to keep opening it."><h5>The signature has expired</h5><p>Sign Porthole again to keep opening it.</p></article>
+</section>
+<section class="d-section" id="a-game-or-download-stopped"><h2>A game or download stopped</h2>
+<article class="d-entry" id="this-build-is-not-connected-to-a-community-server-so-there-i" data-q="this build is not connected to a community server, so there is nothing to compare with. "><h5>This build is not connected to a community server, so there is nothing to compare with.</h5></article>
+<article class="d-entry" id="paired-but-the-pairing-file-could-not-be-saved" data-q="paired, but the pairing file could not be saved: … "><h5>Paired, but the pairing file could not be saved: …</h5></article>
+<article class="d-entry" id="no-steam-server-could-be-reached" data-q="no steam server could be reached. "><h5>No Steam server could be reached.</h5></article>
+<article class="d-entry" id="steam-s-server-list-could-not-be-loaded" data-q="steam&#x27;s server list could not be loaded "><h5>Steam&#x27;s server list could not be loaded</h5></article>
+<article class="d-entry" id="steam-answered-with-error" data-q="steam answered … with error …. "><h5>Steam answered … with error ….</h5></article>
+<article class="d-entry" id="failed-steam-sent-it-encrypted-not-supported" data-q="failed (steam sent it encrypted; not supported) "><h5>failed (Steam sent it encrypted; not supported)</h5></article>
+<article class="d-entry" id="failed-the-download-did-not-match-steam-s-checksum-bytes-ser" data-q="failed (the download did not match steam&#x27;s checksum: … bytes served, … listed; not saved) "><h5>failed (the download did not match Steam&#x27;s checksum: … bytes served, … listed; not saved)</h5></article>
+<article class="d-entry" id="stikdebug-is-not-installed-install-it-and-try-again" data-q="stikdebug is not installed. install it and try again. "><h5>StikDebug is not installed. Install it and try again.</h5></article>
+<article class="d-entry" id="porthole-has-to-close-and-open-again-before-the-next-game-st" data-q="porthole has to close and open again before the next game starts. use close porthole on the home screen, then open it again. "><h5>Porthole has to close and open again before the next game starts. Use Close Porthole on the Home screen, then open it again.</h5></article>
+<article class="d-entry" id="file-not-found-remove-this-entry-and-add-the-game-again-with" data-q="file not found: …. remove this entry and add the game again with +. "><h5>File not found: …. Remove this entry and add the game again with +.</h5></article>
+<article class="d-entry" id="is-built-on-microsoft-s-net-framework-which-needs-wine-mono-" data-q="… is built on microsoft&#x27;s .net framework, which needs wine mono (about 42 mb). download it, then start the game again. "><h5>… is built on Microsoft&#x27;s .NET Framework, which needs Wine Mono (about 42 MB). Download it, then start the game again.</h5></article>
+<article class="d-entry" id="in-app-jit-needs-a-pairing-file-open-settings-setup-guide-to" data-q="in-app jit needs a pairing file. open settings › setup guide to import one, or choose a different jit method there. "><h5>In-app JIT needs a pairing file. Open Settings › Setup guide to import one, or choose a different JIT method there.</h5></article>
+<article class="d-entry" id="stikdebug-is-not-installed-install-it-or-choose-a-different-" data-q="stikdebug is not installed. install it, or choose a different jit method in settings › setup guide. "><h5>StikDebug is not installed. Install it, or choose a different JIT method in Settings › Setup guide.</h5></article>
+<article class="d-entry" id="jit-was-not-turned-on-within-five-minutes-try-again-or-pick-" data-q="jit was not turned on within five minutes. try again, or pick a different jit method in settings › setup guide. "><h5>JIT was not turned on within five minutes. Try again, or pick a different JIT method in Settings › Setup guide.</h5></article>
+<article class="d-entry" id="jit-pool-allocation-failed-force-quit-the-app-and-try-again" data-q="jit pool allocation failed. force-quit the app and try again. "><h5>JIT pool allocation failed. Force-quit the app and try again.</h5></article>
+<article class="d-entry" id="ios-left-too-little-room-for-this-game-on-this-start-of-port" data-q="ios left too little room for this game on this start of porthole (… mb of the … mb it needs). close porthole and open it again, then start the game: it is different each time. "><h5>iOS left too little room for this game on this start of Porthole (… MB of the … MB it needs). Close Porthole and open it again, then start the game: it is different each time.</h5></article>
+<article class="d-entry" id="ios-put-something-in-the-part-of-memory-this-game-s-program-" data-q="ios put something in the part of memory this game&#x27;s program has to load at (it needs … mb there) on this start of porthole. close porthole and open it again, then start the game: it is different each time. "><h5>iOS put something in the part of memory this game&#x27;s program has to load at (it needs … MB there) on this start of Porthole. Close Porthole and open it again, then start the game: it is different each time.</h5></article>
+<article class="d-entry" id="wineserver-failed-to-start" data-q="wineserver failed to start "><h5>wineserver failed to start</h5></article>
+<article class="d-entry" id="wine-process-failed-to-start" data-q="wine process failed to start "><h5>Wine process failed to start</h5></article>
+<article class="d-entry" id="the-files-were-not-saved-check-that-the-device-has-free-spac" data-q="the files were not saved. check that the device has free space. "><h5>The files were not saved. Check that the device has free space.</h5></article>
+<article class="d-entry" id="could-not-remove-epic-files" data-q="could not remove epic files: "><h5>Could not remove Epic files:</h5></article>
+</section>
+<section class="d-section" id="error"><h2>Error</h2>
+<article class="d-entry" id="the-iphone-sent-something-unreadable" data-q="the iphone sent something unreadable (…). "><h5>The iPhone sent something unreadable (…).</h5></article>
+<article class="d-entry" id="pairing-went-off-script" data-q="pairing went off script: …. "><h5>Pairing went off script: ….</h5></article>
+<article class="d-entry" id="the-code-was-wrong-start-again-and-type-the-new-code" data-q="the code was wrong. start again and type the new code. "><h5>The code was wrong. Start again and type the new code.</h5></article>
+<article class="d-entry" id="can-t-reach-the-compatibility-server-right-now" data-q="can&#x27;t reach the compatibility server right now. "><h5>Can&#x27;t reach the compatibility server right now.</h5></article>
+<article class="d-entry" id="that-file-is-too-big-to-be-a-bind-set" data-q="that file is too big to be a bind set. "><h5>That file is too big to be a bind set.</h5></article>
+<article class="d-entry" id="that-is-not-a-porthole-bind-set" data-q="that is not a porthole bind set. "><h5>That is not a Porthole bind set.</h5></article>
+<article class="d-entry" id="that-bind-set-was-made-by-a-newer-version-of-porthole" data-q="that bind set was made by a newer version of porthole. "><h5>That bind set was made by a newer version of Porthole.</h5></article>
+<article class="d-entry" id="that-bind-set-has-nothing-in-it" data-q="that bind set has nothing in it. "><h5>That bind set has nothing in it.</h5></article>
+<article class="d-entry" id="download-the-steam-client-first" data-q="download the steam client first. "><h5>Download the Steam client first.</h5></article>
+<article class="d-entry" id="close-the-running-game-first" data-q="close the running game first. "><h5>Close the running game first.</h5></article>
+<article class="d-entry" id="valve-s-server-did-not-give-the-file-try-again" data-q="valve&#x27;s server did not give the file. try again. "><h5>Valve&#x27;s server did not give the file. Try again.</h5></article>
+<article class="d-entry" id="the-file-did-not-match-what-was-expected-so-it-was-not-used" data-q="the file did not match what was expected, so it was not used. "><h5>The file did not match what was expected, so it was not used.</h5></article>
+<article class="d-entry" id="the-tunnel-extension-is-missing-from-this-build" data-q="the tunnel extension is missing from this build. "><h5>The tunnel extension is missing from this build.</h5></article>
+<article class="d-entry" id="ios-wouldn-t-start-the-tunnel-after-an-app-update-this-usual" data-q="ios wouldn&#x27;t start the tunnel. after an app update this usually clears by restarting the device. restart it and try again; your games and settings are not affected. "><h5>iOS wouldn&#x27;t start the tunnel. After an app update this usually clears by restarting the device. Restart it and try again; your games and settings are not affected.</h5></article>
+<article class="d-entry" id="the-tunnel-did-not-connect-allow-the-vpn-when-ios-asks-and-c" data-q="the tunnel did not connect. allow the vpn when ios asks, and check the tunnel extension is signed with a profile that has the network extension (packet tunnel) entitlement. "><h5>The tunnel did not connect. Allow the VPN when iOS asks, and check the tunnel extension is signed with a profile that has the Network Extension (packet tunnel) entitlement.</h5></article>
+<article class="d-entry" id="what-was-downloaded-is-not-the-microsoft-installer-this-app-" data-q="what was downloaded is not the microsoft installer this app expects, so it was not used. try again. "><h5>What was downloaded is not the Microsoft installer this app expects, so it was not used. Try again.</h5></article>
+<article class="d-entry" id="the-microsoft-installer-could-not-be-unpacked" data-q="the microsoft installer could not be unpacked (…). "><h5>The Microsoft installer could not be unpacked (…).</h5></article>
+<article class="d-entry" id="does-not-match-microsoft-s-original-so-it-was-not-used" data-q="… does not match microsoft&#x27;s original, so it was not used. "><h5>… does not match Microsoft&#x27;s original, so it was not used.</h5></article>
+<article class="d-entry" id="could-not-read-if-the-folder-is-in-icloud-drive-open-it-in-f" data-q="could not read “…”. if the folder is in icloud drive, open it in files and download it first (tap the cloud icon), then try again. "><h5>Could not read “…”. If the folder is in iCloud Drive, open it in Files and download it first (tap the cloud icon), then try again.</h5></article>
+<article class="d-entry" id="not-enough-free-space-the-game-needs-and-the-phone-has-free" data-q="not enough free space: the game needs … and the phone has … free. "><h5>Not enough free space: the game needs … and the phone has … free.</h5></article>
+<article class="d-entry" id="epic-download-failed-http-try-again" data-q="epic download failed (http …). try again. "><h5>Epic download failed (HTTP …). Try again.</h5></article>
+<article class="d-entry" id="could-not-reach-itch-io-check-your-connection-and-try-again" data-q="could not reach itch.io. check your connection and try again. "><h5>Could not reach itch.io. Check your connection and try again.</h5></article>
+<article class="d-entry" id="itch-io-did-not-accept-the-api-key-make-a-new-one-and-sign-i" data-q="itch.io did not accept the api key. make a new one and sign in again. "><h5>itch.io did not accept the API key. Make a new one and sign in again.</h5></article>
+<article class="d-entry" id="the-requested-path-leaves-the-external-folder" data-q="the requested path leaves the external folder. "><h5>The requested path leaves the external folder.</h5></article>
+<article class="d-entry" id="the-saved-external-drive-registration-is-invalid" data-q="the saved external drive registration is invalid. "><h5>The saved external drive registration is invalid.</h5></article>
+<article class="d-entry" id="the-external-drive-mapping-is-already-in-use-existing-files-" data-q="the external drive mapping is already in use. existing files were kept. "><h5>The external drive mapping is already in use. Existing files were kept.</h5></article>
+<article class="d-entry" id="this-is-not-the-registered-folder-select-the-original-folder" data-q="this is not the registered folder. select the original folder. "><h5>This is not the registered folder. Select the original folder.</h5></article>
+<article class="d-entry" id="the-external-drive-is-not-available-reconnect-it-and-try-aga" data-q="the external drive is not available. reconnect it and try again. "><h5>The external drive is not available. Reconnect it and try again.</h5></article>
+<article class="d-entry" id="steam-s-components-could-not-be-verified-try-downloading-the" data-q="steam&#x27;s components could not be verified. try downloading them again. "><h5>Steam&#x27;s components could not be verified. Try downloading them again.</h5></article>
+<article class="d-entry" id="existing-steam-files-need-attention-they-were-kept-use-the-d" data-q="existing steam files need attention. they were kept. use the desktop setup option. "><h5>Existing Steam files need attention. They were kept. Use the desktop setup option.</h5></article>
+<article class="d-entry" id="close-the-running-session-before-preparing-steam-s-component" data-q="close the running session before preparing steam&#x27;s components. "><h5>Close the running session before preparing Steam&#x27;s components.</h5></article>
+<article class="d-entry" id="madeira-could-not-prepare-its-windows-environment" data-q="madeira could not prepare its windows environment. "><h5>Madeira could not prepare its Windows environment.</h5></article>
+<article class="d-entry" id="reconnect-the-registered-ssd-and-try-again" data-q="reconnect the registered ssd and try again. "><h5>Reconnect the registered SSD and try again.</h5></article>
+<article class="d-entry" id="select-the-registered-folder-again-to-renew-access" data-q="select the registered folder again to renew access. "><h5>Select the registered folder again to renew access.</h5></article>
+<article class="d-entry" id="this-is-not-the-registered-library-folder-select-the-origina" data-q="this is not the registered library folder. select the original folder. "><h5>This is not the registered library folder. Select the original folder.</h5></article>
+<article class="d-entry" id="the-library-could-not-be-accessed" data-q="the library could not be accessed. "><h5>The library could not be accessed.</h5></article>
+<article class="d-entry" id="the-requested-path-leaves-the-registered-library" data-q="the requested path leaves the registered library. "><h5>The requested path leaves the registered library.</h5></article>
+<article class="d-entry" id="select-a-dedicated-folder-on-a-locally-attached-drive-cloud-" data-q="select a dedicated folder on a locally attached drive. cloud and network folders are unsupported. "><h5>Select a dedicated folder on a locally attached drive. Cloud and network folders are unsupported.</h5></article>
+<article class="d-entry" id="the-saved-library-registration-is-invalid" data-q="the saved library registration is invalid. "><h5>The saved library registration is invalid.</h5></article>
+<article class="d-entry" id="the-windows-ssd-drive-mapping-is-already-in-use-the-register" data-q="the windows ssd drive mapping is already in use. the registered library folder is unchanged. "><h5>The Windows SSD drive mapping is already in use. The registered library folder is unchanged.</h5></article>
+<article class="d-entry" id="madeira-s-jit-script-is-missing-from-this-installation-reins" data-q="madeira&#x27;s jit script is missing from this installation. reinstall madeira. "><h5>Madeira&#x27;s JIT script is missing from this installation. Reinstall Madeira.</h5></article>
+<article class="d-entry" id="madeira-could-not-create-the-stikdebug-request" data-q="madeira could not create the stikdebug request. "><h5>Madeira could not create the StikDebug request.</h5></article>
+<article class="d-entry" id="stikdebug-is-not-installed-install-it-or-configure-built-in-" data-q="stikdebug is not installed. install it, or configure built-in stikjit. "><h5>StikDebug is not installed. Install it, or configure Built-in StikJIT.</h5></article>
+<article class="d-entry" id="stikdebug-did-not-attach-to-madeira-within-90-seconds-check-" data-q="stikdebug did not attach to madeira within 90 seconds. check its pairing file and localdevvpn, then try again. "><h5>StikDebug did not attach to Madeira within 90 seconds. Check its pairing file and LocalDevVPN, then try again.</h5></article>
+<article class="d-entry" id="sign-in-to-ea-to-continue" data-q="sign in to ea to continue. "><h5>Sign in to EA to continue.</h5></article>
+<article class="d-entry" id="ea-s-server-answered-with-http-try-again-later" data-q="ea&#x27;s server answered with http …. try again later. "><h5>EA&#x27;s server answered with HTTP …. Try again later.</h5></article>
+<article class="d-entry" id="ea-s-server-declined-the-request" data-q="ea&#x27;s server declined the request: … "><h5>EA&#x27;s server declined the request: …</h5></article>
+<article class="d-entry" id="ea-sent-an-unexpected-answer" data-q="ea sent an unexpected answer (…). "><h5>EA sent an unexpected answer (…).</h5></article>
+<article class="d-entry" id="ea-has-no-pc-build-of-this-game-for-porthole-to-download" data-q="ea has no pc build of this game for porthole to download. "><h5>EA has no PC build of this game for Porthole to download.</h5></article>
+<article class="d-entry" id="the-game-s-files-downloaded-but-they-do-not-say-which-progra" data-q="the game&#x27;s files downloaded, but they do not say which program starts the game (__installer/installerdata.xml). add the game with + and choose its .exe. "><h5>The game&#x27;s files downloaded, but they do not say which program starts the game (__Installer/installerdata.xml). Add the game with + and choose its .exe.</h5></article>
+<article class="d-entry" id="ea-did-not-give-this-game-a-licence-check-that-your-account-" data-q="ea did not give this game a licence (…). check that your account owns it and try again. "><h5>EA did not give this game a licence (…). Check that your account owns it and try again.</h5></article>
+<article class="d-entry" id="not-enough-free-space-on-this-device-this-download-needs-abo" data-q="not enough free space on this device: this download needs about … more. free some space, then try again. "><h5>Not enough free space on this device: this download needs about … more. Free some space, then try again.</h5></article>
+<article class="d-entry" id="a-game-file-could-not-be-downloaded-from-ea-try-again-to-con" data-q="a game file could not be downloaded from ea (…). try again to continue. "><h5>A game file could not be downloaded from EA (…). Try again to continue.</h5></article>
+<article class="d-entry" id="ea-s-build-names-a-file-outside-the-game-s-folder" data-q="ea&#x27;s build names a file outside the game&#x27;s folder (…). "><h5>EA&#x27;s build names a file outside the game&#x27;s folder (…).</h5></article>
+<article class="d-entry" id="ea-s-build-file-is-not-a-zip-madeira-can-read-no-central-dir" data-q="ea&#x27;s build file is not a zip madeira can read (no central directory). "><h5>EA&#x27;s build file is not a zip Madeira can read (no central directory).</h5></article>
+<article class="d-entry" id="ea-s-build-file-could-not-be-read" data-q="ea&#x27;s build file could not be read (…). "><h5>EA&#x27;s build file could not be read (…).</h5></article>
+</section>
+</div>
+</main>
+<footer><div class="wrap foot">
+  <div class="foot-brand">
+    <picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night-96.webp"><img src="/img/porthole-sunset-96.webp" alt="" width="40" height="40"></picture>
+    <div><b>Porthole</b><span>Windows PC games on iPhone and iPad. A personal project.</span></div>
+  </div>
+  <nav class="foot-links" aria-label="Footer">
+    <a href="/download.html">Get it</a><a href="/changelog.html">What's new</a><a href="/gallery.html">Gallery</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/docs/">Docs</a><a href="/privacy.html">Privacy</a><a href="/trust.html">Trust</a><a href="/privacy.html#contact">Contact</a><a href="https://github.com/tylerkaska112/PortHole">GitHub</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem</a>
+  </nav>
+  <p class="fine">Not affiliated with or endorsed by Valve, Microsoft, Apple or any game publisher. Game and company names belong to their owners. Built with the help of AI.</p>
+</div></footer>
+<script src="/tools.js?v=20261052" defer></script>
+<script src="/fx.js?v=20261031" defer></script>
+<script src="/menu.js?v=20261027" defer></script>
+<script src="/docs/docs.js?v=202611092040" defer></script>
+</body>
+</html>

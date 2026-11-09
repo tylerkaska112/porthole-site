@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Every setting in Porthole | Documentation</title>
+<meta name="description" content="What each setting in Porthole does: appearance, performance, controls, Steam, storage, a game&#x27;s own page and the in-game menu. Searchable.">
+<meta name="theme-color" content="#04121A">
+<link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="canonical" href="https://portholehq.site/docs/settings.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Every setting in Porthole | Documentation">
+<meta property="og:description" content="What each setting in Porthole does: appearance, performance, controls, Steam, storage, a game&#x27;s own page and the in-game menu. Searchable.">
+<meta property="og:image" content="https://portholehq.site/img/og-image.jpg">
+<meta property="og:url" content="https://portholehq.site/docs/settings.html">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script>try{var d=document.documentElement,t=localStorage.getItem("porthole-theme");if(t){d.dataset.theme=t;if(t==="custom"){var c=JSON.parse(localStorage.getItem("porthole-custom")||"{}");for(var k in c)d.style.setProperty(k,c[k])}}}catch(e){}</script>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css?v=20261104">
+<link rel="stylesheet" href="/docs/docs.css?v=202611092040">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/"><picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night-96.webp"><img src="/img/porthole-sunset-96.webp" alt="" width="38" height="38"></picture>Porthole</a>
+  <nav aria-label="Main">
+    <a href="/#features">Features</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/docs/">Docs</a><a href="/privacy.html">Privacy</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a class="cta" href="/download.html">Get it</a>
+  </nav>
+  <details class="menu">
+    <summary aria-label="Menu"><span class="bars" aria-hidden="true"></span></summary>
+    <div class="panel" role="navigation" aria-label="Site menu">
+      <a href="/">Home</a>
+      <a href="/#features">Features</a>
+      <a href="/download.html">Get it</a>
+      <a href="/compat.html">Compatibility</a>
+      <a href="/help.html">Help</a>
+      <a href="/docs/">Docs</a>
+      <a href="/gallery.html">Gallery</a>
+      <a href="/changelog.html">What's new</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/trust.html">Trust</a>
+      <a href="/privacy.html#contact">Contact</a>
+      <span class="sep" role="separator"></span>
+      <a href="https://discord.gg/N7PkdptTFn">Discord<i aria-hidden="true">↗</i></a>
+      <a href="https://github.com/tylerkaska112/PortHole">GitHub<i aria-hidden="true">↗</i></a>
+      <a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem<i aria-hidden="true">↗</i></a>
+    </div>
+  </details>
+</div></header>
+<main id="main">
+<div class="wrap page doc docs">
+<p class="eyebrow">Documentation</p>
+<h1>Every setting in Porthole</h1>
+<nav class="d-nav" aria-label="Documentation"><a href="/docs/">Search</a><a href="/docs/settings.html" aria-current="page">Settings</a><a href="/docs/engine-lines.html">Engine lines</a><a href="/docs/errors.html">Errors and log lines</a><a href="/docs/messages.html">Messages</a></nav>
+<p class="lede">What each switch, slider and button in the app does, in the order the app shows them. Search for a word from its name, or from what you want to change.</p>
+<input class="search" type="search" data-docs-filter placeholder="Filter: swap, controller, power, drive..." aria-label="Filter the settings" autocomplete="off">
+<p class="fine" data-docs-count aria-live="polite" style="margin:8px 0 0"></p>
+<ul class="d-toc">
+<li><a href="#settings">Settings</a></li>
+<li><a href="#a-game-s-own-page">A game&#x27;s own page</a></li>
+<li><a href="#reports">Reports</a></li>
+<li><a href="#steam">Steam</a></li>
+<li><a href="#stores">Stores</a></li>
+<li><a href="#library">Library</a></li>
+<li><a href="#other-screens">Other screens</a></li>
+</ul>
+<section class="d-section" id="settings"><h2>Settings</h2>
+<div class="d-block" id="settings-advanced"><h3>Advanced</h3>
+<h4>Options</h4>
+<article class="d-entry" id="advanced-options-show-technical-options" data-q="settings advanced options show technical options shows swap and video memory, shader math, tunnel and jit status, and technical readouts. most people never need them."><h5>Show technical options <span class="tag">Toggle</span></h5><p>Shows swap and video memory, shader math, tunnel and JIT status, and technical readouts. Most people never need them.</p></article>
+<article class="d-entry" id="advanced-options-bigger-code-pool-when-the-game-allows-it" data-q="settings advanced options bigger code pool when the game allows it the emulator keeps a stretch of memory free for the rare game that can only load at one fixed address. when none of a game&#x27;s programs needs it, this gives it back so the code pool can be larger (fewer freezes in big games). turn it off to go back to the previous behaviour if a game that started before no longer does."><h5>Bigger code pool when the game allows it <span class="tag">Toggle</span></h5><p>The emulator keeps a stretch of memory free for the rare game that can only load at one fixed address. When none of a game&#x27;s programs needs it, this gives it back so the code pool can be larger (fewer freezes in big games). Turn it off to go back to the previous behaviour if a game that started before no longer does.</p></article>
+</div>
+<div class="d-block" id="settings-components"><h3>Components</h3>
+<h4>Runtimes</h4>
+<p class="d-note">Programs many games need and Windows would normally have. Each is a one-time download, checked against a fixed fingerprint before it is used.</p>
+<article class="d-entry" id="components-runtimes-visual-c-runtime" data-q="settings components runtimes visual c++ runtime microsoft&#x27;s runtime that many games need. about 25 mb, downloaded from microsoft&#x27;s own installer and checked against a fixed fingerprint before anything is used. without it some games won&#x27;t start."><h5>Visual C++ runtime <span class="tag">Action</span></h5><p>Microsoft&#x27;s runtime that many games need. About 25 MB, downloaded from Microsoft&#x27;s own installer and checked against a fixed fingerprint before anything is used. Without it some games won&#x27;t start.</p></article>
+<article class="d-entry" id="components-runtimes-remove-the-downloaded-copy" data-q="settings components runtimes remove the downloaded copy "><h5>Remove the downloaded copy <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="components-runtimes-net-framework-wine-mono" data-q="settings components runtimes .net framework (wine mono) games built on microsoft&#x27;s .net framework (celeste, many indie games and launchers) run on wine mono, the wine project&#x27;s open-source .net runtime. about 42 mb from winehq, about 130 mb once installed, checked against a fixed fingerprint before use. without it those games end as soon as they start."><h5>.NET Framework (Wine Mono) <span class="tag">Action</span></h5><p>Games built on Microsoft&#x27;s .NET Framework (Celeste, many indie games and launchers) run on Wine Mono, the Wine project&#x27;s open-source .NET runtime. About 42 MB from WineHQ, about 130 MB once installed, checked against a fixed fingerprint before use. Without it those games end as soon as they start.</p></article>
+<article class="d-entry" id="components-runtimes-remove-wine-mono" data-q="settings components runtimes remove wine mono "><h5>Remove Wine Mono <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="components-runtimes-32-bit-visual-c-runtime" data-q="settings components runtimes 32-bit visual c++ runtime microsoft&#x27;s c++ runtime for 32-bit programs (older games, many launchers). without it they run on wine&#x27;s own c++ runtime. about 14 mb from microsoft&#x27;s installer, checked against a pinned fingerprint and unpacked here; every file is checked again. not allowed while a game is running."><h5>32-bit Visual C++ runtime <span class="tag">Action</span></h5><p>Microsoft&#x27;s C++ runtime for 32-bit programs (older games, many launchers). Without it they run on Wine&#x27;s own C++ runtime. About 14 MB from Microsoft&#x27;s installer, checked against a pinned fingerprint and unpacked here; every file is checked again. Not allowed while a game is running.</p></article>
+<article class="d-entry" id="components-runtimes-remove-the-32-bit-runtime" data-q="settings components runtimes remove the 32-bit runtime "><h5>Remove the 32-bit runtime <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="components-runtimes-web-pages-in-programs-wine-gecko" data-q="settings components runtimes web pages in programs (wine gecko) installers and launchers that show a web page use wine gecko, the wine project&#x27;s open-source web engine. about 110 mb from winehq (a 32-bit and a 64-bit file), checked against fixed fingerprints before use. without it wine stops on its own “wine gecko installer” window, whose download can hang. programs that already installed it keep it."><h5>Web pages in programs (Wine Gecko) <span class="tag">Action</span></h5><p>Installers and launchers that show a web page use Wine Gecko, the Wine project&#x27;s open-source web engine. About 110 MB from WineHQ (a 32-bit and a 64-bit file), checked against fixed fingerprints before use. Without it Wine stops on its own “Wine Gecko Installer” window, whose download can hang. Programs that already installed it keep it.</p></article>
+<article class="d-entry" id="components-runtimes-remove-wine-gecko" data-q="settings components runtimes remove wine gecko "><h5>Remove Wine Gecko <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="settings-links"><h3>Links</h3>
+<h4>Links</h4>
+<p class="d-note">A porthole:// link can start a game from a Home Screen shortcut, a web page or another app.</p>
+<article class="d-entry" id="links-links-ask-before-a-link-starts-a-game" data-q="settings links links ask before a link starts a game a porthole://play link (a home screen shortcut, a web page, another app) starts a game that is in your library. with this on, porthole asks first, so a link you did not expect cannot start one. links from a computer you have paired are not asked."><h5>Ask before a link starts a game <span class="tag">Toggle</span></h5><p>A porthole://play link (a Home Screen shortcut, a web page, another app) starts a game that is in your library. With this on, Porthole asks first, so a link you did not expect cannot start one. Links from a computer you have paired are not asked.</p></article>
+<h4>Remote control</h4>
+<p class="d-note">For testing from a computer. Leave this off normally.</p>
+<article class="d-entry" id="links-remote-control-allow-remote-control-links" data-q="settings links remote control allow remote-control links lets porthole:// links stop an ended game, change one setting line of a game, or install the newest update. for testing from a computer (tools/ipad.sh). leave off normally: any app or web page that can open a link could use them."><h5>Allow remote-control links <span class="tag">Toggle</span></h5><p>Lets porthole:// links stop an ended game, change one setting line of a game, or install the newest update. For testing from a computer (tools/ipad.sh). Leave off normally: any app or web page that can open a link could use them.</p></article>
+</div>
+<div class="d-block" id="settings-diagnostics"><h3>Diagnostics</h3>
+<h4>Debugging</h4>
+<p class="d-note">For finding out why something looks or behaves wrong. Leave these off normally.</p>
+<article class="d-entry" id="diagnostics-debugging-save-window-pictures" data-q="settings diagnostics debugging save window pictures saves a picture of every windows window about every 2 seconds to files &gt; porthole &gt; surfdump. use them to report a window that looks wrong. leave off normally."><h5>Save window pictures <span class="tag">Toggle</span></h5><p>Saves a picture of every Windows window about every 2 seconds to Files &gt; Porthole &gt; surfdump. Use them to report a window that looks wrong. Leave off normally.</p></article>
+<article class="d-entry" id="diagnostics-debugging-wine-debug-channels" data-q="settings diagnostics debugging wine debug channels advanced: records extra wine messages in the log (for example +msg for window messages). leave empty normally."><h5>Wine debug channels <span class="tag">TextField</span></h5><p>Advanced: records extra Wine messages in the log (for example +msg for window messages). Leave empty normally.</p></article>
+</div>
+<div class="d-block" id="settings-engine-group"><h3>Engine Group</h3>
+<h4>Keys for Porthole</h4>
+<p class="d-note">Tap a row, then press the key you want (hold Ctrl, Alt, Shift or Cmd with it for a combination). Esc cancels. Ctrl+Alt+M and Ctrl+Alt+P always work as well, so a key you cannot press never locks you out.</p>
+<article class="d-entry" id="engine-group-keys-for-porthole-open-porthole-s-menu-in-a-game" data-q="settings engine group keys for porthole open porthole&#x27;s menu in a game "><h5>Open Porthole&#x27;s menu in a game <span class="tag">Keybind</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="engine-group-keys-for-porthole-lock-or-free-the-pointer" data-q="settings engine group keys for porthole lock or free the pointer "><h5>Lock or free the pointer <span class="tag">Keybind</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Try it</h4>
+<article class="d-entry" id="engine-group-try-it-test-controller-rumble" data-q="settings engine group try it test controller rumble "><h5>Test controller rumble <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="settings-engine-changed"><h3>Engine Changed</h3>
+<article class="d-entry" id="engine-changed-put-every-option-back-to-default" data-q="settings engine changed  put every option back to default "><h5>Put every option back to Default <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="settings-report-problem"><h3>Report Problem</h3>
+<h4>My reports</h4>
+<article class="d-entry" id="report-problem-my-reports-check-for-answers" data-q="settings report problem my reports check for answers "><h5>Check for answers <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>A game ended unexpectedly</h4>
+<article class="d-entry" id="report-problem-a-game-ended-unexpectedly-include-the-crash-of" data-q="settings report problem a game ended unexpectedly include the crash of … found when porthole opened again, …. its log was kept, so the report has the run that ended and not the launch that followed."><h5>Include the crash of … <span class="tag">Toggle</span></h5><p>Found when Porthole opened again, …. Its log was kept, so the report has the run that ended and not the launch that followed.</p></article>
+<h4>What went wrong</h4>
+<article class="d-entry" id="report-problem-what-went-wrong-in-a-sentence" data-q="settings report problem what went wrong in a sentence "><h5>In a sentence <span class="tag">TextField</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>What is in the file</h4>
+<article class="d-entry" id="report-problem-what-is-in-the-file-the-whole-log-of-the-run-recommended" data-q="settings report problem what is in the file the whole log of the run (recommended) the log says what the app and the engine did, from the start of the run to its end. it is a few megabytes and is sent packed. folder names inside the app, your account names, e-mail addresses and public ip addresses are replaced before it is written or sent. fingerprints and technical lines stay, because they are what is looked at."><h5>The whole log of the run (recommended) <span class="tag">Toggle</span></h5><p>The log says what the app and the engine did, from the start of the run to its end. It is a few megabytes and is sent packed. Folder names inside the app, your account names, e-mail addresses and public IP addresses are replaced before it is written or sent. Fingerprints and technical lines stay, because they are what is looked at.</p></article>
+<article class="d-entry" id="report-problem-what-is-in-the-file-look-at-exactly-what-would-be-shared" data-q="settings report problem what is in the file look at exactly what would be shared "><h5>Look at exactly what would be shared <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Send it</h4>
+<article class="d-entry" id="report-problem-send-it-open-an-issue-on-github" data-q="settings report problem send it open an issue on github attach the file to it"><h5>Open an issue on GitHub <span class="tag">Action</span></h5><p>Attach the file to it</p></article>
+<article class="d-entry" id="report-problem-send-it-ask-on-discord" data-q="settings report problem send it ask on discord there are support channels"><h5>Ask on Discord <span class="tag">Action</span></h5><p>There are support channels</p></article>
+</div>
+<div class="d-block" id="settings-problem-entry"><h3>Problem Entry</h3>
+<h4>What you sent</h4>
+<article class="d-entry" id="problem-entry-what-you-sent-withdraw-this-report" data-q="settings problem entry what you sent withdraw this report "><h5>Withdraw this report <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="settings-saves"><h3>Saves</h3>
+<h4>Backup</h4>
+<article class="d-entry" id="saves-backup-back-up-saves" data-q="settings saves backup back up saves one zip of every windows user&#x27;s documents, saved games and appdata (caches and steam&#x27;s own files left out), to keep in files or icloud drive. a prefix reset or a reinstall takes saves with it; a backup does not."><h5>Back up saves <span class="tag">Action</span></h5><p>One zip of every Windows user&#x27;s Documents, Saved Games and AppData (caches and Steam&#x27;s own files left out), to keep in Files or iCloud Drive. A prefix reset or a reinstall takes saves with it; a backup does not.</p></article>
+<article class="d-entry" id="saves-backup-restore-saves-from-a-backup" data-q="settings saves backup restore saves from a backup… "><h5>Restore saves from a backup… <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Automatic backups</h4>
+<article class="d-entry" id="saves-automatic-backups-back-up-after-each-game" data-q="settings saves automatic backups back up after each game when a game ends, your saves and settings are zipped into files &gt; porthole &gt; saves backups. the newest five are kept, and nothing is written when nothing has changed, when the saves are over 150 mb, or when the phone is nearly out of space."><h5>Back up after each game <span class="tag">Toggle</span></h5><p>When a game ends, your saves and settings are zipped into Files &gt; Porthole &gt; Saves backups. The newest five are kept, and nothing is written when nothing has changed, when the saves are over 150 MB, or when the phone is nearly out of space.</p></article>
+<article class="d-entry" id="saves-automatic-backups-back-up-now" data-q="settings saves automatic backups back up now "><h5>Back up now <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="saves-automatic-backups-delete-the-automatic-backups" data-q="settings saves automatic backups delete the automatic backups "><h5>Delete the automatic backups <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="settings-updates"><h3>Updates</h3>
+<h4>This app</h4>
+<p class="d-note">The version you are on and whether a newer one is ready.</p>
+<article class="d-entry" id="updates-this-app-check-for-updates" data-q="settings updates this app check for updates "><h5>Check for updates <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="updates-this-app-update-to" data-q="settings updates this app update to … "><h5>Update to … <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="updates-this-app-download" data-q="settings updates this app download … "><h5>Download … <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Signing</h4>
+<p class="d-note">The certificate and profile used to install and update. A free Apple account&#x27;s signature lasts seven days.</p>
+<article class="d-entry" id="updates-signing-what-is-this" data-q="settings updates signing what is this? why the app needs a certificate and a profile to update itself"><h5>What is this? <span class="tag">Action</span></h5><p>Why the app needs a certificate and a profile to update itself</p></article>
+<article class="d-entry" id="updates-signing-import-a-certificate-p12" data-q="settings updates signing import a certificate (.p12) "><h5>Import a certificate (.p12) <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="updates-signing-import-a-profile-mobileprovision" data-q="settings updates signing import a profile (.mobileprovision) "><h5>Import a profile (.mobileprovision) <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Versions</h4>
+<p class="d-note">Every build on the update server, so you can go back to an older one.</p>
+<article class="d-entry" id="updates-versions-open-the-releases-on-github" data-q="settings updates versions open the releases on github "><h5>Open the releases on GitHub <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="updates-versions-update-available" data-q="settings updates versions update available …. tap to see everything since … (…)."><h5>Update available <span class="tag">Action</span></h5><p>…. Tap to see everything since … (…).</p></article>
+<article class="d-entry" id="updates-versions-dismiss" data-q="settings updates versions dismiss "><h5>Dismiss <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="settings-reports-settings"><h3>Reports Settings</h3>
+<h4>Reports tab</h4>
+<p class="d-note">How your games run on this version of the engine, what other people reported, and the reports you sent.</p>
+<article class="d-entry" id="reports-settings-reports-tab-open-the-reports-tab" data-q="settings reports settings reports tab open the reports tab your games and everything people reported"><h5>Open the Reports tab <span class="tag">Action</span></h5><p>Your games and everything people reported</p></article>
+<article class="d-entry" id="reports-settings-reports-tab-my-reports" data-q="settings reports settings reports tab my reports "><h5>My reports <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Badges</h4>
+<p class="d-note">Small marks on games that show how they ran for other people.</p>
+<article class="d-entry" id="reports-settings-badges-show-compatibility-badges" data-q="settings reports settings badges show compatibility badges badges come from reports other people sent. after a game you can send one yourself; it takes under a minute."><h5>Show compatibility badges <span class="tag">Toggle</span></h5><p>Badges come from reports other people sent. After a game you can send one yourself; it takes under a minute.</p></article>
+<article class="d-entry" id="reports-settings-badges-ask-me-how-a-game-ran" data-q="settings reports settings badges ask me how a game ran "><h5>Ask me how a game ran <span class="tag">Toggle</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Privacy</h4>
+<p class="d-note">Reports carry a random key kept on this device, not your name, and the game&#x27;s log, which only the developer can read.</p>
+<article class="d-entry" id="reports-settings-privacy-forget-my-reporting-identity" data-q="settings reports settings privacy forget my reporting identity reports are tied to a random key kept on this device, not to you. forgetting it starts fresh: your old reports stay up but you can no longer edit or delete them."><h5>Forget my reporting identity <span class="tag">Action</span></h5><p>Reports are tied to a random key kept on this device, not to you. Forgetting it starts fresh: your old reports stay up but you can no longer edit or delete them.</p></article>
+</div>
+<div class="d-block" id="settings-log"><h3>Log</h3>
+<h4>Log</h4>
+<p class="d-note">What Porthole and the engine wrote during the last run. Report a problem sends it for you.</p>
+<article class="d-entry" id="log-log-read-the-log" data-q="settings log log read the log newest first. share it from the files app: porthole &gt; madeira-log.txt"><h5>Read the log <span class="tag">Action</span></h5><p>Newest first. Share it from the Files app: Porthole &gt; madeira-log.txt</p></article>
+</div>
+<div class="d-block" id="settings-licences"><h3>Licences</h3>
+<h4>Porthole</h4>
+<article class="d-entry" id="licences-porthole-source-code-online" data-q="settings licences porthole source code online "><h5>Source code online <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="licences-porthole-project-website" data-q="settings licences porthole project website portholehq.site"><h5>Project website <span class="tag">Action</span></h5><p>portholehq.site</p></article>
+<h4>Built on</h4>
+<article class="d-entry" id="licences-built-on-licence-texts" data-q="settings licences built on licence texts the licences of the parts it is built from"><h5>Licence texts <span class="tag">Action</span></h5><p>The licences of the parts it is built from</p></article>
+</div>
+<div class="d-block" id="settings-appearance"><h3>Appearance</h3>
+<h4>Festive</h4>
+<p class="d-note">Holiday looks that appear by themselves around the day.</p>
+<article class="d-entry" id="appearance-festive-festive-themes" data-q="settings appearance festive festive themes porthole dresses up for some holidays by the date. turn this off to keep your own colours all year."><h5>Festive themes <span class="tag">Toggle</span></h5><p>Porthole dresses up for some holidays by the date. Turn this off to keep your own colours all year.</p></article>
+<h4>Glow and motion</h4>
+<p class="d-note">How lively the app looks. Turning these down saves a little battery.</p>
+<article class="d-entry" id="appearance-glow-and-motion-glow" data-q="settings appearance glow and motion glow how strong the light around the selected thing is. off turns the glow and the soft lights in the background down."><h5>Glow <span class="tag">Choice</span></h5><p>How strong the light around the selected thing is. Off turns the glow and the soft lights in the background down.</p></article>
+<article class="d-entry" id="appearance-glow-and-motion-moving-background" data-q="settings appearance glow and motion moving background the soft coloured lights behind every screen drift slowly. turn this off to save a little battery."><h5>Moving background <span class="tag">Toggle</span></h5><p>The soft coloured lights behind every screen drift slowly. Turn this off to save a little battery.</p></article>
+</div>
+<div class="d-block" id="settings-display"><h3>Display</h3>
+<h4>Picture</h4>
+<p class="d-note">What every game starts with. A game&#x27;s own page can change it for that game.</p>
+<article class="d-entry" id="display-picture-resolution" data-q="settings display picture resolution the size of the screen games see. higher is sharper but needs more memory and a faster device; lower is faster. games that pick their own resolution can choose any size up to this one, and the picture is scaled to your screen. each game can have its own on its page. applies the next time a game starts."><h5>Resolution <span class="tag">Choice</span></h5><p>The size of the screen games see. Higher is sharper but needs more memory and a faster device; lower is faster. Games that pick their own resolution can choose any size up to this one, and the picture is scaled to your screen. Each game can have its own on its page. Applies the next time a game starts.</p></article>
+</div>
+<div class="d-block" id="settings-performance"><h3>Performance</h3>
+<h4>Power</h4>
+<p class="d-note">How fast games run and what happens when the device gets hot.</p>
+<article class="d-entry" id="performance-power-power-mode" data-q="settings performance power power mode …. by default a game drops to battery saver (30 fps and eco) by itself when the device gets hot. each game can pick its own on its page."><h5>Power mode <span class="tag">Choice</span></h5><p>…. By default a game drops to Battery saver (30 FPS and Eco) by itself when the device gets hot. Each game can pick its own on its page.</p></article>
+<article class="d-entry" id="performance-power-keep-a-game-running-in-the-background" data-q="settings performance power keep a game running in the background "><h5>Keep a game running in the background <span class="tag">EngineChoice</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="performance-power-keep-my-mode-when-hot" data-q="settings performance power keep my mode when hot stops the automatic drop when the device gets hot. eco mode puts the game on the slow cores, so loading can crawl; this keeps full speed instead, and the device may get hotter and drain faster."><h5>Keep my mode when hot <span class="tag">Toggle</span></h5><p>Stops the automatic drop when the device gets hot. Eco mode puts the game on the slow cores, so loading can crawl; this keeps full speed instead, and the device may get hotter and drain faster.</p></article>
+<h4>Graphics</h4>
+<p class="d-note">Picture choices that cost speed.</p>
+<article class="d-entry" id="performance-graphics-precise-shader-math" data-q="settings performance graphics precise shader math exact lighting math instead of fast approximations. off is faster."><h5>Precise shader math <span class="tag">Toggle</span></h5><p>Exact lighting math instead of fast approximations. Off is faster.</p></article>
+<article class="d-entry" id="performance-graphics-keep-compiled-pipelines" data-q="settings performance graphics keep compiled pipelines "><h5>Keep compiled pipelines <span class="tag">EngineChoice</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Memory</h4>
+<p class="d-note">For games that run out of memory. Most people never change these.</p>
+<article class="d-entry" id="performance-memory-swap" data-q="settings performance memory swap ios has no swap and closes an app that uses too much memory. swap keeps big chunks of game data in a file on the device&#x27;s storage instead, where ios doesn&#x27;t count them, so a memory-hungry game can survive. it uses storage and can be slower."><h5>Swap <span class="tag">Choice</span></h5><p>iOS has no swap and closes an app that uses too much memory. Swap keeps big chunks of game data in a file on the device&#x27;s storage instead, where iOS doesn&#x27;t count them, so a memory-hungry game can survive. It uses storage and can be slower.</p></article>
+<article class="d-entry" id="performance-memory-what-swap-covers" data-q="settings performance memory what swap covers "><h5>What swap covers <span class="tag">Choice</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="performance-memory-video-memory" data-q="settings performance memory video memory "><h5>Video memory <span class="tag">Choice</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="settings-controls"><h3>Controls</h3>
+<h4>First person</h4>
+<p class="d-note">Looking around by dragging on the screen.</p>
+<article class="d-entry" id="controls-first-person-look-sensitivity" data-q="settings controls first person look sensitivity how fast dragging on the screen turns the view in first-person games. a game can set its own on its page, and the in-game menu has quick faster and slower buttons."><h5>Look sensitivity <span class="tag">Slider</span></h5><p>How fast dragging on the screen turns the view in first-person games. A game can set its own on its page, and the in-game Menu has quick Faster and Slower buttons.</p></article>
+</div>
+<div class="d-block" id="settings-sound"><h3>Sound</h3>
+<h4>Audio</h4>
+<p class="d-note">Applies the next time a game starts.</p>
+<article class="d-entry" id="sound-audio-audio-buffer" data-q="settings sound audio audio buffer extra buffered sound, in milliseconds. bigger means fewer crackles but effects lag a little more. applies on the next game start."><h5>Audio buffer <span class="tag">Choice</span></h5><p>Extra buffered sound, in milliseconds. Bigger means fewer crackles but effects lag a little more. Applies on the next game start.</p></article>
+<article class="d-entry" id="sound-audio-game-volume" data-q="settings sound audio game volume "><h5>Game volume <span class="tag">EngineChoice</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="sound-audio-bring-sound-back-after-a-call" data-q="settings sound audio bring sound back after a call "><h5>Bring sound back after a call <span class="tag">EngineChoice</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="settings-connection"><h3>Connection</h3>
+<h4>How JIT is switched on</h4>
+<p class="d-note">JIT lets the emulator run at full speed. It has to be switched on every time a game starts.</p>
+<article class="d-entry" id="connection-how-jit-is-switched-on-jit-method" data-q="settings connection how jit is switched on jit method "><h5>JIT method <span class="tag">Choice</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Pairing file</h4>
+<article class="d-entry" id="connection-pairing-file-get-a-pairing-file-on-this-device" data-q="settings connection pairing file get a pairing file on this device "><h5>Get a pairing file on this device <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Tunnel</h4>
+<p class="d-note">The private connection the JIT helper uses to reach this device.</p>
+<article class="d-entry" id="connection-tunnel-use-localdevvpn-instead" data-q="settings connection tunnel use localdevvpn instead does not start this app&#x27;s own tunnel. localdevvpn (or another vpn with the same 10.7.0.x addresses) has to be switched on before you press play; it keeps running while the game does. turn this on if the app&#x27;s own tunnel sometimes fails to come up. off: the app starts and stops its own tunnel, which replaces any other vpn while it is on."><h5>Use LocalDevVPN instead <span class="tag">Toggle</span></h5><p>Does not start this app&#x27;s own tunnel. LocalDevVPN (or another VPN with the same 10.7.0.x addresses) has to be switched on before you press Play; it keeps running while the game does. Turn this on if the app&#x27;s own tunnel sometimes fails to come up. Off: the app starts and stops its own tunnel, which replaces any other VPN while it is on.</p></article>
+<h4>Your own VPN</h4>
+<p class="d-note">iOS runs one VPN at a time, so yours is paused while JIT is switched on.</p>
+<article class="d-entry" id="connection-your-own-vpn-ask-before-pausing-it" data-q="settings connection your own vpn ask before pausing it ios runs one vpn at a time, so porthole&#x27;s tunnel switches yours off while a game starts or an update installs. with this on, porthole asks first."><h5>Ask before pausing it <span class="tag">Toggle</span></h5><p>iOS runs one VPN at a time, so Porthole&#x27;s tunnel switches yours off while a game starts or an update installs. With this on, Porthole asks first.</p></article>
+<article class="d-entry" id="connection-your-own-vpn-shortcut-to-turn-it-back-on" data-q="settings connection your own vpn shortcut to turn it back on ios does not let an app start another app&#x27;s vpn. to get it back automatically: open the shortcuts app, make a shortcut with one action, set vpn (choose your vpn, then connect), and type its exact name here. when your game closes or the update is done, porthole runs it, then returns here. leave this empty and porthole just reminds you. a vpn with connect on demand switched on in its own app comes back by itself."><h5>Shortcut to turn it back on <span class="tag">TextField</span></h5><p>iOS does not let an app start another app&#x27;s VPN. To get it back automatically: open the Shortcuts app, make a shortcut with one action, Set VPN (choose your VPN, then Connect), and type its exact name here. When your game closes or the update is done, Porthole runs it, then returns here. Leave this empty and Porthole just reminds you. A VPN with Connect On Demand switched on in its own app comes back by itself.</p></article>
+<article class="d-entry" id="connection-your-own-vpn-turn-it-back-on-as-soon-as-jit-is-on" data-q="settings connection your own vpn turn it back on as soon as jit is on with a shortcut above, your vpn comes back right after jit is switched on, before the game starts, instead of when the game closes. use this on a network that blocks steam, so the game&#x27;s steam sign-in goes through your vpn. porthole leaves the app for a moment to run the shortcut, as it does for cellular data."><h5>Turn it back on as soon as JIT is on <span class="tag">Toggle</span></h5><p>With a shortcut above, your VPN comes back right after JIT is switched on, before the game starts, instead of when the game closes. Use this on a network that blocks Steam, so the game&#x27;s Steam sign-in goes through your VPN. Porthole leaves the app for a moment to run the shortcut, as it does for cellular data.</p></article>
+<article class="d-entry" id="connection-your-own-vpn-make-the-shortcut" data-q="settings connection your own vpn make the shortcut shortcuts can&#x27;t be created for you: ios only accepts shortcut files signed by apple, and the set vpn action has to point at your own vpn, which only you can pick. this opens a new, empty shortcut. tap add action, search for set vpn, choose your vpn and set it to connect, then tap the name at the top and call it porthole vpn. porthole fills in that name for you."><h5>Make the shortcut <span class="tag">Action</span></h5><p>Shortcuts can&#x27;t be created for you: iOS only accepts shortcut files signed by Apple, and the Set VPN action has to point at your own VPN, which only you can pick. This opens a new, empty shortcut. Tap Add Action, search for Set VPN, choose your VPN and set it to Connect, then tap the name at the top and call it Porthole VPN. Porthole fills in that name for you.</p></article>
+<h4>Cellular data</h4>
+<p class="d-note">The private connection does not work while cellular data is the network in use.</p>
+<article class="d-entry" id="connection-cellular-data-switch-cellular-data-off-when-needed" data-q="settings connection cellular data switch cellular data off when needed porthole&#x27;s private connection (jit, and installing an update on this device) does not work while cellular data is the network in use. it needs no internet, so with this on, porthole asks, switches cellular data off for a few seconds with a shortcut, and switches it back on as soon as it is done. on wi-fi nothing happens."><h5>Switch cellular data off when needed <span class="tag">Toggle</span></h5><p>Porthole&#x27;s private connection (JIT, and installing an update on this device) does not work while cellular data is the network in use. It needs no internet, so with this on, Porthole asks, switches cellular data off for a few seconds with a Shortcut, and switches it back on as soon as it is done. On Wi-Fi nothing happens.</p></article>
+<article class="d-entry" id="connection-cellular-data-add-the-two-shortcuts" data-q="settings connection cellular data add the two shortcuts ios only lets an app switch cellular data through a shortcut with the action set cellular data. these two are bundled with porthole, signed so ios accepts them, and contain only that one action. do not rename them."><h5>Add the two shortcuts <span class="tag">Action</span></h5><p>iOS only lets an app switch cellular data through a Shortcut with the action Set Cellular Data. These two are bundled with Porthole, signed so iOS accepts them, and contain only that one action. Do not rename them.</p></article>
+<article class="d-entry" id="connection-cellular-data-test-the-shortcuts" data-q="settings connection cellular data test the shortcuts a quick check that both shortcuts are added and allowed, so the first real use does not stop to ask. it works on wi-fi too."><h5>Test the shortcuts <span class="tag">Action</span></h5><p>A quick check that both shortcuts are added and allowed, so the first real use does not stop to ask. It works on Wi-Fi too.</p></article>
+<h4>Troubleshooting</h4>
+<p class="d-note">If Play says the tunnel will not connect.</p>
+<article class="d-entry" id="connection-troubleshooting-reset-the-tunnel" data-q="settings connection troubleshooting reset the tunnel if play says the tunnel won&#x27;t connect, this deletes the app&#x27;s vpn setting and makes a fresh one. your games and settings are not touched. ios asks you to allow the vpn again."><h5>Reset the tunnel <span class="tag">Action</span></h5><p>If Play says the tunnel won&#x27;t connect, this deletes the app&#x27;s VPN setting and makes a fresh one. Your games and settings are not touched. iOS asks you to allow the VPN again.</p></article>
+<h4>Status</h4>
+<article class="d-entry" id="connection-status-enable-jit" data-q="settings connection status enable jit "><h5>Enable JIT <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="connection-status-turn-the-tunnel-off" data-q="settings connection status turn the tunnel off "><h5>Turn the tunnel off <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="connection-status-turn-the-tunnel-on" data-q="settings connection status turn the tunnel on "><h5>Turn the tunnel on <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="settings-steam-settings"><h3>Steam Settings</h3>
+<h4>Account</h4>
+<article class="d-entry" id="steam-settings-account-open-your-steam-library" data-q="settings steam settings account open your steam library "><h5>Open your Steam library <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="steam-settings-account-sign-out" data-q="settings steam settings account sign out "><h5>Sign out <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="steam-settings-account-sign-in-to-steam" data-q="settings steam settings account sign in to steam "><h5>Sign in to Steam <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Steam Big Picture</h4>
+<p class="d-note">Valve&#x27;s own gamepad interface, running inside Porthole. An experiment: Madeira leaves it out of its releases because it is heavy and not finished.</p>
+<article class="d-entry" id="steam-settings-steam-big-picture-start-steam-big-picture" data-q="settings steam settings steam big picture start steam big picture starts valve&#x27;s real steam client in big picture mode inside the wine desktop, so you can browse steam the way it looks on a console. it needs the steam client above. the first start downloads valve&#x27;s client (a few hundred mb) from valve into a folder of its own, and takes a few minutes. it uses a lot of memory (a 4 gb swap file and 4 gb of donor ram are asked for), the screen can be slow and steam may take a while to appear. your games are not changed. madeira itself calls this unfinished."><h5>Start Steam Big Picture <span class="tag">Action</span></h5><p>Starts Valve&#x27;s real Steam client in Big Picture mode inside the Wine desktop, so you can browse Steam the way it looks on a console. It needs the Steam client above. The first start downloads Valve&#x27;s client (a few hundred MB) from Valve into a folder of its own, and takes a few minutes. It uses a lot of memory (a 4 GB swap file and 4 GB of donor RAM are asked for), the screen can be slow and Steam may take a while to appear. Your games are not changed. Madeira itself calls this unfinished.</p></article>
+<h4>Steam client</h4>
+<p class="d-note">Valve&#x27;s own files, which start Steam games and check your licence.</p>
+<article class="d-entry" id="steam-settings-steam-client-steam-client" data-q="settings steam settings steam client steam client valve&#x27;s own client files start your steam games and check your licence. about 73 mb from valve; nothing else is installed."><h5>Steam client <span class="tag">Action</span></h5><p>Valve&#x27;s own client files start your Steam games and check your licence. About 73 MB from Valve; nothing else is installed.</p></article>
+<article class="d-entry" id="steam-settings-steam-client-steam-controller-support" data-q="settings steam settings steam client steam controller support "><h5>Steam controller support <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Steam Cloud</h4>
+<p class="d-note">Your game saves on Steam&#x27;s servers.</p>
+<article class="d-entry" id="steam-settings-steam-cloud-download-my-cloud-saves-before-a-game-starts" data-q="settings steam settings steam cloud download my cloud saves before a game starts before a game starts through steam, porthole downloads your own steam cloud files for it (such as world saves) if they are missing here. it only reads from steam: nothing is uploaded, and a newer file on this device is never replaced."><h5>Download my cloud saves before a game starts <span class="tag">Toggle</span></h5><p>Before a game starts through Steam, Porthole downloads your own Steam Cloud files for it (such as world saves) if they are missing here. It only reads from Steam: nothing is uploaded, and a newer file on this device is never replaced.</p></article>
+<h4>Game storage</h4>
+<p class="d-note">Where Steam games are saved.</p>
+<article class="d-entry" id="steam-settings-game-storage-new-downloads-go-to-the-ssd" data-q="settings steam settings game storage new downloads go to the ssd a game you download from now on is saved on the ssd instead of the device. a game that is already installed (or half downloaded) stays where it is; windows, steam&#x27;s client files and the usual windows user folders stay on the device."><h5>New downloads go to the SSD <span class="tag">Toggle</span></h5><p>A game you download from now on is saved on the SSD instead of the device. A game that is already installed (or half downloaded) stays where it is; Windows, Steam&#x27;s client files and the usual Windows user folders stay on the device.</p></article>
+<article class="d-entry" id="steam-settings-game-storage-check-the-ssd-connection" data-q="settings steam settings game storage check the ssd connection "><h5>Check the SSD connection <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="steam-settings-game-storage-select-the-library-folder-again" data-q="settings steam settings game storage select the library folder again renews access to the same folder (after ios forgot it). choosing a different folder does not bring these games back."><h5>Select the library folder again <span class="tag">Action</span></h5><p>Renews access to the same folder (after iOS forgot it). Choosing a different folder does not bring these games back.</p></article>
+<article class="d-entry" id="steam-settings-game-storage-choose-an-ssd-library-folder" data-q="settings steam settings game storage choose an ssd library folder pick a folder on a drive plugged into the device (a dedicated folder). steam games you download to it keep their files, download progress and caches there. cloud folders and network shares are not supported. if you unplug the drive during a game, the game ends."><h5>Choose an SSD library folder <span class="tag">Action</span></h5><p>Pick a folder on a drive plugged into the device (a dedicated folder). Steam games you download to it keep their files, download progress and caches there. Cloud folders and network shares are not supported. If you unplug the drive during a game, the game ends.</p></article>
+<h4>Steam games window</h4>
+<p class="d-note">How Steam games are drawn on the screen.</p>
+<article class="d-entry" id="steam-settings-steam-games-window-use-wine-s-desktop-display" data-q="settings steam settings steam games window use wine&#x27;s desktop display on (recommended): steam games run on a wine virtual desktop, and touch and rotation work. off is an experiment that draws the game straight into the app&#x27;s game view. applies the next time a game starts."><h5>Use Wine&#x27;s desktop display <span class="tag">Toggle</span></h5><p>On (recommended): Steam games run on a Wine virtual desktop, and touch and rotation work. Off is an experiment that draws the game straight into the app&#x27;s game view. Applies the next time a game starts.</p></article>
+</div>
+<div class="d-block" id="settings-guides"><h3>Guides</h3>
+<h4>Tips</h4>
+<p class="d-note">Short explanations that appear the first time you open a screen.</p>
+<article class="d-entry" id="guides-tips-show-tips" data-q="settings guides tips show tips a short explanation appears the first time you open a screen, and when you start your first game. the question mark at the top of every screen opens it again."><h5>Show tips <span class="tag">Toggle</span></h5><p>A short explanation appears the first time you open a screen, and when you start your first game. The question mark at the top of every screen opens it again.</p></article>
+<article class="d-entry" id="guides-tips-show-all-tips-again" data-q="settings guides tips show all tips again every screen explains itself again the next time you open it, and the next game you start shows its short tour."><h5>Show all tips again <span class="tag">Action</span></h5><p>Every screen explains itself again the next time you open it, and the next game you start shows its short tour.</p></article>
+<h4>Open a guide</h4>
+<article class="d-entry" id="guides-open-a-guide-playing-a-game" data-q="settings guides open a guide playing a game the tour shown before your first game"><h5>Playing a game <span class="tag">Action</span></h5><p>The tour shown before your first game</p></article>
+</div>
+<div class="d-block" id="settings-about"><h3>About</h3>
+<h4>About Porthole</h4>
+<p class="d-note">Which version this is and what it is made of.</p>
+<article class="d-entry" id="about-about-porthole-licences-and-source-code" data-q="settings about about porthole licences and source code free software, gpl-3.0-or-later"><h5>Licences and source code <span class="tag">Action</span></h5><p>Free software, GPL-3.0-or-later</p></article>
+<h4>Experiments</h4>
+<p class="d-note">Not listed anywhere else.</p>
+<article class="d-entry" id="about-experiments-show-steam-big-picture" data-q="settings about experiments show steam big picture adds a start steam big picture row to settings &gt; stores &gt; steam. it starts valve&#x27;s real client in big picture, which has been seen to run its web helper into a crash on the first click. experimental."><h5>Show Steam Big Picture <span class="tag">Toggle</span></h5><p>Adds a Start Steam Big Picture row to Settings &gt; Stores &gt; Steam. It starts Valve&#x27;s real client in Big Picture, which has been seen to run its web helper into a crash on the first click. Experimental.</p></article>
+</div>
+<div class="d-block" id="settings-storage"><h3>Storage</h3>
+<h4>Temporary files</h4>
+<article class="d-entry" id="storage-temporary-files-clear-temporary-files" data-q="settings storage temporary files clear temporary files "><h5>Clear temporary files <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="settings-stores-settings"><h3>Stores Settings</h3>
+<h4>Downloads and space</h4>
+<article class="d-entry" id="stores-settings-downloads-and-space-downloads" data-q="settings stores settings downloads and space downloads what is being installed, from every store"><h5>Downloads <span class="tag">Action</span></h5><p>What is being installed, from every store</p></article>
+<article class="d-entry" id="stores-settings-downloads-and-space-storage" data-q="settings stores settings downloads and space storage how much room games use, and how to free it"><h5>Storage <span class="tag">Action</span></h5><p>How much room games use, and how to free it</p></article>
+</div>
+<div class="d-block" id="settings-store-account-groups"><h3>Store Account Groups</h3>
+<h4>Account</h4>
+<article class="d-entry" id="store-account-groups-account-open-the-library" data-q="settings store account groups account open the … library "><h5>Open the … library <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="store-account-groups-account-sign-out-of" data-q="settings store account groups account sign out of … "><h5>Sign out of … <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="store-account-groups-account-sign-in-to" data-q="settings store account groups account sign in to … "><h5>Sign in to … <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Library</h4>
+<article class="d-entry" id="store-account-groups-library-refresh-the-list" data-q="settings store account groups library refresh the list "><h5>Refresh the list <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Downloads and space</h4>
+<article class="d-entry" id="store-account-groups-downloads-and-space-downloads" data-q="settings store account groups downloads and space downloads what is being installed, from every store"><h5>Downloads <span class="tag">Action</span></h5><p>What is being installed, from every store</p></article>
+<article class="d-entry" id="store-account-groups-downloads-and-space-storage" data-q="settings store account groups downloads and space storage how much room games use, and how to free it"><h5>Storage <span class="tag">Action</span></h5><p>How much room games use, and how to free it</p></article>
+</div>
+<div class="d-block" id="settings-gog-store-settings"><h3>Gog Store Settings</h3>
+<h4>Game services</h4>
+<p class="d-note">What GOG&#x27;s own client does while a game runs.</p>
+<article class="d-entry" id="gog-store-settings-game-services-gog-galaxy-services" data-q="settings gog store settings game services gog galaxy services a game built with gog&#x27;s galaxy sdk talks to gog&#x27;s client for its sign-in, achievements, stats, leaderboards and play time. while one of your gog games runs, porthole answers for that client on this device only, using your gog sign-in to get a token for that one game. it needs a game installed from gog&#x27;s own builds (a game installed before this was added is read once, at its next start). without it, or without a sign-in, the game runs offline, as it would without gog&#x27;s client. not tested on a device yet."><h5>GOG Galaxy services <span class="tag">Toggle</span></h5><p>A game built with GOG&#x27;s Galaxy SDK talks to GOG&#x27;s client for its sign-in, achievements, stats, leaderboards and play time. While one of your GOG games runs, Porthole answers for that client on this device only, using your GOG sign-in to get a token for that one game. It needs a game installed from GOG&#x27;s own builds (a game installed before this was added is read once, at its next start). Without it, or without a sign-in, the game runs offline, as it would without GOG&#x27;s client. Not tested on a device yet.</p></article>
+</div>
+</section>
+<section class="d-section" id="a-game-s-own-page"><h2>A game&#x27;s own page</h2>
+<div class="d-block" id="a-game-s-own-page-change-program"><h3>Change Program</h3>
+<h4>Somewhere else</h4>
+<article class="d-entry" id="change-program-somewhere-else-program" data-q="a game&#x27;s own page change program somewhere else program "><h5>Program <span class="tag">TextField</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="a-game-s-own-page-game-binds"><h3>Game Binds</h3>
+<h4>In use</h4>
+<article class="d-entry" id="game-binds-in-use-bind-set-in-use" data-q="a game&#x27;s own page game binds in use bind set in use only one set is used at a time. standard leaves this game&#x27;s own controls and engine settings exactly as they are. a set with controller binds switches the controller to keyboard and mouse for this game; a set with a touch layout replaces the on-screen controls. applies the next time the game starts."><h5>Bind set in use <span class="tag">Choice</span></h5><p>Only one set is used at a time. Standard leaves this game&#x27;s own Controls and Engine settings exactly as they are. A set with controller binds switches the controller to keyboard and mouse for this game; a set with a touch layout replaces the on-screen controls. Applies the next time the game starts.</p></article>
+<h4>Your sets</h4>
+<article class="d-entry" id="game-binds-your-sets-new-bind-set" data-q="a game&#x27;s own page game binds your sets new bind set starts from this game&#x27;s current controller settings"><h5>New bind set <span class="tag">Action</span></h5><p>Starts from this game&#x27;s current controller settings</p></article>
+<article class="d-entry" id="game-binds-your-sets-import-from-a-file" data-q="a game&#x27;s own page game binds your sets import from a file… .portholebinds"><h5>Import from a file… <span class="tag">Action</span></h5><p>.portholebinds</p></article>
+<h4>Community</h4>
+<article class="d-entry" id="game-binds-community-shared-binds-for-this-game" data-q="a game&#x27;s own page game binds community shared binds for this game binds and touch layouts other people shared; rate them and add the ones you like"><h5>Shared binds for this game <span class="tag">Action</span></h5><p>Binds and touch layouts other people shared; rate them and add the ones you like</p></article>
+</div>
+<div class="d-block" id="a-game-s-own-page-bind-set-editor"><h3>Bind Set Editor</h3>
+<h4>About this set</h4>
+<article class="d-entry" id="bind-set-editor-about-this-set-name" data-q="a game&#x27;s own page bind set editor about this set name "><h5>Name <span class="tag">TextField</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="bind-set-editor-about-this-set-notes" data-q="a game&#x27;s own page bind set editor about this set notes "><h5>Notes <span class="tag">TextField</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="bind-set-editor-about-this-set-use-this-set" data-q="a game&#x27;s own page bind set editor about this set use this set only one set is used at a time. applies the next time the game starts."><h5>Use this set <span class="tag">Toggle</span></h5><p>Only one set is used at a time. Applies the next time the game starts.</p></article>
+<h4>This set</h4>
+<article class="d-entry" id="bind-set-editor-this-set-export-to-a-file" data-q="a game&#x27;s own page bind set editor this set export to a file .portholebinds, to keep or send"><h5>Export to a file <span class="tag">Action</span></h5><p>.portholebinds, to keep or send</p></article>
+<article class="d-entry" id="bind-set-editor-this-set-duplicate" data-q="a game&#x27;s own page bind set editor this set duplicate "><h5>Duplicate <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="bind-set-editor-this-set-delete-this-set" data-q="a game&#x27;s own page bind set editor this set delete this set "><h5>Delete this set <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Controller</h4>
+<article class="d-entry" id="bind-set-editor-controller-include-controller-binds" data-q="a game&#x27;s own page bind set editor controller include controller binds with this on, using the set turns the controller into a keyboard and mouse for this game, with the buttons below. off leaves the controller as it is."><h5>Include controller binds <span class="tag">Toggle</span></h5><p>With this on, using the set turns the controller into a keyboard and mouse for this game, with the buttons below. Off leaves the controller as it is.</p></article>
+<article class="d-entry" id="bind-set-editor-controller-right-stick-up-and-down-speed" data-q="a game&#x27;s own page bind set editor controller right stick up and down speed "><h5>Right stick up and down speed <span class="tag">Slider</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Touch controls</h4>
+<article class="d-entry" id="bind-set-editor-touch-controls-include-a-touch-layout" data-q="a game&#x27;s own page bind set editor touch controls include a touch layout with this on, using the set replaces the on-screen controls with this layout. off keeps the game&#x27;s normal controls choice."><h5>Include a touch layout <span class="tag">Toggle</span></h5><p>With this on, using the set replaces the on-screen controls with this layout. Off keeps the game&#x27;s normal Controls choice.</p></article>
+<article class="d-entry" id="bind-set-editor-touch-controls-edit-the-layout" data-q="a game&#x27;s own page bind set editor touch controls edit the layout … control\(t.controls.count == 1 ?"><h5>Edit the layout <span class="tag">Action</span></h5><p>… control\(t.controls.count == 1 ?</p></article>
+<article class="d-entry" id="bind-set-editor-touch-controls-start-over-from-mouse-and-keys" data-q="a game&#x27;s own page bind set editor touch controls start over from: mouse and keys "><h5>Start over from: mouse and keys <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="bind-set-editor-touch-controls-start-over-from-first-person" data-q="a game&#x27;s own page bind set editor touch controls start over from: first person "><h5>Start over from: first person <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="bind-set-editor-touch-controls-start-over-from-empty" data-q="a game&#x27;s own page bind set editor touch controls start over from: empty "><h5>Start over from: empty <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="a-game-s-own-page-in-game-binds"><h3>In Game Binds</h3>
+<h4>Controller</h4>
+<article class="d-entry" id="in-game-binds-controller-controller-as-keyboard-and-mouse" data-q="a game&#x27;s own page in game binds controller controller as keyboard and mouse left stick w a s d, right stick the mouse, buttons as keys. off goes back to automatic. applies at once."><h5>Controller as keyboard and mouse <span class="tag">Toggle</span></h5><p>Left stick W A S D, right stick the mouse, buttons as keys. Off goes back to Automatic. Applies at once.</p></article>
+<article class="d-entry" id="in-game-binds-controller-controller-buttons" data-q="a game&#x27;s own page in game binds controller controller buttons "><h5>Controller buttons <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>In use</h4>
+<article class="d-entry" id="in-game-binds-in-use-bind-set-in-use" data-q="a game&#x27;s own page in game binds in use bind set in use "><h5>Bind set in use <span class="tag">Choice</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="in-game-binds-in-use-new-bind-set-from-the-current-controls" data-q="a game&#x27;s own page in game binds in use new bind set from the current controls "><h5>New bind set from the current controls <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="in-game-binds-in-use-edit-this-set" data-q="a game&#x27;s own page in game binds in use edit this set controller binds and the touch layout"><h5>Edit this set <span class="tag">Action</span></h5><p>Controller binds and the touch layout</p></article>
+<article class="d-entry" id="in-game-binds-in-use-edit-the-on-screen-controls-on-the-game" data-q="a game&#x27;s own page in game binds in use edit the on-screen controls on the game move and change controls while you look at the game, and test them"><h5>Edit the on-screen controls on the game <span class="tag">Action</span></h5><p>Move and change controls while you look at the game, and test them</p></article>
+<article class="d-entry" id="in-game-binds-in-use-make-on-screen-controls-on-the-game" data-q="a game&#x27;s own page in game binds in use make on-screen controls on the game starts a new set with its own layout"><h5>Make on-screen controls on the game <span class="tag">Action</span></h5><p>Starts a new set with its own layout</p></article>
+</div>
+<div class="d-block" id="a-game-s-own-page-game-engine"><h3>Game Engine</h3>
+<h4>Compatibility</h4>
+<article class="d-entry" id="game-engine-compatibility-avx-and-avx2" data-q="a game&#x27;s own page game engine compatibility avx and avx2 lets the translator run programs built for avx processors through its 128-bit emulation. a game that closes the moment it starts, or after a message about unsupported instructions, may need it. only 64-bit games. costs some speed."><h5>AVX and AVX2 <span class="tag">Override</span></h5><p>Lets the translator run programs built for AVX processors through its 128-bit emulation. A game that closes the moment it starts, or after a message about unsupported instructions, may need it. Only 64-bit games. Costs some speed.</p></article>
+<article class="d-entry" id="game-engine-compatibility-frame-generation-experimental" data-q="a game&#x27;s own page game engine compatibility frame generation (experimental) shows a metalfx-generated picture between every two frames the game draws, so the screen can show twice the game’s frame rate. it needs a screen that can run at least twice as fast as the game: on a 120 hz screen a game at 60 fps or less (the screen is held at its top rate while it is on). a game faster than that, or a moment when the screen’s picture queue is full, is shown as it is. it adds about half a game frame of delay and can smear edges and the on-screen controls. frame limits do not apply while it is on. needs ios 26."><h5>Frame generation (experimental) <span class="tag">Override</span></h5><p>Shows a MetalFX-generated picture between every two frames the game draws, so the screen can show twice the game’s frame rate. It needs a screen that can run at least twice as fast as the game: on a 120 Hz screen a game at 60 FPS or less (the screen is held at its top rate while it is on). A game faster than that, or a moment when the screen’s picture queue is full, is shown as it is. It adds about half a game frame of delay and can smear edges and the on-screen controls. Frame limits do not apply while it is on. Needs iOS 26.</p></article>
+<article class="d-entry" id="game-engine-compatibility-cpu-cores-reported" data-q="a game&#x27;s own page game engine compatibility cpu cores reported how many processor cores this game is told about. some games size their worker threads from it."><h5>CPU cores reported <span class="tag">Override</span></h5><p>How many processor cores this game is told about. Some games size their worker threads from it.</p></article>
+<article class="d-entry" id="game-engine-compatibility-direct3d-9-anisotropic-filtering" data-q="a game&#x27;s own page game engine compatibility direct3d 9 anisotropic filtering limits (or raises) texture filtering quality for direct3d 9 games. the game&#x27;s own setting is used by default."><h5>Direct3D 9 anisotropic filtering <span class="tag">Override</span></h5><p>Limits (or raises) texture filtering quality for Direct3D 9 games. The game&#x27;s own setting is used by default.</p></article>
+<article class="d-entry" id="game-engine-compatibility-reduced-precision-x87" data-q="a game&#x27;s own page game engine compatibility reduced-precision x87 makes old floating-point instructions faster and less exact. the engine turns it on by itself for 32-bit games; off asks for full precision, which some games need (assassin&#x27;s creed&#x27;s character cannot be moved with the left stick otherwise). leave it alone for games that run well."><h5>Reduced-precision x87 <span class="tag">Override</span></h5><p>Makes old floating-point instructions faster and less exact. The engine turns it on by itself for 32-bit games; Off asks for full precision, which some games need (Assassin&#x27;s Creed&#x27;s character cannot be moved with the left stick otherwise). Leave it alone for games that run well.</p></article>
+<article class="d-entry" id="game-engine-compatibility-graphics-card-the-game-sees" data-q="a game&#x27;s own page game engine compatibility graphics card the game sees which graphics card this game is told it has, everywhere it can ask: direct3d 9, 10, 11 and 12, windows&#x27; own adapter list and nvidia&#x27;s nvapi. for a game that refuses to start or picks poor settings because it does not know the card, or that needs an nvidia one. this changes only what the game reads; the device draws the same."><h5>Graphics card the game sees <span class="tag">Override</span></h5><p>Which graphics card this game is told it has, everywhere it can ask: Direct3D 9, 10, 11 and 12, Windows&#x27; own adapter list and NVIDIA&#x27;s NVAPI. For a game that refuses to start or picks poor settings because it does not know the card, or that needs an NVIDIA one. This changes only what the game reads; the device draws the same.</p></article>
+<article class="d-entry" id="game-engine-compatibility-large-memory-reservations" data-q="a game&#x27;s own page game engine compatibility large memory reservations turn this on when a game quits at start because it reserves far more address space than ios gives the app (64 gb or more, as final fantasy tactics - the ivalice chronicles does). porthole then really backs 16 gb of it and tells the game it got everything. off (the default) leaves such a reservation to fail, as before."><h5>Large memory reservations <span class="tag">Override</span></h5><p>Turn this on when a game quits at start because it reserves far more address space than iOS gives the app (64 GB or more, as Final Fantasy Tactics - The Ivalice Chronicles does). Porthole then really backs 16 GB of it and tells the game it got everything. Off (the default) leaves such a reservation to fail, as before.</p></article>
+<h4>Keyboard and mouse</h4>
+<article class="d-entry" id="game-engine-keyboard-and-mouse-mouse-speed" data-q="a game&#x27;s own page game engine keyboard and mouse mouse speed how fast the mouse turns this game&#x27;s camera. 1× sends the mouse&#x27;s own movement unchanged. applies at once."><h5>Mouse speed <span class="tag">Override</span></h5><p>How fast the mouse turns this game&#x27;s camera. 1× sends the mouse&#x27;s own movement unchanged. Applies at once.</p></article>
+<article class="d-entry" id="game-engine-keyboard-and-mouse-always-use-the-mouse-to-look" data-q="a game&#x27;s own page game engine keyboard and mouse always use the mouse to look for a game that turns the camera with the mouse but never says it hides its cursor: the mouse always moves the camera and the pointer is locked to the game (ctrl+alt+p frees it). off lets the game&#x27;s cursor decide."><h5>Always use the mouse to look <span class="tag">Override</span></h5><p>For a game that turns the camera with the mouse but never says it hides its cursor: the mouse always moves the camera and the pointer is locked to the game (Ctrl+Alt+P frees it). Off lets the game&#x27;s cursor decide.</p></article>
+<h4>Controller</h4>
+<article class="d-entry" id="game-engine-controller-controller-as-keyboard-and-mouse" data-q="a game&#x27;s own page game engine controller controller as keyboard and mouse forces this game to use the controller as a keyboard and mouse (left stick w a s d, right stick the mouse, buttons as keys), for games with no controller support. off goes back to automatic. change what each button does under controller buttons."><h5>Controller as keyboard and mouse <span class="tag">Toggle</span></h5><p>Forces this game to use the controller as a keyboard and mouse (left stick W A S D, right stick the mouse, buttons as keys), for games with no controller support. Off goes back to Automatic. Change what each button does under Controller buttons.</p></article>
+<article class="d-entry" id="game-engine-controller-controller" data-q="a game&#x27;s own page game engine controller controller automatic (the default): the controller appears to the game as an xbox pad, and if the game does not read it at all within about 25 seconds it becomes keyboard and mouse instead (and goes back to an xbox pad the moment the game starts reading it). xbox controller: always an xbox pad. dualsense (hid) and xbox: the pad is also shown as a dualsense on the hid path, for games that look for a hid gamepad and ignore xinput (hollow knight: silksong); rumble does not work in this mode. keyboard and mouse: always keys and mouse, for games with no controller support. also directinput joystick: the same xbox pad plus an old-style joystick for games that only look for one."><h5>Controller <span class="tag">Override</span></h5><p>Automatic (the default): the controller appears to the game as an Xbox pad, and if the game does not read it at all within about 25 seconds it becomes keyboard and mouse instead (and goes back to an Xbox pad the moment the game starts reading it). Xbox controller: always an Xbox pad. DualSense (HID) and Xbox: the pad is also shown as a DualSense on the HID path, for games that look for a HID gamepad and ignore XInput (Hollow Knight: Silksong); rumble does not work in this mode. Keyboard and mouse: always keys and mouse, for games with no controller support. Also DirectInput joystick: the same Xbox pad plus an old-style joystick for games that only look for one.</p></article>
+<article class="d-entry" id="game-engine-controller-controller-buttons" data-q="a game&#x27;s own page game engine controller controller buttons "><h5>Controller buttons <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="game-engine-controller-remap-buttons" data-q="a game&#x27;s own page game engine controller remap buttons changes which controller button the game sees for each button on your pad, for this game only: swap a and b, put a bumper on a trigger, turn a button off. it applies while the controller is an xbox or dualsense pad for the game."><h5>Remap buttons <span class="tag">Action</span></h5><p>Changes which controller button the game sees for each button on your pad, for this game only: swap A and B, put a bumper on a trigger, turn a button off. It applies while the controller is an Xbox or DualSense pad for the game.</p></article>
+<article class="d-entry" id="game-engine-controller-right-stick-up-and-down-speed" data-q="a game&#x27;s own page game engine controller right stick up and down speed how fast the mouse moves up and down compared with left and right. many games turn the view at different speeds in each direction."><h5>Right stick up and down speed <span class="tag">Slider</span></h5><p>How fast the mouse moves up and down compared with left and right. Many games turn the view at different speeds in each direction.</p></article>
+<h4>Starting</h4>
+<article class="d-entry" id="game-engine-starting-working-folder" data-q="a game&#x27;s own page game engine starting working folder the folder the program starts in, as a windows path such as c:\games\foo. leave empty to start in the program&#x27;s own folder. a batch file (.bat or .cmd) as the program runs through cmd.exe."><h5>Working folder <span class="tag">TextField</span></h5><p>The folder the program starts in, as a Windows path such as C:\Games\Foo. Leave empty to start in the program&#x27;s own folder. A batch file (.bat or .cmd) as the program runs through cmd.exe.</p></article>
+<article class="d-entry" id="game-engine-starting-this-game-s-engine-lines" data-q="a game&#x27;s own page game engine starting this game&#x27;s engine lines lines in madeira.cfg&#x27;s syntax that apply to this game only, for example env.madeira_fex_avx = 1. a key here wins over the app-wide madeira.cfg while this game runs."><h5>This game&#x27;s engine lines <span class="tag">Action</span></h5><p>Lines in madeira.cfg&#x27;s syntax that apply to this game only, for example env.MADEIRA_FEX_AVX = 1. A key here wins over the app-wide madeira.cfg while this game runs.</p></article>
+<h4>Share this game&#x27;s setup</h4>
+<article class="d-entry" id="game-engine-share-this-game-s-setup-share-this-game-s-setup" data-q="a game&#x27;s own page game engine share this game&#x27;s setup share this game&#x27;s setup puts this game&#x27;s launch options, per-game settings, engine choices and saved controls into one file you can send. it holds nothing of yours: no program path, account or play history."><h5>Share this game&#x27;s setup <span class="tag">Action</span></h5><p>Puts this game&#x27;s launch options, per-game settings, engine choices and saved controls into one file you can send. It holds nothing of yours: no program path, account or play history.</p></article>
+<article class="d-entry" id="game-engine-share-this-game-s-setup-copy-this-setup-as-text" data-q="a game&#x27;s own page game engine share this game&#x27;s setup copy this setup as text one line to paste into a message"><h5>Copy this setup as text <span class="tag">Action</span></h5><p>One line to paste into a message</p></article>
+<article class="d-entry" id="game-engine-share-this-game-s-setup-apply-a-shared-setup" data-q="a game&#x27;s own page game engine share this game&#x27;s setup apply a shared setup from a file or the clipboard"><h5>Apply a shared setup <span class="tag">Action</span></h5><p>From a file or the clipboard</p></article>
+<h4>Home Screen shortcut</h4>
+<article class="d-entry" id="game-engine-home-screen-shortcut-copy-this-game-s-shortcut-link" data-q="a game&#x27;s own page game engine home screen shortcut copy this game&#x27;s shortcut link starts this game from outside the app. copy the link, then in the shortcuts app make a shortcut with an open url action that uses it, and choose add to home screen."><h5>Copy this game&#x27;s shortcut link <span class="tag">Action</span></h5><p>Starts this game from outside the app. Copy the link, then in the Shortcuts app make a shortcut with an Open URL action that uses it, and choose Add to Home Screen.</p></article>
+<article class="d-entry" id="game-engine-home-screen-shortcut-reset-this-game-s-engine-settings" data-q="a game&#x27;s own page game engine home screen shortcut reset this game&#x27;s engine settings "><h5>Reset this game&#x27;s engine settings <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="a-game-s-own-page-pad-binds"><h3>Pad Binds</h3>
+<h4>Change one by pressing it</h4>
+<article class="d-entry" id="pad-binds-change-one-by-pressing-it-press-the-button-or-push-the-stick-now" data-q="a game&#x27;s own page pad binds change one by pressing it press the button, or push the stick, now… tap here to cancel"><h5>Press the button, or push the stick, now… <span class="tag">Action</span></h5><p>Tap here to cancel</p></article>
+<article class="d-entry" id="pad-binds-change-one-by-pressing-it-press-a-controller-button-to-change-it" data-q="a game&#x27;s own page pad binds change one by pressing it press a controller button to change it "><h5>Press a controller button to change it <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Buttons</h4>
+<article class="d-entry" id="pad-binds-buttons-back-to-the-standard-layout" data-q="a game&#x27;s own page pad binds buttons back to the standard layout "><h5>Back to the standard layout <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="pad-binds-buttons-does" data-q="a game&#x27;s own page pad binds buttons … does "><h5>… does <span class="tag">Choice</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="a-game-s-own-page-game"><h3>Game</h3>
+<h4>Explore</h4>
+<article class="d-entry" id="game-explore-controls-and-key-binds" data-q="a game&#x27;s own page game explore controls and key binds "><h5>Controls and key binds <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="game-explore-how-it-runs-for-others" data-q="a game&#x27;s own page game explore how it runs for others "><h5>How it runs for others <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="game-explore-news-and-patch-notes" data-q="a game&#x27;s own page game explore news and patch notes from steam"><h5>News and patch notes <span class="tag">Action</span></h5><p>From Steam</p></article>
+<article class="d-entry" id="game-explore-achievements" data-q="a game&#x27;s own page game explore achievements "><h5>Achievements <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="game-explore-friends-playing" data-q="a game&#x27;s own page game explore friends playing "><h5>Friends playing <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="game-explore-workshop" data-q="a game&#x27;s own page game explore workshop "><h5>Workshop <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Manage</h4>
+<article class="d-entry" id="game-manage-more-options" data-q="a game&#x27;s own page game manage more options speed, memory, engine and launch options"><h5>More options <span class="tag">Action</span></h5><p>Speed, memory, engine and launch options</p></article>
+<article class="d-entry" id="game-manage-about-and-files" data-q="a game&#x27;s own page game manage about and files "><h5>About and files <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Play</h4>
+<article class="d-entry" id="game-play-start" data-q="a game&#x27;s own page game play start through steam: valve&#x27;s own client checks your licence first. most steam games need this. run directly: starts the game without steam. only use it for games that don&#x27;t check steam when they start; a game that does will freeze on its first screen."><h5>Start <span class="tag">Choice</span></h5><p>Through Steam: Valve&#x27;s own client checks your licence first. Most Steam games need this. Run directly: starts the game without Steam. Only use it for games that don&#x27;t check Steam when they start; a game that does will freeze on its first screen.</p></article>
+<article class="d-entry" id="game-play-resolution" data-q="a game&#x27;s own page game play resolution the size of the screen this game sees. default follows settings &gt; play. applies the next time the game starts."><h5>Resolution <span class="tag">Override</span></h5><p>The size of the screen this game sees. Default follows Settings &gt; Play. Applies the next time the game starts.</p></article>
+<article class="d-entry" id="game-play-power-mode" data-q="a game&#x27;s own page game play power mode default follows settings &gt; play. max runs up to the screen’s maximum (120 fps on a promotion screen, otherwise 60), saver is 30 fps and cooler."><h5>Power mode <span class="tag">Override</span></h5><p>Default follows Settings &gt; Play. Max runs up to the screen’s maximum (120 FPS on a ProMotion screen, otherwise 60), Saver is 30 FPS and cooler.</p></article>
+<article class="d-entry" id="game-play-reset-this-game-to-the-app-wide-settings" data-q="a game&#x27;s own page game play reset this game to the app-wide settings "><h5>Reset this game to the app-wide settings <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>One-time installs</h4>
+<article class="d-entry" id="game-one-time-installs-one-time-installs" data-q="a game&#x27;s own page game one-time installs one-time installs some steam games bring installers for things they need (rockstar&#x27;s launcher, directx, visual c++). run at next start runs the ones that have not run yet before the game starts, with windows&#x27; service manager available to them; after that the choice goes back to skip, so they do not run every time. skip starts the game without them. use run at next start again to retry an installer that failed."><h5>One-time installs <span class="tag">Choice</span></h5><p>Some Steam games bring installers for things they need (Rockstar&#x27;s launcher, DirectX, Visual C++). Run at next start runs the ones that have not run yet before the game starts, with Windows&#x27; service manager available to them; after that the choice goes back to Skip, so they do not run every time. Skip starts the game without them. Use Run at next start again to retry an installer that failed.</p></article>
+<article class="d-entry" id="game-one-time-installs-run-them-all-again" data-q="a game&#x27;s own page game one-time installs run them all again forgets that this game&#x27;s one-time installs ever ran, so the next start runs every one of them again (rockstar&#x27;s launcher, social club, directx, visual c++). use it after you deleted what they installed, or when an install stopped half way. it does not delete anything itself."><h5>Run them all again <span class="tag">Action</span></h5><p>Forgets that this game&#x27;s one-time installs ever ran, so the next start runs every one of them again (Rockstar&#x27;s launcher, Social Club, DirectX, Visual C++). Use it after you deleted what they installed, or when an install stopped half way. It does not delete anything itself.</p></article>
+<h4>Memory</h4>
+<article class="d-entry" id="game-memory-swap" data-q="a game&#x27;s own page game memory swap "><h5>Swap <span class="tag">Override</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="game-memory-swap-covers" data-q="a game&#x27;s own page game memory swap covers "><h5>Swap covers <span class="tag">Override</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="game-memory-video-memory" data-q="a game&#x27;s own page game memory video memory "><h5>Video memory <span class="tag">Override</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Speed</h4>
+<article class="d-entry" id="game-speed-keep-mode-when-hot" data-q="a game&#x27;s own page game speed keep mode when hot "><h5>Keep mode when hot <span class="tag">Override</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="game-speed-audio-buffer" data-q="a game&#x27;s own page game speed audio buffer "><h5>Audio buffer <span class="tag">Override</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="game-speed-precise-shader-math" data-q="a game&#x27;s own page game speed precise shader math "><h5>Precise shader math <span class="tag">Override</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="game-speed-wine-desktop-display" data-q="a game&#x27;s own page game speed wine desktop display "><h5>Wine desktop display <span class="tag">Override</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>On-screen controls</h4>
+<article class="d-entry" id="game-on-screen-controls-layout" data-q="a game&#x27;s own page game on-screen controls layout "><h5>Layout <span class="tag">Choice</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="game-on-screen-controls-look-sensitivity" data-q="a game&#x27;s own page game on-screen controls look sensitivity "><h5>Look sensitivity <span class="tag">Slider</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="game-on-screen-controls-use-the-app-wide-look-sensitivity" data-q="a game&#x27;s own page game on-screen controls use the app-wide look sensitivity "><h5>Use the app-wide look sensitivity <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>How it runs</h4>
+<article class="d-entry" id="game-how-it-runs-see-reports" data-q="a game&#x27;s own page game how it runs see reports "><h5>See reports <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Launch</h4>
+<article class="d-entry" id="game-launch-launch-options" data-q="a game&#x27;s own page game launch launch options extra command-line options for the program, separated by spaces."><h5>Launch options <span class="tag">TextField</span></h5><p>Extra command-line options for the program, separated by spaces.</p></article>
+<article class="d-entry" id="game-launch-show-windows-windows" data-q="a game&#x27;s own page game launch show windows windows draws ordinary windows windows, like launchers and installers. games that draw their own picture don&#x27;t need it."><h5>Show Windows windows <span class="tag">Toggle</span></h5><p>Draws ordinary Windows windows, like launchers and installers. Games that draw their own picture don&#x27;t need it.</p></article>
+<h4>About this game</h4>
+<article class="d-entry" id="game-about-this-game-program" data-q="a game&#x27;s own page game about this game program pick another program from this game&#x27;s folder to start. the game stays in your library with its steam link, settings and play time."><h5>Program <span class="tag">Action</span></h5><p>Pick another program from this game&#x27;s folder to start. The game stays in your library with its Steam link, settings and play time.</p></article>
+<h4>Files</h4>
+<article class="d-entry" id="game-files-verify-and-update-files" data-q="a game&#x27;s own page game files verify and update files "><h5>Verify and update files <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="game-files-delete-downloaded-files" data-q="a game&#x27;s own page game files delete downloaded files "><h5>Delete downloaded files <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="game-files-remove-from-library" data-q="a game&#x27;s own page game files remove from library "><h5>Remove from library <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="a-game-s-own-page-pad-assist"><h3>Pad Assist</h3>
+<h4>Gyro aim</h4>
+<article class="d-entry" id="pad-assist-gyro-aim-gyro-aim" data-q="a game&#x27;s own page pad assist gyro aim gyro aim moving the controller (or this device) aims. automatic gyro uses the controller&#x27;s sensors (dualsense, dualshock 4, switch pro) and the device&#x27;s own otherwise. automatic output moves the right stick, or the mouse when the game gets no controller from the pad."><h5>Gyro aim <span class="tag">Toggle</span></h5><p>Moving the controller (or this device) aims. Automatic gyro uses the controller&#x27;s sensors (DualSense, DualShock 4, Switch Pro) and the device&#x27;s own otherwise. Automatic output moves the right stick, or the mouse when the game gets no controller from the pad.</p></article>
+<article class="d-entry" id="pad-assist-gyro-aim-gyro-from" data-q="a game&#x27;s own page pad assist gyro aim gyro from "><h5>Gyro from <span class="tag">Choice</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="pad-assist-gyro-aim-active" data-q="a game&#x27;s own page pad assist gyro aim active "><h5>Active <span class="tag">Choice</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="pad-assist-gyro-aim-moves" data-q="a game&#x27;s own page pad assist gyro aim moves "><h5>Moves <span class="tag">Choice</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="pad-assist-gyro-aim-turn-with" data-q="a game&#x27;s own page pad assist gyro aim turn with "><h5>Turn with <span class="tag">Choice</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="pad-assist-gyro-aim-sensitivity" data-q="a game&#x27;s own page pad assist gyro aim sensitivity "><h5>Sensitivity <span class="tag">Slider</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="pad-assist-gyro-aim-anti-dead-zone" data-q="a game&#x27;s own page pad assist gyro aim anti-dead zone the least stick push a slow movement gives, so it gets past the game&#x27;s own dead zone. raise it if slow aiming does nothing."><h5>Anti-dead zone <span class="tag">Slider</span></h5><p>The least stick push a slow movement gives, so it gets past the game&#x27;s own dead zone. Raise it if slow aiming does nothing.</p></article>
+<article class="d-entry" id="pad-assist-gyro-aim-invert-up-and-down" data-q="a game&#x27;s own page pad assist gyro aim invert up and down "><h5>Invert up and down <span class="tag">Toggle</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="pad-assist-gyro-aim-invert-left-and-right" data-q="a game&#x27;s own page pad assist gyro aim invert left and right "><h5>Invert left and right <span class="tag">Toggle</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Turbo</h4>
+<article class="d-entry" id="pad-assist-turbo-turbo" data-q="a game&#x27;s own page pad assist turbo turbo … "><h5>Turbo … <span class="tag">Toggle</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="pad-assist-turbo-presses-a-second" data-q="a game&#x27;s own page pad assist turbo presses a second "><h5>Presses a second <span class="tag">Slider</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="a-game-s-own-page-pad-remap"><h3>Pad Remap</h3>
+<h4>Change one by pressing it</h4>
+<article class="d-entry" id="pad-remap-change-one-by-pressing-it-press-the-button-now" data-q="a game&#x27;s own page pad remap change one by pressing it press the button now… tap here to cancel"><h5>Press the button now… <span class="tag">Action</span></h5><p>Tap here to cancel</p></article>
+<article class="d-entry" id="pad-remap-change-one-by-pressing-it-press-a-controller-button-to-change-it" data-q="a game&#x27;s own page pad remap change one by pressing it press a controller button to change it "><h5>Press a controller button to change it <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Quick changes</h4>
+<article class="d-entry" id="pad-remap-quick-changes-swap-a-and-b" data-q="a game&#x27;s own page pad remap quick changes swap a and b confirm and cancel the other way round"><h5>Swap A and B <span class="tag">Action</span></h5><p>Confirm and cancel the other way round</p></article>
+<article class="d-entry" id="pad-remap-quick-changes-swap-x-and-y" data-q="a game&#x27;s own page pad remap quick changes swap x and y "><h5>Swap X and Y <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="pad-remap-quick-changes-swap-the-triggers-with-the-bumpers" data-q="a game&#x27;s own page pad remap quick changes swap the triggers with the bumpers \(padkind.glyph("><h5>Swap the triggers with the bumpers <span class="tag">Action</span></h5><p>\(padKind.glyph(</p></article>
+<article class="d-entry" id="pad-remap-quick-changes-back-to-the-standard-buttons" data-q="a game&#x27;s own page pad remap quick changes back to the standard buttons "><h5>Back to the standard buttons <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="a-game-s-own-page-recommended-settings"><h3>Recommended Settings</h3>
+<h4>What works for others</h4>
+<article class="d-entry" id="recommended-settings-what-works-for-others-undo-the-last-applied-suggestions" data-q="a game&#x27;s own page recommended settings what works for others undo the last applied suggestions puts this game&#x27;s settings back as they were"><h5>Undo the last applied suggestions <span class="tag">Action</span></h5><p>Puts this game&#x27;s settings back as they were</p></article>
+<article class="d-entry" id="recommended-settings-what-works-for-others-use-these-setting-plan-changes-count-" data-q="a game&#x27;s own page recommended settings what works for others use these … setting\(plan.changes.count == 1 ? only for this game; you can undo it"><h5>Use these … setting\(plan.changes.count == 1 ? <span class="tag">Action</span></h5><p>Only for this game; you can undo it</p></article>
+</div>
+<div class="d-block" id="a-game-s-own-page-shared-binds-browser"><h3>Shared Binds Browser</h3>
+<article class="d-entry" id="shared-binds-browser-sort-by" data-q="a game&#x27;s own page shared binds browser  sort by "><h5>Sort by <span class="tag">Choice</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="a-game-s-own-page-shared-bind-detail"><h3>Shared Bind Detail</h3>
+<h4>Reviews</h4>
+<article class="d-entry" id="shared-bind-detail-reviews-rate-it" data-q="a game&#x27;s own page shared bind detail reviews rate it thumbs up or down, and an optional comment"><h5>Rate it <span class="tag">Action</span></h5><p>Thumbs up or down, and an optional comment</p></article>
+<article class="d-entry" id="shared-bind-detail-reviews-report-this-set" data-q="a game&#x27;s own page shared bind detail reviews report this set if it is spam or not what it says. several reports hide it."><h5>Report this set <span class="tag">Action</span></h5><p>If it is spam or not what it says. Several reports hide it.</p></article>
+</div>
+<div class="d-block" id="a-game-s-own-page-shared-bind-review"><h3>Shared Bind Review</h3>
+<article class="d-entry" id="shared-bind-review-did-it-work-for-you" data-q="a game&#x27;s own page shared bind review  did it work for you? "><h5>Did it work for you? <span class="tag">Choice</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="shared-bind-review-comment" data-q="a game&#x27;s own page shared bind review  comment "><h5>Comment <span class="tag">TextField</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="a-game-s-own-page-bind-set-sharing"><h3>Bind Set Sharing</h3>
+<h4>Community</h4>
+<article class="d-entry" id="bind-set-sharing-community-update-the-shared-copy" data-q="a game&#x27;s own page bind set sharing community update the shared copy sends this version. changed text waits for approval again."><h5>Update the shared copy <span class="tag">Action</span></h5><p>Sends this version. Changed text waits for approval again.</p></article>
+<article class="d-entry" id="bind-set-sharing-community-stop-sharing" data-q="a game&#x27;s own page bind set sharing community stop sharing "><h5>Stop sharing <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="bind-set-sharing-community-share-this-set" data-q="a game&#x27;s own page bind set sharing community share this set shares the controller binds and the touch layout so other people can add them. the name, notes and control labels you typed are shown to others only after they have been approved. no account or name of yours is sent."><h5>Share this set <span class="tag">Action</span></h5><p>Shares the controller binds and the touch layout so other people can add them. The name, notes and control labels you typed are shown to others only after they have been approved. No account or name of yours is sent.</p></article>
+</div>
+<div class="d-block" id="a-game-s-own-page-tested-setup"><h3>Tested Setup</h3>
+<h4>Madeira’s tested setup</h4>
+<article class="d-entry" id="tested-setup-madeira-s-tested-setup-use-this-setup" data-q="a game&#x27;s own page tested setup madeira’s tested setup use this setup "><h5>Use this setup <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="tested-setup-madeira-s-tested-setup-undo-madeira-s-tested-setup" data-q="a game&#x27;s own page tested setup madeira’s tested setup undo madeira’s tested setup puts this game’s engine lines and settings back as they were"><h5>Undo Madeira’s tested setup <span class="tag">Action</span></h5><p>Puts this game’s engine lines and settings back as they were</p></article>
+</div>
+</section>
+<section class="d-section" id="reports"><h2>Reports</h2>
+<div class="d-block" id="reports-report"><h3>Report</h3>
+<h4>Did it crash?</h4>
+<article class="d-entry" id="report-did-it-crash-crashes" data-q="reports report did it crash? crashes "><h5>Crashes <span class="tag">Choice</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Where did the game come from?</h4>
+<article class="d-entry" id="report-where-did-the-game-come-from-files-from" data-q="reports report where did the game come from? files from different stores can ship different builds of the same game, so this matters. pick from the list."><h5>Files from <span class="tag">Choice</span></h5><p>Different stores can ship different builds of the same game, so this matters. Pick from the list.</p></article>
+<h4>What to include</h4>
+<article class="d-entry" id="report-what-to-include-include-what-the-app-measured" data-q="reports report what to include include what the app measured "><h5>Include what the app measured <span class="tag">Toggle</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="report-what-to-include-share-my-settings-for-this-game" data-q="reports report what to include share my settings for this game how the game was started and the performance settings it used. this helps people get the same result. launch options you typed are never shared."><h5>Share my settings for this game <span class="tag">Toggle</span></h5><p>How the game was started and the performance settings it used. This helps people get the same result. Launch options you typed are never shared.</p></article>
+<h4>Your note</h4>
+<article class="d-entry" id="report-your-note-optional-note" data-q="reports report your note optional note a person checks notes before they appear, so yours won&#x27;t show straight away. please don&#x27;t mention where to get game files."><h5>Optional note <span class="tag">TextField</span></h5><p>A person checks notes before they appear, so yours won&#x27;t show straight away. Please don&#x27;t mention where to get game files.</p></article>
+</div>
+<div class="d-block" id="reports-game-reports-layout"><h3>Game Reports Layout</h3>
+<h4>Reports</h4>
+<article class="d-entry" id="game-reports-layout-reports-show-more" data-q="reports game reports layout reports show more "><h5>Show more <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="reports-reports"><h3>Reports</h3>
+<article class="d-entry" id="reports-try-again" data-q="reports reports  try again "><h5>Try again <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="reports-compat-game"><h3>Compat Game</h3>
+<article class="d-entry" id="compat-game-try-again" data-q="reports compat game  try again "><h5>Try again <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+</section>
+<section class="d-section" id="steam"><h2>Steam</h2>
+<div class="d-block" id="steam-steam-achievements-content"><h3>Steam Achievements Content</h3>
+<article class="d-entry" id="steam-achievements-content-try-again" data-q="steam steam achievements content  try again "><h5>Try again <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="steam-steam-game"><h3>Steam Game</h3>
+<h4>About this game</h4>
+<article class="d-entry" id="steam-game-about-this-game-read-the-full-description" data-q="steam steam game about this game read the full description "><h5>Read the full description <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Explore</h4>
+<article class="d-entry" id="steam-game-explore-how-it-runs-on-porthole" data-q="steam steam game explore how it runs on porthole "><h5>How it runs on Porthole <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="steam-game-explore-steam-reviews" data-q="steam steam game explore steam reviews … · …%"><h5>Steam reviews <span class="tag">Action</span></h5><p>… · …%</p></article>
+<article class="d-entry" id="steam-game-explore-news-and-patch-notes" data-q="steam steam game explore news and patch notes from steam"><h5>News and patch notes <span class="tag">Action</span></h5><p>From Steam</p></article>
+<article class="d-entry" id="steam-game-explore-version-and-dlc" data-q="steam steam game explore version and dlc "><h5>Version and DLC <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="steam-game-explore-achievements" data-q="steam steam game explore achievements "><h5>Achievements <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="steam-game-explore-workshop" data-q="steam steam game explore workshop mods and community items"><h5>Workshop <span class="tag">Action</span></h5><p>Mods and community items</p></article>
+<article class="d-entry" id="steam-game-explore-details-and-files" data-q="steam steam game explore details and files "><h5>Details and files <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Files and links</h4>
+<article class="d-entry" id="steam-game-files-and-links-open-on-steam" data-q="steam steam game files and links open on steam "><h5>Open on Steam <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="steam-game-files-and-links-delete-downloaded-files" data-q="steam steam game files and links delete downloaded files "><h5>Delete downloaded files <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>On Porthole</h4>
+<article class="d-entry" id="steam-game-on-porthole-see-reports" data-q="steam steam game on porthole see reports what other players say about running this game here, by device, with the settings that worked."><h5>See reports <span class="tag">Action</span></h5><p>What other players say about running this game here, by device, with the settings that worked.</p></article>
+<article class="d-entry" id="steam-game-on-porthole-write-a-report" data-q="steam steam game on porthole write a report "><h5>Write a report <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>System requirements</h4>
+<article class="d-entry" id="steam-game-system-requirements-minimum" data-q="steam steam game system requirements minimum "><h5>Minimum <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="steam-game-system-requirements-recommended" data-q="steam steam game system requirements recommended "><h5>Recommended <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="steam-steam-versions-content"><h3>Steam Versions Content</h3>
+<article class="d-entry" id="steam-versions-content-try-again" data-q="steam steam versions content  try again "><h5>Try again <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Version</h4>
+<article class="d-entry" id="steam-versions-content-version-beta-password" data-q="steam steam versions content version beta password some games have private betas. a code from the developer, typed here, opens the beta it belongs to."><h5>Beta password <span class="tag">TextField</span></h5><p>Some games have private betas. A code from the developer, typed here, opens the beta it belongs to.</p></article>
+</div>
+<div class="d-block" id="steam-steam-sign-in"><h3>Steam Sign In</h3>
+<article class="d-entry" id="steam-sign-in-steam-guard-code" data-q="steam steam sign in  steam guard code "><h5>Steam Guard code <span class="tag">TextField</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="steam-sign-in-submit-code" data-q="steam steam sign in  submit code "><h5>Submit code <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="steam-sign-in-account-name" data-q="steam steam sign in  account name "><h5>Account name <span class="tag">TextField</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="steam-sign-in-password" data-q="steam steam sign in  password "><h5>Password <span class="tag">TextField</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="steam-steam-owned-list"><h3>Steam Owned List</h3>
+<article class="d-entry" id="steam-owned-list-steam-client" data-q="steam steam owned list  steam client valve&#x27;s own client files start your steam games and check your licence. about 73 mb from valve; nothing else is installed."><h5>Steam client <span class="tag">Action</span></h5><p>Valve&#x27;s own client files start your Steam games and check your licence. About 73 MB from Valve; nothing else is installed.</p></article>
+<article class="d-entry" id="steam-owned-list-steam-controller-support" data-q="steam steam owned list  steam controller support "><h5>Steam controller support <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="steam-steam-workshop-content"><h3>Steam Workshop Content</h3>
+<article class="d-entry" id="steam-workshop-content-show" data-q="steam steam workshop content  show "><h5>Show <span class="tag">Choice</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="steam-workshop-content-order" data-q="steam steam workshop content  order "><h5>Order <span class="tag">Choice</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="steam-workshop-content-search" data-q="steam steam workshop content  search "><h5>Search <span class="tag">TextField</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="steam-workshop-content-try-again" data-q="steam steam workshop content  try again "><h5>Try again <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Subscribed</h4>
+<article class="d-entry" id="steam-workshop-content-subscribed-update-mods-automatically" data-q="steam steam workshop content subscribed update mods automatically when a mod you are subscribed to has a newer version on steam, porthole downloads it when you open the game&#x27;s page. turn this off to update only with the button below."><h5>Update mods automatically <span class="tag">Toggle</span></h5><p>When a mod you are subscribed to has a newer version on Steam, Porthole downloads it when you open the game&#x27;s page. Turn this off to update only with the button below.</p></article>
+<article class="d-entry" id="steam-workshop-content-subscribed-download-missing-and-updated-items" data-q="steam steam workshop content subscribed download missing and updated items "><h5>Download missing and updated items <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+</section>
+<section class="d-section" id="stores"><h2>Stores</h2>
+<div class="d-block" id="stores-epic-game"><h3>Epic Game</h3>
+<h4>About this game</h4>
+<article class="d-entry" id="epic-game-about-this-game-read-the-full-description" data-q="stores epic game about this game read the full description "><h5>Read the full description <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="epic-game-about-this-game-how-it-runs-on-porthole" data-q="stores epic game about this game how it runs on porthole "><h5>How it runs on Porthole <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="epic-game-about-this-game-details-and-files" data-q="stores epic game about this game details and files "><h5>Details and files <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Files and links</h4>
+<article class="d-entry" id="epic-game-files-and-links-find-on-the-epic-games-store" data-q="stores epic game files and links find on the epic games store "><h5>Find on the Epic Games Store <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="epic-game-files-and-links-write-a-report" data-q="stores epic game files and links write a report "><h5>Write a report <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="epic-game-files-and-links-delete-downloaded-files" data-q="stores epic game files and links delete downloaded files "><h5>Delete downloaded files <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+</section>
+<section class="d-section" id="library"><h2>Library</h2>
+<div class="d-block" id="library-steam-picker"><h3>Steam Picker</h3>
+<article class="d-entry" id="steam-picker-game-name" data-q="library steam picker  game name "><h5>Game name <span class="tag">TextField</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Pick the match</h4>
+<article class="d-entry" id="steam-picker-pick-the-match-no-artwork" data-q="library steam picker pick the match no artwork "><h5>No artwork <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+</section>
+<section class="d-section" id="other-screens"><h2>Other screens</h2>
+<div class="d-block" id="other-screens-add-game-flow"><h3>Add Game Flow</h3>
+<h4>How do you want to add it?</h4>
+<article class="d-entry" id="add-game-flow-how-do-you-want-to-add-it-import-a-game-folder" data-q="other screens add game flow how do you want to add it? import a game folder in files, tap folders until you are inside the game&#x27;s folder (the one with its .exe), then tap open at the top right. tapping a folder only goes into it; open chooses the folder you are in. it is copied into the app, so it needs that much free space."><h5>Import a game folder <span class="tag">Action</span></h5><p>In Files, tap folders until you are inside the game&#x27;s folder (the one with its .exe), then tap Open at the top right. Tapping a folder only goes into it; Open chooses the folder you are in. It is copied into the app, so it needs that much free space.</p></article>
+<article class="d-entry" id="add-game-flow-how-do-you-want-to-add-it-download-from-steam" data-q="other screens add game flow how do you want to add it? download from steam games you own on steam, installed straight into the app."><h5>Download from Steam <span class="tag">Action</span></h5><p>Games you own on Steam, installed straight into the app.</p></article>
+<article class="d-entry" id="add-game-flow-how-do-you-want-to-add-it-download-from-epic-games" data-q="other screens add game flow how do you want to add it? download from epic games games you own on epic games, installed straight into the app. you sign in on epic&#x27;s own page."><h5>Download from Epic Games <span class="tag">Action</span></h5><p>Games you own on Epic Games, installed straight into the app. You sign in on Epic&#x27;s own page.</p></article>
+<article class="d-entry" id="add-game-flow-how-do-you-want-to-add-it-download-from-gog" data-q="other screens add game flow how do you want to add it? download from gog games you own on gog, installed straight into the app. you sign in on gog&#x27;s own page."><h5>Download from GOG <span class="tag">Action</span></h5><p>Games you own on GOG, installed straight into the app. You sign in on GOG&#x27;s own page.</p></article>
+<article class="d-entry" id="add-game-flow-how-do-you-want-to-add-it-download-from-itch-io" data-q="other screens add game flow how do you want to add it? download from itch.io games you bought, claimed or collected on itch.io, installed straight into the app. you sign in with your own api key."><h5>Download from itch.io <span class="tag">Action</span></h5><p>Games you bought, claimed or collected on itch.io, installed straight into the app. You sign in with your own API key.</p></article>
+<article class="d-entry" id="add-game-flow-how-do-you-want-to-add-it-download-from-amazon-games" data-q="other screens add game flow how do you want to add it? download from amazon games games you bought on amazon or claimed with prime gaming, installed straight into the app. you sign in on amazon&#x27;s own page."><h5>Download from Amazon Games <span class="tag">Action</span></h5><p>Games you bought on Amazon or claimed with Prime Gaming, installed straight into the app. You sign in on Amazon&#x27;s own page.</p></article>
+<article class="d-entry" id="add-game-flow-how-do-you-want-to-add-it-download-from-the-ea-app" data-q="other screens add game flow how do you want to add it? download from the ea app pc games on your ea account, installed straight into the app and started without the ea app. you sign in on ea&#x27;s own page. games with ea&#x27;s kernel anti-cheat cannot run."><h5>Download from the EA app <span class="tag">Action</span></h5><p>PC games on your EA account, installed straight into the app and started without the EA app. You sign in on EA&#x27;s own page. Games with EA&#x27;s kernel anti-cheat cannot run.</p></article>
+<article class="d-entry" id="add-game-flow-how-do-you-want-to-add-it-run-a-windows-installer" data-q="other screens add game flow how do you want to add it? run a windows installer for games from a disc or a setup file you already have. pick the setup file, run it, then add what it installed."><h5>Run a Windows installer <span class="tag">Action</span></h5><p>For games from a disc or a setup file you already have. Pick the setup file, run it, then add what it installed.</p></article>
+<h4>Already in the app</h4>
+<article class="d-entry" id="add-game-flow-already-in-the-app-search" data-q="other screens add game flow already in the app search "><h5>Search <span class="tag">TextField</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="add-game-flow-already-in-the-app-add-by-path" data-q="other screens add game flow already in the app add by path "><h5>Add by path <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="add-game-flow-already-in-the-app-program" data-q="other screens add game flow already in the app program "><h5>Program <span class="tag">TextField</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="other-screens-program-chooser"><h3>Program Chooser</h3>
+<h4>Not the right one?</h4>
+<article class="d-entry" id="program-chooser-not-the-right-one-search" data-q="other screens program chooser not the right one? search "><h5>Search <span class="tag">TextField</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="program-chooser-not-the-right-one-show-installers-and-tools" data-q="other screens program chooser not the right one? show installers and tools (…) "><h5>Show installers and tools (…) <span class="tag">Toggle</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="other-screens-pair-on-device"><h3>Pair On Device</h3>
+<h4>Troubleshooting</h4>
+<article class="d-entry" id="pair-on-device-troubleshooting-show-details" data-q="other screens pair on device troubleshooting show details "><h5>Show details <span class="tag">Toggle</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="pair-on-device-troubleshooting-copy" data-q="other screens pair on device troubleshooting copy "><h5>Copy <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="other-screens-setup-guide"><h3>Setup Guide</h3>
+<article class="d-entry" id="setup-guide-create-it-on-this-device" data-q="other screens setup guide  create it on this device about a minute, no computer"><h5>Create it on this device <span class="tag">Action</span></h5><p>About a minute, no computer</p></article>
+<article class="d-entry" id="setup-guide-i-already-have-a-pairing-file" data-q="other screens setup guide  i already have a pairing file "><h5>I already have a pairing file <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="setup-guide-choose-the-pairing-file" data-q="other screens setup guide  choose the pairing file 1. on a computer, install a free pairing tool such as iloader or jitterbug. 2. plug in your device and tap trust. 3. save the pairing file for your device (.plist or .mobiledevicepairing). 4. move it to this device (airdrop, icloud drive or a cable). 5. come back and choose it here. you only do this once."><h5>Choose the pairing file <span class="tag">Action</span></h5><p>1. On a computer, install a free pairing tool such as iloader or Jitterbug. 2. Plug in your device and tap Trust. 3. Save the pairing file for your device (.plist or .mobiledevicepairing). 4. Move it to this device (AirDrop, iCloud Drive or a cable). 5. Come back and choose it here. You only do this once.</p></article>
+<article class="d-entry" id="setup-guide-replace-the-pairing-file" data-q="other screens setup guide  replace the pairing file "><h5>Replace the pairing file <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="setup-guide-check-again" data-q="other screens setup guide  check again "><h5>Check again <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<article class="d-entry" id="setup-guide-use-a-different-method" data-q="other screens setup guide  use a different method "><h5>Use a different method <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+<h4>Files</h4>
+<article class="d-entry" id="setup-guide-files-import-a-game" data-q="other screens setup guide files import a game pick a game&#x27;s folder in files and it is copied into porthole, or run a windows installer."><h5>Import a game <span class="tag">Action</span></h5><p>Pick a game&#x27;s folder in Files and it is copied into Porthole, or run a Windows installer.</p></article>
+</div>
+<div class="d-block" id="other-screens-vcredist32"><h3>VCRedist32</h3>
+<h4>32-bit programs (optional)</h4>
+<p class="d-note">Older games and many launchers are 32-bit programs. They run on Wine&#x27;s own C++ runtime unless you add Microsoft&#x27;s. You can also do this later in Settings › Advanced › Windows components.</p>
+<article class="d-entry" id="vcredist32-32-bit-programs-optional-download" data-q="other screens vcredist32 32-bit programs (optional) download about … mb, from microsoft"><h5>Download <span class="tag">Action</span></h5><p>About … MB, from Microsoft</p></article>
+<article class="d-entry" id="vcredist32-32-bit-programs-optional-remove-the-downloaded-copy" data-q="other screens vcredist32 32-bit programs (optional) remove the downloaded copy "><h5>Remove the downloaded copy <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="other-screens-vcruntime"><h3>VCRuntime</h3>
+<article class="d-entry" id="vcruntime-download" data-q="other screens vcruntime  download about 25 mb, from microsoft"><h5>Download <span class="tag">Action</span></h5><p>About 25 MB, from Microsoft</p></article>
+<article class="d-entry" id="vcruntime-remove-the-downloaded-copy" data-q="other screens vcruntime  remove the downloaded copy "><h5>Remove the downloaded copy <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="other-screens-wine-gecko"><h3>Wine Gecko</h3>
+<h4>Web pages in programs (optional)</h4>
+<p class="d-note">Launchers and installers that show a web page need Wine&#x27;s web engine. Without it Wine stops on its own download window, which can hang. You can also do this later in Settings › Advanced › Windows components.</p>
+<article class="d-entry" id="wine-gecko-web-pages-in-programs-optional-download" data-q="other screens wine gecko web pages in programs (optional) download about 110 mb, from winehq"><h5>Download <span class="tag">Action</span></h5><p>About 110 MB, from WineHQ</p></article>
+<article class="d-entry" id="wine-gecko-web-pages-in-programs-optional-remove-the-downloaded-copy" data-q="other screens wine gecko web pages in programs (optional) remove the downloaded copy "><h5>Remove the downloaded copy <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+<div class="d-block" id="other-screens-wine-mono"><h3>Wine Mono</h3>
+<h4>.NET (optional)</h4>
+<p class="d-note">Only for games built on Microsoft&#x27;s .NET Framework, such as Celeste. You can also download it later in Settings › Advanced › Windows components.</p>
+<article class="d-entry" id="wine-mono-net-optional-download" data-q="other screens wine mono .net (optional) download about 42 mb, from winehq"><h5>Download <span class="tag">Action</span></h5><p>About 42 MB, from WineHQ</p></article>
+<article class="d-entry" id="wine-mono-net-optional-remove-the-downloaded-copy" data-q="other screens wine mono .net (optional) remove the downloaded copy "><h5>Remove the downloaded copy <span class="tag">Action</span></h5><p class="fine">No further description in the app.</p></article>
+</div>
+</section>
+</div>
+</main>
+<footer><div class="wrap foot">
+  <div class="foot-brand">
+    <picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night-96.webp"><img src="/img/porthole-sunset-96.webp" alt="" width="40" height="40"></picture>
+    <div><b>Porthole</b><span>Windows PC games on iPhone and iPad. A personal project.</span></div>
+  </div>
+  <nav class="foot-links" aria-label="Footer">
+    <a href="/download.html">Get it</a><a href="/changelog.html">What's new</a><a href="/gallery.html">Gallery</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/docs/">Docs</a><a href="/privacy.html">Privacy</a><a href="/trust.html">Trust</a><a href="/privacy.html#contact">Contact</a><a href="https://github.com/tylerkaska112/PortHole">GitHub</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem</a>
+  </nav>
+  <p class="fine">Not affiliated with or endorsed by Valve, Microsoft, Apple or any game publisher. Game and company names belong to their owners. Built with the help of AI.</p>
+</div></footer>
+<script src="/tools.js?v=20261052" defer></script>
+<script src="/fx.js?v=20261031" defer></script>
+<script src="/menu.js?v=20261027" defer></script>
+<script src="/docs/docs.js?v=202611092040" defer></script>
+</body>
+</html>

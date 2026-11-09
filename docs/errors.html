@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Errors and log lines | Porthole documentation</title>
+<meta name="description" content="What an error or a line in Porthole&#x27;s log means and what to try: black screens, pairing, memory, feature levels, downloads.">
+<meta name="theme-color" content="#04121A">
+<link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="canonical" href="https://portholehq.site/docs/errors.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Errors and log lines | Porthole documentation">
+<meta property="og:description" content="What an error or a line in Porthole&#x27;s log means and what to try: black screens, pairing, memory, feature levels, downloads.">
+<meta property="og:image" content="https://portholehq.site/img/og-image.jpg">
+<meta property="og:url" content="https://portholehq.site/docs/errors.html">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script>try{var d=document.documentElement,t=localStorage.getItem("porthole-theme");if(t){d.dataset.theme=t;if(t==="custom"){var c=JSON.parse(localStorage.getItem("porthole-custom")||"{}");for(var k in c)d.style.setProperty(k,c[k])}}}catch(e){}</script>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css?v=20261104">
+<link rel="stylesheet" href="/docs/docs.css?v=202611092040">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/"><picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night-96.webp"><img src="/img/porthole-sunset-96.webp" alt="" width="38" height="38"></picture>Porthole</a>
+  <nav aria-label="Main">
+    <a href="/#features">Features</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/docs/">Docs</a><a href="/privacy.html">Privacy</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a class="cta" href="/download.html">Get it</a>
+  </nav>
+  <details class="menu">
+    <summary aria-label="Menu"><span class="bars" aria-hidden="true"></span></summary>
+    <div class="panel" role="navigation" aria-label="Site menu">
+      <a href="/">Home</a>
+      <a href="/#features">Features</a>
+      <a href="/download.html">Get it</a>
+      <a href="/compat.html">Compatibility</a>
+      <a href="/help.html">Help</a>
+      <a href="/docs/">Docs</a>
+      <a href="/gallery.html">Gallery</a>
+      <a href="/changelog.html">What's new</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/trust.html">Trust</a>
+      <a href="/privacy.html#contact">Contact</a>
+      <span class="sep" role="separator"></span>
+      <a href="https://discord.gg/N7PkdptTFn">Discord<i aria-hidden="true">↗</i></a>
+      <a href="https://github.com/tylerkaska112/PortHole">GitHub<i aria-hidden="true">↗</i></a>
+      <a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem<i aria-hidden="true">↗</i></a>
+    </div>
+  </details>
+</div></header>
+<main id="main">
+<div class="wrap page doc docs">
+<p class="eyebrow">Documentation</p>
+<h1>Errors and log lines</h1>
+<nav class="d-nav" aria-label="Documentation"><a href="/docs/">Search</a><a href="/docs/settings.html">Settings</a><a href="/docs/engine-lines.html">Engine lines</a><a href="/docs/errors.html" aria-current="page">Errors and log lines</a><a href="/docs/messages.html">Messages</a></nav>
+<p class="lede">Something stopped, or a report’s log shows a line you do not understand. Search for the words in the message. Each entry says what it means, what to try, and how sure we are.</p>
+<input class="search" type="search" data-docs-filter placeholder="Filter: black screen, pairing, 12_0, fence, memory..." aria-label="Filter the errors" autocomplete="off">
+<p class="fine" data-docs-count aria-live="polite" style="margin:8px 0 0"></p>
+<section class="d-section" id="starting-a-game"><h2>Starting a game</h2>
+<article class="d-entry" id="pairing-file-needed" data-q="&quot;pairing file needed&quot; pairing file needed the pairing file lets porthole switch jit on, which games need to run at speed. without it the game cannot start. on ios 27 or later: in the setup guide tap **create it on this device**, then open settings &gt; privacy &amp; security &gt; developer mode &gt; &quot;pair with porthole&quot; and type the six-digit code porthole shows. on earlier ios: make the file once on a computer with a free pairing tool such as iloader or jitterbug, move it to the device and choose it in porthole. starting a game"><h5>&quot;Pairing file needed&quot;</h5><p class="d-see"><b>You see:</b> <code>Pairing file needed</code></p><p>The pairing file lets Porthole switch JIT on, which games need to run at speed. Without it the game cannot start.</p><p class="d-tryh"><b>Try:</b></p><ul><li>On iOS 27 or later: in the setup guide tap <b>Create it on this device</b>, then open Settings &gt; Privacy &amp; Security &gt; Developer Mode &gt; &quot;Pair with Porthole&quot; and type the six-digit code Porthole shows.</li><li>On earlier iOS: make the file once on a computer with a free pairing tool such as iloader or Jitterbug, move it to the device and choose it in Porthole.</li></ul><p class="fine">From the Help page.</p></article>
+<article class="d-entry" id="tunnel-connecting-disconnected" data-q="the tunnel says &quot;connecting&quot; and then &quot;disconnected&quot; after an update [tunnel] ... connecting, then disconnected ios sometimes keeps old information about the app&#x27;s helper after an update. restart the device. your games and settings are not affected and you do not need to reinstall. starting a game"><h5>The tunnel says &quot;connecting&quot; and then &quot;disconnected&quot; after an update</h5><p class="d-see"><b>You see:</b> <code>[tunnel] ... connecting, then disconnected</code></p><p>iOS sometimes keeps old information about the app&#x27;s helper after an update.</p><p class="d-tryh"><b>Try:</b></p><ul><li>Restart the device. Your games and settings are not affected and you do not need to reinstall.</li></ul><p class="fine">Seen repeatedly; restarting fixes it.</p></article>
+<article class="d-entry" id="large-address-space-not-allowed" data-q="&quot;large address space is not allowed&quot; in the install check [install] note: large address space is not allowed this copy of porthole was signed without the permission that lets games map the big block of address space the engine reserves for them. some games will not start, or close shortly after they do. many games run fine without it, so the line is a note, not always a fault. if a game closes at start, sign porthole again with a profile that carries the extended virtual addressing capability (the install check in settings says whether your profile has it). starting a game"><h5>&quot;Large address space is not allowed&quot; in the install check</h5><p class="d-see"><b>You see:</b> <code>[install] note: Large address space is not allowed</code></p><p>This copy of Porthole was signed without the permission that lets games map the big block of address space the engine reserves for them. Some games will not start, or close shortly after they do. Many games run fine without it, so the line is a note, not always a fault.</p><p class="d-tryh"><b>Try:</b></p><ul><li>If a game closes at start, sign Porthole again with a profile that carries the extended virtual addressing capability (the install check in Settings says whether your profile has it).</li></ul><p class="fine">The wording is the app&#x27;s own; whether it is the cause of a given crash has to be read from that game&#x27;s log.</p></article>
+</section>
+<section class="d-section" id="steam"><h2>Steam</h2>
+<article class="d-entry" id="steam-sign-in-refused" data-q="&quot;steam did not accept the saved sign-in for downloads&quot; steam: the sign-in for downloads was refused (result 5).  [cloud] skipped: steam did not accept the saved sign-in for downloads. sign in for downloads again. the sign-in porthole saved for downloads and steam cloud has expired or was refused, so cloud saves are skipped for that run. the game itself can still start. open settings &gt; steam and sign in for downloads again. steam"><h5>&quot;Steam did not accept the saved sign-in for downloads&quot;</h5><p class="d-see"><b>You see:</b> <code>Steam: the sign-in for downloads was refused (result 5).  [cloud] skipped: Steam did not accept the saved sign-in for downloads. Sign in for downloads again.</code></p><p>The sign-in Porthole saved for downloads and Steam Cloud has expired or was refused, so cloud saves are skipped for that run. The game itself can still start.</p><p class="d-tryh"><b>Try:</b></p><ul><li>Open Settings &gt; Steam and sign in for downloads again.</li></ul><p class="fine">The log line says so itself.</p></article>
+<article class="d-entry" id="steam-fails-on-one-network" data-q="steam sign-in or downloads fail on one network only tls or connection errors to steam some work and school networks block steam. try another network or a mobile connection. if it works there, the network was the cause. steam"><h5>Steam sign-in or downloads fail on one network only</h5><p class="d-see"><b>You see:</b> <code>TLS or connection errors to Steam</code></p><p>Some work and school networks block Steam.</p><p class="d-tryh"><b>Try:</b></p><ul><li>Try another network or a mobile connection. If it works there, the network was the cause.</li></ul><p class="fine">From the Help page.</p></article>
+</section>
+<section class="d-section" id="graphics"><h2>Graphics</h2>
+<article class="d-entry" id="dx11-feature-level-12-0" data-q="&quot;minimum required feature level d3d_feature_level_12_0 not supported&quot; maximum supported feature level: d3d_feature_level_11_1  /  minimum required feature level d3d_feature_level_12_0 not supported the game&#x27;s direct3d 11 mode asks for feature level 12_0, and porthole&#x27;s direct3d 11 layer reports 11_1 at most. the game then shows its own error and closes. a setting cannot raise that level. start the game in its **directx 12** mode instead. if you added a `-dx11` launch argument, remove it. games whose only mode needs feature level 12_0 on direct3d 11 cannot run through that layer. graphics"><h5>&quot;Minimum required feature level D3D_FEATURE_LEVEL_12_0 not supported&quot;</h5><p class="d-see"><b>You see:</b> <code>Maximum supported feature level: D3D_FEATURE_LEVEL_11_1  /  Minimum required feature level D3D_FEATURE_LEVEL_12_0 not supported</code></p><p>The game&#x27;s Direct3D 11 mode asks for feature level 12_0, and Porthole&#x27;s Direct3D 11 layer reports 11_1 at most. The game then shows its own error and closes. A setting cannot raise that level.</p><p class="d-tryh"><b>Try:</b></p><ul><li>Start the game in its <b>DirectX 12</b> mode instead. If you added a <code>-dx11</code> launch argument, remove it.</li><li>Games whose only mode needs feature level 12_0 on Direct3D 11 cannot run through that layer.</li></ul><p class="fine">Seen with Dying Light: The Beast launched with -dx11; its DirectX 12 mode starts.</p></article>
+<article class="d-entry" id="d3d12-black-screen-fence" data-q="black screen and 0 fps after the game ran well for a while (directx 12) queue::wait: fence ... never reached n in 5 s (at 0); continuing a command queue is waiting for a fence that nothing ever signalled, so the game stops drawing frames. the process is still alive: sound may carry on. one known cause is a game that writes a marker value with writebufferimmediate and then waits for it (see the next entry). look just before the first queue::wait line in the report log for `unimplemented: ... writebufferimmediate`. if it is there, add the engine line `write-buffer-immediate = 1` to the game&#x27;s engine lines and start it again. if memory warnings (`mem-pressure critical`) come just before, raise the game&#x27;s swap or lower its graphics quality. send a problem report from settings &gt; report a problem if it keeps happening. graphics"><h5>Black screen and 0 FPS after the game ran well for a while (DirectX 12)</h5><p class="d-see"><b>You see:</b> <code>Queue::Wait: fence ... never reached N in 5 s (at 0); continuing</code></p><p>A command queue is waiting for a fence that nothing ever signalled, so the game stops drawing frames. The process is still alive: sound may carry on. One known cause is a game that writes a marker value with WriteBufferImmediate and then waits for it (see the next entry).</p><p class="d-tryh"><b>Try:</b></p><ul><li>Look just before the first Queue::Wait line in the report log for <code>unimplemented: ... WriteBufferImmediate</code>. If it is there, add the engine line <code>write-buffer-immediate = 1</code> to the game&#x27;s engine lines and start it again.</li><li>If memory warnings (<code>mem-pressure CRITICAL</code>) come just before, raise the game&#x27;s Swap or lower its graphics quality.</li><li>Send a problem report from Settings &gt; Report a problem if it keeps happening.</li></ul><p class="fine">The fence line is a symptom, not a cause. The WriteBufferImmediate connection is likely but not yet confirmed for every game.</p></article>
+<article class="d-entry" id="write-buffer-immediate-unimplemented" data-q="&quot;unimplemented: id3d12graphicscommandlist7::writebufferimmediate&quot; [madeira-d3d12] unimplemented: id3d12graphicscommandlist7::writebufferimmediate the game called a direct3d 12 function that writes a small value from the gpu. by default porthole ignores it, because writing it is switched off. a game that waits for that value will wait forever. add `write-buffer-immediate = 1` to the game&#x27;s engine lines (game settings &gt; starting &gt; this game&#x27;s engine lines). the log then says `write-buffer-immediate = 1 (opt-in)`. graphics"><h5>&quot;unimplemented: ID3D12GraphicsCommandList7::WriteBufferImmediate&quot;</h5><p class="d-see"><b>You see:</b> <code>[madeira-d3d12] unimplemented: ID3D12GraphicsCommandList7::WriteBufferImmediate</code></p><p>The game called a Direct3D 12 function that writes a small value from the GPU. By default Porthole ignores it, because writing it is switched off. A game that waits for that value will wait forever.</p><p class="d-tryh"><b>Try:</b></p><ul><li>Add <code>write-buffer-immediate = 1</code> to the game&#x27;s engine lines (game settings &gt; Starting &gt; This game&#x27;s engine lines). The log then says <code>write-buffer-immediate = 1 (opt-in)</code>.</li></ul><p class="fine">The option is part of the engine and is on in the recommended setup of other games. Whether it fixes a particular game has to be tried.</p></article>
+</section>
+<section class="d-section" id="memory"><h2>Memory</h2>
+<article class="d-entry" id="mem-pressure-critical" data-q="&quot;[mem-pressure] critical&quot; [mem-pressure] critical: app 6723 mb, free 1469 mb, gpu 4536 mb porthole is close to the memory ios lets one app use. the game may stutter, freeze, or be closed by ios without warning. the numbers say how much the app, the free memory and the graphics memory are using. open the game&#x27;s settings and raise **swap**; a wide swap coverage helps games with many small allocations. lower the game&#x27;s own texture and graphics quality: graphics memory is a large part of the total. close other apps before you start. memory"><h5>&quot;[mem-pressure] CRITICAL&quot;</h5><p class="d-see"><b>You see:</b> <code>[mem-pressure] CRITICAL: app 6723 MB, free 1469 MB, gpu 4536 MB</code></p><p>Porthole is close to the memory iOS lets one app use. The game may stutter, freeze, or be closed by iOS without warning. The numbers say how much the app, the free memory and the graphics memory are using.</p><p class="d-tryh"><b>Try:</b></p><ul><li>Open the game&#x27;s settings and raise <b>Swap</b>; a wide swap coverage helps games with many small allocations.</li><li>Lower the game&#x27;s own texture and graphics quality: graphics memory is a large part of the total.</li><li>Close other apps before you start.</li></ul><p class="fine">General guidance from the Help page; a game that needs more memory than the device can give cannot be fixed with a setting.</p></article>
+</section>
+<section class="d-section" id="log-lines-that-are-not-the-problem"><h2>Log lines that are not the problem</h2>
+<article class="d-entry" id="pool-applied-false" data-q="&quot;[err] [no-footprint] pool applied=false&quot; [no-footprint] pool-rw-alias: all 4 variants refused - pool stays jetsam-counted porthole tried to keep its code memory out of the count ios uses to decide when to close an app, and ios refused all four ways. the line is marked err but the game starts normally; the memory just stays counted. nothing. it appears in logs of games that run. log lines that are not the problem"><h5>&quot;[ERR] [no-footprint] pool applied=false&quot;</h5><p class="d-see"><b>You see:</b> <code>[no-footprint] pool-RW-alias: ALL 4 variants refused - pool stays jetsam-counted</code></p><p>Porthole tried to keep its code memory out of the count iOS uses to decide when to close an app, and iOS refused all four ways. The line is marked ERR but the game starts normally; the memory just stays counted.</p><p class="d-tryh"><b>Try:</b></p><ul><li>Nothing. It appears in logs of games that run.</li></ul><p class="fine">It is in every log we have read, including those of games that played.</p></article>
+<article class="d-entry" id="video64-assertion" data-q="&quot;assertion failed: failed to load video64.dll&quot; src\public\tier1\interface.h (271) : assertion failed: failed to load &quot;video64.dll&quot; it comes from valve&#x27;s own code that starts with the game. it appears in logs of games that went on to run. nothing, unless the game also fails to start; then read the lines after it. log lines that are not the problem"><h5>&quot;Assertion Failed: Failed to load video64.dll&quot;</h5><p class="d-see"><b>You see:</b> <code>src\public\tier1\interface.h (271) : Assertion Failed: Failed to load &quot;video64.dll&quot;</code></p><p>It comes from Valve&#x27;s own code that starts with the game. It appears in logs of games that went on to run.</p><p class="d-tryh"><b>Try:</b></p><ul><li>Nothing, unless the game also fails to start; then read the lines after it.</li></ul><p class="fine">Seen in logs of games that played.</p></article>
+</section>
+</div>
+</main>
+<footer><div class="wrap foot">
+  <div class="foot-brand">
+    <picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night-96.webp"><img src="/img/porthole-sunset-96.webp" alt="" width="40" height="40"></picture>
+    <div><b>Porthole</b><span>Windows PC games on iPhone and iPad. A personal project.</span></div>
+  </div>
+  <nav class="foot-links" aria-label="Footer">
+    <a href="/download.html">Get it</a><a href="/changelog.html">What's new</a><a href="/gallery.html">Gallery</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/docs/">Docs</a><a href="/privacy.html">Privacy</a><a href="/trust.html">Trust</a><a href="/privacy.html#contact">Contact</a><a href="https://github.com/tylerkaska112/PortHole">GitHub</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem</a>
+  </nav>
+  <p class="fine">Not affiliated with or endorsed by Valve, Microsoft, Apple or any game publisher. Game and company names belong to their owners. Built with the help of AI.</p>
+</div></footer>
+<script src="/tools.js?v=20261052" defer></script>
+<script src="/fx.js?v=20261031" defer></script>
+<script src="/menu.js?v=20261027" defer></script>
+<script src="/docs/docs.js?v=202611092040" defer></script>
+</body>
+</html>
