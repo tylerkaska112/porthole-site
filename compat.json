@@ -1,7 +1,1536 @@
 {
- "generated": "2026-11-04 19:48 UTC",
+ "generated": "2026-11-08 23:00 UTC",
  "engine": "3af3467-r1",
  "games": [
+  {
+   "id": "steam:242760",
+   "title": "The Forest",
+   "kind": "steam",
+   "steamAppID": 242760,
+   "reportCount": 3,
+   "lastReport": "2026-11-06",
+   "verdict": "broken",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 2,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro",
+     "verdict": "broken",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.3.26",
+     "engine": "3af3467-r4",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 53.4,
+      "fpsLow": 2,
+      "minutes": 2,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPad Pro 13-inch (M4)"
+    },
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "broken",
+     "stability": "constantly",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 52.9,
+      "fpsLow": 1,
+      "minutes": 5,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPhone 15 Pro"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.335",
+     "engine": "48f9764-r1",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "drains_battery",
+      "needs_low_settings"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 63,
+      "fpsLow": 44,
+      "minutes": 7,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "ultra low graphics settings to get 60 fps",
+     "date": "2026-10-15",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:3241660",
+   "title": "R.E.P.O.",
+   "kind": "steam",
+   "steamAppID": 3241660,
+   "reportCount": 3,
+   "lastReport": "2026-11-05",
+   "verdict": "playable",
+   "confidence": "medium",
+   "countedReports": 2,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPhone 13 Pro Max",
+     "verdict": "broken",
+     "reports": 1
+    },
+    {
+     "device": "iPhone 15 Pro",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 3072,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_bad"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 29.7,
+      "fpsLow": 29,
+      "minutes": 8,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": true,
+      "swapMB": 2048,
+      "swapCoverage": "",
+      "vramMB": 512,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPhone 17"
+    },
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "drains_battery",
+      "needs_low_settings",
+      "overheats"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 22.8,
+      "fpsLow": 16,
+      "minutes": 12,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 3072,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPhone 15 Pro"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "broken",
+     "stability": "wont_launch",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 1,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPhone 13 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:250900",
+   "title": "The Binding of Isaac: Rebirth",
+   "kind": "steam",
+   "steamAppID": 250900,
+   "reportCount": 3,
+   "lastReport": "2026-11-05",
+   "verdict": "playable",
+   "confidence": "medium",
+   "countedReports": 2,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro",
+     "verdict": "broken",
+     "reports": 1
+    },
+    {
+     "device": "iPad Pro 11-inch (M4)",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "26.5.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "graphics_glitches",
+      "long_loading"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 46.4,
+      "fpsLow": 42.2,
+      "minutes": 18,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPad Pro 11-inch (M4)"
+    },
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "broken",
+     "stability": "wont_launch",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 1,
+      "fpsLow": 1,
+      "minutes": 1,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 2048,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "Black screen",
+     "date": "2026-11-04",
+     "device": "iPhone 15 Pro"
+    },
+    {
+     "ios": "27.2",
+     "appVersion": "1.0.1",
+     "engine": "279fd0f-r13",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 59.4,
+      "fpsLow": 57,
+      "minutes": 9,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "can't download or play any DLC/mods.",
+     "date": "2026-10-17",
+     "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:1332010",
+   "title": "Stray",
+   "kind": "steam",
+   "steamAppID": 1332010,
+   "reportCount": 2,
+   "lastReport": "2026-11-07",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPhone, model iPhone19,4",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.1",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "graphics_glitches"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 19.4,
+      "fpsLow": 5,
+      "minutes": 8,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-07",
+     "device": "iPhone, model iPhone19,4"
+    },
+    {
+     "ios": "27.2",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "audio_issues",
+      "controller_ok",
+      "graphics_glitches",
+      "needs_low_settings",
+      "overheats"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 12.9,
+      "fpsLow": 5,
+      "minutes": 7,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-02",
+     "device": "iPhone 16 Pro"
+    }
+   ]
+  },
+  {
+   "id": "steam:1145350",
+   "title": "Hades II",
+   "kind": "steam",
+   "steamAppID": 1145350,
+   "reportCount": 2,
+   "lastReport": "2026-11-07",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPhone Air",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "overheats"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 38.6,
+      "fpsLow": 29,
+      "minutes": 9,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-07",
+     "device": "iPhone Air"
+    },
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 90.3,
+      "fpsLow": 59,
+      "minutes": 7,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "works great, 120 fps locked pretty much, although i didnt get that far. ipad pro m4 2tb",
+     "date": "2026-10-19",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:557340",
+   "title": "My Friend Pedro",
+   "kind": "steam",
+   "steamAppID": 557340,
+   "reportCount": 2,
+   "lastReport": "2026-11-06",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPhone 17",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 4096,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 512,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 114.2,
+      "fpsLow": 83,
+      "minutes": 13,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": true,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 512,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": false,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPhone 17"
+    },
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "controller_bad"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 29.6,
+      "fpsLow": 29.1,
+      "minutes": 6,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": true,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 512,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": false,
+      "controls": "standard"
+     },
+     "comment": "I needed to use a special flag in order for it to get past the like starting game screen, and I do not think that this game is a especially optimized for mobile a.k.a. controls suck, it is 100% playable with Xbox controller though.",
+     "date": "2026-11-04",
+     "device": "iPhone 17"
+    }
+   ]
+  },
+  {
+   "id": "steam:4001890",
+   "title": "How to Fish",
+   "kind": "steam",
+   "steamAppID": 4001890,
+   "reportCount": 2,
+   "lastReport": "2026-11-06",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 2,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.3.26",
+     "engine": "3af3467-r4",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 74.4,
+      "fpsLow": 26,
+      "minutes": 3,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPad Pro 13-inch (M4)"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.365",
+     "engine": "48f9764-r1",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 97.3,
+      "fpsLow": 57,
+      "minutes": 6,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-15",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:427520",
+   "title": "Factorio",
+   "kind": "steam",
+   "steamAppID": 427520,
+   "reportCount": 2,
+   "lastReport": "2026-11-06",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 2,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.3.26",
+     "engine": "3af3467-r4",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 31.5,
+      "fpsLow": 3,
+      "minutes": 1,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPad Pro 13-inch (M4)"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.207",
+     "engine": "48f9764-r0",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "audio_issues",
+      "controller_ok",
+      "online_works"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 55.3,
+      "fpsLow": 10.9,
+      "minutes": 5,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "direct",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-10",
+     "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:2670630",
+   "title": "Supermarket Simulator",
+   "kind": "steam",
+   "steamAppID": 2670630,
+   "reportCount": 2,
+   "lastReport": "2026-11-06",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 2,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.3.26",
+     "engine": "3af3467-r4",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 80.5,
+      "fpsLow": 49,
+      "minutes": 1,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPad Pro 13-inch (M4)"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "0.50.207",
+     "engine": "48f9764-r0",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "online_works"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 44.1,
+      "fpsLow": 20,
+      "minutes": 6,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": null,
+     "date": "2026-10-11",
+     "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:270880",
+   "title": "American Truck Simulator",
+   "kind": "steam",
+   "steamAppID": 270880,
+   "reportCount": 2,
+   "lastReport": "2026-11-05",
+   "verdict": "broken",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPad, model iPad15,7",
+     "verdict": "broken",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "broken",
+     "stability": "wont_launch",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 9,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": true,
+      "swapMB": 3072,
+      "swapCoverage": "",
+      "vramMB": 1536,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPad, model iPad15,7"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "1.1.20",
+     "engine": "279fd0f-r15",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "long_loading"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 115.1,
+      "fpsLow": 88,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-17",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:3247750",
+   "title": "Mycopunk",
+   "kind": "steam",
+   "steamAppID": 3247750,
+   "reportCount": 2,
+   "lastReport": "2026-11-05",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPad, model iPad17,4",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "drains_battery",
+      "long_loading",
+      "overheats"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 59.1,
+      "fpsLow": 55,
+      "minutes": 13,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": "it takes about 5-10 minutes to load initially then works normally",
+     "date": "2026-11-05",
+     "device": "iPad, model iPad17,4"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 59.4,
+      "fpsLow": 58,
+      "minutes": 80,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": "it takes like 5 minutes each time I launch it to get into the game but works great afterwards",
+     "date": "2026-10-21",
+     "device": "iPad, model iPad17,4"
+    }
+   ]
+  },
+  {
+   "id": "steam:275850",
+   "title": "No Man's Sky",
+   "kind": "steam",
+   "steamAppID": 275850,
+   "reportCount": 2,
+   "lastReport": "2026-11-05",
+   "verdict": "broken",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro",
+     "verdict": "broken",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "broken",
+     "stability": "constantly",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 2,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 4096,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "On iPhone 15 Pro probably insufficient memory",
+     "date": "2026-11-05",
+     "device": "iPhone 15 Pro"
+    },
+    {
+     "ios": "27.2",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "long_loading"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 10,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "downloads just fine and seems to launch without issue but failed to actually load into game. I think that this is due to me having a free Apple developer account and not having extra memory unlocked.",
+     "date": "2026-11-04",
+     "device": "iPhone 15"
+    }
+   ]
+  },
+  {
+   "id": "steam:383870",
+   "title": "Firewatch",
+   "kind": "steam",
+   "steamAppID": 383870,
+   "reportCount": 2,
+   "lastReport": "2026-11-04",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro Max",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "direct",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 29.8,
+      "fpsLow": 29,
+      "minutes": 5,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "direct",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "test",
+     "date": "2026-11-04",
+     "device": "iPhone 15 Pro Max"
+    },
+    {
+     "ios": "27.0",
+     "appVersion": "1.0.1",
+     "engine": "279fd0f-r5",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 94.4,
+      "fpsLow": 40,
+      "minutes": 10,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-10-16",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:1712830",
+   "title": "Baldi's Basics Classic Remastered",
+   "kind": "steam",
+   "steamAppID": 1712830,
+   "reportCount": 2,
+   "lastReport": "2026-11-04",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 2,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_bad",
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 29.8,
+      "fpsLow": 29.6,
+      "minutes": 7,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": true,
+      "swapMB": 2048,
+      "swapCoverage": "",
+      "vramMB": 512,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "default on screen touch controls dont rlly work, but after editing it it works fine",
+     "date": "2026-11-04",
+     "device": "iPhone 17"
+    },
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "broken",
+     "stability": "constantly",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 1,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-03",
+     "device": "iPhone 11"
+    }
+   ]
+  },
   {
    "id": "steam:620",
    "title": "Portal 2",
@@ -85,6 +1614,2803 @@
    ]
   },
   {
+   "id": "steam:1244950",
+   "title": "Battletoads",
+   "kind": "steam",
+   "steamAppID": 1244950,
+   "reportCount": 1,
+   "lastReport": "2026-11-08",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad Pro 11-inch (M4)",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "sometimes",
+     "tags": [
+      "needs_low_settings"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 34.6,
+      "fpsLow": 29,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-08",
+     "device": "iPad Pro 11-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:1942280",
+   "title": "Brotato",
+   "kind": "steam",
+   "steamAppID": 1942280,
+   "reportCount": 1,
+   "lastReport": "2026-11-08",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad Pro 11-inch (M4)",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 116.7,
+      "fpsLow": 101,
+      "minutes": 27,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-08",
+     "device": "iPad Pro 11-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:438640",
+   "title": "LEGO® STAR WARSTM: The Force Awakens",
+   "kind": "steam",
+   "steamAppID": 438640,
+   "reportCount": 1,
+   "lastReport": "2026-11-08",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad Pro 11-inch (M4)",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "drains_battery"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 56.3,
+      "fpsLow": 24,
+      "minutes": 9,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 1024,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-08",
+     "device": "iPad Pro 11-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:3164500",
+   "title": "Schedule I",
+   "kind": "steam",
+   "steamAppID": 3164500,
+   "reportCount": 1,
+   "lastReport": "2026-11-08",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.3.86",
+     "engine": "2c133ca-r1",
+     "onThisEngine": false,
+     "rating": "playable",
+     "stability": "sometimes",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 40.1,
+      "fpsLow": 3,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": null,
+     "date": "2026-11-08",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:4231820",
+   "title": "Castlevania: Belmont's Curse",
+   "kind": "steam",
+   "steamAppID": 4231820,
+   "reportCount": 1,
+   "lastReport": "2026-11-08",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone, model iPhone19,4",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.3",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "sometimes",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 94.5,
+      "fpsLow": 39,
+      "minutes": 6,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-08",
+     "device": "iPhone, model iPhone19,4"
+    }
+   ]
+  },
+  {
+   "id": "steam:412020",
+   "title": "Metro Exodus",
+   "kind": "steam",
+   "steamAppID": 412020,
+   "reportCount": 1,
+   "lastReport": "2026-11-08",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 17 Pro Max",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "sometimes",
+     "tags": [
+      "controller_ok",
+      "graphics_glitches",
+      "needs_low_settings",
+      "online_works"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 22.3,
+      "fpsLow": 6,
+      "minutes": 15,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-08",
+     "device": "iPhone 17 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:814380",
+   "title": "SekiroTM: Shadows Die Twice",
+   "kind": "steam",
+   "steamAppID": 814380,
+   "reportCount": 1,
+   "lastReport": "2026-11-08",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad, model iPad14,5",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "graphics_glitches"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 25.2,
+      "fpsLow": 13,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-08",
+     "device": "iPad, model iPad14,5"
+    }
+   ]
+  },
+  {
+   "id": "steam:739630",
+   "title": "Phasmophobia",
+   "kind": "steam",
+   "steamAppID": 739630,
+   "reportCount": 1,
+   "lastReport": "2026-11-08",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 17",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "firstPerson",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "online_works"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 48.3,
+      "fpsLow": 30,
+      "minutes": 6,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "firstPerson"
+     },
+     "comment": null,
+     "date": "2026-11-08",
+     "device": "iPhone 17"
+    }
+   ]
+  },
+  {
+   "id": "steam:335300",
+   "title": "DARK SOULSTM II: Scholar of the First Sin",
+   "kind": "steam",
+   "steamAppID": 335300,
+   "reportCount": 1,
+   "lastReport": "2026-11-07",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad, model iPad15,7",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "sometimes",
+     "tags": [
+      "controller_ok",
+      "needs_low_settings"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 36.5,
+      "fpsLow": 15,
+      "minutes": 51,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 40,
+      "preciseMath": true,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-07",
+     "device": "iPad, model iPad15,7"
+    }
+   ]
+  },
+  {
+   "id": "steam:550",
+   "title": "Left 4 Dead 2",
+   "kind": "steam",
+   "steamAppID": 550,
+   "reportCount": 1,
+   "lastReport": "2026-11-07",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone, model iPhone19,3",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "needs_low_settings"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 40.9,
+      "fpsLow": 15,
+      "minutes": 5,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-07",
+     "device": "iPhone, model iPhone19,3"
+    }
+   ]
+  },
+  {
+   "id": "steam:204360",
+   "title": "Castle Crashers",
+   "kind": "steam",
+   "steamAppID": 204360,
+   "reportCount": 1,
+   "lastReport": "2026-11-07",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 14 Plus",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_bad"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 29.8,
+      "fpsLow": 29,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-07",
+     "device": "iPhone 14 Plus"
+    }
+   ]
+  },
+  {
+   "id": "steam:2132850",
+   "title": "Rabbit and Steel",
+   "kind": "steam",
+   "steamAppID": 2132850,
+   "reportCount": 1,
+   "lastReport": "2026-11-07",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad, model iPad16,8",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "direct",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 29.9,
+      "fpsLow": 30,
+      "minutes": 10,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "direct",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "runs well. mindful on lower specs because later on many attacks will use a bunch of projectiles!!! also idk if this is a problem with the app in general but if u swipe down to see ur control center and then go back to the app ur controller will be unresponsive!!! and the only way to get ur controller working again is by closing and opening the app again!!",
+     "date": "2026-11-07",
+     "device": "iPad, model iPad16,8"
+    }
+   ]
+  },
+  {
+   "id": "steam:1645820",
+   "title": "SurrounDead",
+   "kind": "steam",
+   "steamAppID": 1645820,
+   "reportCount": 1,
+   "lastReport": "2026-11-06",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad Air 13-inch (M2)",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "controller_bad",
+      "overheats"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 18,
+      "fpsLow": 10,
+      "minutes": 5,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPad Air 13-inch (M2)"
+    }
+   ]
+  },
+  {
+   "id": "steam:1211020",
+   "title": "Wobbly Life",
+   "kind": "steam",
+   "steamAppID": 1211020,
+   "reportCount": 1,
+   "lastReport": "2026-11-06",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad Pro 11-inch (M4)",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "26.5.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "overheats"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 33,
+      "fpsLow": 21,
+      "minutes": 43,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPad Pro 11-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:307690",
+   "title": "Sleeping Dogs: Definitive Edition",
+   "kind": "steam",
+   "steamAppID": 307690,
+   "reportCount": 1,
+   "lastReport": "2026-11-06",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 17",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 4096,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "overheats"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 28.7,
+      "fpsLow": 19,
+      "minutes": 14,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPhone 17"
+    }
+   ]
+  },
+  {
+   "id": "steam:2494930",
+   "title": "SLUDGE LIFE: The BIG MUD Sessions",
+   "kind": "steam",
+   "steamAppID": 2494930,
+   "reportCount": 1,
+   "lastReport": "2026-11-06",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 17",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "sometimes",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 52.4,
+      "fpsLow": 39,
+      "minutes": 5,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "direct",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPhone 17"
+    }
+   ]
+  },
+  {
+   "id": "steam:365670",
+   "title": "Blender",
+   "kind": "steam",
+   "steamAppID": 365670,
+   "reportCount": 1,
+   "lastReport": "2026-11-06",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.3.26",
+     "engine": "3af3467-r4",
+     "onThisEngine": false,
+     "rating": "playable",
+     "stability": "sometimes",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 7.8,
+      "fpsLow": 5,
+      "minutes": 4,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "direct",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 4096,
+      "swapCoverage": "wide",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:601150",
+   "title": "Devil-May-Cry-5",
+   "kind": "steam",
+   "steamAppID": 601150,
+   "reportCount": 1,
+   "lastReport": "2026-11-06",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.3.26",
+     "engine": "3af3467-r4",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 68.7,
+      "fpsLow": 21.6,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": null,
+     "comment": null,
+     "date": "2026-11-06",
+     "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:1799840",
+   "title": "Queen's Domain",
+   "kind": "steam",
+   "steamAppID": 1799840,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad, model iPad17,4",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 59.4,
+      "fpsLow": 59.9,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPad, model iPad17,4"
+    }
+   ]
+  },
+  {
+   "id": "steam:203160",
+   "title": "Tomb Raider",
+   "kind": "steam",
+   "steamAppID": 203160,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 17 Pro",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.3",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 54.9,
+      "fpsLow": 29.8,
+      "minutes": 9,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "very good",
+     "date": "2026-11-05",
+     "device": "iPhone 17 Pro"
+    }
+   ]
+  },
+  {
+   "id": "steam:1030300",
+   "title": "Hollow Knight: Silksong",
+   "kind": "steam",
+   "steamAppID": 1030300,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad Air 11-inch (M3)",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.0",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "controller_bad"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 58.4,
+      "fpsLow": 52.9,
+      "minutes": 10,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "xbox controller does not work",
+     "date": "2026-11-05",
+     "device": "iPad Air 11-inch (M3)"
+    }
+   ]
+  },
+  {
+   "id": "steam:239140",
+   "title": "Dying Light",
+   "kind": "steam",
+   "steamAppID": 239140,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 17 Pro",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.3",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 59.7,
+      "fpsLow": 29,
+      "minutes": 5,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "great",
+     "date": "2026-11-05",
+     "device": "iPhone 17 Pro"
+    }
+   ]
+  },
+  {
+   "id": "steam:2626860",
+   "title": "Dragon Eclipse",
+   "kind": "steam",
+   "steamAppID": 2626860,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad, model iPad17,4",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 58.4,
+      "fpsLow": 49,
+      "minutes": 11,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPad, model iPad17,4"
+    }
+   ]
+  },
+  {
+   "id": "steam:1519240",
+   "title": "Box Ninja",
+   "kind": "steam",
+   "steamAppID": 1519240,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 17",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 2048,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 512,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 29.8,
+      "fpsLow": 29.8,
+      "minutes": 6,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": true,
+      "swapMB": 2048,
+      "swapCoverage": "",
+      "vramMB": 512,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "controls need to be configured",
+     "date": "2026-11-05",
+     "device": "iPhone 17"
+    }
+   ]
+  },
+  {
+   "id": "steam:674940",
+   "title": "Stick Fight: The Game",
+   "kind": "steam",
+   "steamAppID": 674940,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 17 Pro",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.0.1",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "sometimes",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 28.9,
+      "fpsLow": 21,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPhone 17 Pro"
+    }
+   ]
+  },
+  {
+   "id": "steam:3224770",
+   "title": "Umamusume: Pretty Derby",
+   "kind": "steam",
+   "steamAppID": 3224770,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "broken",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 15",
+     "verdict": "broken",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "broken",
+     "stability": "constantly",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 5,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPhone 15"
+    }
+   ]
+  },
+  {
+   "id": "steam:504230",
+   "title": "Celeste",
+   "kind": "steam",
+   "steamAppID": 504230,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 4096,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 4096,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 41.3,
+      "fpsLow": 29.1,
+      "minutes": 12,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 4096,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "No problems whatsoever",
+     "date": "2026-11-05",
+     "device": "iPhone 15 Pro"
+    }
+   ]
+  },
+  {
+   "id": "steam:632360",
+   "title": "Risk of Rain 2",
+   "kind": "steam",
+   "steamAppID": 632360,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 4096,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 4096,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "overheats"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 23.5,
+      "fpsLow": 2,
+      "minutes": 12,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 4096,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPhone 15 Pro"
+    }
+   ]
+  },
+  {
+   "id": "steam:3480",
+   "title": "Peggle Deluxe",
+   "kind": "steam",
+   "steamAppID": 3480,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "broken",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad, model iPad15,7",
+     "verdict": "broken",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "26.1",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "broken",
+     "stability": "wont_launch",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 1,
+      "fpsLow": 1,
+      "minutes": 2,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPad, model iPad15,7"
+    }
+   ]
+  },
+  {
+   "id": "steam:977950",
+   "title": "A Dance of Fire and Ice",
+   "kind": "steam",
+   "steamAppID": 977950,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 4096,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "overheats"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 115.5,
+      "fpsLow": 97,
+      "minutes": 9,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 4096,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPhone 15 Pro"
+    }
+   ]
+  },
+  {
+   "id": "steam:1337520",
+   "title": "Risk of Rain Returns",
+   "kind": "steam",
+   "steamAppID": 1337520,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "performance",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 4096,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 58.6,
+      "fpsLow": 59,
+      "minutes": 21,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 4096,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "Works flawlessl",
+     "date": "2026-11-05",
+     "device": "iPhone 15 Pro"
+    }
+   ]
+  },
+  {
+   "id": "steam:1903340",
+   "title": "Clair Obscur: Expedition 33",
+   "kind": "steam",
+   "steamAppID": 1903340,
+   "reportCount": 1,
+   "lastReport": "2026-11-05",
+   "verdict": "broken",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone 15 Pro",
+     "verdict": "broken",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "broken",
+     "stability": "constantly",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 0,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 3072,
+      "swapCoverage": "",
+      "vramMB": 4096,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-05",
+     "device": "iPhone 15 Pro"
+    }
+   ]
+  },
+  {
+   "id": "steam:17470",
+   "title": "Dead Space (2008)",
+   "kind": "steam",
+   "steamAppID": 17470,
+   "reportCount": 1,
+   "lastReport": "2026-11-04",
+   "verdict": "broken",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad mini (A17 Pro)",
+     "verdict": "broken",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "26.5.2",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "broken",
+     "stability": "wont_launch",
+     "tags": [
+      "controller_ok",
+      "long_loading"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 15.2,
+      "fpsLow": 10.9,
+      "minutes": 3,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-04",
+     "device": "iPad mini (A17 Pro)"
+    }
+   ]
+  },
+  {
+   "id": "steam:4474710",
+   "title": "FINAL FANTASY RESONANCE DEMO",
+   "kind": "steam",
+   "steamAppID": 4474710,
+   "reportCount": 1,
+   "lastReport": "2026-11-04",
+   "verdict": "playable",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPad, model iPad17,4",
+     "verdict": "playable",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "graphics_glitches"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 53.1,
+      "fpsLow": 35,
+      "minutes": 24,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "flickring effects (lighting, water, fire etc..)",
+     "date": "2026-11-04",
+     "device": "iPad, model iPad17,4"
+    }
+   ]
+  },
+  {
+   "id": "steam:107100",
+   "title": "Bastion",
+   "kind": "steam",
+   "steamAppID": 107100,
+   "reportCount": 1,
+   "lastReport": "2026-11-04",
+   "verdict": "great",
+   "confidence": "low",
+   "countedReports": 1,
+   "earlierReports": 0,
+   "devices": [
+    {
+     "device": "iPhone, model iPhone19,4",
+     "verdict": "great",
+     "reports": 1
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.1",
+     "appVersion": "1.2.0",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "graphics_glitches"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 59.2,
+      "fpsLow": 59,
+      "minutes": 18,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-04",
+     "device": "iPhone, model iPhone19,4"
+    }
+   ]
+  },
+  {
    "id": "steam:609320",
    "title": "FAR: Lone Sails",
    "kind": "steam",
@@ -137,248 +4463,10 @@
    ]
   },
   {
-   "id": "steam:204360",
-   "title": "Castle Crashers",
-   "kind": "steam",
-   "steamAppID": 204360,
-   "reportCount": 1,
-   "lastReport": "2026-11-03",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.2",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "broken",
-     "stability": "wont_launch",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": null,
-      "fpsLow": null,
-      "minutes": 0,
-      "thermal": null
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-03",
-     "device": "iPhone 11"
-    }
-   ]
-  },
-  {
-   "id": "steam:704850",
-   "title": "Thief Simulator",
-   "kind": "steam",
-   "steamAppID": 704850,
-   "reportCount": 1,
-   "lastReport": "2026-11-03",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.2",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "broken",
-     "stability": "constantly",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": null,
-      "fpsLow": null,
-      "minutes": 1,
-      "thermal": "hot"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-03",
-     "device": "iPhone 12"
-    }
-   ]
-  },
-  {
-   "id": "steam:1721470",
-   "title": "Poppy Playtime",
-   "kind": "steam",
-   "steamAppID": 1721470,
-   "reportCount": 1,
-   "lastReport": "2026-11-03",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.2",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "broken",
-     "stability": "constantly",
-     "tags": [
-      "audio_issues",
-      "controller_bad"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 107.9,
-      "fpsLow": 35,
-      "minutes": 2,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": true,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-03",
-     "device": "iPad Pro 13-inch (M4)"
-    }
-   ]
-  },
-  {
-   "id": "steam:21000",
-   "title": "LEGO® BatmanTM: The Videogame",
-   "kind": "steam",
-   "steamAppID": 21000,
-   "reportCount": 1,
-   "lastReport": "2026-11-03",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "broken",
-     "stability": "wont_launch",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": null,
-      "fpsLow": null,
-      "minutes": 1,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-03",
-     "device": "iPhone 16 Pro Max"
-    }
-   ]
-  },
-  {
    "id": "steam:3902430",
    "title": "War of Dots",
    "kind": "steam",
    "steamAppID": 3902430,
-   "reportCount": 1,
-   "lastReport": "2026-11-03",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0.1",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "broken",
-     "stability": "constantly",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": null,
-      "fpsLow": null,
-      "minutes": 1,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-03",
-     "device": "iPhone 11"
-    }
-   ]
-  },
-  {
-   "id": "steam:1712830",
-   "title": "Baldi's Basics Classic Remastered",
-   "kind": "steam",
-   "steamAppID": 1712830,
    "reportCount": 1,
    "lastReport": "2026-11-03",
    "verdict": null,
@@ -518,142 +4606,6 @@
    ]
   },
   {
-   "id": "steam:245170",
-   "title": "Skullgirls 2nd Encore",
-   "kind": "steam",
-   "steamAppID": 245170,
-   "reportCount": 1,
-   "lastReport": "2026-11-03",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.2",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "broken",
-     "stability": "never",
-     "tags": [],
-     "source": "steam",
-     "perf": null,
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": true,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-03",
-     "device": "iPhone 16 Pro"
-    }
-   ]
-  },
-  {
-   "id": "steam:275390",
-   "title": "Guacamelee! Super Turbo Championship Edition",
-   "kind": "steam",
-   "steamAppID": 275390,
-   "reportCount": 1,
-   "lastReport": "2026-11-03",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.2",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "broken",
-     "stability": "never",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": null,
-      "fpsLow": null,
-      "minutes": 6,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-03",
-     "device": "iPhone 16 Pro"
-    }
-   ]
-  },
-  {
-   "id": "steam:381210",
-   "title": "Dead by Daylight",
-   "kind": "steam",
-   "steamAppID": 381210,
-   "reportCount": 1,
-   "lastReport": "2026-11-03",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.2",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "broken",
-     "stability": "sometimes",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": null,
-      "fpsLow": null,
-      "minutes": 1,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-03",
-     "device": "iPad, model iPad13,8"
-    }
-   ]
-  },
-  {
    "id": "steam:4348910",
    "title": "Probably Stolen",
    "kind": "steam",
@@ -686,343 +4638,6 @@
      "comment": null,
      "date": "2026-11-02",
      "device": "iPhone 16"
-    }
-   ]
-  },
-  {
-   "id": "steam:1332010",
-   "title": "Stray",
-   "kind": "steam",
-   "steamAppID": 1332010,
-   "reportCount": 1,
-   "lastReport": "2026-11-02",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.2",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "playable",
-     "stability": "never",
-     "tags": [
-      "audio_issues",
-      "controller_ok",
-      "graphics_glitches",
-      "needs_low_settings",
-      "overheats"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 12.9,
-      "fpsLow": 5,
-      "minutes": 7,
-      "thermal": "hot"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": true,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-02",
-     "device": "iPhone 16 Pro"
-    }
-   ]
-  },
-  {
-   "id": "steam:200260",
-   "title": "Batman: Arkham City GOTY",
-   "kind": "steam",
-   "steamAppID": 200260,
-   "reportCount": 1,
-   "lastReport": "2026-11-02",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.2",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "broken",
-     "stability": "wont_launch",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": null,
-      "fpsLow": null,
-      "minutes": 3,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": true,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-02",
-     "device": "iPhone 16 Pro"
-    }
-   ]
-  },
-  {
-   "id": "steam:22380",
-   "title": "Fallout: New Vegas",
-   "kind": "steam",
-   "steamAppID": 22380,
-   "reportCount": 1,
-   "lastReport": "2026-11-02",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.2",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "broken",
-     "stability": "wont_launch",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": null,
-      "fpsLow": null,
-      "minutes": 0,
-      "thermal": null
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-02",
-     "device": "iPhone, model iPhone19,4"
-    }
-   ]
-  },
-  {
-   "id": "steam:480",
-   "title": "Spacewar",
-   "kind": "steam",
-   "steamAppID": 480,
-   "reportCount": 1,
-   "lastReport": "2026-11-02",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0.1",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "broken",
-     "stability": "never",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": null,
-      "fpsLow": null,
-      "minutes": 1,
-      "thermal": "critical"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-02",
-     "device": "iPhone 12"
-    }
-   ]
-  },
-  {
-   "id": "steam:240",
-   "title": "Counter-Strike: Source",
-   "kind": "steam",
-   "steamAppID": 240,
-   "reportCount": 1,
-   "lastReport": "2026-10-26",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0.1",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "broken",
-     "stability": "sometimes",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 2,
-      "fpsLow": 2,
-      "minutes": 2,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-10-26",
-     "device": "iPad, model iPad16,10"
-    }
-   ]
-  },
-  {
-   "id": "steam:3247750",
-   "title": "Mycopunk",
-   "kind": "steam",
-   "steamAppID": 3247750,
-   "reportCount": 1,
-   "lastReport": "2026-10-21",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "controller_ok"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 59.4,
-      "fpsLow": 58,
-      "minutes": 80,
-      "thermal": "warm"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": false,
-      "swapMB": 4096,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "firstPerson"
-     },
-     "comment": "it takes like 5 minutes each time I launch it to get into the game but works great afterwards",
-     "date": "2026-10-21",
-     "device": "iPad, model iPad17,4"
-    }
-   ]
-  },
-  {
-   "id": "steam:1375900",
-   "title": "Swarm Grinder",
-   "kind": "steam",
-   "steamAppID": 1375900,
-   "reportCount": 1,
-   "lastReport": "2026-10-20",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.2",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "broken",
-     "stability": "never",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": null,
-      "fpsLow": null,
-      "minutes": 7,
-      "thermal": "hot"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-10-20",
-     "device": "iPhone 15 Pro Max"
     }
    ]
   },
@@ -1072,55 +4687,6 @@
      "comment": null,
      "date": "2026-10-19",
      "device": "iPad, model iPad17,4"
-    }
-   ]
-  },
-  {
-   "id": "steam:1145350",
-   "title": "Hades II",
-   "kind": "steam",
-   "steamAppID": 1145350,
-   "reportCount": 1,
-   "lastReport": "2026-10-19",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0.1",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "controller_ok"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 90.3,
-      "fpsLow": 59,
-      "minutes": 7,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": false,
-      "swapMB": 4096,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": "works great, 120 fps locked pretty much, although i didnt get that far. ipad pro m4 2tb",
-     "date": "2026-10-19",
-     "device": "iPad Pro 13-inch (M4)"
     }
    ]
   },
@@ -1266,103 +4832,6 @@
      "comment": null,
      "date": "2026-10-18",
      "device": "iPhone 15 Pro"
-    }
-   ]
-  },
-  {
-   "id": "steam:3510960",
-   "title": "Star Lusts",
-   "kind": "steam",
-   "steamAppID": 3510960,
-   "reportCount": 1,
-   "lastReport": "2026-10-17",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "18.7.8",
-     "appVersion": "1.0.1",
-     "engine": "279fd0f-r13",
-     "onThisEngine": false,
-     "rating": "broken",
-     "stability": "sometimes",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": null,
-      "fpsLow": null,
-      "minutes": 0,
-      "thermal": "hot"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": true,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": true,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-10-17",
-     "device": "iPhone 15 Pro"
-    }
-   ]
-  },
-  {
-   "id": "steam:270880",
-   "title": "American Truck Simulator",
-   "kind": "steam",
-   "steamAppID": 270880,
-   "reportCount": 1,
-   "lastReport": "2026-10-17",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0",
-     "appVersion": "1.1.20",
-     "engine": "279fd0f-r15",
-     "onThisEngine": false,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "controller_ok",
-      "long_loading"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 115.1,
-      "fpsLow": 88,
-      "minutes": 5,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-10-17",
-     "device": "iPad Pro 13-inch (M4)"
     }
    ]
   },
@@ -1514,104 +4983,6 @@
      "comment": "mfi controller doesnt work without access to steam input",
      "date": "2026-10-17",
      "device": "iPhone 15 Pro Max"
-    }
-   ]
-  },
-  {
-   "id": "steam:250900",
-   "title": "The Binding of Isaac: Rebirth",
-   "kind": "steam",
-   "steamAppID": 250900,
-   "reportCount": 1,
-   "lastReport": "2026-10-17",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.2",
-     "appVersion": "1.0.1",
-     "engine": "279fd0f-r13",
-     "onThisEngine": false,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "controller_ok"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 59.4,
-      "fpsLow": 57,
-      "minutes": 9,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": true,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": "can't download or play any DLC/mods.",
-     "date": "2026-10-17",
-     "device": "iPhone 15 Pro Max"
-    }
-   ]
-  },
-  {
-   "id": "steam:383870",
-   "title": "Firewatch",
-   "kind": "steam",
-   "steamAppID": 383870,
-   "reportCount": 1,
-   "lastReport": "2026-10-16",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0",
-     "appVersion": "1.0.1",
-     "engine": "279fd0f-r5",
-     "onThisEngine": false,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "controller_ok"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 94.4,
-      "fpsLow": 40,
-      "minutes": 10,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-10-16",
-     "device": "iPad Pro 13-inch (M4)"
     }
    ]
   },
@@ -1808,106 +5179,6 @@
    ]
   },
   {
-   "id": "steam:4001890",
-   "title": "How to Fish",
-   "kind": "steam",
-   "steamAppID": 4001890,
-   "reportCount": 1,
-   "lastReport": "2026-10-15",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0",
-     "appVersion": "0.50.365",
-     "engine": "48f9764-r1",
-     "onThisEngine": false,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "controller_ok"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 97.3,
-      "fpsLow": 57,
-      "minutes": 6,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": false,
-      "swapMB": 4096,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-10-15",
-     "device": "iPad Pro 13-inch (M4)"
-    }
-   ]
-  },
-  {
-   "id": "steam:242760",
-   "title": "The Forest",
-   "kind": "steam",
-   "steamAppID": 242760,
-   "reportCount": 1,
-   "lastReport": "2026-10-15",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0",
-     "appVersion": "0.50.335",
-     "engine": "48f9764-r1",
-     "onThisEngine": false,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "controller_ok",
-      "drains_battery",
-      "needs_low_settings"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 63,
-      "fpsLow": 44,
-      "minutes": 7,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": true,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": "ultra low graphics settings to get 60 fps",
-     "date": "2026-10-15",
-     "device": "iPad Pro 13-inch (M4)"
-    }
-   ]
-  },
-  {
    "id": "steam:1167630",
    "title": "Teardown",
    "kind": "steam",
@@ -1954,107 +5225,6 @@
      },
      "comment": null,
      "date": "2026-10-11",
-     "device": "iPhone 15 Pro Max"
-    }
-   ]
-  },
-  {
-   "id": "steam:2670630",
-   "title": "Supermarket Simulator",
-   "kind": "steam",
-   "steamAppID": 2670630,
-   "reportCount": 1,
-   "lastReport": "2026-10-11",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0",
-     "appVersion": "0.50.207",
-     "engine": "48f9764-r0",
-     "onThisEngine": false,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "controller_ok",
-      "online_works"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 44.1,
-      "fpsLow": 20,
-      "minutes": 6,
-      "thermal": "hot"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": true,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "firstPerson"
-     },
-     "comment": null,
-     "date": "2026-10-11",
-     "device": "iPhone 15 Pro Max"
-    }
-   ]
-  },
-  {
-   "id": "steam:427520",
-   "title": "Factorio",
-   "kind": "steam",
-   "steamAppID": 427520,
-   "reportCount": 1,
-   "lastReport": "2026-10-10",
-   "verdict": null,
-   "confidence": null,
-   "countedReports": 0,
-   "earlierReports": 1,
-   "devices": [],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0",
-     "appVersion": "0.50.207",
-     "engine": "48f9764-r0",
-     "onThisEngine": false,
-     "rating": "great",
-     "stability": "never",
-     "tags": [
-      "audio_issues",
-      "controller_ok",
-      "online_works"
-     ],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 55.3,
-      "fpsLow": 10.9,
-      "minutes": 5,
-      "thermal": "warm"
-     },
-     "settings": {
-      "launch": "direct",
-      "power": "performance",
-      "keepModeWhenHot": true,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-10-10",
      "device": "iPhone 15 Pro Max"
     }
    ]
