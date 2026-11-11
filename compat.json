@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10 23:00 UTC",
+ "generated": "2026-11-11 16:00 UTC",
  "engine": "3af3467-r1",
  "games": [
   {
@@ -1919,59 +1919,6 @@
      "comment": null,
      "date": "2026-10-15",
      "device": "iPad Pro 13-inch (M4)"
-    }
-   ]
-  },
-  {
-   "id": "steam:383980",
-   "title": "Rivals of Aether",
-   "kind": "steam",
-   "steamAppID": 383980,
-   "reportCount": 1,
-   "lastReport": "2026-11-10",
-   "verdict": "playable",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 0,
-   "devices": [
-    {
-     "device": "iPhone, model iPhone19,3",
-     "verdict": "playable",
-     "reports": 1
-    }
-   ],
-   "settingsSummary": null,
-   "reports": [
-    {
-     "ios": "27.0.1",
-     "appVersion": "1.2.1",
-     "engine": "3af3467-r1",
-     "onThisEngine": true,
-     "rating": "playable",
-     "stability": "sometimes",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 56.6,
-      "fpsLow": 29,
-      "minutes": 17,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "performance",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-10",
-     "device": "iPhone, model iPhone19,3"
     }
    ]
   },
