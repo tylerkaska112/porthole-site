@@ -128,8 +128,8 @@ p { margin: 0; text-wrap: pretty; }
 .step { display: grid; gap: 8px; }
 .step h3 { font-size: clamp(22px, 2.5vw, 32px); }
 .step p { color: var(--dim); max-width: 32em; }
-.js:not(.rm) .steps { position: relative; display: block; min-height: var(--sh, 15.5rem); }
-.js:not(.rm) .step { position: absolute; inset: 0 0 auto 0;
+.js:not(.rm) .steps { position: relative; display: grid; }
+.js:not(.rm) .step { grid-area: 1 / 1; align-content: start;
   --in: clamp(0, (var(--p, 0) - var(--a)) * 14, 1); --out: clamp(0, (var(--b) - var(--p, 0)) * 14, 1);
   opacity: calc(var(--in) * var(--out)); transform: translate3d(0, calc((1 - var(--in)) * 44px - (1 - var(--out)) * 44px), 0); pointer-events: none; }
 .js:not(.rm) .step.hold { --out: 1; }   /* the last step stays */
@@ -138,7 +138,6 @@ p { margin: 0; text-wrap: pretty; }
   .split, .split.flip { grid-template-columns: 1fr; gap: 20px; }
   .split.flip .copy { order: 0; }
   .js:not(.rm) .stick { padding-top: calc(var(--nav) + 1vh); align-content: start; }
-  .js:not(.rm) .steps { min-height: 14.5rem; }
   .js:not(.rm) .stick .copy { gap: 10px; }
   .js:not(.rm) .stick .note { font-size: 12px; line-height: 1.4; }
   .copy .h2 { font-size: clamp(30px, 8.4vw, 44px); }
@@ -169,7 +168,7 @@ p { margin: 0; text-wrap: pretty; }
 .bar-row .fill { position: absolute; inset: 0 auto 0 0; width: calc(var(--w) * 1% * var(--g)); border-radius: inherit; background: color-mix(in srgb, var(--dim) 55%, transparent); }
 .bar-row .fill.on { background: linear-gradient(90deg, var(--accent), var(--accent2)); box-shadow: 0 0 18px color-mix(in srgb, var(--accent) 50%, transparent); }
 @media (max-width: 900px) {
-  .fg-device { width: 100%; max-width: min(560px, 100%, calc(32svh * 1.33)); margin-inline: auto; }
+  .fg-device { width: 100%; max-width: min(560px, 100%, max(170px, calc((100svh - 590px) * 1.42))); margin-inline: auto; }
   .fps b { font-size: 30px; } .fps { padding: 4px 12px 6px; }
   .fg-toggle { font-size: 12px; padding: 5px 12px 5px 7px; }
 }
@@ -299,4 +298,31 @@ details.q[open] .a { animation: fadeup .5s var(--ease); }
 @media (max-width: 760px) {
   .tiles { grid-template-columns: repeat(2, 1fr); }
   .rank li { grid-template-columns: 1fr auto; } .rank .br { grid-column: 1 / -1; grid-row: 2; }
+}
+
+/* Phones: the Controls cards are a plain swipeable row. A pinned, scroll-moved row left blank stretches on real phones. */
+@media (max-width: 900px) {
+  .js:not(.rm) .track:has(> .rail-stick) { height: auto; }
+  .js:not(.rm) .rail-stick { position: relative; height: auto; overflow: visible; padding: var(--space) 0; align-content: start; }
+  .js:not(.rm) .rail { transform: none; will-change: auto; width: 100%; min-width: 0; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--gutter); -webkit-overflow-scrolling: touch; scrollbar-width: none; padding-bottom: 6px; }
+  .js:not(.rm) .rail::-webkit-scrollbar { display: none; }
+  .js:not(.rm) .rail .hcard { scroll-snap-align: start; min-height: 0; }
+  .js:not(.rm) .rail .hcard .art { aspect-ratio: 5 / 3; }
+}
+
+@media (max-width: 900px) {
+  .js:not(.rm) .stick .bars { gap: 8px; margin-top: 0; }
+  .js:not(.rm) .stick .bar-row { gap: 4px; }
+  .js:not(.rm) .stick .bar-row header { font-size: 15px; }
+  .js:not(.rm) .stick .bar-row header span { font-size: 13px; }
+  .js:not(.rm) .stick .bar-row .track-b { height: 8px; }
+  .js:not(.rm) .stick .step h3 { font-size: 20px; }
+  .js:not(.rm) .stick .step { gap: 6px; }
+  .fg-device { max-width: min(560px, 100%, max(160px, calc((100svh - 600px) * 1.42))); }
+}
+@media (max-width: 520px) {
+  .fg-toggle { font-size: 11px; gap: 8px; padding: 4px 10px 4px 5px; left: 2.4%; }
+  .fg-toggle i { width: 36px; height: 22px; } .fg-toggle i::after { width: 16px; height: 16px; top: 3px; left: calc(3px + var(--sw) * 14px); }
+  .fps { right: 2.4%; } .fps b { font-size: 26px; } .fps small { font-size: 11px; }
 }
