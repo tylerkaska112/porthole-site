@@ -18,11 +18,10 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<script>if(window.matchMedia&&matchMedia("(prefers-reduced-motion: no-preference)").matches&&"IntersectionObserver" in window)document.documentElement.classList.add("anim")</script>
+<script>document.documentElement.classList.add("js");if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("rm")</script>
 <script>try{var d=document.documentElement,t=localStorage.getItem("porthole-theme");if(t){d.dataset.theme=t;if(t==="custom"){var c=JSON.parse(localStorage.getItem("porthole-custom")||"{}");for(var k in c)d.style.setProperty(k,c[k])}}}catch(e){}</script>
 <link rel="preload" href="/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/style.css?v=20261104">
-<link rel="stylesheet" href="/mock.css?v=20261038">
+<link rel="stylesheet" href="/site2.css?v=20261112e">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -49,268 +48,209 @@
 </script>
 </head>
 <body>
+<div class="sea" aria-hidden="true"><i></i><i></i></div>
 <a class="skip" href="#main">Skip to the content</a>
-<header class="top"><div class="wrap">
-  <a class="brand" href="/"><picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night-96.webp"><img src="/img/porthole-sunset-96.webp" alt="" width="38" height="38"></picture>Porthole</a>
-  <nav aria-label="Main">
-    <a href="/#features">Features</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/docs/">Docs</a><a href="/privacy.html">Privacy</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a class="cta" href="/download.html">Get it</a>
-  </nav>
-  <details class="menu">
-    <summary aria-label="Menu"><span class="bars" aria-hidden="true"></span></summary>
-    <div class="panel" role="navigation" aria-label="Site menu">
-      <a href="/" aria-current="page">Home</a>
-      <a href="/#features">Features</a>
-      <a href="/download.html">Get it</a>
-      <a href="/compat.html">Compatibility</a>
-      <a href="/help.html">Help</a>
-      <a href="/docs/">Docs</a>
-      <a href="/gallery.html">Gallery</a>
-      <a href="/changelog.html">What's new</a>
-      <a href="/privacy.html">Privacy</a>
-      <a href="/trust.html">Trust</a>
-      <a href="/privacy.html#contact">Contact</a>
-      <span class="sep" role="separator"></span>
-      <a href="https://discord.gg/N7PkdptTFn">Discord<i aria-hidden="true">↗</i></a>
-      <a href="https://github.com/tylerkaska112/PortHole">GitHub<i aria-hidden="true">↗</i></a>
-      <a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem<i aria-hidden="true">↗</i></a>
-    </div>
-  </details>
-</div></header>
+<header class="nav">
+  <a class="brand" href="/"><img src="/img/porthole-night-96.webp" alt="" width="36" height="36">Porthole</a>
+  <nav class="links" aria-label="Main"><a href="#features">Features</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/docs/">Docs</a><a href="/changelog.html">What&rsquo;s new</a><a href="https://discord.gg/N7PkdptTFn">Discord</a></nav>
+  <a class="btn primary sm" href="/download.html">Get it</a>
+  <button class="burger" type="button" aria-label="Menu" aria-expanded="false"><span></span></button>
+  <div class="bar" aria-hidden="true"></div>
+</header>
+
 <main id="main">
-
-<div class="wrap">
-  <section class="hero">
-    <div>
-      <a class="release-pill" href="/changelog.html#v1-3-0"><i aria-hidden="true"></i>Porthole 1.3.0 &ldquo;Full Sail&rdquo; is out <span>What&rsquo;s new</span></a>
-      <h1>Windows PC games, <span>in your pocket.</span></h1>
-      <p class="lede">Porthole runs Windows games on your iPhone and iPad. Bring your own game files, download the ones you own on Steam, Epic Games, GOG, itch.io, Amazon Games and EA, and see how each game runs on phones like yours before you try it.</p>
-      <div class="actions">
-        <a class="button" href="/download.html">Get Porthole 1.3.0</a>
-        <a class="button quiet" href="/compat.html">See what runs</a>
-      </div>
-      <ul class="meta-row"><li>Free and open source</li><li>iOS 18 or later</li><li>You sign it yourself</li></ul>
-      <div class="status"><span><b>Early software.</b> Made and tested by one person. Plenty of games won&rsquo;t run yet, and some need tweaking, so check the <a href="/compat.html">compatibility list</a> before you spend an evening on one.</span></div>
-    </div>
-    <div class="art">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night.webp">
-        <img src="/img/porthole-sunset.webp" width="800" height="800" fetchpriority="high" alt="A silver ship's porthole looking out at a calm cyan sea with a small island and palm tree">
-      </picture>
-    </div>
-  </section>
-
-  <section id="new">
-    <p class="eyebrow">New in 1.3.0</p>
-    <h2>Sharper pictures, better touch controls and Steam Cloud</h2>
-    <p class="lede">&ldquo;Full Sail&rdquo; adds upscaling and frame generation, saves that follow you through Steam Cloud, fixes that ask first and a rebuilt touch screen.</p>
-    <div class="grid glance-grid">
-      <a class="card glance" href="/changelog.html#v1-3-0"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></svg></div>
-        <h3>Touch controls</h3><p>A trackpad mode, a full PC keyboard, mixed layouts with gamepad buttons, floating sticks and controls that fade when you are not touching them.</p></a>
-      <a class="card glance" href="/changelog.html#v1-3-0"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="11" rx="5.5"/><path d="M7 10.5v4M5 12.5h4"/><circle cx="16" cy="11.5" r="1"/><circle cx="18.5" cy="13.5" r="1"/></svg></div>
-        <h3>On-screen game controller</h3><p>For games that need a pad, in Xbox, PlayStation, Nintendo Switch and Super Nintendo styles. The game sees an ordinary Xbox pad.</p></a>
-      <a class="card glance" href="/changelog.html#v1-3-0"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></svg></div>
-        <h3>Steam Cloud and drives</h3><p>Upload and download a game&rsquo;s saves, and send downloads to an external drive, with a speed test.</p></a>
-      <a class="card glance" href="/changelog.html#v1-3-0"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
-        <h3>Upscaling and frames</h3><p>MetalFX upscaling, plus Lossless Scaling frame generation if you own it, switchable while you play.</p></a>
-    </div>
-    <a class="more-link" href="/changelog.html#v1-3-0">Everything in 1.3.0 &rsaquo;</a>
-  </section>
-
-  <section id="fit">
-    <p class="eyebrow">Before you start</p>
-    <h2>Will it work for me?</h2>
-    <p class="fine">Porthole asks a bit more of you than an App Store app. If you can tick these four, you can use it. <a href="/download.html#you-need">The details are on the Get it page</a>, and the <a href="/help.html#checker">setup checker</a> tells you what is missing.</p>
-    <div class="grid">
-      <div class="card"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div><h3>An iPhone or iPad on iOS 18 or later</h3><p>More memory is better: a game that needs more than your device has can't run.</p></div>
-      <div class="card"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>A way to sign the app</h3><p>Porthole isn't on the App Store, so you sign it yourself. A paid developer account or a third-party certificate service is recommended and gives you everything. A free Apple ID works with some features missing.</p></div>
-      <div class="card"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L5 14h6l-1 8 8-12h-6z"/></svg></div><h3>A way to switch on JIT</h3><p>Porthole does it itself once it has a pairing file. On iOS 27 or later your device can make that file on its own; before that it is made once on a computer.</p></div>
-      <div class="card"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="5"/><path d="M8 10v4M6 12h4M16 11h.01M18 13h.01"/></svg></div><h3>Games you own</h3><p>From Steam, Epic Games, GOG, itch.io, Amazon Games or EA, or game folders you copy in from Files. Porthole contains no games.</p></div>
-    </div>
-  </section>
-
-  <section id="runs" class="tint">
-    <p class="eyebrow">What players report</p>
-    <h2>What runs, and how well</h2>
-    <p class="fine">Real reports from players, with the frame rate they measured and the device they used. Nothing here is made up.</p>
-    <div class="grid" id="runs-list"><p class="fine">The reports are on the <a href="/compat.html">compatibility list</a>.</p></div>
-    <p class="fine" id="runs-note" style="margin-top:14px"></p>
-  </section>
-
-  <section id="features">
-    <p class="eyebrow">What it does</p>
-    <h2>Everything in one place</h2>
-    <div class="grid">
-      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M12 11v4M10 13h4"/></svg></div>
-        <h3>Add games your way</h3><p>Copy a game folder in from the Files app, or run a Windows installer. Porthole finds the right program in the folder and keeps uninstallers and helper tools out of the way.</p></div>
-      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg></div>
-        <h3>Six stores, one place</h3><p>Sign in and download the Windows games you own from Steam, Epic Games, GOG, itch.io, Amazon Games or the EA app. Each store has a grid of your games and a page for every game, every game shows which store it came from, and one Downloads page shows what all of them are downloading.</p></div>
-      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg></div>
-        <h3>Downloads that keep going</h3><p>Leave the app and the queue carries on. A card on the lock screen shows the percentage, size and speed, with buttons to pause, resume or cancel.</p></div>
-      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="11" rx="5.5"/><path d="M7 10.5v4M5 12.5h4"/><circle cx="16" cy="11.5" r="1"/><circle cx="18.5" cy="13.5" r="1"/></svg></div>
-        <h3>Built for a controller</h3><p>Move around the whole app with a game controller, like a console. PlayStation and Xbox controllers work without setup, the on-screen buttons hide while one is in use, and every game's buttons can be remapped. Steam says which games support one, and Porthole shows it on every game.</p></div>
-      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></svg></div>
-        <h3>Keyboard and mouse</h3><p>On an iPad, plug in or pair a keyboard and a mouse or trackpad and play like on a PC: every key, five mouse buttons, the wheel, the game's own cursor in menus and a locked pointer for looking around. Choose the key that opens Porthole's menu.</p></div>
-      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M12 3l2.4 1.8 3-.2 1 2.8 2.5 1.7-.9 2.9.9 2.9-2.5 1.7-1 2.8-3-.2L12 21l-2.4-1.8-3 .2-1-2.8L3.1 15l.9-2.9L3.1 9.2l2.5-1.7 1-2.8 3 .2z"/></svg></div>
-        <h3>Know before you try</h3><p>Each game shows a badge from reports by other people: works great, works with problems, or doesn't work. Add your own in under a minute.</p></div>
-      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
-        <h3>Made for iPhone and iPad</h3><p>Touch controls you can switch while you play, a page for every game with its own settings, and a layout that fills the iPad screen.</p></div>
-      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
-        <h3>No ads, no account</h3><p>Porthole has no ads and no account of its own. A compatibility report is only sent when you choose to send one, and nothing in it names you.</p></div>
-    </div>
-  </section>
-
-  <section id="demo" class="tint">
-    <p class="eyebrow">Try it</p>
-    <h2>Tap around a Porthole</h2>
-    <p class="lede">A working copy of the iPhone app's layout, with made-up games and no connection to anything. Open a store, start a download, press Play, then try <b>Settings &#8250; Appearance</b>: it changes the colours of this whole website.</p>
-    <div class="mock-stage">
-      <div class="mock" id="mock"><div class="m-screen" id="m-screen" aria-label="A demo of the Porthole app. Everything in it is made up."></div></div>
-      <div class="mock-side">
-        <h3>Things to try</h3>
-        <ul>
-          <li>Open <b>Stores</b>, sign in to GOG and install a game. The round button shows progress.</li>
-          <li>Start two downloads, then pause one or move another to the front on the Downloads page.</li>
-          <li>Press <b>Play</b>, switch the power mode, and trigger the low-memory warning.</li>
-          <li>Open a game's page and try <b>How it runs</b>.</li>
-          <li>In <b>Settings &#8250; Appearance</b>, pick a theme, or your own colour.</li>
-        </ul>
-        <p class="fine">Everything in the demo is invented, and it shows the layout, not how any game runs. <a href="/gallery.html">See pictures of the real app</a>.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="console">
-    <div class="split">
-      <div>
-        <p class="eyebrow">Made to be used with a controller</p>
-        <h2>A shelf that feels like a console</h2>
-        <p class="lede">Your games sit on one row. Move along it and the one you're on grows, with its name, its badges and Play right there.</p>
-        <div class="legend">
-          <div><span class="chip full">FULL</span><p><b>Full controller support.</b> Steam lists the game as playable with a controller from start to finish, menus included.</p></div>
-          <div><span class="chip partial">PARTIAL</span><p><b>Partial controller support.</b> It works with a controller in places, but some parts still want a keyboard and mouse. Porthole shows you how to cover those.</p></div>
-        </div>
-      </div>
-      <div>
-        <div class="shelf-demo" role="img" aria-label="An illustration of the Porthole home screen: a row of games with one selected and larger, showing its name and a Play button">
-          <div class="bar"><img src="/img/porthole-sunset.webp" alt=""><b>Porthole</b><span class="on">Home</span><span>Steam</span><span>Reports</span><span>Settings</span><span class="grow"></span><span>9:41</span></div>
-          <div class="stage">
-            <h3>Your next game</h3>
-            <div class="chips"><span class="chip plain">Steam</span><span class="chip full">FULL</span><span class="chip plain">Played yesterday</span></div>
-            <span class="play">&#9654;&nbsp; Play</span>
-          </div>
-          <div class="row">
-            <div class="tile t1"><span class="chip partial">PARTIAL</span></div>
-            <div class="tile big t2"><span class="chip full">FULL</span></div>
-            <div class="tile t3"></div><div class="tile t4"></div><div class="tile t5"></div>
-          </div>
-        </div>
-        <p class="demo-note">An illustration of the home screen, not a screenshot.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="editor" class="tint">
-    <p class="eyebrow">Make it yours</p>
-    <h2>Build your own controls</h2>
-    <p class="lede">Porthole's on-screen controls are yours to arrange. This is a small copy of the editor: use the stick and buttons, then press Edit to drag things around (they snap to guides), add more, and undo.</p>
-    <div class="ed">
-      <div class="ed-bar">
-        <button type="button" id="ed-mode" class="primary">Edit</button>
-        <button type="button" id="ed-add" aria-expanded="false" aria-controls="ed-tray" disabled>+ Add</button>
-        <button type="button" id="ed-undo" disabled>Undo</button>
-        <button type="button" id="ed-redo" disabled>Redo</button>
-        <button type="button" id="ed-del" disabled>Delete</button>
-        <span class="sp"></span>
-        <button type="button" id="ed-reset">Reset</button>
-      </div>
-      <div class="ed-tray" id="ed-tray">
-        <button type="button" data-type="btn" data-label="Q">Key Q</button>
-        <button type="button" data-type="btn" data-label="F">Key F</button>
-        <button type="button" data-type="btn" data-label="Tab">Tab</button>
-        <button type="button" data-type="btn" data-label="Fire">Fire</button>
-        <button type="button" data-type="sw" data-label="Look">Look / Mouse switch</button>
-      </div>
-      <div class="ed-screen" id="ed-screen" aria-label="A game screen with on-screen controls you can try"></div>
-      <p class="ed-status" id="ed-status" aria-live="polite"></p>
-    </div>
-    <p class="fine">Only a demo: nothing you do here is saved or sent anywhere. In the app the layout is kept per game, and you can share one with other players.</p>
-  </section>
-
-  <section id="how">
-    <p class="eyebrow">How it works</p>
-    <h2>Three quick steps to your first game</h2>
-    <ol class="steps">
-      <li><h3>Get ready</h3><p>Install Porthole and follow the setup guide: switch on full speed, allow its private link, and download Microsoft's Windows components.</p><p class="when">About 2 minutes, and 25 MB</p></li>
-      <li><h3>Add a game</h3><p>Sign in to Steam, Epic Games, GOG, itch.io, Amazon Games or EA and download one you own, or copy a game folder in from Files.</p><p class="when">As long as the download takes</p></li>
-      <li><h3>Press Play</h3><p>Check the game's badge first if you like, then press Play. Tell other people how it went with a short report.</p><p class="when">The first start takes a minute or more</p></li>
-    </ol>
-    <p class="fine" style="margin-top:22px">Under the hood Porthole is built on <b>Madeira</b>, a project that runs Windows programs on iOS by combining Wine, the FEX-Emu translator and DXMT, which turns Direct3D into Metal. Speed depends on the game and on the device, and some games need more memory than a phone has. It needs iOS 18 or later and JIT switched on, which Porthole can do by itself once it has a pairing file.</p>
-  </section>
-
-  <section id="expect" class="tint">
-    <p class="eyebrow">Straight talk</p>
-    <h2>What to expect</h2>
-    <div class="grid">
-      <div class="card"><h3>It's early</h3><p>Porthole is a hobby project that changes often. Plenty of games don't run yet, and some run slowly. The <a href="/compat.html">compatibility list</a> shows what people have actually tried.</p></div>
-      <div class="card"><h3>It takes some setting up</h3><p>Porthole isn't on the App Store, because it uses interfaces Apple keeps private. You sign the app file with your own developer certificate and install it yourself. <a href="/download.html">Here's what you need.</a></p></div>
-      <div class="card"><h3>You bring the games</h3><p>Porthole never includes games and doesn't get around any copy protection. You need to own what you run.</p></div>
-    </div>
-  </section>
-
-  <section id="faq">
-    <p class="eyebrow">Questions</p>
-    <h2>Good to know</h2>
-    <div class="faq">
-      <details><summary>Is Porthole on the App Store?</summary><div class="a"><p>No, and it can't be: it relies on things Apple doesn't allow in App Store apps. You install it yourself, signed with your own certificate. The <a href="/download.html">Get it</a> page explains how.</p></div></details>
-      <details><summary>Is it legal?</summary><div class="a"><p>Porthole contains no games and doesn't bypass any copy protection. Steam games start through Valve's own client files, which check your licence as they do on a PC, Epic, GOG and itch.io games are installed from the stores' own servers with your own account, and Microsoft's runtime is downloaded from Microsoft. Porthole is free software under the GPL and its source code is public.</p></div></details>
-      <details><summary>Which games will run?</summary><div class="a"><p>It depends on the game and the device. The <a href="/compat.html">compatibility list</a> comes from reports sent by people using Porthole, and the app shows the same badge on each game.</p></div></details>
-      <details><summary>Can I use a keyboard and mouse?</summary><div class="a"><p>Yes, on an iPad. A Bluetooth or USB keyboard and a mouse or trackpad work in games like on a PC: every key, five mouse buttons, the wheel, the game&rsquo;s own cursor in menus and a locked pointer for looking around. An iPhone gets a mouse only through AssistiveTouch. Details are in <a href="/help.html">Help</a>.</p></div></details>
-      <details><summary>Do I need a controller?</summary><div class="a"><p>No. Porthole has on-screen touch controls, and on an iPad a keyboard and a mouse work too. A controller makes it feel like a console, and Porthole shows which games support one.</p></div></details>
-      <details><summary>Was this built with AI?</summary><div class="a"><p>Yes. A large part of the code, the documentation, this website and the artwork was written by an AI coding assistant (Claude, from Anthropic) working with the maintainer, who directs the project, reviews the changes and tests them on real devices. The project therefore contains AI-written code, and like any software it may contain mistakes.</p></div></details>
-      <details><summary>Does it collect my data?</summary><div class="a"><p>No account, no ads and no tracking. A compatibility report is only sent when you choose to send one. The <a href="/privacy.html">privacy page</a> lists exactly what a report contains.</p></div></details>
-      <details><summary>Is it affiliated with Valve, Microsoft or Apple?</summary><div class="a"><p>No. Steam and its artwork belong to Valve; Epic Games, GOG and every game or launcher you run belong to their owners. Apple, iPhone, iPad and iOS are trademarks of Apple Inc.</p></div></details>
-    </div>
-  </section>
-
-  <section id="community">
-    <div class="band">
-      <div>
-        <p class="eyebrow">Community</p>
-        <h2>Come and say hello</h2>
-        <p class="lede">Get help setting up, share how a game runs for you, and tell us what to build next. Support questions get their own ticket-style posts, so nothing gets lost.</p>
-      </div>
-      <a class="button" href="https://discord.gg/N7PkdptTFn">Join the Discord</a>
-    </div>
-  </section>
-
-  <section id="thanks">
-    <p class="eyebrow">With thanks to</p>
-    <h2>The projects this stands on</h2>
-    <ul class="credits">
-      <li><b><a href="https://github.com/willfaust/Madeira">Madeira</a></b><span>The runtime Porthole is built on (Wine, FEX-Emu and DXMT).</span></li>
-      <li><b><a href="https://github.com/intraducine/iridium">Iridium</a></b><span>The idea of switching JIT on from inside the app.</span></li>
-      <li><b><a href="https://github.com/StikDebug/StikDebug">StikDebug</a> and <a href="https://github.com/jkcoxson/idevice">idevice</a></b><span>The debugger library and the device protocols behind JIT and pairing.</span></li>
-      <li><b><a href="https://github.com/StikDebug/StikPair">StikPair</a></b><span>Showed how a pairing file can be made on the device itself.</span></li>
-    </ul>
-  </section>
-</div>
-</main>
-<footer><div class="wrap foot">
-  <div class="foot-brand">
-    <picture><source media="(prefers-color-scheme: dark)" srcset="/img/porthole-night-96.webp"><img src="/img/porthole-sunset-96.webp" alt="" width="40" height="40"></picture>
-    <div><b>Porthole</b><span>Windows PC games on iPhone and iPad. A personal project.</span></div>
+<section class="hero" id="top">
+  <div class="hero-copy">
+    <a class="pill" href="/changelog.html#v1-3-0" data-r><i aria-hidden="true"></i>Porthole 1.3.0 &ldquo;Full Sail&rdquo; is out <b>What&rsquo;s new</b></a>
+    <h1 class="h1" data-l><span class="ln" style="--i:0"><span>Windows games.</span></span><span class="ln" style="--i:1"><span class="grad">In your pocket.</span></span></h1>
+    <p class="lede" data-r style="--i:3">Porthole runs Windows games on your iPhone and iPad. Bring your own game files, or download the ones you own on Steam, Epic Games, GOG, itch.io, Amazon Games and EA, and see how each one runs on phones like yours before you try it.</p>
+    <div class="cta" data-r style="--i:4"><a class="btn primary" href="/download.html">Get Porthole 1.3.0</a><a class="btn" href="/compat.html">See what runs</a></div>
+    <ul class="facts" data-r style="--i:5"><li>Free and open source</li><li>iOS 18 or later</li><li>You sign it yourself</li></ul>
   </div>
-  <nav class="foot-links" aria-label="Footer">
-    <a href="/download.html">Get it</a><a href="/changelog.html">What's new</a><a href="/gallery.html">Gallery</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/docs/">Docs</a><a href="/privacy.html">Privacy</a><a href="/trust.html">Trust</a><a href="/privacy.html#contact">Contact</a><a href="https://github.com/tylerkaska112/PortHole">GitHub</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a href="https://github.com/tylerkaska112/PortHole/issues/new/choose">Report a problem</a>
-  </nav>
-  <p class="fine">Not affiliated with or endorsed by Valve, Microsoft, Apple or any game publisher. Game and company names belong to their owners. Built with the help of AI.</p>
+  <div class="hero-stage" data-r="zoom" style="--i:3">
+    <div class="hero-device">
+      <div class="ipad"><div class="screen"><img src="/img/screens/gta-after.webp" width="1800" height="1350" alt="Grand Theft Auto V running in Porthole on an iPad, with the frame rate overlay reading 82 FPS" fetchpriority="high"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="features" aria-labelledby="fg-title">
+  <div class="track" style="--h:400vh">
+    <div class="stick">
+      <div class="split">
+        <div class="copy">
+          <p class="eyebrow" data-r>New in 1.3.0</p>
+          <h2 class="h2" id="fg-title" data-l><span class="ln" style="--i:0"><span>Sharper. Smoother.</span></span><span class="ln" style="--i:1"><span class="grad">In real time.</span></span></h2>
+          <div class="steps" style="--sh:23.5rem">
+            <div class="step" style="--a:-.3;--b:.34"><h3>Render low. Look sharp.</h3><p>Upscaling enlarges the picture to your screen, so a game can run at a lower resolution and still look crisp. You can switch it on or off from the in-game menu while you play. Direct3D 11 and 12 games.</p></div>
+            <div class="step" style="--a:.30;--b:.70"><h3>More frames from the same game.</h3><p>Frame generation adds up to three frames between the ones the game draws. In Grand Theft Auto V that is 40 frames a second without it and 82 with it.</p></div>
+            <div class="step hold" style="--a:.66;--b:2"><h3>It adds up.</h3><div class="bars" aria-label="Average frames per second without and with frame generation"><div class="bar-row" style="--o:0;--a:.72"><header>Grand Theft Auto V<span>40 to 82 fps</span></header><div class="track-b"><i class="fill" style="--w:30.8"></i></div><div class="track-b"><i class="fill on" style="--w:63.1"></i></div></div><div class="bar-row" style="--o:1;--a:.72"><header>Factorio<span>60 to 120 fps</span></header><div class="track-b"><i class="fill" style="--w:46.2"></i></div><div class="track-b"><i class="fill on" style="--w:92.3"></i></div></div><div class="bar-row" style="--o:2;--a:.72"><header>Lethal Company<span>35 to 62 fps</span></header><div class="track-b"><i class="fill" style="--w:26.9"></i></div><div class="track-b"><i class="fill on" style="--w:47.7"></i></div></div><div class="bar-row" style="--o:3;--a:.72"><header>The Forest<span>30 to 45 fps</span></header><div class="track-b"><i class="fill" style="--w:23.1"></i></div><div class="track-b"><i class="fill on" style="--w:34.6"></i></div></div></div></div>
+          </div>
+          <p class="note">Upscaling and frame generation use Lossless Scaling, which you need to own on Steam. Frame rates are averages from my own testing on an iPad in Porthole 1.3; results vary by game and settings.</p>
+        </div>
+        <div class="fg-device">
+          <div class="ipad"><div class="screen">
+            <img class="before" src="/img/screens/gta-before.webp" width="1800" height="1350" alt="Grand Theft Auto V without frame generation: 40 FPS" loading="lazy">
+            <img class="after" src="/img/screens/gta-after.webp" width="1800" height="1350" alt="Grand Theft Auto V with frame generation: 82 FPS" loading="lazy">
+          </div></div>
+          <div class="fg-toggle"><i></i><span>Frame generation <b data-switch=".455" data-on="on" data-off="off">off</b></span></div>
+          <div class="fps" aria-hidden="true"><b data-count data-from="40" data-to="82" data-a=".44" data-b=".6" data-hot="60">40</b><small>FPS</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story" aria-labelledby="ctl-title">
+  <div class="track" style="--h:330vh">
+    <div class="stick rail-stick">
+      <div class="rail-head">
+        <p class="eyebrow" data-r>Controls</p>
+        <h2 class="h2" id="ctl-title" data-l><span class="ln" style="--i:0"><span>Play your way.</span></span></h2>
+        <p class="lede" data-r style="--i:2">Touch controls that stay out of the way, an on-screen game controller, and full support for real controllers, keyboards and mice.</p>
+      </div>
+      <div class="rail">
+        <article class="hcard"><div class="art"><svg viewBox="0 0 400 240" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<rect x="44" y="16" width="92" height="16" rx="8" opacity=".5"/><rect x="264" y="16" width="92" height="16" rx="8" opacity=".5"/>
+<circle cx="96" cy="94" r="40" opacity=".5"/><circle class="drift" cx="96" cy="94" r="20" fill="currentColor" fill-opacity=".3"/>
+<path d="M84 160h24v14h14v24h-14v14H84v-14H70v-24h14z" opacity=".7"/>
+<circle cx="304" cy="94" r="40" opacity=".5"/><circle cx="304" cy="94" r="20" fill="currentColor" fill-opacity=".2"/>
+<circle class="pulse" cx="304" cy="158" r="14" fill="currentColor" fill-opacity=".3"/><circle class="pulse d1" cx="334" cy="186" r="14"/><circle class="pulse d2" cx="304" cy="214" r="14"/><circle class="pulse d3" cx="274" cy="186" r="14"/>
+</svg></div><div class="txt"><h3 class="h3">On-screen game controller</h3><p>For games that need a pad. Xbox, PlayStation, Nintendo Switch and Super Nintendo styles, and the game simply sees an Xbox controller.</p></div></article>
+        <article class="hcard"><div class="art"><svg viewBox="0 0 400 240" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<rect x="50" y="24" width="300" height="192" rx="26" opacity=".5"/>
+<path class="sweep" d="M100 170C150 70 240 70 292 128"/>
+<circle cx="292" cy="128" r="15" fill="currentColor" fill-opacity=".4"/>
+<path d="M300 112l24 40-14 2 8 18-8 4-8-18-10 10z" fill="currentColor" fill-opacity=".25"/>
+<circle class="pulse" cx="120" cy="150" r="9"/><circle class="pulse d2" cx="150" cy="150" r="9"/>
+<path d="M135 128v-34m-8 8l8-8 8 8" opacity=".6"/>
+</svg></div><div class="txt"><h3 class="h3">Trackpad mode</h3><p>Slide to move the cursor, tap to click, tap with two fingers to right-click and drag two fingers to scroll. Made for point-and-click and strategy games.</p></div></article>
+        <article class="hcard"><div class="art"><svg viewBox="0 0 400 240" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" aria-hidden="true"><rect x="50" y="60" width="28" height="28" rx="8" opacity=".5"/><rect x="84" y="60" width="28" height="28" rx="8" opacity=".5"/><rect x="118" y="60" width="28" height="28" rx="8" opacity=".5"/><rect x="152" y="60" width="28" height="28" rx="8" opacity=".5"/><rect x="186" y="60" width="28" height="28" rx="8" opacity=".5"/><rect x="220" y="60" width="28" height="28" rx="8" opacity=".5"/><rect x="254" y="60" width="28" height="28" rx="8" opacity=".5"/><rect x="288" y="60" width="28" height="28" rx="8" opacity=".5"/><rect x="322" y="60" width="28" height="28" rx="8" opacity=".5"/><rect x="356" y="60" width="28" height="28" rx="8" opacity=".5"/><rect x="66" y="98" width="28" height="28" rx="8" opacity=".5"/><rect x="100" y="98" width="28" height="28" rx="8" opacity=".5"/><rect x="134" y="98" width="28" height="28" rx="8" opacity=".5"/><rect x="168" y="98" width="28" height="28" rx="8" opacity=".5"/><rect x="202" y="98" width="28" height="28" rx="8" opacity=".5"/><rect x="236" y="98" width="28" height="28" rx="8" opacity=".5"/><rect x="270" y="98" width="28" height="28" rx="8" opacity=".5"/><rect x="304" y="98" width="28" height="28" rx="8" opacity=".5"/><rect x="338" y="98" width="28" height="28" rx="8" opacity=".5"/><rect class="pulse" x="50" y="136" width="48" height="28" rx="8" fill="currentColor" fill-opacity=".28"/><rect x="106" y="136" width="28" height="28" rx="8" opacity=".5"/><rect x="140" y="136" width="28" height="28" rx="8" opacity=".5"/><rect x="174" y="136" width="28" height="28" rx="8" opacity=".5"/><rect x="208" y="136" width="28" height="28" rx="8" opacity=".5"/><rect x="242" y="136" width="28" height="28" rx="8" opacity=".5"/><rect x="276" y="136" width="28" height="28" rx="8" opacity=".5"/><rect x="310" y="136" width="28" height="28" rx="8" opacity=".5"/><rect class="pulse d1" x="50" y="174" width="44" height="28" rx="8" fill="currentColor" fill-opacity=".28"/><rect class="pulse d2" x="100" y="174" width="40" height="28" rx="8" fill="currentColor" fill-opacity=".28"/><rect x="146" y="174" width="160" height="28" rx="8" opacity=".5"/></svg></div><div class="txt"><h3 class="h3">A full PC keyboard</h3><p>Function keys, arrows and all, with Shift, Ctrl and Alt that hold for the next key, so Ctrl+Shift+Z just works.</p></div></article>
+        <article class="hcard"><div class="art"><svg viewBox="0 0 400 240" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true">
+<g opacity=".55"><rect x="50" y="36" width="300" height="46" rx="16"/><rect x="50" y="98" width="300" height="46" rx="16"/><rect x="50" y="160" width="300" height="46" rx="16"/></g>
+<g fill="currentColor" fill-opacity=".35" stroke="none"><rect x="72" y="54" width="120" height="10" rx="5"/><rect x="72" y="116" width="96" height="10" rx="5"/><rect x="72" y="178" width="140" height="10" rx="5"/></g>
+<rect class="pulse" x="290" y="48" width="42" height="22" rx="11" fill="currentColor" fill-opacity=".3"/><circle cx="321" cy="59" r="8" fill="currentColor"/>
+<rect x="290" y="110" width="42" height="22" rx="11"/><circle cx="301" cy="121" r="8"/>
+<rect class="pulse d2" x="290" y="172" width="42" height="22" rx="11" fill="currentColor" fill-opacity=".3"/><circle cx="321" cy="183" r="8" fill="currentColor"/>
+</svg></div><div class="txt"><h3 class="h3">Everything in one place</h3><p>A Controls page in Settings gathers every controller, keyboard, mouse and touch setting. Floating sticks and controls that fade away are one switch each.</p></div></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story" aria-labelledby="lib-title">
+  <div class="track" style="--h:350vh">
+    <div class="stick">
+      <div class="split flip">
+        <div class="copy">
+          <p class="eyebrow" data-r>Your library</p>
+          <h2 class="h2" id="lib-title" data-l><span class="ln" style="--i:0"><span>All your games.</span></span><span class="ln" style="--i:1"><span class="grad">One place.</span></span></h2>
+          <div class="steps">
+            <div class="step" style="--a:-.3;--b:.34"><h3>One shelf for every game.</h3><p>Everything you own, from every store, on one Home screen, with a page for each game&rsquo;s settings, controls and compatibility.</p></div>
+            <div class="step" style="--a:.30;--b:.70"><h3>Six stores, one tab.</h3><p>Sign in and download what you own, or copy a game folder in from Files. Hide the stores you do not use.</p><div class="chips"><span class="chip">Steam</span><span class="chip">Epic Games</span><span class="chip">GOG</span><span class="chip">itch.io</span><span class="chip">Amazon Games</span><span class="chip">EA app</span></div></div>
+            <div class="step hold" style="--a:.66;--b:2"><h3>Downloads you control.</h3><p>Choose the device or an external SSD when you press Download, and watch the speed and time left. Steam Cloud saves upload and download from the game&rsquo;s page, with a list of what will move first.</p></div>
+          </div>
+        </div>
+        <div class="phone-stack">
+          <img class="shot" style="--a:-.3;--b:.34" src="/img/shots/home.webp" width="1185" height="565" alt="Porthole&rsquo;s Home screen with a shelf of games from several stores" loading="lazy">
+          <img class="shot" style="--a:.30;--b:.70" src="/img/shots/stores.webp" width="1185" height="565" alt="The Stores tab showing games from Steam and Epic Games side by side" loading="lazy">
+          <img class="shot hold" style="--a:.66;--b:2" src="/img/shots/downloads.webp" width="1185" height="565" alt="The Downloads screen with speed, time left and a queue" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="runs" aria-labelledby="runs-title">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow" data-r>Compatibility</p>
+      <h2 class="h2" id="runs-title" data-l><span class="ln" style="--i:0"><span>Know before you try.</span></span></h2>
+      <p class="lede" data-r style="--i:2">Porthole shows how each game runs on phones like yours, from reports sent by real people, and puts the same badge on the game inside the app.</p>
+    </div>
+    <p class="live-fallback fine"><a href="/compat.html">Open the compatibility list</a> to see what people have reported.</p>
+    <div class="live" hidden>
+      <div class="stats">
+        <div class="stat" data-r style="--i:0"><b data-live="games">0</b><span>games reported on</span></div>
+        <div class="stat" data-r style="--i:1"><b data-live="reports">0</b><span>player reports</span></div>
+        <div class="stat" data-r style="--i:2"><b data-live="good">0</b><span>work great or play well</span></div>
+      </div>
+      <div class="marquee" data-r aria-label="Games people report working well or playable"></div>
+      <div class="explore" data-r>
+        <h3 class="explore-title" id="explore-title">What to expect on your device</h3>
+        <div class="chips" role="group" aria-label="Choose a device"></div>
+        <div class="tiles">
+          <div class="tile"><b data-x="fps">&ndash;</b><span>typical frames per second</span></div>
+          <div class="tile"><b data-x="good">&ndash;</b><span>of reports say it works well</span></div>
+          <div class="tile"><b data-x="hot">&ndash;</b><span>of reports say it gets hot</span></div>
+          <div class="tile"><b data-x="n">&ndash;</b><span>reports with a frame rate</span></div>
+        </div>
+        <div class="fastest"><h4>Fastest games on this device</h4><ol class="rank"></ol></div>
+        <p class="fine">Each bar is one player&rsquo;s average over a play session, so treat them as a guide, not a promise.</p>
+      </div>
+      <p class="fine">Reports so far were made on earlier versions of the engine. With 1.3.0 every game starts at &ldquo;Not yet tested&rdquo; again until people have played it on this version. Your result can differ: device, settings and iOS version all matter.</p>
+    </div>
+    <div class="cta" style="justify-content:center;margin-top:30px" data-r><a class="btn" href="/compat.html">Open the compatibility list</a></div>
+  </div>
+</section>
+
+<section class="section" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow" data-r>How it works</p>
+      <h2 class="h2" id="how-title" data-l><span class="ln" style="--i:0"><span>Three steps to your first game.</span></span></h2>
+    </div>
+    <div class="flow" data-view>
+      <div class="fstep" data-r style="--i:0"><h3 class="h3">Get ready</h3><p>Install Porthole and follow the setup guide: switch on full speed, allow its private link, and download Microsoft&rsquo;s Windows components.</p><small>About 2 minutes, and 25 MB</small></div>
+      <div class="fstep" data-r style="--i:1"><h3 class="h3">Add a game</h3><p>Sign in to Steam, Epic Games, GOG, itch.io, Amazon Games or EA and download one you own, or copy a game folder in from Files.</p><small>As long as the download takes</small></div>
+      <div class="fstep" data-r style="--i:2"><h3 class="h3">Press Play</h3><p>Check the game&rsquo;s badge first if you like, then press Play. Tell other people how it went with a short report.</p><small>The first start takes a minute or more</small></div>
+    </div>
+    <p class="under" data-r><b>Under the hood.</b> Porthole is built on Madeira, a project that runs Windows programs on iOS by combining Wine, the FEX-Emu translator and DXMT, which turns Direct3D into Metal. Speed depends on the game and on the device, and some games need more memory than a phone has. It needs iOS 18 or later and JIT switched on, which Porthole can do by itself once it has a pairing file.</p>
+  </div>
+</section>
+
+<section class="section" id="expect" aria-labelledby="expect-title">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow" data-r>Straight talk</p>
+      <h2 class="h2" id="expect-title" data-l><span class="ln" style="--i:0"><span>What to expect.</span></span></h2>
+    </div>
+    <div class="cards">
+      <article class="card" data-r style="--i:0"><h3 class="h3">It&rsquo;s early</h3><p>Porthole is a hobby project that changes often. Plenty of games don&rsquo;t run yet, and some run slowly. The compatibility list shows what people have actually tried.</p></article>
+      <article class="card" data-r style="--i:1"><h3 class="h3">It takes some setting up</h3><p>Porthole isn&rsquo;t on the App Store, because it uses interfaces Apple keeps private. You sign the app file with your own developer certificate and install it yourself. <a href="/download.html">Here&rsquo;s what you need.</a></p></article>
+      <article class="card" data-r style="--i:2"><h3 class="h3">You bring the games</h3><p>Porthole never includes games and doesn&rsquo;t get around any copy protection. You need to own what you run.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow" data-r>Questions</p>
+      <h2 class="h2" id="faq-title" data-l><span class="ln" style="--i:0"><span>Good to know.</span></span></h2>
+    </div>
+    <div class="faq"><details class="q" data-r style="--i:0"><summary>Is Porthole on the App Store?</summary><div class="a">No, and it can&rsquo;t be: it relies on things Apple doesn&rsquo;t allow in App Store apps. You install it yourself, signed with your own certificate. The <a href="/download.html">Get it</a> page explains how.</div></details><details class="q" data-r style="--i:1"><summary>Is it legal?</summary><div class="a">Porthole contains no games and doesn&rsquo;t bypass any copy protection. Steam games start through Valve&rsquo;s own client files, which check your licence as they do on a PC; Epic, GOG and itch.io games are installed from the stores&rsquo; own servers with your own account; and Microsoft&rsquo;s runtime is downloaded from Microsoft. Porthole is free software under the GPL and its source code is public.</div></details><details class="q" data-r style="--i:2"><summary>Which games will run?</summary><div class="a">It depends on the game and the device. The <a href="/compat.html">compatibility list</a> comes from reports sent by people using Porthole, and the app shows the same badge on each game.</div></details><details class="q" data-r style="--i:0"><summary>Can I use a keyboard and mouse?</summary><div class="a">Yes, on an iPad. A Bluetooth or USB keyboard and a mouse or trackpad work in games like on a PC: every key, five mouse buttons, the wheel, the game&rsquo;s own cursor in menus and a locked pointer for looking around. An iPhone gets a mouse only through AssistiveTouch. Details are in <a href="/help.html">Help</a>.</div></details><details class="q" data-r style="--i:1"><summary>Do I need a controller?</summary><div class="a">No. Porthole has on-screen touch controls, including an on-screen game controller, and on an iPad a keyboard and a mouse work too. A controller makes it feel like a console, and Porthole shows which games support one.</div></details><details class="q" data-r style="--i:2"><summary>Do upscaling and frame generation cost extra?</summary><div class="a">They use Lossless Scaling, which you need to own on Steam. Porthole checks your Steam purchase and keeps nothing of Lossless Scaling that you did not buy.</div></details><details class="q" data-r style="--i:0"><summary>Was this built with AI?</summary><div class="a">Yes. A large part of the code, the documentation, this website and the artwork was written by an AI coding assistant (Claude, from Anthropic) working with the maintainer, who directs the project, reviews the changes and tests them on real devices. The project therefore contains AI-written code, and like any software it may contain mistakes.</div></details><details class="q" data-r style="--i:1"><summary>Does it collect my data?</summary><div class="a">No account, no ads and no tracking. A compatibility report is only sent when you choose to send one. The <a href="/privacy.html">privacy page</a> lists exactly what a report contains.</div></details><details class="q" data-r style="--i:2"><summary>Is it affiliated with Valve, Microsoft or Apple?</summary><div class="a">No. Steam and its artwork belong to Valve; Epic Games, GOG and every game or launcher you run belong to their owners. Apple, iPhone, iPad and iOS are trademarks of Apple Inc.</div></details></div>
+  </div>
+</section>
+
+<section class="section get" id="get" aria-labelledby="get-title" data-view>
+  <img class="ring" src="/img/porthole-night.webp" alt="" width="1024" height="1024" loading="lazy">
+  <div class="wrap inner">
+    <img class="mark" src="/img/porthole-night-96.webp" alt="" width="112" height="112" data-r="zoom">
+    <h2 class="h2" id="get-title" data-l><span class="ln" style="--i:0"><span>Ready when</span></span><span class="ln" style="--i:1"><span class="grad">you are.</span></span></h2>
+    <p class="lede" data-r style="--i:2">Porthole 1.3.0 &ldquo;Full Sail&rdquo; is free, open source and runs on iOS 18 or later.</p>
+    <div class="cta" data-r style="--i:3"><a class="btn primary" href="/download.html">Get Porthole 1.3.0</a><a class="btn" href="/changelog.html#v1-3-0">See what&rsquo;s new</a></div>
+    <p class="early" data-r style="--i:4"><b>Early software.</b> Made and tested by one person. Plenty of games won&rsquo;t run yet, and some need tweaking, so check the <a href="/compat.html">compatibility list</a> before you spend an evening on one.</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <div class="row"><a class="brand" href="/"><img src="/img/porthole-night-96.webp" alt="" width="36" height="36">Porthole</a>
+  <nav aria-label="Footer"><a href="/download.html">Get it</a><a href="/changelog.html">What&rsquo;s new</a><a href="/gallery.html">Gallery</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/docs/">Docs</a><a href="/privacy.html">Privacy</a><a href="/trust.html">Trust</a><a href="/privacy.html#contact">Contact</a><a href="https://github.com/tylerkaska112/Porthole">GitHub</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a href="https://github.com/tylerkaska112/Porthole/issues/new/choose">Report a problem</a></nav></div>
+  <p>Windows PC games on iPhone and iPad. A personal project. Not affiliated with or endorsed by Valve, Microsoft, Apple or any game publisher. Game and company names belong to their owners. Built with the help of AI.</p>
 </div></footer>
-<script src="/anim.js?v=20261023" defer></script>
-<script src="/runs.js?v=20261040" defer></script>
+<script src="/site2.js?v=20261112e" defer></script>
 <script src="/theme.js?v=20261034" defer></script>
-<script src="/mock.js?v=20261037" defer></script>
-<script src="/editor.js?v=20261033" defer></script>
-<script src="/fx.js?v=20261033" defer></script>
-<script src="/menu.js?v=20261027" defer></script>
 </body>
 </html>
