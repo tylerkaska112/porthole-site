@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12 20:00 UTC",
+ "generated": "2026-11-13 00:00 UTC",
  "engine": "3af3467-r1",
  "games": [
   {
@@ -163,6 +163,175 @@
      "comment": "can't download or play any DLC/mods.",
      "date": "2026-10-17",
      "device": "iPhone 15 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:239140",
+   "title": "Dying Light",
+   "kind": "steam",
+   "steamAppID": 239140,
+   "reportCount": 3,
+   "lastReport": "2026-11-12",
+   "verdict": "playable",
+   "confidence": "medium",
+   "countedReports": 2,
+   "earlierReports": 1,
+   "devices": [
+    {
+     "device": "iPhone 17 Pro",
+     "verdict": "playable",
+     "reports": 2
+    }
+   ],
+   "settingsSummary": {
+    "reports": 1,
+    "items": [
+     {
+      "key": "launch",
+      "value": "steam",
+      "count": 1
+     },
+     {
+      "key": "power",
+      "value": "balanced",
+      "count": 1
+     },
+     {
+      "key": "desktopDisplay",
+      "value": true,
+      "count": 1
+     },
+     {
+      "key": "preciseMath",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "controls",
+      "value": "standard",
+      "count": 1
+     },
+     {
+      "key": "swapMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "vramMB",
+      "value": 0,
+      "count": 1
+     },
+     {
+      "key": "audioCushionMs",
+      "value": 80,
+      "count": 1
+     },
+     {
+      "key": "keepModeWhenHot",
+      "value": false,
+      "count": 1
+     },
+     {
+      "key": "swapCoverage",
+      "value": "",
+      "count": 1
+     }
+    ]
+   },
+   "reports": [
+    {
+     "ios": "27.2.1",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 39.4,
+      "fpsLow": 30,
+      "minutes": 6,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": true,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-12",
+     "device": "iPhone 17 Pro"
+    },
+    {
+     "ios": "26.1",
+     "appVersion": "1.1.0",
+     "engine": "279fd0f-r17",
+     "onThisEngine": false,
+     "rating": "broken",
+     "stability": "wont_launch",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 0,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": true,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-12",
+     "device": "iPhone 14 Pro Max"
+    },
+    {
+     "ios": "27.3",
+     "appVersion": "1.2.1",
+     "engine": "3af3467-r1",
+     "onThisEngine": true,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 59.7,
+      "fpsLow": 29,
+      "minutes": 5,
+      "thermal": "warm"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "great",
+     "date": "2026-11-05",
+     "device": "iPhone 17 Pro"
     }
    ]
   },
@@ -462,144 +631,6 @@
      "comment": null,
      "date": "2026-11-05",
      "device": "iPhone 13 Pro Max"
-    }
-   ]
-  },
-  {
-   "id": "steam:239140",
-   "title": "Dying Light",
-   "kind": "steam",
-   "steamAppID": 239140,
-   "reportCount": 2,
-   "lastReport": "2026-11-12",
-   "verdict": "great",
-   "confidence": "low",
-   "countedReports": 1,
-   "earlierReports": 1,
-   "devices": [
-    {
-     "device": "iPhone 17 Pro",
-     "verdict": "great",
-     "reports": 1
-    }
-   ],
-   "settingsSummary": {
-    "reports": 1,
-    "items": [
-     {
-      "key": "launch",
-      "value": "steam",
-      "count": 1
-     },
-     {
-      "key": "power",
-      "value": "balanced",
-      "count": 1
-     },
-     {
-      "key": "desktopDisplay",
-      "value": true,
-      "count": 1
-     },
-     {
-      "key": "preciseMath",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "controls",
-      "value": "standard",
-      "count": 1
-     },
-     {
-      "key": "swapMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "vramMB",
-      "value": 0,
-      "count": 1
-     },
-     {
-      "key": "audioCushionMs",
-      "value": 80,
-      "count": 1
-     },
-     {
-      "key": "keepModeWhenHot",
-      "value": false,
-      "count": 1
-     },
-     {
-      "key": "swapCoverage",
-      "value": "",
-      "count": 1
-     }
-    ]
-   },
-   "reports": [
-    {
-     "ios": "26.1",
-     "appVersion": "1.1.0",
-     "engine": "279fd0f-r17",
-     "onThisEngine": false,
-     "rating": "broken",
-     "stability": "wont_launch",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": null,
-      "fpsLow": null,
-      "minutes": 0,
-      "thermal": "cool"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": true,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": null,
-     "date": "2026-11-12",
-     "device": "iPhone 14 Pro Max"
-    },
-    {
-     "ios": "27.3",
-     "appVersion": "1.2.1",
-     "engine": "3af3467-r1",
-     "onThisEngine": true,
-     "rating": "great",
-     "stability": "never",
-     "tags": [],
-     "source": "steam",
-     "perf": {
-      "fpsAvg": 59.7,
-      "fpsLow": 29,
-      "minutes": 5,
-      "thermal": "warm"
-     },
-     "settings": {
-      "launch": "steam",
-      "power": "balanced",
-      "keepModeWhenHot": false,
-      "swapMB": 0,
-      "swapCoverage": "",
-      "vramMB": 0,
-      "audioCushionMs": 80,
-      "preciseMath": false,
-      "desktopDisplay": true,
-      "controls": "standard"
-     },
-     "comment": "great",
-     "date": "2026-11-05",
-     "device": "iPhone 17 Pro"
     }
    ]
   },
@@ -2633,6 +2664,103 @@
      "comment": null,
      "date": "2026-10-15",
      "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:291480",
+   "title": "Warface: Clutch",
+   "kind": "steam",
+   "steamAppID": 291480,
+   "reportCount": 1,
+   "lastReport": "2026-11-12",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2.1",
+     "appVersion": "1.3.0",
+     "engine": "2c133ca-r1",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": null,
+      "fpsLow": null,
+      "minutes": 1,
+      "thermal": null
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "balanced",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "wide",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-12",
+     "device": "iPhone 14 Pro Max"
+    }
+   ]
+  },
+  {
+   "id": "steam:4304060",
+   "title": "SONIC PICO PARK",
+   "kind": "steam",
+   "steamAppID": 4304060,
+   "reportCount": 1,
+   "lastReport": "2026-11-12",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2",
+     "appVersion": "1.3.0",
+     "engine": "2c133ca-r1",
+     "onThisEngine": false,
+     "rating": "great",
+     "stability": "never",
+     "tags": [
+      "controller_ok",
+      "online_works"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 90.1,
+      "fpsLow": 4,
+      "minutes": 1,
+      "thermal": "cool"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 4096,
+      "swapCoverage": "",
+      "vramMB": 4096,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": null,
+     "date": "2026-11-12",
+     "device": "iPhone 16 Pro"
     }
    ]
   },
