@@ -20,16 +20,17 @@
 <meta name="twitter:card" content="summary_large_image">
 <script>document.documentElement.classList.add("js");if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("rm")</script>
 <script>try{var d=document.documentElement,t=localStorage.getItem("porthole-theme");if(t){d.dataset.theme=t;if(t==="custom"){var c=JSON.parse(localStorage.getItem("porthole-custom")||"{}");for(var k in c)d.style.setProperty(k,c[k])}}}catch(e){}</script>
+<script>try{var s=localStorage.getItem("porthole-scheme");if(s)document.documentElement.dataset.scheme=s}catch(e){}</script>
 <link rel="preload" href="/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/site2.css?v=20261112h">
-<link rel="stylesheet" href="/inner.css?v=20261112g">
+<link rel="stylesheet" href="/site2.css?v=20261113e">
+<link rel="stylesheet" href="/inner.css?v=20261113e">
 </head>
 <body class="inner">
 <div class="sea" aria-hidden="true"><i></i><i></i></div>
 <a class="skip" href="#main">Skip to the content</a>
 <header class="nav">
   <a class="brand" href="/"><img src="/img/porthole-night-96.webp" alt="" width="36" height="36">Porthole</a>
-  <nav class="links" aria-label="Main"><a href="/#features">Features</a><a href="/compat.html" aria-current="page">Compatibility</a><a href="/help.html">Help</a><a href="/docs/">Docs</a><a href="/changelog.html">What&rsquo;s new</a><a href="https://discord.gg/N7PkdptTFn">Discord</a></nav>
+  <nav class="links" aria-label="Main"><a href="/#features">Features</a><a href="/compat.html" aria-current="page">Compatibility</a><a href="/help.html">Help</a><a href="/docs/">Docs</a><a href="/changelog.html">What&rsquo;s new</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a class="navtool" href="/docs/?search" aria-label="Search the documentation"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span>Search</span></a><button class="navtool scheme" type="button" aria-label="Switch to light mode"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg><span>Light mode</span></button></nav>
   <a class="btn primary sm" href="/download.html">Get it</a>
   <button class="burger" type="button" aria-label="Menu" aria-expanded="false"><span></span></button>
   <div class="bar" aria-hidden="true"></div>
@@ -39,6 +40,21 @@
   <p class="eyebrow">Compatibility</p>
   <h1>Compatibility</h1>
   <p class="lede">How games run in Porthole, from reports sent by the people using it. Tap a game to see which devices it works on, what settings people used, and their notes. A badge counts reports made on the current version of the game engine behind Porthole; when that engine changes, old reports stay here for reference and the game shows <b>Not yet tested</b> until someone plays it again.</p>
+
+  <div class="explore" hidden data-r>
+    <h3 class="explore-title" id="explore-title">Will it run on your device?</h3>
+    <p class="explore-lede">Pick your device to see what players with the same one have reported: how fast games run, how often they say it works, and which games make a good first try.</p>
+    <div class="dchips" role="group" aria-label="Choose a device"></div>
+    <div class="tiles">
+      <div class="tile"><b data-x="fps">&ndash;</b><span>typical frames per second</span></div>
+      <div class="tile"><b data-x="good">&ndash;</b><span>of reports say it works well</span></div>
+      <div class="tile"><b data-x="hot">&ndash;</b><span>of reports say it gets hot</span></div>
+      <div class="tile"><b data-x="n">&ndash;</b><span>reports with a frame rate</span></div>
+    </div>
+    <div class="fastest"><h4>Fastest games on this device</h4><ol class="rank"></ol></div>
+    <div class="fastest"><h4>Good games to try first</h4><ul class="firsts"></ul></div>
+    <p class="fine">Each bar is one player&rsquo;s average over a play session, so treat them as a guide, not a promise. The games listed under &ldquo;try first&rdquo; are ones players reported working well on this device.</p>
+  </div>
 
   <div class="tools">
     <input id="q" type="search" placeholder="Search games" aria-label="Search games" autocomplete="off">
@@ -70,7 +86,7 @@
   <p>Windows PC games on iPhone and iPad. A personal project. Not affiliated with or endorsed by Valve, Microsoft, Apple or any game publisher. Game and company names belong to their owners. Built with the help of AI.</p>
 </div></footer>
 <script src="/compat.js?v=20261012"></script>
-<script src="/site2.js?v=20261112h" defer></script>
+<script src="/site2.js?v=20261113e" defer></script>
 <script src="/theme.js?v=20261034" defer></script>
 </body>
 </html>

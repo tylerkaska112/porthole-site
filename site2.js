@@ -105,8 +105,8 @@
   }
 
   // Compatibility numbers and the game names, from the same snapshot the compatibility page reads
-  var live = $('.live');
-  if (live && window.fetch) {
+  var liveEl = $('.live'), live = liveEl || document.createElement('div');
+  if ((liveEl || $('.explore')) && window.fetch) {
     fetch('/compat.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(function (data) {
       var games = (data && data.games) || [];
       if (!games.length) return;
@@ -132,6 +132,7 @@
         });
       }
       buildExplorer(games);
+      buildVoices(games);
       live.hidden = false;
       var fallback = $('.live-fallback'); if (fallback) fallback.hidden = true;
       watchCounters();
@@ -140,7 +141,8 @@
   }
 
 
-  // "What to expect on your device": pick a device to see the typical frame rate, how many reports say it works, and the fastest games there.
+  // "Will it run on your device?": pick a device to see the typical frame rate, how many reports say it works, the fastest games there
+  // and some good games to try first. Everything comes from the public snapshot and is only ever put on the page as text.
   function buildExplorer(games) {
     var box = $('.explore'); if (!box) return;
     var rows = [];
@@ -152,7 +154,7 @@
     var counts = {};
     rows.forEach(function (r) { if (r.fps && /^(iPhone|iPad)[^,]*$/.test(r.device)) counts[r.device] = (counts[r.device] || 0) + 1; });
     var devices = Object.keys(counts).filter(function (d) { return counts[d] >= 5; }).sort(function (a, b) { return counts[b] - counts[a]; }).slice(0, 5);
-    var chips = $('.chips', box), list = $('.rank', box);
+    var chips = $('.dchips', box), list = $('.rank', box), firsts = $('.firsts', box);
     function median(a) { a = a.slice().sort(function (x, y) { return x - y; }); var m = a.length >> 1; return a.length ? (a.length % 2 ? a[m] : (a[m - 1] + a[m]) / 2) : null; }
     function show(dev) {
       var sel = rows.filter(function (r) { return !dev || r.device === dev; });
@@ -160,9 +162,9 @@
       var rated = sel.filter(function (r) { return r.rating; });
       var set = function (k, t) { var n = $('[data-x="' + k + '"]', box); if (n) n.textContent = t; };
       var med = median(withFps.map(function (r) { return r.fps; }));
-      set('fps', med === null ? '\u2013' : String(Math.round(med)));
-      set('good', rated.length ? Math.round(100 * rated.filter(function (r) { return r.rating !== 'broken'; }).length / rated.length) + '%' : '\u2013');
-      set('hot', sel.length ? Math.round(100 * sel.filter(function (r) { return r.hot; }).length / sel.length) + '%' : '\u2013');
+      set('fps', med === null ? '–' : String(Math.round(med)));
+      set('good', rated.length ? Math.round(100 * rated.filter(function (r) { return r.rating !== 'broken'; }).length / rated.length) + '%' : '–');
+      set('hot', sel.length ? Math.round(100 * sel.filter(function (r) { return r.hot; }).length / sel.length) + '%' : '–');
       set('n', String(withFps.length));
       var best = {};
       withFps.forEach(function (r) { if (!best[r.game] || r.fps > best[r.game]) best[r.game] = r.fps; });
@@ -174,10 +176,20 @@
         bar.style.setProperty('--w', 0); br.appendChild(bar); li.appendChild(nm); li.appendChild(br); li.appendChild(fv); list.appendChild(li);
         requestAnimationFrame(function () { requestAnimationFrame(function () { bar.style.setProperty('--w', Math.min(100, x.f / 1.2)); }); });
       });
-      $$('.chip', chips).forEach(function (c) { c.setAttribute('aria-pressed', String((c.dataset.dev || '') === (dev || ''))); });
+      // games people reported working well here, the ones with the most reports first
+      var good = {};
+      sel.forEach(function (r) { if (r.rating === 'great') good[r.game] = (good[r.game] || 0) + 1; });
+      var picks = Object.keys(good).map(function (k) { return { t: k, n: good[k], f: best[k] || 0 }; })
+        .sort(function (a, b) { return b.n - a.n || b.f - a.f || a.t.localeCompare(b.t); }).slice(0, 10);
+      if (firsts) {
+        firsts.textContent = '';
+        if (!picks.length) { var none = document.createElement('li'); none.className = 'none'; none.textContent = 'No reports of a game working great on this device yet.'; firsts.appendChild(none); }
+        picks.forEach(function (x) { var li = document.createElement('li'); li.className = 'tag'; li.textContent = x.t; firsts.appendChild(li); });
+      }
+      $$('.dchip', chips).forEach(function (c) { c.setAttribute('aria-pressed', String((c.dataset.dev || '') === (dev || ''))); });
     }
     function chip(label, dev, n) {
-      var b = document.createElement('button'); b.type = 'button'; b.className = 'chip'; b.dataset.dev = dev || '';
+      var b = document.createElement('button'); b.type = 'button'; b.className = 'dchip'; b.dataset.dev = dev || '';
       b.appendChild(document.createTextNode(label));
       if (n) { var sm = document.createElement('small'); sm.textContent = n; b.appendChild(sm); }
       b.addEventListener('click', function () { show(dev); }); chips.appendChild(b);
@@ -185,6 +197,29 @@
     chip('All devices', '', rows.filter(function (r) { return r.fps; }).length);
     devices.forEach(function (d) { chip(d, d, counts[d]); });
     show('');
+    box.hidden = false;
+  }
+
+  // "What players say": a few recent, upbeat comments from the same public reports, word for word.
+  function buildVoices(games) {
+    var box = $('.voices'); if (!box) return;
+    var q = [];
+    games.forEach(function (g) { (g.reports || []).forEach(function (r) {
+      var c = String(r.comment || '').trim();
+      if (r.rating === 'great' && c.length >= 18 && c.length <= 170 && !/\btest\b/i.test(c) && !/https?:|@|!!/.test(c) && !/\b(doesn'?t|don'?t|didn'?t|can'?t|cant|won'?t|crash\w*|bug\w*|issue\w*|problem\w*|fail\w*|slow|broken|but|not|although|though|only|need\w*|must|have to)\b/i.test(c)) q.push({ t: c, g: g.title || 'A game', d: r.device || '', date: r.date || '' });
+    }); });
+    q.sort(function (a, b) { return a.date < b.date ? 1 : -1; });
+    var seen = {}, pick = [];
+    q.forEach(function (x) { if (!seen[x.g] && pick.length < 3) { seen[x.g] = 1; pick.push(x); } });
+    if (pick.length < 2) return;
+    var grid = $('.vgrid', box); grid.textContent = '';
+    pick.forEach(function (x) {
+      var bq = document.createElement('blockquote'), p = document.createElement('p'), cite = document.createElement('cite');
+      var dev = /model/.test(x.d) ? (x.d.indexOf('iPad') === 0 ? 'an iPad' : 'an iPhone') : x.d;
+      p.textContent = '“' + x.t + '”'; cite.textContent = x.g + (dev ? ' on ' + dev : '');
+      bq.appendChild(p); bq.appendChild(cite); grid.appendChild(bq);
+    });
+    box.hidden = false;
   }
 
   // Videos play only while they are on screen, muted, and never when motion is reduced
@@ -198,6 +233,26 @@
       entries.forEach(function (e) { if (e.isIntersecting) { var p = e.target.play(); if (p && p.catch) p.catch(function () {}); } else e.target.pause(); });
     }, { threshold: 0.35 });
     videos.forEach(function (v) { vio.observe(v); });
+  }
+
+  // Light or dark: follows the device until the visitor chooses (the choice is kept in this browser only)
+  var schemeBtn = $('.scheme');
+  function effectiveScheme() { return root.dataset.scheme || (window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'); }
+  function syncScheme() {
+    if (!schemeBtn) return;
+    var light = effectiveScheme() === 'light', label = $('span', schemeBtn);
+    schemeBtn.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+    if (label) label.textContent = light ? 'Dark mode' : 'Light mode';
+    var m = $('meta[name="theme-color"]'); var c = getComputedStyle(root).getPropertyValue('--bg').trim(); if (m && c) m.setAttribute('content', c);
+  }
+  if (schemeBtn) {
+    schemeBtn.addEventListener('click', function () {
+      var next = effectiveScheme() === 'light' ? 'dark' : 'light';
+      root.dataset.scheme = next;
+      try { localStorage.setItem('porthole-scheme', next); } catch (e) { /* private mode: it just resets next time */ }
+      syncScheme();
+    });
+    syncScheme();
   }
 
   // A soft light that follows the pointer over cards

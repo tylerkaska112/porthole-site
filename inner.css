@@ -163,3 +163,17 @@
 .inner .docs h4, .inner .docs h5 { font-family: var(--display); letter-spacing: -.02em; }
 .inner .game .body .chip, .inner .game .body .pill { white-space: normal; max-width: 100%; }
 .inner .game .body { min-width: 0; overflow-wrap: anywhere; }
+
+/* Download page: the three-step plan and the signing routes */
+.inner .page .plan { list-style: none; margin: 22px 0 8px; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; counter-reset: p; max-width: none; }
+.inner .plan li { position: relative; margin: 0; padding: 62px 18px 18px; border-radius: 22px; background: var(--panel); border: 1px solid var(--line); display: grid; gap: 6px; align-content: start; counter-increment: p; }
+.inner .plan li::before { content: counter(p); position: absolute; left: 18px; top: 16px; width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; font: 800 17px var(--display); color: var(--accent-ink); background: linear-gradient(135deg, var(--accent), var(--accent2)); }
+.inner .plan b { font: 700 18px var(--display); letter-spacing: -.02em; }
+.inner .plan span { color: var(--dim); font-size: 15px; }
+@media (max-width: 760px) { .inner .page .plan { grid-template-columns: 1fr; } .inner .plan li { padding: 16px 16px 16px 66px; } .inner .plan li::before { top: 14px; } }
+.inner .routes .card h3 { font-size: 19px; }
+.inner .routes .card p { margin: 0; }
+.inner .routes .card .good { color: var(--good); }
+.inner .release-card { box-shadow: var(--glow); }
+:root[data-scheme="light"] .inner { --glow: 0 0 0 1px rgba(8, 120, 141, .2), 0 24px 70px -28px rgba(8, 120, 141, .4); --panel-solid: #FFFFFF; }
+@media (prefers-color-scheme: light) { :root:not([data-scheme="dark"]) .inner { --glow: 0 0 0 1px rgba(8, 120, 141, .2), 0 24px 70px -28px rgba(8, 120, 141, .4); --panel-solid: #FFFFFF; } }

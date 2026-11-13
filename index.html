@@ -20,8 +20,9 @@
 <meta name="twitter:card" content="summary_large_image">
 <script>document.documentElement.classList.add("js");if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("rm")</script>
 <script>try{var d=document.documentElement,t=localStorage.getItem("porthole-theme");if(t){d.dataset.theme=t;if(t==="custom"){var c=JSON.parse(localStorage.getItem("porthole-custom")||"{}");for(var k in c)d.style.setProperty(k,c[k])}}}catch(e){}</script>
+<script>try{var s=localStorage.getItem("porthole-scheme");if(s)document.documentElement.dataset.scheme=s}catch(e){}</script>
 <link rel="preload" href="/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/site2.css?v=20261112k">
+<link rel="stylesheet" href="/site2.css?v=20261113e">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -52,7 +53,7 @@
 <a class="skip" href="#main">Skip to the content</a>
 <header class="nav">
   <a class="brand" href="/"><img src="/img/porthole-night-96.webp" alt="" width="36" height="36">Porthole</a>
-  <nav class="links" aria-label="Main"><a href="#features">Features</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/docs/">Docs</a><a href="/changelog.html">What&rsquo;s new</a><a href="https://discord.gg/N7PkdptTFn">Discord</a></nav>
+  <nav class="links" aria-label="Main"><a href="#features">Features</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/docs/">Docs</a><a href="/changelog.html">What&rsquo;s new</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a class="navtool" href="/docs/?search" aria-label="Search the documentation"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span>Search</span></a><button class="navtool scheme" type="button" aria-label="Switch to light mode"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg><span>Light mode</span></button></nav>
   <a class="btn primary sm" href="/download.html">Get it</a>
   <button class="burger" type="button" aria-label="Menu" aria-expanded="false"><span></span></button>
   <div class="bar" aria-hidden="true"></div>
@@ -177,8 +178,9 @@
       </div>
       <div class="marquee" data-r aria-label="Games people report working well or playable"></div>
       <div class="explore" data-r>
-        <h3 class="explore-title" id="explore-title">What to expect on your device</h3>
-        <div class="chips" role="group" aria-label="Choose a device"></div>
+        <h3 class="explore-title" id="explore-title">Will it run on your device?</h3>
+        <p class="explore-lede">Pick your device to see what players with the same one have reported: how fast games run, how often they say it works, and which games make a good first try.</p>
+        <div class="dchips" role="group" aria-label="Choose a device"></div>
         <div class="tiles">
           <div class="tile"><b data-x="fps">&ndash;</b><span>typical frames per second</span></div>
           <div class="tile"><b data-x="good">&ndash;</b><span>of reports say it works well</span></div>
@@ -186,7 +188,13 @@
           <div class="tile"><b data-x="n">&ndash;</b><span>reports with a frame rate</span></div>
         </div>
         <div class="fastest"><h4>Fastest games on this device</h4><ol class="rank"></ol></div>
-        <p class="fine">Each bar is one player&rsquo;s average over a play session, so treat them as a guide, not a promise.</p>
+        <div class="fastest"><h4>Good games to try first</h4><ul class="firsts"></ul></div>
+        <p class="fine">Each bar is one player&rsquo;s average over a play session, so treat them as a guide, not a promise. The games listed under &ldquo;try first&rdquo; are ones players reported working well on this device.</p>
+      </div>
+      <div class="voices" data-r hidden>
+        <h3 class="explore-title">What players say</h3>
+        <div class="vgrid"></div>
+        <p class="fine">Comments from player reports, shown as they were written.</p>
       </div>
       <p class="fine">Reports so far were made on earlier versions of the engine. With 1.3.0 every game starts at &ldquo;Not yet tested&rdquo; again until people have played it on this version. Your result can differ: device, settings and iOS version all matter.</p>
     </div>
@@ -201,7 +209,7 @@
       <h2 class="h2" id="how-title" data-l><span class="ln" style="--i:0"><span>Three steps to your first game.</span></span></h2>
     </div>
     <div class="flow" data-view>
-      <div class="fstep" data-r style="--i:0"><h3 class="h3">Get ready</h3><p>Install Porthole and follow the setup guide: switch on full speed, allow its private link, and download Microsoft&rsquo;s Windows components.</p><small>About 2 minutes, and 25 MB</small></div>
+      <div class="fstep" data-r style="--i:0"><h3 class="h3">Install and set up</h3><p>Sign the app with your own certificate and install it, then follow the setup guide: switch on full speed, allow its private link, and download Microsoft&rsquo;s Windows components.</p><small>About 20 minutes the first time, then it&rsquo;s done</small></div>
       <div class="fstep" data-r style="--i:1"><h3 class="h3">Add a game</h3><p>Sign in to Steam, Epic Games, GOG, itch.io, Amazon Games or EA and download one you own, or copy a game folder in from Files.</p><small>As long as the download takes</small></div>
       <div class="fstep" data-r style="--i:2"><h3 class="h3">Press Play</h3><p>Check the game&rsquo;s badge first if you like, then press Play. Tell other people how it went with a short report.</p><small>The first start takes a minute or more</small></div>
     </div>
@@ -212,13 +220,24 @@
 <section class="section" id="expect" aria-labelledby="expect-title">
   <div class="wrap">
     <div class="head">
-      <p class="eyebrow" data-r>Straight talk</p>
+      <p class="eyebrow" data-r>Before you start</p>
       <h2 class="h2" id="expect-title" data-l><span class="ln" style="--i:0"><span>What to expect.</span></span></h2>
     </div>
     <div class="cards">
-      <article class="card" data-r style="--i:0"><h3 class="h3">It&rsquo;s early</h3><p>Porthole is a hobby project that changes often. Plenty of games don&rsquo;t run yet, and some run slowly. The compatibility list shows what people have actually tried.</p></article>
-      <article class="card" data-r style="--i:1"><h3 class="h3">It takes some setting up</h3><p>Porthole isn&rsquo;t on the App Store, because it uses interfaces Apple keeps private. You sign the app file with your own developer certificate and install it yourself. <a href="/download.html">Here&rsquo;s what you need.</a></p></article>
+      <article class="card" data-r style="--i:0"><h3 class="h3">It&rsquo;s early, and getting better</h3><p>Porthole is a hobby project that changes often. Plenty of games already run well, and some need a little tweaking. The compatibility list shows what people have actually tried, so you can pick a good first game.</p></article>
+      <article class="card" data-r style="--i:1"><h3 class="h3">Setting up takes about 20 minutes, once</h3><p>Porthole isn&rsquo;t on the App Store, because it uses interfaces Apple keeps private. You sign the app file with your own certificate and install it yourself. <a href="/download.html">The Get it page walks you through it.</a></p></article>
       <article class="card" data-r style="--i:2"><h3 class="h3">You bring the games</h3><p>Porthole never includes games and doesn&rsquo;t get around any copy protection. You need to own what you run.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about" aria-labelledby="about-title">
+  <div class="wrap">
+    <div class="about">
+      <p class="eyebrow" data-r>Who makes this</p>
+      <h2 class="h2" id="about-title" data-l><span class="ln" style="--i:0"><span>One person, <span class="grad">in the open.</span></span></span></h2>
+      <p class="lede" data-r style="--i:1">Porthole is a hobby project made by one person. It is free, open source and not tied to any publisher, and every release is written up in plain words on the <a href="/changelog.html">What&rsquo;s new</a> page. Questions, ideas and bug reports are welcome; the Discord is the quickest way to get an answer.</p>
+      <div class="cta" data-r style="--i:2"><a class="btn primary" href="https://discord.gg/N7PkdptTFn">Join the Discord</a><a class="btn" href="https://github.com/tylerkaska112/Porthole">See the source on GitHub</a></div>
     </div>
   </div>
 </section>
@@ -240,7 +259,7 @@
     <h2 class="h2" id="get-title" data-l><span class="ln" style="--i:0"><span>Ready when</span></span><span class="ln" style="--i:1"><span class="grad">you are.</span></span></h2>
     <p class="lede" data-r style="--i:2">Porthole 1.3.0 &ldquo;Full Sail&rdquo; is free, open source and runs on iOS 18 or later.</p>
     <div class="cta" data-r style="--i:3"><a class="btn primary" href="/download.html">Get Porthole 1.3.0</a><a class="btn" href="/changelog.html#v1-3-0">See what&rsquo;s new</a></div>
-    <p class="early" data-r style="--i:4"><b>Early software.</b> Made and tested by one person. Plenty of games won&rsquo;t run yet, and some need tweaking, so check the <a href="/compat.html">compatibility list</a> before you spend an evening on one.</p>
+    <p class="early" data-r style="--i:4"><b>Friendly heads-up.</b> Porthole is made and tested by one person, so it&rsquo;s still early: some games run great and some need a little tweaking. The <a href="/compat.html">compatibility list</a> shows which, so your first game can be a good one.</p>
   </div>
 </section>
 </main>
@@ -250,7 +269,7 @@
   <nav aria-label="Footer"><a href="/download.html">Get it</a><a href="/changelog.html">What&rsquo;s new</a><a href="/gallery.html">Gallery</a><a href="/compat.html">Compatibility</a><a href="/help.html">Help</a><a href="/docs/">Docs</a><a href="/privacy.html">Privacy</a><a href="/trust.html">Trust</a><a href="/privacy.html#contact">Contact</a><a href="https://github.com/tylerkaska112/Porthole">GitHub</a><a href="https://discord.gg/N7PkdptTFn">Discord</a><a href="https://github.com/tylerkaska112/Porthole/issues/new/choose">Report a problem</a></nav></div>
   <p>Windows PC games on iPhone and iPad. A personal project. Not affiliated with or endorsed by Valve, Microsoft, Apple or any game publisher. Game and company names belong to their owners. Built with the help of AI.</p>
 </div></footer>
-<script src="/site2.js?v=20261112k" defer></script>
+<script src="/site2.js?v=20261113e" defer></script>
 <script src="/theme.js?v=20261034" defer></script>
 </body>
 </html>
