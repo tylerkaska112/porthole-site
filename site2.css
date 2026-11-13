@@ -334,8 +334,8 @@ details.q[open] .a { animation: fadeup .5s var(--ease); }
 }
 
 /* ---------- Light mode: follows the device until the visitor picks one with the button in the header ---------- */
-:root[data-scheme="light"] { color-scheme: light; --bg: #F3FAFC; --bg2: #E1F2F6; --panel: rgba(6, 40, 56, .05); --panel2: rgba(6, 40, 56, .09); --line: rgba(6, 40, 56, .15); --text: #062431; --dim: #43606F; --accent: #08788D; --accent2: #0A9279; --accent-ink: #FFFFFF; --warm: #B85F0A; --good: #0B8A5F; --amber: #A86A00; }
-@media (prefers-color-scheme: light) { :root:not([data-scheme="dark"]) { color-scheme: light; --bg: #F3FAFC; --bg2: #E1F2F6; --panel: rgba(6, 40, 56, .05); --panel2: rgba(6, 40, 56, .09); --line: rgba(6, 40, 56, .15); --text: #062431; --dim: #43606F; --accent: #08788D; --accent2: #0A9279; --accent-ink: #FFFFFF; --warm: #B85F0A; --good: #0B8A5F; --amber: #A86A00; } }
+:root[data-scheme="light"] { color-scheme: light; --bg: #F3FAFC; --bg2: #E1F2F6; --panel: rgba(6, 40, 56, .05); --panel2: rgba(6, 40, 56, .09); --line: rgba(6, 40, 56, .15); --text: #062431; --dim: #43606F; --accent: #07728A; --accent2: #0A9279; --accent-ink: #FFFFFF; --warm: #B85F0A; --good: #0B8A5F; --amber: #A86A00; }
+@media (prefers-color-scheme: light) { :root:not([data-scheme="dark"]) { color-scheme: light; --bg: #F3FAFC; --bg2: #E1F2F6; --panel: rgba(6, 40, 56, .05); --panel2: rgba(6, 40, 56, .09); --line: rgba(6, 40, 56, .15); --text: #062431; --dim: #43606F; --accent: #07728A; --accent2: #0A9279; --accent-ink: #FFFFFF; --warm: #B85F0A; --good: #0B8A5F; --amber: #A86A00; } }
 :root[data-scheme="light"] .sea i { opacity: .55; }
 :root[data-scheme="light"] .get .ring { opacity: .1; }
 :root[data-scheme="light"] .hcard .art { background: color-mix(in srgb, var(--accent) 7%, transparent); }
