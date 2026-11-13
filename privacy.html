@@ -38,7 +38,7 @@
 <div class="wrap page doc">
   <p class="eyebrow">Privacy</p>
   <h1>Privacy</h1>
-  <p class="lede">Porthole has no ads, no analytics and no account of its own. This page says exactly what leaves your device, and when. Last updated 17 October 2026.</p>
+  <p class="lede">Porthole has no ads, no analytics and no account of its own. This page says exactly what leaves your device, and when. Last updated 13 November 2026.</p>
 
   <h2>What stays on your device</h2>
   <ul>
@@ -59,7 +59,7 @@
     <tr><td>Measurements</td><td>Average and low frame rate, how long you played, and how hot the device got, if you leave "Include what the app measured" on.</td></tr>
     <tr><td>Settings</td><td>How the game was started and the performance settings it used, if you leave "Share my settings" on. Launch options you typed are never shared.</td></tr>
     <tr><td>Your note</td><td>Optional. A person reads it before it can appear, and notes that look like links or download sites are removed.</td></tr>
-    <tr><td>The game's log</td><td>The log of the game's install and run, so a problem can be told from a setup mistake. The report screen shows its size before you send. The app removes folder names inside its own storage, your store account names, e-mail addresses, public IP addresses and any password, token or key that appears next to its name first. The log is <b>private</b>: it is never shown in Reports or to anyone else, and only the project's maintainer can read it. It is deleted 30 days after the report is approved or rejected; the server's daily backup keeps three copies, so a deleted log can remain in a backup for a few days.</td></tr>
+    <tr><td>The game's log</td><td>The log of the game's install and run, so a problem can be told from a setup mistake. The report screen shows its size before you send. The app removes folder names inside its own storage, your store account names, e-mail addresses, public IP addresses and any password, token or key that appears next to its name first. A log can still mention the games you run and technical details of the engine. The log is <b>private</b>: it is never shown in Reports or to anyone else, and only the project's maintainer can read it. It is deleted 30 days after the report is approved or rejected; the server's daily backup keeps three copies, so a deleted log can remain in a backup for a few days.</td></tr>
   </table>
   <p>Each report is tied to a random key made on your device. It is not tied to your name, your Apple ID, your Steam account or any device identifier. The server does not store IP addresses; it holds them in memory for a short time to limit abuse. Reports whose files came from "somewhere else" are kept private and are never shown or counted. <b>Every report waits for the maintainer's approval</b> before it is shown or counted toward a badge; Settings ▸ Compatibility reports ▸ My reports says when one is waiting or was not accepted.</p>
   <p>You can delete your own reports in Settings ▸ Compatibility reports, and forget your reporting key there too. Reports are public: the device model, iOS version and answers are shown next to the game.</p>
@@ -73,10 +73,22 @@
     <tr><td>The log</td><td>The whole log of the run you are reporting (after a crash: the run that ended, and the game's own log) and of the run before it, unless you switch it off. A log is a few megabytes, up to a few tens; it is packed before it is sent. The app removes folder names inside its own storage, your Steam, Epic, GOG and itch.io account names, e-mail addresses, public IP addresses and any password, token or key that appears next to its name from it before anything is saved or sent. A log can still mention the games you run and technical details of the engine. You can open "Look at exactly what would be shared" and read the whole report first.</td></tr>
   </table>
   <p>A problem report is <b>private</b>: it is not shown to anyone else and not counted anywhere. It can be read by the project's maintainer, and by your own install, which shows you its status (open, reviewed, or fixed in a version) and a short note from the maintainer if there is one. It is tied to the same random key as compatibility reports, not to your name, your Apple ID, your store accounts or any device identifier. The server does not store IP addresses; it holds them in memory for a short time to limit abuse.</p>
-  <p>The whole log is needed because the cause of a crash is often far from its last lines. The log part of a report is deleted 30 days after the report is marked fixed, and a fixed report is deleted after a year. You can withdraw a report you sent at any time in Settings ▸ Report a problem ▸ My reports; it is then deleted from the server.</p>
+  <p>The whole log is needed because the cause of a crash is often far from its last lines. The log part of a report is deleted 30 days after the report is marked fixed, and a fixed report is deleted after a year. The server's daily backup keeps three copies of the problem reports too, so a deleted report or log can remain in a backup for a few days. You can withdraw a report you sent at any time in Settings ▸ Report a problem ▸ My reports; it is then deleted from the server.</p>
+
+  <h2 id="binds">Shared key binds</h2>
+  <p>On a game's Binds page you can look at controller binds and touch layouts that other people shared for that game, and share your own. Looking asks Porthole's server for the public sets of that game, so it sees which game you are looking at (a Steam app number, or the fingerprint of the game's main program file) and, like any website, your IP address, which it does not store. When you add someone's set, the app tells the server once that it was added, which is only a counter.</p>
+  <p>Nothing of yours is sent until you tap <b>Share this set</b> and confirm. Then the server receives:</p>
+  <table>
+    <tr><th>What</th><th>Details</th></tr>
+    <tr><td>The game</td><td>Its Steam app number, or the fingerprint of its main program file, and its title.</td></tr>
+    <tr><td>The set</td><td>The controller binds and the touch layout: where each control is, how big it is, what it does and what it is called.</td></tr>
+    <tr><td>Your words</td><td>The set's name and notes, and the labels you gave to controls. A rating or comment you leave on someone else's set is sent in the same way.</td></tr>
+  </table>
+  <p>The layout and the ratings can be seen by other people at once. <b>Everything you typed</b> (names, notes, labels and comments) waits for the maintainer's approval before anyone else sees it, and again after you update a shared set. A shared set is tied to a random key made on your device, not to your name, your Apple ID, your store accounts or any device identifier. Under <b>Stop sharing</b> you can take down a set you shared; it is then deleted from the server. The server's daily backup keeps the newest fourteen copies, so a deleted set can remain in a backup for up to two weeks.</p>
 
   <h2>Showing badges</h2>
   <p>To show compatibility badges, Porthole downloads the public list of games that have reports for your engine version and your device model, and matches your own games against it on your device. The server is not told which games you have: it sees only a request for the list, with your device model and engine version. You can switch badges off in Settings ▸ Compatibility reports.</p>
+  <p>In the same way Porthole downloads a small public list of rules for its automatic fixes (what to change when a game stops in a known way). The request carries nothing but the name "Porthole"; the rules are applied on your device, and nothing about your games is sent.</p>
 
   <h2>Game stores</h2>
   <p>Porthole talks to a store only to list the games you own and to download them, and only after you sign in. Sign-in tokens go to that store's own servers and nowhere else, and they are kept in the iOS Keychain. Porthole does not keep a cache or cookies of that traffic.</p>
@@ -96,13 +108,14 @@
   <p>Pairing and the JIT tunnel use connections that stay on your device. The VPN entry Porthole creates is a local loopback: no traffic from other apps goes through it. iOS runs one VPN at a time, so before it turns its own tunnel on Porthole checks whether another VPN is on (it cannot tell which one), asks you, and afterwards can run a shortcut you choose to turn your VPN back on. Nothing about this is sent anywhere.</p>
 
   <h2>Where reports are stored</h2>
-  <p>Compatibility reports and problem reports are stored on a computer run by the project's maintainer, not with an advertising or analytics company, and are not sold or shared.</p>
+  <p>Compatibility reports, problem reports and shared key binds are stored on a computer run by the project's maintainer, not with an advertising or analytics company, and are not sold or shared.</p>
 
   <h2>Your choices</h2>
   <ul>
     <li>Turn off badges and the "How did it run?" prompt in Settings ▸ Compatibility reports.</li>
     <li>Delete reports you sent, or forget your reporting key, in the same place.</li>
     <li>Share a problem report as a file instead of sending it to the server, or switch the log off before you send, in Settings ▸ Report a problem. Withdraw one you sent under My reports.</li>
+    <li>Stop sharing a set you shared, on that set's page under Binds.</li>
     <li>Delete the app to remove everything stored on your device.</li>
   </ul>
 
