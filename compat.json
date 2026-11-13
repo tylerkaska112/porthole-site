@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13 00:00 UTC",
+ "generated": "2026-11-13 10:00 UTC",
  "engine": "3af3467-r1",
  "games": [
   {
@@ -2664,6 +2664,55 @@
      "comment": null,
      "date": "2026-10-15",
      "device": "iPad Pro 13-inch (M4)"
+    }
+   ]
+  },
+  {
+   "id": "steam:355050",
+   "title": "Sky Force Anniversary",
+   "kind": "steam",
+   "steamAppID": 355050,
+   "reportCount": 1,
+   "lastReport": "2026-11-13",
+   "verdict": null,
+   "confidence": null,
+   "countedReports": 0,
+   "earlierReports": 1,
+   "devices": [],
+   "settingsSummary": null,
+   "reports": [
+    {
+     "ios": "27.2.1",
+     "appVersion": "1.3.0",
+     "engine": "2c133ca-r1",
+     "onThisEngine": false,
+     "rating": "playable",
+     "stability": "never",
+     "tags": [
+      "controller_ok"
+     ],
+     "source": "steam",
+     "perf": {
+      "fpsAvg": 17.6,
+      "fpsLow": 2,
+      "minutes": 4,
+      "thermal": "hot"
+     },
+     "settings": {
+      "launch": "steam",
+      "power": "performance",
+      "keepModeWhenHot": false,
+      "swapMB": 0,
+      "swapCoverage": "",
+      "vramMB": 0,
+      "audioCushionMs": 80,
+      "preciseMath": false,
+      "desktopDisplay": true,
+      "controls": "standard"
+     },
+     "comment": "Runs slow at 10fps",
+     "date": "2026-11-13",
+     "device": "iPhone, model iPhone19,4"
     }
    ]
   },
